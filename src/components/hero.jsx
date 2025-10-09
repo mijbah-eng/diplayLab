@@ -20,19 +20,19 @@ function Hero() {
       id: 1,
       title: "Welcome to Our Website",
       text: "Discover amazing content and services here.",
-      image: "images/hero/nature-2.jpg",
+      image: "images/hero/slider_1.jpeg",
     },
     {
       id: 2,
       title: "Explore New Features",
       text: "We keep improving your experience.",
-      image: "images/hero/nature-3.jpg",
+      image: "images/hero/slider_2.jpeg",
     },
     {
       id: 3,
       title: "Join Us Today",
       text: "Sign up and be part of our community.",
-      image: "images/hero/nature-4.jpg",
+      image: "images/hero/slider_1.jpeg",
     },
   ];
 
@@ -46,8 +46,8 @@ function Hero() {
           >
             <div className="absolute inset-0 bg-black/40"></div>
             <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center font-bold">
-              <h1 className="text-5xl font-bold">{slide.title}</h1>
-              <p className="text-2xl mt-4">{slide.text}</p>
+              <h1 className="text-3xl md:text-5xl font-bold">{slide.title}</h1>
+              <p className="text-sm md:text-2xl mt-4">{slide.text}</p>
             </div>
           </div>
         </div>

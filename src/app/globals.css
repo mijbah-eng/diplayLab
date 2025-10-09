@@ -44,3 +44,7 @@ body {
 .navLink:hover{
 color: #105783
 }
+
+img{
+  max-width: 100%;
+}

@@ -7,7 +7,7 @@ function CMS_Marketing() {
         <h2 className="md:text-[3rem] text-3xl md:leading-12 font-bold text-slate-900 mb-4">Empowering your marketing teen with an easy-to-use CMS</h2>
         <p className="mt-4 text-base text-slate-600">Create, manage and distribute content to you digital displays with Display Lab's intuitive and powerful content management system.</p>
         <div className="mt-8 flex flex-wrap max-md:justify-center gap-4">
-          <a href="javascript:void(0);" className="px-6 py-3 text-base font-semibold text-white bg-[#324ef0] hover:bg-opacity-80 transition-all duration-300 transform focus:ring-2 focus:ring-[#192ff1] focus:outline-none focus:ring-opacity-50 rounded-2xl">Get Started</a>
+          <a href="javascript:void(0);" className="px-6 py-3 text-base font-semibold text-white bg-[#324ef0] hover:bg-opacity-80 transition-all duration-300 transform focus:ring-2 focus:ring-[#192ff1] focus:outline-none focus:ring-opacity-50 rounded-md">Get Started</a>
         </div>
       </div>
       <div className="">
