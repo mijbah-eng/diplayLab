@@ -1,26 +1,12 @@
 "use client";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-// import "./style.css";
 
 function Hero() {
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 800,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   arrows:false
-  // };
 
   const slides = [
     {
