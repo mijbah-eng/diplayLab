@@ -12,10 +12,11 @@ import Rental_1 from "@/components/rental/rental_1";
 import Rental_2 from "@/components/rental/rental_2";
 import SolutionCard from "@/components/solution-card";
 
+
 export default function Home() {
   return (
     <>
-      <div className="">
+      <div className="relative">
         <Navber />
         <Hero />
         <div className="px-[15px] md:px-[80px]">

@@ -3,56 +3,101 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+// import "./style.css";
 
 function Hero() {
-  const settings = {
-    infinite: true,
-    speed: 800,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows:false
-  };
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 800,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   arrows:false
+  // };
 
   const slides = [
     {
       id: 1,
       title: "Welcome to Our Website",
       text: "Discover amazing content and services here.",
-      image: "images/hero/slider_1.jpeg",
+      image: "images/hero/slide_1.png",
     },
     {
       id: 2,
       title: "Explore New Features",
       text: "We keep improving your experience.",
-      image: "images/hero/slider_2.jpeg",
+      image: "images/hero/slide_2.png",
     },
     {
       id: 3,
       title: "Join Us Today",
       text: "Sign up and be part of our community.",
-      image: "images/hero/slider_1.jpeg",
+      image: "images/hero/slide_3.png",
+    },
+    {
+      id: 4,
+      title: "Join Us Today",
+      text: "Sign up and be part of our community.",
+      image: "images/hero/slide_4.png",
+    },
+    {
+      id: 5,
+      title: "Join Us Today",
+      text: "Sign up and be part of our community.",
+      image: "images/hero/slide_5.png",
+    },
+    {
+      id: 6,
+      title: "Join Us Today",
+      text: "Sign up and be part of our community.",
+      image: "images/hero/slide_6.png",
     },
   ];
 
   return (
-    <Slider {...settings}>
-      {slides.map((slide) => (
-        <div key={slide.id}>
-          <div
-            className="w-full h-[100vh] bg-cover bg-center relative"
-            style={{ backgroundImage: `url(${slide.image})` }}
-          >
-            <div className="absolute inset-0 bg-black/40"></div>
-            <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center font-bold">
-              <h1 className="text-3xl md:text-5xl font-bold">{slide.title}</h1>
-              <p className="text-sm md:text-2xl mt-4">{slide.text}</p>
+    <div className="w-full h-[100vh] relative">
+
+      <Swiper dir="ltr" pagination={{ clickable: true, }} modules={[Autoplay, Pagination]}
+        autoplay={{ delay: 2500, disableOnInteraction: false }} loop={true}
+        className="w-full h-full">
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <div
+              className="w-full h-[100vh] bg-cover bg-center relative"
+              style={{ backgroundImage: `url(${slide.image})` }}
+            >
+              <div className="absolute inset-0 bg-black/40"></div>
+              <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center font-bold">
+                <h1 className="text-3xl md:text-5xl font-bold">{slide.title}</h1>
+                <p className="text-sm md:text-2xl mt-4">{slide.text}</p>
+              </div>
             </div>
-          </div>
-        </div>
-      ))}
-    </Slider>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <style jsx global>{`
+      .swiper-pagination-bullet {
+      background: #fff;
+      opacity: 0.6;
+      width: 10px;
+      height: 10px;
+      transition: all 0.3s ease;
+      }
+      .swiper-pagination-bullet-active {
+      background: #00bcd4;
+      opacity: 1;
+      transform: scale(1.2);
+      }
+      `}</style>
+    </div>
+
   );
 }
 
