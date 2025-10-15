@@ -24,7 +24,7 @@ function Navber() {
   return (
     <>
       <nav className="w-full">
-        <div className="absolute z-10 px-[20px] md:px-[80px] py-[15px] flex justify-between items-center w-full">
+        <div className="absolute z-10 px-[20px] md:px-[160px] py-[15px] flex justify-between items-center w-full">
         
         <div className="logo w-50">
           <img src="images/logo/logo.png" alt="Logo" />
@@ -66,7 +66,7 @@ function Navber() {
         <nav
           className="relative w-full fixed-nav"
         >
-          <div className="flex justify-between px-[20px] md:px-[80px] py-[15px] items-center"
+          <div className="flex justify-between px-[20px] md:px-[160px] py-[15px] items-center"
             style={{
               position: "fixed",
               top: 0,

@@ -37,7 +37,7 @@ function Advertisement_2() {
     <div className="py-30">
       <h2 className="text-3xl font-semibold text-center mx-auto">Use Cases</h2>
       {/* flex flex-col md:flex-row justify-center items-center */}
-      <div className="grid grid-cols-1 place-items-center md:grid-cols-3 mt-15 gap-5 flex-wrap">
+      <div className="grid grid-cols-1 place-items-center md:grid-cols-4 mt-15 gap-5 flex-wrap">
         {advertisement_Content?.map((single_Advertisement_Card, index) => (
           <div className="w-xs px-4 py-2 flex flex-col items-center" key={index}>
             <Image

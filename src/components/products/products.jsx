@@ -13,8 +13,8 @@ function Products() {
         <div className="max-w-[200px] flex flex-col items-center">
           {/* <div className="w-40 mt-15"> */}
             <Image
-              src={"/images/products/Indoor Display.png"}
-              width={100}
+              src={"/images/products/products-1.png"}
+              width={200}
               height={100}
               className=" w-full h-full object-cover rounded-lg"
               alt="Stand_Kiosk"
@@ -26,8 +26,8 @@ function Products() {
         <div className="max-w-[200px] flex flex-col items-center">
           {/* <div className="w-40"> */}
             <Image
-              src={"/images/products/Stand Kiosk.png"}
-              width={100}
+              src={"/images/products/products-2.png"}
+              width={200}
               height={100}
               className="max-w-full h-full object-cover rounded-lg"
               alt="Stand_Kiosk"
@@ -39,8 +39,8 @@ function Products() {
         <div className="max-w-[200px] flex flex-col items-center">
           
             <Image
-              src={"/images/products/3D Holograph.png"}
-              width={100}
+              src={"/images/products/products-3.png"}
+              width={200}
               height={100}
               className="max-w-full h-full object-cover rounded-lg"
               alt="Stand_Kiosk"
@@ -52,8 +52,8 @@ function Products() {
         <div className="max-w-[200px] flex flex-col items-center">
           
             <Image
-              src={"/images/products/Window Display.png"}
-              width={100}
+              src={"/images/products/products-4.png"}
+              width={200}
               height={100}
               className="max-w-full h-full object-cover rounded-lg"
               alt="Stand_Kiosk"
@@ -65,8 +65,8 @@ function Products() {
         <div className="max-w-[200px] flex flex-col items-center">
           {/* <div className="w-40 mt-15"> */}
             <Image
-              src={"/images/products/Indoor Display.png"}
-              width={100}
+              src={"/images/products/products-5.png"}
+              width={200}
               height={100}
               className=" w-full h-full object-cover rounded-lg"
               alt="Stand_Kiosk"
@@ -78,8 +78,8 @@ function Products() {
         <div className="max-w-[200px] flex flex-col items-center">
           {/* <div className="w-40"> */}
             <Image
-              src={"/images/products/Stand Kiosk.png"}
-              width={100}
+              src={"/images/products/products-6.png"}
+              width={200}
               height={100}
               className="max-w-full h-full object-cover rounded-lg"
               alt="Stand_Kiosk"
