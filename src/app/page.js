@@ -19,7 +19,7 @@ export default function Home() {
       <div className="relative">
         <Navber />
         <Hero />
-        <div className="px-[15px] md:px-[80px]">
+        <div className="px-[15px] md:px-[160px]">
           <SolutionCard />
           <CMS_Marketing />
           <CMS_Content />

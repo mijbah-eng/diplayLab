@@ -14,11 +14,14 @@ function Advertisement_1() {
       </div>
       <div className="max-md:order-1 max-md:text-center md:w-md md:justify-self-end ">
         <div className="">
-          <h2 className="md:text-[3rem] text-3xl md:leading-12 font-bold text-slate-900 mb-4">
-            Display Lab Advertisement
+          <h2 className="md:text-[3rem] text-3xl md:leading-12 font-semibold text-slate-900 mb-4">
+            Transformative Advertising Solutions
           </h2>
           <p className="mt-4 text-base text-slate-600">
-            Engage audiences with digital displays in gas stations, grocery stores and outdoor locations.
+            Turn any space into a dynamic advertising hub with our tailored display advertising options.
+          </p>
+          <p>
+            Empower your brand with captivating visuals and intelligent ad scheduling. From grocery stores to shopping malls. Display I ab brings targeted marketing directly to your audlence.
           </p>
           <div className="mt-8 flex flex-wrap max-md:justify-center gap-4">
             <a

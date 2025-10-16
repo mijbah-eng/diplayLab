@@ -26,7 +26,7 @@ function Rental_2() {
         needs.
       </p>
 
-      <div className="flex flex-wrap items-center justify-center mt-10 mx-auto gap-4">
+      <div className="flex flex-wrap items-center justify-evenly mt-10 mx-auto gap-4">
         {rental_Images?.map((singleImage, index) => (
           <Image
             width={224}

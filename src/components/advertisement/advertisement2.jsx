@@ -35,7 +35,7 @@ function Advertisement_2() {
   ];
   return (
     <div className="py-30">
-      <h2 className="text-3xl font-semibold text-center mx-auto">Use Cases</h2>
+      <h2 className="text-3xl font-semibold text-center mx-auto">Advertising</h2>
       {/* flex flex-col md:flex-row justify-center items-center */}
       <div className="grid grid-cols-1 place-items-center md:grid-cols-4 mt-15 gap-5 flex-wrap">
         {advertisement_Content?.map((single_Advertisement_Card, index) => (

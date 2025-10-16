@@ -24,8 +24,8 @@ function About_Us() {
           Learn More <FaArrowRightLong />
         </Link>
       </div>
-      <div className="">
-        <Image width={500} height={500} src={'/images/about_us/about_us.png'} alt="about_us" className="object-cover rounded-lg shadow-xl"></Image>
+      <div className="w-2xl">
+        <Image width={800} height={500} src={'/images/about_us/about_us.png'} alt="about_us" className="object-cover rounded-lg shadow-xl w-full h-full"></Image>
       </div>
     </div>
   );

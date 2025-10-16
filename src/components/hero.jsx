@@ -49,7 +49,7 @@ function Hero() {
   ];
 
   return (
-    <div className="w-full h-[1079px] relative">
+    <div className="w-full h-[100dvh] relative">
 
       <Swiper dir="ltr" pagination={{ clickable: true, }} modules={[Autoplay, Pagination]}
         autoplay={{ delay: 2500, disableOnInteraction: false }} loop={true}
@@ -57,10 +57,10 @@ function Hero() {
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
             <div
-              className="w-full h-full bg-cover md:bg-top relative"
-              style={{ backgroundImage: `url(${slide.image})` }}
+              className="w-full h-full bg-cover bg-no-repeat relative"
+              style={{ backgroundImage: `url(${slide.image})`, backgroundPosition: "70% 50%" }}
             >
-<div className="absolute inset-0 bg-black/40"></div>
+            <div className="absolute inset-0 bg-black/40"></div>
               <div className="relative z-100 flex flex-col items-center justify-center h-full text-white text-center font-bold">
                 <h1 className="text-3xl md:text-5xl font-bold">{slide.title}</h1>
                 <p className="text-sm md:text-2xl mt-4">{slide.text}</p>
