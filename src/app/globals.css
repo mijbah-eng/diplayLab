@@ -3,7 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --h1 : 
+  --text : #0f172b;
+  --h2 : bold 1.875rem/3rem;
 }
 
 @theme inline {

@@ -6,7 +6,6 @@ import { ImDisplay } from "react-icons/im";
 import { IoIosTv } from "react-icons/io";
 
 function SolutionCard() {
-  const cartNumber = [1, 2, 3, 4];
   const DisplayLab_Solution_Data = [
     {
       svg: (
@@ -41,18 +40,6 @@ function SolutionCard() {
   ];
   return (
     <div className="section flex flex-col items-center py-30">
-      {/* <h3>Explore Display Lab Solutions</h3>
-      <div className="card-container">
-        <div className="card">
-          <CiCreditCard1 />
-          <h4>Title</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe,
-            dignissimos.
-          </p>
-          <Link href={"/"}>Learn More</Link>
-        </div>
-      </div> */}
       <h2 className="text-3xl md:text-5xl text-slate-900 font-bold mb-10 text-center">
         Explore Display Lab Solutions
       </h2>

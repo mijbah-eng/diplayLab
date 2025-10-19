@@ -14,7 +14,7 @@ function Advertisement_1() {
       </div>
       <div className="max-md:order-1 max-md:text-center md:w-md md:justify-self-end ">
         <div className="">
-          <h2 className="md:text-[3rem] text-3xl md:leading-12 font-semibold text-slate-900 mb-4">
+          <h2 className="text-3xl md:text-5xl text-slate-900 font-bold mb-10">
             Transformative Advertising Solutions
           </h2>
           <p className="mt-4 text-base text-slate-600">

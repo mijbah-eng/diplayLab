@@ -70,10 +70,10 @@ function Products() {
   return (
     <div className="py-30 flex flex-col gap-20">
       <div className="">
-<h1 className="text-3xl font-semibold text-center mx-auto">
+<h1 className="text-3xl md:text-5xl text-slate-900 font-bold text-center mx-auto">
         Display Lab Products
       </h1>
-      <p className="text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto w-xs">
+      <p className="text-sm text-slate-500 text-center mt-5 max-w-lg mx-auto w-xs">
         Explore our range of digital signage displays for various applications.
       </p>
 

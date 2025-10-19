@@ -4,7 +4,7 @@ function Rental_1() {
   return (
     <div className="grid md:grid-cols-2 gap-[40px] max-w-full max-md:max-w-md mx-auto py-30">
       <div className="max-md:order-2 max-md:text-center md:w-md flex flex-col gap-2">
-        <h2 className="md:text-[3rem] text-3xl md:leading-12 font-bold text-slate-900 mb-4 leading-[.5]">
+        <h2 className="text-3xl md:text-5xl text-slate-900 font-bold  mb-4 leading-[.5]">
           Display Lab Rental
         </h2>
         <p className="mt-4 text-base text-slate-600">

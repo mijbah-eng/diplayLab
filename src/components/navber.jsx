@@ -35,17 +35,22 @@ function Navber() {
           <Link href={"/"}>RENTAL</Link>
           <Link href={"/"}>ADVERTISMENT</Link>
         </div>
-        <div className="md:hidden text-white text-3xl cursor-pointer absolute top-6 right-5 z-20 hover:text-slate-300 transition-all duration-200 ease-in" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <HiX /> : <HiMenu />}
+        <div className="md:hidden text-white text-3xl cursor-pointer absolute top-6 right-5 hover:text-slate-300 transition-all duration-200 ease-in" onClick={() => setIsOpen(true)}>
+           <HiMenu />
         </div>
 
         {/* Menu Start */}
           <div
             className={`absolute top-0 left-0 w-full bg-black flex flex-col gap-6 py-6 font-bold text-slate-100 md:hidden transition-all duration-500 ease-in-out ${
-              isOpen ? "translate-y-0" : "-translate-y-full"
+              isOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
-            <p className="text-3xl px-5 text-slate-300">Menu</p>
+            <div className="flex justify-between items-center px-5">
+              <p className="text-3xl text-slate-300">Menu</p>
+              <div className="text-white hover:text-slate-300 cursor-pointer text-3xl " onClick={() => setIsOpen(false)}>
+                <HiX />
+              </div>
+            </div>
             <hr className="text-slate-700" />
             <div className="flex flex-col px-5 gap-6 py-6 font-bold">
               <Link className="hover:text-slate-300 transition-all duration-200 ease-in" href="/" onClick={() => setIsOpen(false)}>CMS</Link>
@@ -99,17 +104,22 @@ function Navber() {
             </div>
 
 
-            <div className={`md:hidden text-black text-3xl cursor-pointer absolute top-6 right-5 z-20 ${isOpen ? 'hover:text-slate-300': ''}  transition-all duration-200 ease-in ${isOpen ? 'text-white' : '' }`} onClick={() => setIsOpen(!isOpen)}>
-              {isOpen ? <HiX /> : <HiMenu />}
+            <div className={`md:hidden text-black text-3xl cursor-pointer absolute top-6 right-5 transition-all duration-200 ease-in`} onClick={() => setIsOpen(true)}>
+           <HiMenu />
             </div>
 
          {/* Menu Start */}
           <div
             className={`absolute top-0 left-0 w-full bg-black flex flex-col gap-6 py-6 font-bold text-slate-100 md:hidden transition-all duration-500 ease-in-out ${
-              isOpen ? "translate-y-0" : "-translate-y-full"
+              isOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
-            <p className="text-3xl px-5 text-slate-300">Menu</p>
+            <div className="flex justify-between items-center px-5">
+              <p className="text-3xl text-slate-300">Menu</p>
+              <div className="text-white hover:text-slate-300 cursor-pointer text-3xl " onClick={() => setIsOpen(false)}>
+                <HiX />
+              </div>
+            </div>
             <hr className="text-slate-700" />
             <div className="flex flex-col px-5 gap-6 py-6 font-bold">
               <Link className="hover:text-slate-300 transition-all duration-200 ease-in" href="/" onClick={() => setIsOpen(false)}>CMS</Link>

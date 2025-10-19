@@ -16,7 +16,7 @@ import SolutionCard from "@/components/solution-card";
 export default function Home() {
   return (
     <>
-      <div className="relative">
+      <div className="relative overflow-x-hidden">
         <Navber />
         <Hero />
         <div className="px-[15px] md:px-[160px]">

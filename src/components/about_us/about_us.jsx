@@ -9,11 +9,11 @@ function About_Us() {
         <p className="text-base font-medium text-slate-600">
           ABOUT DISPLAY LAB
         </p>
-        <h1 className="text-3xl md:text-4xl font-bold mt-2 max-w-sm">
+        <h1 className="text-3xl md:text-5xl 2xl:text-6xl text-slate-900 font-bold mb-10 max-w-md">
           Innovating the Future of Digital Displays
         </h1>
 
-        <p className="text-sm text-slate-500 mt-4 max-w-sm">
+        <p className="text-md text-slate-500 max-w-md">
           Display Lab is a technology-driven company specializing in advanced
           display systems and advertising solutions. From smart kiosks and LED
           screens to dynamic content management software, we empower businesses
@@ -24,7 +24,7 @@ function About_Us() {
           Learn More <FaArrowRightLong />
         </Link>
       </div>
-      <div className="w-2xl">
+      <div className="w-md 2xl:w-2xl ">
         <Image width={800} height={500} src={'/images/about_us/about_us.png'} alt="about_us" className="object-cover rounded-lg shadow-xl w-full h-full"></Image>
       </div>
     </div>
