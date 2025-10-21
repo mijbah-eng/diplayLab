@@ -1,37 +1,33 @@
+import Image from "next/image";
 import Link from "next/link";
-import { CiCreditCard1 } from "react-icons/ci";
-import { FaMobileAlt } from "react-icons/fa";
-import { FaArrowRightLong, FaTv } from "react-icons/fa6";
-import { ImDisplay } from "react-icons/im";
-import { IoIosTv } from "react-icons/io";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 function SolutionCard() {
   const DisplayLab_Solution_Data = [
     {
-      svg: (
-        <CiCreditCard1 size={120} className="object-cover rounded-lg m-auto" />
-      ),
+      iconImage: <Image className="object-cover w-full" src={"/images/explore-Display/Icon-01.png"} width={100} height={100} />,
       title: "Powerful CMS Systems",
       description:
         "Easily manage schedule and control all your display content in real me.",
       link_Text: "Learn More",
     },
     {
-      svg: <IoIosTv size={120} className="object-cover rounded-lg m-auto" />,
+      iconImage: <Image className="object-cover w-full" src={"/images/explore-Display/Icon-02.png"} width={100} height={100} />,
       title: "Versatile Display Products",
       description:
         "Discover LED-LCD and 3D displays disgned for every environment.",
       link_Text: "View Products",
     },
     {
-      svg: <FaMobileAlt size={120} className="object-cover rounded-lg m-auto" />,
+      iconImage: <Image className="object-cover w-full" src={"/images/explore-Display/Icon-03.png"} width={100} height={100} />,
       title: "Flexible Rental Options",
       description:
         "Short-term display rental for events, offices and spocial occasions.",
       link_Text: "Explore Rentals",
     },
     {
-      svg: <ImDisplay size={120} className="object-cover rounded-lg m-auto" />,
+      iconImage: <Image className="object-cover w-full" src={"/images/explore-Display/Icon-04.png"} width={100} height={100} />,
       title: "Transformative Advertising Solutions",
       description:
         "Turn any space into a domscic advertising hub with our tallored options.",
@@ -49,7 +45,7 @@ function SolutionCard() {
             className="shadow-sm border border-gray-200 w-full max-w-sm rounded-lg overflow-hidden mx-auto mt-4"
             key={i}
           >
-            <div className="mt-2">{data?.svg}</div>
+            <div className="mt-2 mx-auto w-40">{data?.iconImage}</div>
             <div className="px-4 py-2 text-center">
               <h3 className="text-2xl md:text-3xl font-semibold">{data?.title}</h3>
               <p className="mt-3 text-xs md:text-sm text-slate-500 leading-relaxed">

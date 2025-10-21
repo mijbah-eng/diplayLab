@@ -13,8 +13,8 @@ function CMS_Marketing() {
           <a href="javascript:void(0);" className="px-6 py-3 text-base font-semibold text-white bg-[#324ef0] hover:bg-opacity-80 transition-all duration-300 transform focus:ring-2 focus:ring-[#192ff1] focus:outline-none focus:ring-opacity-50 rounded-md">Explore CMS</a>
         </div>
       </div>
-      <div className="">
-        <Image width={500} height={500} src={'/images/cms/displayLab CMS.png'} className="w-full h-full object-cover" alt="CMS_Image"></Image>
+      <div className="w-3xl">
+        <Image width={1000} height={1000} src={'/images/cms/Empowering.jpg'} className="w-full h-full object-cover" alt="CMS_Image"></Image>
       </div>
     </div>
     

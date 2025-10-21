@@ -41,7 +41,7 @@ function FAQ() {
           Frequently Asked Questions
         </h1>
 
-        <div className="max-w-xl w-full mt-6 flex flex-col gap-4 items-start text-left">
+        <div className="max-w-3xl w-full mt-6 flex flex-col gap-4 items-start text-left">
           {faqsData.map((faq, index) => (
             <div key={index} className="flex flex-col items-start w-full">
               <div

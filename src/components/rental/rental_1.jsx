@@ -32,10 +32,10 @@ function Rental_1() {
           </a>
         </div>
       </div>
-      <div className="">
+      <div className="w-3xl">
         <Image
-          width={500}
-          height={500}
+          width={1000}
+          height={1000}
           src={"/images/rental/rental.png"}
           className="object-cover w-full h-full"
           alt="rental"

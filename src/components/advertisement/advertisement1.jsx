@@ -3,12 +3,12 @@ import Image from "next/image";
 function Advertisement_1() {
   return (
     <div className="grid md:grid-cols-2 gap-[40px] max-w-full max-md:max-w-md mx-auto py-30">
-      <div className="">
+      <div className="w-3xl">
         <Image
-          width={600}
-          height={500}
-          src={"/images/advertisement/advertisement.png"}
-          className="object-cover rounded-lg shadow-xl"
+          width={1000}
+          height={1000}
+          src={"/images/cms/Empowering.jpg"}
+          className="object-cover rounded-lg shadow-xl w-full h-full"
           alt="rental"
         ></Image>
       </div>
