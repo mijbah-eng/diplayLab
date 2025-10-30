@@ -2,16 +2,19 @@ import Image from "next/image";
 
 function Rental_1() {
   return (
-    <div className="grid md:grid-cols-2 gap-[40px] max-w-full max-md:max-w-md mx-auto py-30">
-      <div className="max-md:order-2 max-md:text-center md:w-md flex flex-col gap-2">
-        <h2 className="text-3xl md:text-5xl text-slate-900 font-bold  mb-4 leading-[.5]">
+    <>
+<div className="space-large"></div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px] mx-auto px-4">
+      <div className="max-md:text-center pr-0 md:pr-[22%]">
+        <h2 className="text-3xl md:text-5xl text-slate-900 font-bold  mb-10 leading-[.5]">
           Display Lab Rental
         </h2>
-        <p className="mt-4 text-base text-slate-600">
+        <p className="mt-4 text-base text-slate-600 mb-8">
           Flexible rental solutions for events and businesses with professional support and custom content creation.
         </p>
         <div className="">
-          <ul className="list-disc text-base ml-5 text-start text-slate-600">
+          <ul className="list-disc text-base ml-30 md:ml-5  text-start text-slate-600">
             <li>
               LED,LCD and holographic displays
             </li>
@@ -32,16 +35,17 @@ function Rental_1() {
           </a>
         </div>
       </div>
-      <div className="w-3xl">
+      <div className="w-[400px] mx-auto">
         <Image
           width={1000}
           height={1000}
           src={"/images/rental/rental.png"}
-          className="object-cover w-full h-full"
+          className="object-cover max-w-full h-full"
           alt="rental"
         ></Image>
       </div>
     </div>
+    </>
   );
 }
 

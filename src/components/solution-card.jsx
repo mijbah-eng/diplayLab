@@ -6,28 +6,28 @@ import { FaArrowRightLong } from "react-icons/fa6";
 function SolutionCard() {
   const DisplayLab_Solution_Data = [
     {
-      iconImage: <Image className="object-cover w-full" src={"/images/explore-Display/Icon-01.png"} width={100} height={100} />,
+      iconImage: <Image className="object-cover w-full" src={"/images/explore-Display/Icon-01.png"} alt="" width={100} height={100} />,
       title: "Powerful CMS Systems",
       description:
         "Easily manage schedule and control all your display content in real me.",
       link_Text: "Learn More",
     },
     {
-      iconImage: <Image className="object-cover w-full" src={"/images/explore-Display/Icon-02.png"} width={100} height={100} />,
+      iconImage: <Image className="object-cover w-full" src={"/images/explore-Display/Icon-02.png"} alt="" width={100} height={100} />,
       title: "Versatile Display Products",
       description:
         "Discover LED-LCD and 3D displays disgned for every environment.",
       link_Text: "View Products",
     },
     {
-      iconImage: <Image className="object-cover w-full" src={"/images/explore-Display/Icon-03.png"} width={100} height={100} />,
+      iconImage: <Image className="object-cover w-full" src={"/images/explore-Display/Icon-03.png"} alt="" width={100} height={100} />,
       title: "Flexible Rental Options",
       description:
         "Short-term display rental for events, offices and spocial occasions.",
       link_Text: "Explore Rentals",
     },
     {
-      iconImage: <Image className="object-cover w-full" src={"/images/explore-Display/Icon-04.png"} width={100} height={100} />,
+      iconImage: <Image className="object-cover w-full" src={"/images/explore-Display/Icon-04.png"} alt="" width={100} height={100} />,
       title: "Transformative Advertising Solutions",
       description:
         "Turn any space into a domscic advertising hub with our tallored options.",
@@ -35,7 +35,8 @@ function SolutionCard() {
     },
   ];
   return (
-    <div className="section flex flex-col items-center py-30">
+    <div className="section flex flex-col items-center">
+      <div className="space-large"></div>
       <h2 className="text-3xl md:text-5xl text-slate-900 font-bold mb-10 text-center">
         Explore Display Lab Solutions
       </h2>

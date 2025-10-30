@@ -45,10 +45,12 @@ function CMS_Content() {
     },
   ]
   return (
-    <div className="py-30">
-      <h1 className="text-3xl font-semibold text-center mx-auto">
+    <>
+    <div className="space-large"></div>
+    <div className="">
+      <h3 className="text-4xl font-bold text-center mx-auto">
         Simplify content management
-      </h1>
+      </h3>
       <p className="text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto">
         Easily create and organize content playlists, expedule display times and
         add/pdata content in real time: Our CMS makes managing effortless.
@@ -65,9 +67,9 @@ function CMS_Content() {
         ))}
       </div>
 
-      <h1 className="text-3xl font-semibold text-center mx-auto mt-20">
+      <h3 className="text-4xl font-bold text-center mx-auto mt-20">
         Features that make managing content a breeze
-      </h1>
+      </h3>
 
       <div className="flex flex-col md:flex-row justify-center items-center mt-15 gap-5">
         {Content_data2.map((singleCard, index) => (
@@ -81,6 +83,8 @@ function CMS_Content() {
         ))}
       </div>
     </div>
+    </>
+    
   );
 }
 

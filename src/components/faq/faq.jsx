@@ -36,7 +36,8 @@ function FAQ() {
 
   return (
     <>
-      <div className="flex flex-col items-center text-center text-slate-800 px-3 py-30">
+    <div className="space-large"></div>
+      <div className="flex flex-col items-center text-center text-slate-800 px-3">
         <h1 className="text-3xl md:text-4xl font-semibold mt-2">
           Frequently Asked Questions
         </h1>

@@ -3,6 +3,10 @@ import Link from "next/link";
 
 function Footer() {
   return (
+    <>
+    <div className="space-large"></div>
+
+
     <footer className="flex flex-col flex-wrap items-center lg:justify-between overflow-hidden gap-10 md:gap-20 py-10 px-6 md:px-16 lg:px-24 xl:px-32 text-[13px] text-gray-500 bg-black">
       <div className="flex flex-wrap items-start gap-10 md:gap-[60px] xl:gap-[140px] justify-center">
         <div>
@@ -233,6 +237,7 @@ function Footer() {
         © 2025 <Link className="hover:text-[#105783]" href="https://displaylab.net" target="_blank">Dispay Lab</Link>
       </p>
     </footer>
+    </>
   );
 }
 

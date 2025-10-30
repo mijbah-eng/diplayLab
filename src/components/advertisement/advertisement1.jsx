@@ -2,17 +2,20 @@ import Image from "next/image";
 
 function Advertisement_1() {
   return (
-    <div className="grid md:grid-cols-2 gap-[40px] max-w-full max-md:max-w-md mx-auto py-30">
-      <div className="w-3xl">
+    <>
+    <div className="space-large"></div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px] mx-auto px-4">
+      <div className="">
         <Image
           width={1000}
           height={1000}
           src={"/images/cms/Empowering.jpg"}
-          className="object-cover rounded-lg shadow-xl w-full h-full"
+          className="object-cover rounded-lg shadow-xl max-w-full h-full"
           alt="rental"
         ></Image>
       </div>
-      <div className="max-md:order-1 max-md:text-center md:w-md md:justify-self-end ">
+      <div className="max-md:text-center pr-0 md:pl-[22%] ">
         <div className="">
           <h2 className="text-3xl md:text-5xl text-slate-900 font-bold mb-10">
             Transformative Advertising Solutions
@@ -34,6 +37,7 @@ function Advertisement_1() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

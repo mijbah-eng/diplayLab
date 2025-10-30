@@ -50,3 +50,15 @@ color: #105783
 img{
   max-width: 100%;
 }
+
+.container{
+  max-width: 1280px;
+  margin: auto;
+}
+.twoContent{
+  padding-right: 22%;
+}
+
+.space-large {
+    padding: 0 0 6rem;
+}

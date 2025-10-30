@@ -19,7 +19,7 @@ export default function Home() {
       <div className="relative overflow-x-hidden">
         <Navber />
         <Hero />
-        <div className="px-[15px] md:px-[160px]">
+        <div className="container">
           <SolutionCard />
           <CMS_Marketing />
           <CMS_Content />
