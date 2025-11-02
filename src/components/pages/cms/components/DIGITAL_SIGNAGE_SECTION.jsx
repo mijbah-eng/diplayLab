@@ -16,7 +16,7 @@ function DIGITAL_SIGNAGE_SECTION() {
                 <p className="text-center mt-5">Turn any screen or TV into captivating digital signage with our powerful, easy-to-use digital signage platform.</p>
             </div>
             <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-10">
-                <div className="md:w-1/2 flex justify-end">
+                <div className="md:w-1/2 flex justify-center">
                     <Image src={"/images/rental/rental.png"} alt="" width={1000} height={1000} className="object-cover w-sm h-full" />
                 </div>
                 
