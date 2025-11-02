@@ -30,7 +30,7 @@ function Navber() {
           <img src="images/logo/logo.png" alt="Logo" />
         </div>
         <div className="menu md:flex gap-10 hidden font-bold text-white">
-          <Link href={"/"}>CMS</Link>
+          <Link href={"/cms"}>CMS</Link>
           <Link href={"/"}>PRODUCTS</Link>
           <Link href={"/"}>RENTAL</Link>
           <Link href={"/"}>ADVERTISMENT</Link>
