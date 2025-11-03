@@ -4,6 +4,11 @@ import CORE_FEATURES from "./components/CORE_FEATURES";
 import DEVICE_SECTION from "./components/DeviceSection";
 import DIGITAL_SIGNAGE_SECTION from "./components/DIGITAL_SIGNAGE_SECTION";
 import DIGITAL_SIGNAGE_SECTION2 from "./components/DIGITAL_SIGNAGE_SECTION2";
+import STEPS_SECTION from "./components/STEPS";
+import HOW_TO_WORK from "./components/HOW_TO_WORK";
+import WHY_SECTION from "./components/WHY_SECTION";
+import Footer from "@/components/Footer/footer";
+import FAQ from "@/components/faq/faq";
 
 function CMS() {
     return ( <>
@@ -13,6 +18,11 @@ function CMS() {
         <DEVICE_SECTION />
         <DIGITAL_SIGNAGE_SECTION />
         <DIGITAL_SIGNAGE_SECTION2 />
+        <STEPS_SECTION />
+        <HOW_TO_WORK />
+        <WHY_SECTION />
+        <FAQ />
+        <Footer />
     </> );
 }
 

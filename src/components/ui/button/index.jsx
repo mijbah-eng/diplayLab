@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 
-function Button({btnName, route}) {
+function Button({btnName, route, className}) {
     const router = useRouter()
 
     const handleClick = () => {
@@ -11,7 +11,7 @@ function Button({btnName, route}) {
 
     return ( 
         
-        <button className="px-6 py-3 text-base font-semibold text-white bg-[#105783] hover:bg-opacity-80 transition-all duration-300 transform hover:bg-[#084c77] rounded-md hover:cursor-pointer"
+        <button className={`px-6 py-3 text-base font-semibold text-white bg-[#105783] hover:bg-opacity-80 transition-all duration-300 transform hover:bg-[#084c77] rounded-md hover:cursor-pointer ${className}`}
         onClick={handleClick}>
             {btnName}
         </button>

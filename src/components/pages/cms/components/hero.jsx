@@ -6,7 +6,7 @@ function CMS_HERO() {
     return ( 
         <div className="hero-section mt-20">
             <div className="bg-linear-gradient">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px] mx-auto px-4 py-30 container">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-[80px] md:gap-[40px] mx-auto px-4 py-30 pt-10 md:pt-30 container">
                     <div className="max-md:text-center pr-0 md:pr-[22%]">
                         <h2 className="text-3xl md:text-5xl text-slate-900 font-bold">
                         About the CMS
