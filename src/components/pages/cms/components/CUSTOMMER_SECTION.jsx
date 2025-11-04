@@ -60,7 +60,7 @@ export default function Testimonial() {
                     {t.company}
                   </h3>
                   <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                    <span className="text-orange-500 text-2xl mr-2">❝</span>
+                    <span className="text-blue-500 text-2xl mr-2">❝</span>
                     {t.text}
                   </p>
                   <p className="font-semibold text-gray-800">
@@ -78,7 +78,7 @@ export default function Testimonial() {
           <div className="swiper-pagination mt-4"></div>
 
           {/* Navigation buttons */}
-          <div className="testimonial-prev absolute right-[4rem] top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-2 cursor-pointer hover:bg-orange-500 hover:text-white transition-all">
+          <div className="testimonial-prev absolute right-[4rem] top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-2 cursor-pointer hover:bg-blue-500 hover:text-white transition-all">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -90,7 +90,7 @@ export default function Testimonial() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
           </div>
-          <div className="testimonial-next absolute right-[1rem] top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-2 cursor-pointer hover:bg-orange-500 hover:text-white transition-all">
+          <div className="testimonial-next absolute right-[1rem] top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-2 cursor-pointer hover:bg-blue-500 hover:text-white transition-all">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -108,7 +108,7 @@ export default function Testimonial() {
       {/* Global Styles */}
       <style jsx global>{`
         .swiper-pagination-bullet {
-          background: #f97316;
+          background: #105783;
           opacity: 0.4;
           width: 10px;
           height: 10px;
