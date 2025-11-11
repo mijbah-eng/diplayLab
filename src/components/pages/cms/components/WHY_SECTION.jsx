@@ -50,8 +50,8 @@ function WHY_SECTION() {
                 </div>
             ))}
         </div>
-        <div className="flex justify-center items-center">
-            <div className="grid grid-cols-1 gap-[40px] mx-auto px-4 place-items-center">
+        
+        <div className="grid grid-cols-1 gap-[40px] mx-auto py-10 md:py-5 px-4 place-items-center">
             {contents2.map((content, index) => (
                 <div  key={index} className="w-sm flex flex-col gap-5 items-center text-center">
                     {content?.icon}
@@ -60,8 +60,7 @@ function WHY_SECTION() {
                 </div>
             ))}
         </div>
-             <Button className={"my-10"} btnName={"Get Started"} route={"/cms"}/>
-        </div>
+        
          <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px] mx-auto px-4  place-items-center">
             {contents3.map((content, index) => (
                 <div  key={index} className="w-sm flex flex-col gap-5 items-center text-center">
