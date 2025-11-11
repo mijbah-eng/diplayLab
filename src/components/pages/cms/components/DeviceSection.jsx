@@ -37,7 +37,7 @@ function DEVICE_SECTION() {
           <span className="font-semibold text-xl mt-5">Your screen management?</span>
           <div className="deviceFeatures grid grid-cols-3 md:grid-cols-5 gap-10 mt-8">
             {devices.map((device, index) => (
-                <div key={index} className="singleFeature flex flex-col items-center gap-2 text-blue-500">
+                <div key={index} className="singleFeature flex flex-col items-center gap-2 text-[#fff] bg-[#125884] px-5 rounded-xl py-2">
                     {device?.icon}
                 <h4 className="text-lg font-semibold">{device?.title}</h4>
             </div>

@@ -11,13 +11,13 @@ function STEPS_SECTION() {
         {
             image: "/images/advertisement/advertisement3.png",
             number: "2",
-            title: "Add Content",
+            title: "Create Your Playlist",
             description: "Set up your device or player, download and install the DisplayLab Player app on it, and pair it using the code."
         },
         {
             image: "/images/advertisement/advertisement4.png",
             number: "3",
-            title: "Assign To Display",
+            title: "Sent To Display",
             description: "Set up your device or player, download and install the DisplayLab Player app on it, and pair it using the code."
         },
     ]
@@ -43,7 +43,7 @@ function STEPS_SECTION() {
                                 className="w-full h-full object-cover rounded-md"
                             />
                         </div>
-                        <h4 className="text-2xl font-semibold mt-5 "><span className="bg-green-400 px-3 py-1 rounded-md text-white">{step?.number}</span> {step?.title}</h4>
+                        <h4 className="text-2xl font-semibold mt-5 "><span className="bg-[#125884] px-3 py-1 rounded-md text-white">{step?.number}</span> {step?.title}</h4>
                         <p className="mt-3">{step?.description}
                         </p>
           </div>
