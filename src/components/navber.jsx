@@ -26,9 +26,9 @@ function Navber() {
       <nav className="w-full">
         <div className="absolute z-10 px-[20px] md:px-[160px] py-[15px] flex justify-between items-center w-full">
         
-        <div className="logo w-50">
+        <Link href={"/"} className="logo w-50">
           <img src="images/logo/logo.png" alt="Logo" />
-        </div>
+        </Link>
         <div className="menu md:flex gap-10 hidden font-bold text-white">
           <Link href={"/cms"}>CMS</Link>
           <Link href={"/"}>PRODUCTS</Link>
@@ -84,9 +84,9 @@ function Navber() {
               zIndex: 1000,
             }}>
 
-            <div className="logo w-50">
+            <Link href={"/"} className="logo w-50">
               <img src="images/logo/logo.png" alt="Logo" />
-            </div>
+            </Link>
 
             <div className="menu md:flex gap-10 hidden font-bold text-black">
               <Link className="navLink" href={"/"}>

@@ -1,5 +1,6 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         className={`${roboto.variable} antialiased`}
       >
         {children}
+        <ScrollToTopButton/>
       </body>
     </html>
   );

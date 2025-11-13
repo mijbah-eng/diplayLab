@@ -23,9 +23,9 @@ function Navber2() {
           }}
         >
           <div className="flex justify-between  py-[15px] items-center container">
-            <div className="logo w-50">
+            <Link href={"/"} className="logo w-50">
               <img src="images/logo/logo.png" alt="Logo" />
-            </div>
+            </Link>
 
             <div className="menu md:flex gap-10 hidden font-bold text-black">
               <Link className="navLink" href={"/cms"}>
