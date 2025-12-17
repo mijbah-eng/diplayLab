@@ -31,14 +31,14 @@ function Navber2() {
               <Link className="navLink" href={"/cms"}>
                 CMS
               </Link>
-              <Link className="navLink" href={"/"}>
+              <Link className="navLink" href={"/products"}>
                 PRODUCTS
               </Link>
-              <Link className="navLink" href={"/"}>
+              <Link className="navLink" href={"/rental"}>
                 RENTAL
               </Link>
-              <Link className="navLink" href={"/"}>
-                ADVERTISMENT
+              <Link className="navLink" href={"/advertisement"}>
+                ADVERTISEMENT
               </Link>
             </div>
 
@@ -68,31 +68,31 @@ function Navber2() {
               <div className="flex flex-col px-5 gap-6 py-6 font-bold">
                 <Link
                   className="hover:text-slate-300 transition-all duration-200 ease-in"
-                  href="/"
+                  href="/cms"
                   onClick={() => setIsOpen(false)}
                 >
                   CMS
                 </Link>
                 <Link
                   className="hover:text-slate-300 transition-all duration-200 ease-in"
-                  href="/"
+                  href="/products"
                   onClick={() => setIsOpen(false)}
                 >
                   PRODUCTS
                 </Link>
                 <Link
                   className="hover:text-slate-300 transition-all duration-200 ease-in"
-                  href="/"
+                  href="/rental"
                   onClick={() => setIsOpen(false)}
                 >
                   RENTAL
                 </Link>
                 <Link
                   className="hover:text-slate-300 transition-all duration-200 ease-in"
-                  href="/"
+                  href="/advertisement"
                   onClick={() => setIsOpen(false)}
                 >
-                  ADVERTISMENT
+                  ADVERTISEMENT
                 </Link>
               </div>
             </div>

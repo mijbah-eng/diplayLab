@@ -31,9 +31,9 @@ function Navber() {
         </Link>
         <div className="menu md:flex gap-10 hidden font-bold text-white">
           <Link href={"/cms"}>CMS</Link>
-          <Link href={"/"}>PRODUCTS</Link>
-          <Link href={"/"}>RENTAL</Link>
-          <Link href={"/"}>ADVERTISMENT</Link>
+          <Link href={"/products"}>PRODUCTS</Link>
+          <Link href={"/rental"}>RENTAL</Link>
+          <Link href={"/advertisement"}>ADVERTISEMENT</Link>
         </div>
         <div className="md:hidden text-white text-3xl cursor-pointer absolute top-6 right-5 hover:text-slate-300 transition-all duration-200 ease-in" onClick={() => setIsOpen(true)}>
            <HiMenu />
@@ -56,7 +56,7 @@ function Navber() {
               <Link className="hover:text-slate-300 transition-all duration-200 ease-in" href="/" onClick={() => setIsOpen(false)}>CMS</Link>
               <Link className="hover:text-slate-300 transition-all duration-200 ease-in" href="/" onClick={() => setIsOpen(false)}>PRODUCTS</Link>
               <Link className="hover:text-slate-300 transition-all duration-200 ease-in" href="/" onClick={() => setIsOpen(false)}>RENTAL</Link>
-              <Link className="hover:text-slate-300 transition-all duration-200 ease-in" href="/" onClick={() => setIsOpen(false)}>ADVERTISMENT</Link>
+              <Link className="hover:text-slate-300 transition-all duration-200 ease-in" href="/advertisement" onClick={() => setIsOpen(false)}>ADVERTISEMENT</Link>
             </div>
           </div>
         {/* Menu End */}
@@ -89,17 +89,17 @@ function Navber() {
             </Link>
 
             <div className="menu md:flex gap-10 hidden font-bold text-black">
-              <Link className="navLink" href={"/"}>
+              <Link className="navLink" href={"/cms"}>
                 CMS
               </Link>
-              <Link className="navLink" href={"/"}>
+              <Link className="navLink" href={"/products"}>
                 PRODUCTS
               </Link>
-              <Link className="navLink" href={"/"}>
+              <Link className="navLink" href={"/rental"}>
                 RENTAL
               </Link>
-              <Link className="navLink" href={"/"}>
-                ADVERTISMENT
+              <Link className="navLink" href={"/advertisement"}>
+                ADVERTISEMENT
               </Link>
             </div>
 
@@ -122,10 +122,10 @@ function Navber() {
             </div>
             <hr className="text-slate-700" />
             <div className="flex flex-col px-5 gap-6 py-6 font-bold">
-              <Link className="hover:text-slate-300 transition-all duration-200 ease-in" href="/" onClick={() => setIsOpen(false)}>CMS</Link>
-              <Link className="hover:text-slate-300 transition-all duration-200 ease-in" href="/" onClick={() => setIsOpen(false)}>PRODUCTS</Link>
-              <Link className="hover:text-slate-300 transition-all duration-200 ease-in" href="/" onClick={() => setIsOpen(false)}>RENTAL</Link>
-              <Link className="hover:text-slate-300 transition-all duration-200 ease-in" href="/" onClick={() => setIsOpen(false)}>ADVERTISMENT</Link>
+              <Link className="hover:text-slate-300 transition-all duration-200 ease-in" href="/cms" onClick={() => setIsOpen(false)}>CMS</Link>
+              <Link className="hover:text-slate-300 transition-all duration-200 ease-in" href="/products" onClick={() => setIsOpen(false)}>PRODUCTS</Link>
+              <Link className="hover:text-slate-300 transition-all duration-200 ease-in" href="/rental" onClick={() => setIsOpen(false)}>RENTAL</Link>
+              <Link className="hover:text-slate-300 transition-all duration-200 ease-in" href="/advertisement" onClick={() => setIsOpen(false)}>ADVERTISEMENT</Link>
             </div>
           </div>
         {/* Menu End */}

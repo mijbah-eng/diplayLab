@@ -150,6 +150,32 @@ img{
   background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.08), transparent 60%);
   z-index: 0;
 }
+.product-hero-bg{
+  background-image: url("../../public/images/pages/products/hero/hero.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rental-hero-bg{
+  background-image: url("../../public/images/pages/rental/hero/hero.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.advertisement-hero-bg{
+  background-image: url("../../public/images/pages/advertisement/hero/hero.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* @media (min-width: 300px) {
+  .product-hero-bg{
+  background-image: url("../../public/images/pages/products/hero/hero-image.png");
+  background-position: top bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+} */
 
 .dark {
   --background : oklch(0.145 0 0);
