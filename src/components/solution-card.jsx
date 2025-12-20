@@ -14,7 +14,7 @@ function SolutionCard() {
     },
     {
       iconImage: <Image className="object-cover w-full" src={"/images/explore-Display/Icon-02.png"} alt="" width={100} height={100} />,
-      title: "Versatile Display Products",
+      title: "Display Products",
       description:
         "Discover LED-LCD and 3D displays disgned for every environment.",
       link_Text: "View Products",
@@ -49,12 +49,12 @@ function SolutionCard() {
             <div className="mt-2 mx-auto w-40">{data?.iconImage}</div>
             <div className="px-4 py-2 text-center">
               <h3 className="text-2xl md:text-3xl font-semibold">{data?.title}</h3>
-              <p className="mt-3 text-xs md:text-sm text-slate-500 leading-relaxed">
+              <p className="mt-2 text-xs md:text-sm text-slate-500 leading-relaxed">
                 {data?.description}
               </p>
               <Link
                 href={"/"}
-                className="flex justify-center items-center gap-2 mt-6 px-4 py-2.5 w-full rounded-lg text-sm tracking-wider font-medium border-none outline-none cursor-pointer hover:underline"
+                className={`flex justify-center items-center ${i===1 ? `mt-10` : ``} gap-2 px-4 py-2.5 w-full rounded-lg text-sm tracking-wider font-medium border-none outline-none cursor-pointer hover:underline`}
               >
                 {data?.link_Text} <FaArrowRightLong />
               </Link>
