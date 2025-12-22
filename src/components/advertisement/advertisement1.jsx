@@ -29,7 +29,7 @@ function Advertisement_1() {
           <div className="mt-8 flex flex-wrap max-md:justify-center gap-4">
             <a
               href="javascript:void(0);"
-              className="px-6 py-3 text-base font-semibold text-white bg-[#324ef0] hover:bg-opacity-80 transition-all duration-300 transform focus:ring-2 focus:ring-[#192ff1] focus:outline-none focus:ring-opacity-50 rounded-md"
+              className="px-6 py-3 text-base font-semibold text-white bg-[#105783] hover:bg-[#003051] transition-all duration-300 transform rounded-md"
             >
               Request A Advertisement
             </a>

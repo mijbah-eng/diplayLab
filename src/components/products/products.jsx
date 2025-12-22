@@ -99,7 +99,7 @@ function Products() {
       </div>
 
       <Link
-        className="w-[11rem] text-center self-center px-6 py-3 text-base font-semibold text-white bg-[#324ef0] hover:bg-opacity-80 transition-all duration-300 transform focus:ring-2 focus:ring-[#192ff1] focus:outline-none focus:ring-opacity-50 rounded-md"
+        className="w-[11rem] text-center self-center px-6 py-3 text-base font-semibold text-white bg-[#105783] hover:bg-[#003051] transition-all duration-300 transform focus:ring-2 rounded-md"
         href={"#"}
       >
         View All Products
