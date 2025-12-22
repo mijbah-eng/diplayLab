@@ -44,7 +44,7 @@ function Footer() {
 
           <ul className="mt-2 space-y-2">
             <li>
-              <Link href="/" className="hover:text-[#105783] transition">
+              <Link href="/about" className="hover:text-[#105783] transition">
                 About
               </Link>
             </li>
