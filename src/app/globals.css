@@ -125,6 +125,11 @@ img{
 .space-large {
     padding: 0 0 6rem;
 }
+@media (max-width: 768px) {
+  .space-large {
+    padding: 0 0 3rem !important;
+}
+}
 .bg-linear-gradient{
   background-image: linear-gradient(rgb(93 186 253) 0%, rgb(244 250 255) 100%);
   position: relative;

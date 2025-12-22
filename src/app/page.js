@@ -20,16 +20,27 @@ export default function Home() {
         <Navber />
         <Hero />
         <div className="container">
+          <div class="space-large"></div>
           <SolutionCard />
+          <div class="space-large"></div>
           <CMS_Marketing />
+          <div class="space-large"></div>
           <CMS_Content />
+          <div class="space-large"></div>
           <Products />
+          <div class="space-large"></div>
           <Rental_1 />
+          <div class="space-large"></div>
           <Rental_2 />
+          <div class="space-large"></div>
           <Advertisement_1 />
+          <div class="space-large"></div>
           <Advertisement_2 />
+          <div class="space-large"></div>
           <About_Us />
+          <div class="space-large"></div>
           <FAQ />
+          <div class="space-large"></div>
         </div>
         <Footer />
       </div>
