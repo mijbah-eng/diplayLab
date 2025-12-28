@@ -18,11 +18,11 @@ function Rental_2() {
   return (
     <>
     <div className="space-large"></div>
-      <h3 className="text-4xl font-bold text-center mx-auto">
+      <h3 className="title text-center mr_b">
         Display Lab Rental Produts
       </h3>
 
-      <p className="text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto">
+      <p className="section_desc">
         Flexible rental options for short-term and long-term digital signage
         needs.
       </p>

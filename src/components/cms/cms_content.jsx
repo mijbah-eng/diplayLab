@@ -48,35 +48,35 @@ function CMS_Content() {
     <>
     <div className="space-large"></div>
     <div className="">
-      <h3 className="text-4xl font-bold text-center mx-auto">
+      <h3 className="section_sub_title">
         Simplify content management
       </h3>
-      <p className="text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto">
+      <p className="section_desc">
         Easily create and organize content playlists, expedule display times and
         add/pdata content in real time: Our CMS makes managing effortless.
       </p>
-      <div className="flex flex-col md:flex-row justify-center items-center mt-15 gap-5">
+      <div className="three_columns_items">
         {Content_data.map((singleCard, index) => (
-          <div className="w-xs px-4 py-2 flex flex-col items-center" key={index}>
+          <div className="single_items_size" key={index}>
             {singleCard?.svg}
-            <h4 className="text-2xl font-semibold mt-2">{singleCard?.title}</h4>
-            <p className="text-gray-500 text-center mt-4">
+            <h4 className="section_sub_sub_title">{singleCard?.title}</h4>
+            <p className="section_sub_sub_desc">
               {singleCard?.description}
             </p>
           </div>
         ))}
       </div>
 
-      <h3 className="text-4xl font-bold text-center mx-auto mt-20">
+      <h3 className="section_sub_title mt-20">
         Features that make managing content a breeze
       </h3>
 
-      <div className="flex flex-col md:flex-row justify-center items-center mt-15 gap-5">
+      <div className="three_columns_items">
         {Content_data2.map((singleCard, index) => (
-          <div className="w-xs px-4 py-2 flex flex-col items-center" key={index}>
+          <div className="single_items_size" key={index}>
             {singleCard?.svg}
-            <h4 className="text-2xl font-semibold mt-2">{singleCard?.title}</h4>
-            <p className="text-gray-500 text-center mt-4">
+            <h4 className="section_sub_sub_title">{singleCard?.title}</h4>
+            <p className="section_sub_sub_desc">
               {singleCard?.description}
             </p>
           </div>
