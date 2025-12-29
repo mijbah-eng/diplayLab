@@ -9,10 +9,10 @@ function Prduct_Hero() {
             <div className="container">
                 <div className="md:w-2xl mr-auto px-4 pt-20 md:pt-50 ">
                     <div className="max-md:text-center pr-0 md:pr-[22%]">
-                        <h2 className="text-3xl md:text-5xl text-white font-bold">
+                        <h2 className="title text-white">
                         Versatile Dispaly Procuts
                         </h2>
-                        <p className="mt-4 text-2xl text-white mb-8">
+                        <p className="mt-4 two_column_desc text-white mb-8">
                         Discover a wide range of diplay products from interactive kiosks to outdoor screens-perfect for any enviroment.
                         </p>
                     </div>

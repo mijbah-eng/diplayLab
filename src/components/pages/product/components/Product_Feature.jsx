@@ -37,19 +37,19 @@ function Product_Feature() {
     return ( <>
     <div className="section flex flex-col items-center">
       <div className="space-large"></div>
-      <h2 className="text-3xl md:text-5xl text-slate-900 font-bold mb-10 text-center">
+      <h2 className="title mb-10 text-center">
         Explore Display Lab Solutions
       </h2>
       <div className="flex flex-col md:gap-4 md:flex-row container">
         {DisplayLab_Solution_Data.map((data, i) => (
           <div
-            className="shadow-sm border border-gray-200 w-full max-w-sm rounded-lg overflow-hidden mx-auto mt-4"
+            className="card"
             key={i}
           >
             <div className="mt-2 mx-auto w-10 text-center">{data?.iconImage}</div>
             <div className="px-4 py-2 text-center flex flex-col justify-between gap-4 md:gap-8">
-              <h3 className="text-2xl md:text-3xl font-bold">{data?.title}</h3>
-              <p className="mt-3 text-xl md:text-2xl text-slate-500 leading-relaxed">
+              <h3 className="card_title">{data?.title}</h3>
+              <p className=" card_desc mb-2">
                 {data?.description}
               </p>
             </div>

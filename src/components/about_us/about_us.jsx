@@ -11,11 +11,11 @@ function About_Us() {
         <p className="text-base font-medium text-slate-600">
           ABOUT DISPLAY LAB
         </p>
-        <h1 className="text-3xl md:text-5xl 2xl:text-6xl text-slate-900 font-bold mb-10 max-w-md">
+        <h1 className="title mb-10">
           Innovating the Future of Digital Displays
         </h1>
 
-        <p className="text-md text-slate-500 max-w-md">
+        <p className="two_column_desc">
           Display Lab is a technology-driven company specializing in advanced
           display systems and advertising solutions. From smart kiosks and LED
           screens to dynamic content management software, we empower businesses

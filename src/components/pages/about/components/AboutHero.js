@@ -6,7 +6,7 @@ function AboutHero() {
         <div className="">
             <div className="container">
                 <div className="flex flex-col gap-5 items-center py-10">
-                    <h1 className="text-5xl font-bold">About US</h1>
+                    <h1 className="title">About US</h1>
                 </div>
             </div>
         </div>

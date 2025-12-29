@@ -39,14 +39,14 @@ function WHY_SECTION() {
      <div className="space-large"></div>
     <div className="container">
         <div className="title">
-            <h2 className="text-3xl md:text-5xl text-slate-900 font-bold mb-10 text-center">Why Display Lab</h2>
+            <h2 className="title mb-10 text-center">Why Display Lab</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px] mx-auto px-4 mt-20 place-items-center">
             {contents1.map((content, index) => (
                 <div  key={index} className="w-sm flex flex-col gap-5 items-center text-center">
                     {content?.icon}
-                    <h3 className="text-2xl font-semibold">{content?.title}</h3>
-                    <p className="text-slate-600">{content?.description}</p>
+                    <h3 className="section_sub_sub_title">{content?.title}</h3>
+                    <p className="section_sub_sub_desc">{content?.description}</p>
                 </div>
             ))}
         </div>
@@ -55,8 +55,8 @@ function WHY_SECTION() {
             {contents2.map((content, index) => (
                 <div  key={index} className="w-sm flex flex-col gap-5 items-center text-center">
                     {content?.icon}
-                    <h3 className="text-2xl font-semibold">{content?.title}</h3>
-                    <p className="text-slate-600">{content?.description}</p>
+                    <h3 className="section_sub_sub_title">{content?.title}</h3>
+                    <p className="section_sub_sub_desc">{content?.description}</p>
                 </div>
             ))}
         </div>
@@ -65,8 +65,8 @@ function WHY_SECTION() {
             {contents3.map((content, index) => (
                 <div  key={index} className="w-sm flex flex-col gap-5 items-center text-center">
                     {content?.icon}
-                    <h3 className="text-2xl font-semibold">{content?.title}</h3>
-                    <p className="text-slate-600">{content?.description}</p>
+                    <h3 className="section_sub_sub_title">{content?.title}</h3>
+                    <p className="section_sub_sub_desc">{content?.description}</p>
                 </div>
             ))}
         </div>

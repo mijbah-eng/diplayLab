@@ -23,7 +23,7 @@ function AboutSection() {
                             {/* <Image src={"public/images/about_us/about.png"} /> */}
                         </div>
                         <div className="w-xl">
-                            <h4 className="text-center md:text-left text-3xl font-semibold mb-5">Our Mission</h4>
+                            <h4 className="text-center card_title mb-5">Our Mission</h4>
                             <p className="w-full text-xl text-center md:text-left">
                                 At DisplayLab, our mission is to make communication effortless and impactful through powerful digital signage solutions. What began as a small team with a big idea has grown into a global company serving over 30,000 businesses, from storefronts to corporate offices and everything in between. We’re passionate about what we build because clear communication helps businesses connect, grow, and drive results that matter.
                             </p>
@@ -33,7 +33,7 @@ function AboutSection() {
 
     {/* Our Vision */}
     <div className="space-large"></div>
-      <h3 className="text-4xl font-bold text-center mx-auto">
+      <h3 className="title text-center">
         Dispaly Lab In Action
       </h3>
 

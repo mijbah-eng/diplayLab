@@ -31,7 +31,7 @@ function CORE_FEATURES() {
 
         <div className="bg-blue-glow">
             <div className="container pt-5 text-white z-10">
-                <h3 className="text-3xl md:text-5xl font-bold text-center mx-auto">
+                <h3 className="title text-center">
                     Core Features
                 </h3>
 
@@ -41,7 +41,7 @@ function CORE_FEATURES() {
                     <div className="bg-white p-3 rounded-full text-black">
                     {feature?.icon}
                     </div>
-                    <h4 className="text-xl md:text-2xl font-semibold">
+                    <h4 className="section_sub_sub_title">
                         {feature?.title}
                     </h4>
                     <p className="">

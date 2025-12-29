@@ -5,10 +5,10 @@ function Rental_Hero() {
             <div className="container">
                 <div className="md:w-2xl mr-auto px-4 pt-20 md:pt-50 ">
                     <div className="max-md:text-center pr-0 md:pr-[22%]">
-                        <h2 className="text-3xl md:text-5xl text-white font-bold">
+                        <h2 className="title text-white">
                         Flexible Rental Options
                         </h2>
-                        <p className="mt-4 text-2xl text-white mb-8">
+                        <p className="mt-4 two_column_desc text-white mb-8">
                        Need displays for a short term ? Our rental services offer flexible solutions for events, businesses and special occasions.
                         </p>
                     </div>

@@ -80,80 +80,81 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-.mr_b{
-  @apply mb-6
+.mr_b {
+  @apply mb-6;
+}
+.d_flex {
+  @apply flex flex-col items-center gap-10;
 }
 .title {
-  @apply text-3xl md:text-5xl text-slate-900 font-bold 
+  @apply text-3xl md:text-5xl  font-bold;
 }
-.card{
-  @apply shadow-sm border border-gray-200 w-full max-w-sm rounded-lg overflow-hidden mx-auto mt-4
+.card {
+  @apply shadow-sm border border-gray-200 w-full max-w-sm rounded-lg overflow-hidden mx-auto mt-4;
 }
-.card_title{
-  @apply text-2xl md:text-3xl font-semibold
+.card_title {
+  @apply text-2xl md:text-3xl font-semibold;
 }
-.card_desc{
-  @apply mt-2 text-xs md:text-sm text-slate-500 leading-relaxed
+.card_desc {
+  @apply mt-2 text-xs md:text-sm text-slate-500 leading-relaxed;
 }
-.card_link{
-  @apply flex justify-center items-center gap-2 px-4 py-2.5 w-full rounded-lg text-sm tracking-wider font-medium border-none outline-none cursor-pointer hover:underline
+.card_link {
+  @apply flex justify-center items-center gap-2 px-4 py-2.5 w-full rounded-lg text-sm tracking-wider font-medium border-none outline-none cursor-pointer hover:underline;
 }
 .two_column {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-[40px] mx-auto px-4
+  @apply grid grid-cols-1 md:grid-cols-2 gap-[40px] mx-auto px-4;
 }
-.button{
-  @apply w-fit text-center self-center px-6 py-3 text-base font-semibold text-white bg-[#105783] hover:bg-[#003051] transition-all duration-300 transform focus:ring-2 rounded-md
-  /* @apply px-6 py-3 text-base font-semibold text-white bg-[#105783] hover:bg-[#003051] transition-all duration-300 transform rounded-md */
+.button {
+  @apply w-fit text-center self-center px-6 py-3 text-base font-semibold text-white bg-[#105783] hover:bg-[#003051] transition-all duration-300 transform focus:ring-2 rounded-md;
 }
-.section_sub_title{
-  @apply text-4xl font-bold text-center mx-auto
+.section_sub_title {
+  @apply text-4xl font-bold text-center mx-auto;
 }
-.section_sub_sub_title{
-  @apply text-2xl font-semibold mt-2
+.section_sub_sub_title {
+  @apply text-2xl font-semibold mt-2;
 }
-.section_sub_sub_desc{
-  @apply text-gray-500 text-center mt-4
+.section_sub_sub_desc {
+  @apply text-gray-500 text-center mt-4;
 }
-.three_columns_items{
-  @apply flex flex-col md:flex-row justify-center items-center mt-15 gap-5
+.three_columns_items {
+  @apply flex flex-col md:flex-row justify-center items-center mt-15 gap-5;
 }
 .single_items_size {
-  @apply w-xs px-4 py-2 flex flex-col items-center
+  @apply w-xs px-4 py-2 flex flex-col items-center;
 }
-.section_desc{
-  @apply text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto
+.section_desc {
+  @apply text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto;
 }
-.four_columns_items{
-  @apply grid place-items-center grid-cols-1 md:grid-cols-4 gap-10 mt-20
+.four_columns_items {
+  @apply grid place-items-center grid-cols-1 md:grid-cols-4 gap-10 mt-20;
 }
-.single_product{
-  @apply max-w-[200px] flex flex-col items-center
+.single_product {
+  @apply max-w-[200px] flex flex-col items-center;
 }
-.single_product_image{
-  @apply w-full h-full object-cover rounded-lg
+.single_product_image {
+  @apply w-full h-full object-cover rounded-lg;
 }
-.single_product_name{
-  @apply font-semibold mt-2 text-xl
+.single_product_name {
+  @apply font-semibold mt-2 text-xl;
 }
-.two_column_desc{
-  @apply mt-4 text-base text-slate-600
+.two_column_Subtitle {
+  @apply text-4xl font-bold;
 }
-.two_column_sub_desc{
-  @apply mt-4 text-sm text-slate-600 mb-8
+.two_column_desc {
+  @apply mt-4 text-base;
 }
-
-body {
-  /* font-family: "Roboto", sans-serif; */
+.two_column_desc_black {
+  @apply mt-4 text-base text-black;
 }
-/* .section{
-  margin: 0 80px 0 80px;
-} */
+.two_column_sub_desc {
+  @apply mt-4 text-sm text-slate-600 mb-8;
+}
+.fore_column_grid {
+  @apply grid grid-cols-1 place-items-center md:grid-cols-4 mt-15 gap-5 flex-wrap;
+}
+.fore_column_grid_single_item {
+  @apply w-full md:w-xs px-4 py-2 flex flex-col items-center;
+}
 
 .fixed-nav {
   animation: fadeIn 0.3s ease-in-out;

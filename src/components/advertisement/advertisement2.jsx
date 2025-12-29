@@ -36,11 +36,11 @@ function Advertisement_2() {
   return (
     <>
       <div className="space-large"></div>
-      <h3 className="text-4xl font-bold text-center mx-auto">Advertising</h3>
+      <h3 className="section_sub_title text-center">Advertising</h3>
       {/* flex flex-col md:flex-row justify-center items-center */}
-      <div className="grid grid-cols-1 place-items-center md:grid-cols-4 mt-15 gap-5 flex-wrap">
+      <div className="fore_column_grid">
         {advertisement_Content?.map((single_Advertisement_Card, index) => (
-          <div className="w-full md:w-xs px-4 py-2 flex flex-col items-center" key={index}>
+          <div className="fore_column_grid_single_item" key={index}>
             <Image
               width={600}
               height={600}
@@ -48,8 +48,8 @@ function Advertisement_2() {
               className="object-cover rounded-lg"
               alt=""
             ></Image>
-            <h4 className="text-2xl font-semibold mt-2">{single_Advertisement_Card?.title}</h4>
-            <p className="text-gray-500 text-center mt-4">
+            <h4 className="section_sub_sub_title ">{single_Advertisement_Card?.title}</h4>
+            <p className="section_sub_sub_desc ">
                 {single_Advertisement_Card?.description}
             </p>
           </div>

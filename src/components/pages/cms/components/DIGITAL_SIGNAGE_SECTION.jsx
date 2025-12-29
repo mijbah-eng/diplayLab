@@ -11,9 +11,9 @@ function DIGITAL_SIGNAGE_SECTION() {
     <div className="">
         <div className="space-large"></div>
         <div className="container">
-            <div className="title">
-                <h2 className="text-3xl md:text-5xl text-slate-900 font-bold text-center">Unlock Your Potential <br /> With Out Digital Signage Software</h2>
-                <p className="text-center mt-5">Turn any screen or TV into captivating digital signage with our powerful, easy-to-use digital signage platform.</p>
+            <div className="flex flex-col gap-5">
+                <h2 className="title text-center">Unlock Your Potential <br /> With Out Digital Signage Software</h2>
+                <p className="section_desc">Turn any screen or TV into captivating digital signage with our powerful, easy-to-use digital signage platform.</p>
             </div>
             <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-10">
                 <div className="md:w-1/2 flex justify-center">
@@ -21,7 +21,7 @@ function DIGITAL_SIGNAGE_SECTION() {
                 </div>
                 
                 <div className="md:w-1/2 flex flex-col mt-5">
-                    <h3 className="text-2xl md:text-3xl font-semibold mt-2">Any Screen, Any Hardware</h3>
+                    <h3 className="two_column_Subtitle">Any Screen, Any Hardware</h3>
                     <p className="mt-4 w-md">We offer the largest variety of platform and hardware options,including our popular DisplayLab devices. Enjoy the freedom to choose the best hardware for your needs with our flexible digital signage software solution.</p>
                     <div className="flex gap-10">
                     {

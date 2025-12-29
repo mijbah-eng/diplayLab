@@ -38,11 +38,11 @@ function DIGITAL_SIGNAGE_SECTION2() {
     <div className="space-large"></div>
       <div className="container">
         
-        <div className="title">
-          <h2 className="text-3xl md:text-5xl text-slate-900 font-bold text-center">
+        <div className="flex flex-col gap-5">
+          <h2 className="title text-center">
             Digital Signage Software
           </h2>
-          <p className="text-center mt-5">
+          <p className="section_desc">
             Our digital signage solutions can benefit your organization,no
             matter your industry.
           </p>
@@ -57,8 +57,8 @@ function DIGITAL_SIGNAGE_SECTION2() {
                 className="object-cover rounded-lg"
                 alt=""
                 ></Image>
-                <h4 className="text-2xl font-semibold mt-2">{single_Advertisement_Card?.title}</h4>
-                <p className="text-gray-500 text-center mt-4">
+                <h4 className="section_sub_sub_title mt-2">{single_Advertisement_Card?.title}</h4>
+                <p className="section_sub_sub_desc ">
                     {single_Advertisement_Card?.description}
                 </p>
             </div>

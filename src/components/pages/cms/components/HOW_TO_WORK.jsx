@@ -14,19 +14,19 @@ function HOW_TO_WORK() {
             <p className="text-xs md:text-base text-slate-600 bg-gray-200 w-fit px-3 py-1 rounded-full ml-0 md:-ml-3">
               PLUG-AND-PLAY SOLUTIONS
             </p>
-            <h1 className="text-3xl md:text-5xl text-slate-900 font-bold mb-10 max-w-md">
+            <h1 className="title mb-10">
               How It Works
             </h1>
     
-            <p className="text-md text-slate-500 max-w-md">
+            <p className="two_column_desc">
               Simple connect the Power, Ethernet (or Wi-Fi), and HDMI cables to set up the digital signage player with a display screen.
             </p>
             
-            <p className="text-md text-slate-500 max-w-md">
+            <p className="two_column_desc">
               Then, login to our secure Digital Signage CMS via a standard web-browser (e.g.Google Chrome) from any PC or Laptop from anywhere.
             </p>
 
-            <p className="text-md text-slate-500 max-w-md">
+            <p className="two_column_desc">
               Once logged into the CMS, upload images, videos, audio, PDF, MS Office files or design your content and schedule playback across screens.
             </p>
 
