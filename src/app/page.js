@@ -6,6 +6,7 @@ import CMS_Marketing from "@/components/cms/cms_section_1";
 import FAQ from "@/components/faq/faq";
 import Footer from "@/components/Footer/footer";
 import Hero from "@/components/hero";
+import MarqueeSection from "@/components/marquee/marquee";
 import Navber from "@/components/navber";
 import Products from "@/components/products/products";
 import Rental_1 from "@/components/rental/rental_1";
@@ -22,6 +23,8 @@ export default function Home() {
         <div className="container">
           <div className="space-large"></div>
           <SolutionCard />
+          <div className="space-large"></div>
+          <MarqueeSection />
           <div className="space-large"></div>
           <CMS_Marketing />
           <div className="space-large"></div>
