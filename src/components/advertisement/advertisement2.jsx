@@ -4,12 +4,12 @@ function Advertisement_2() {
   const advertisement_Content = [
     {
       image: "/images/advertisement/advertisement2.png",
-      title: "Menu Booblsads",
+      title: "Restaurant",
       description: "Elnminuate your ontine from using Simple exapoles.",
     },
     {
-      image: "/images/advertisement/advertisement3.png",
-      title: "In-Store Promotions",
+      image: "/images/advertisement/shopping_mall.jpg",
+      title: "Shopping Mall",
       description: "Induslibal content onmkellaons on fotral istars.",
     },
     {
@@ -18,18 +18,38 @@ function Advertisement_2() {
       description: "Slinandman life orcopession aind for amelef to asses.",
     },
     {
-      image: "/images/advertisement/advertisement2.png",
-      title: "Menu Booblsads",
+      image: "/images/advertisement/hospital.jpg",
+      title: "Hospital",
       description: "Elnminuate your ontine from using Simple exapoles.",
     },
     {
       image: "/images/advertisement/advertisement3.png",
-      title: "In-Store Promotions",
+      title: "Grocery Shop",
       description: "Induslibal content onmkellaons on fotral istars.",
     },
     {
       image: "/images/advertisement/advertisement4.png",
-      title: "Corporate Office",
+      title: "Bank",
+      description: "Slinandman life orcopession aind for amelef to asses.",
+    },
+    {
+      image: "/images/advertisement/advertisement4.png",
+      title: "Airport",
+      description: "Slinandman life orcopession aind for amelef to asses.",
+    },
+    {
+      image: "/images/advertisement/advertisement4.png",
+      title: "Train Station",
+      description: "Slinandman life orcopession aind for amelef to asses.",
+    },
+    {
+      image: "/images/advertisement/advertisement4.png",
+      title: "High-Traffic-Location",
+      description: "Slinandman life orcopession aind for amelef to asses.",
+    },
+    {
+      image: "/images/advertisement/showroom.jpg",
+      title: "Showroom",
       description: "Slinandman life orcopession aind for amelef to asses.",
     },
   ];
