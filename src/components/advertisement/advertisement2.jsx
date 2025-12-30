@@ -8,7 +8,7 @@ function Advertisement_2() {
       description: "Elnminuate your ontine from using Simple exapoles.",
     },
     {
-      image: "/images/advertisement/shopping_mall.jpg",
+      image: "/images/advertisement/shoopingmall.png",
       title: "Shopping Mall",
       description: "Induslibal content onmkellaons on fotral istars.",
     },
@@ -23,12 +23,12 @@ function Advertisement_2() {
       description: "Elnminuate your ontine from using Simple exapoles.",
     },
     {
-      image: "/images/advertisement/advertisement3.png",
+      image: "/images/advertisement/groceryshoop.png",
       title: "Grocery Shop",
       description: "Induslibal content onmkellaons on fotral istars.",
     },
     {
-      image: "/images/advertisement/advertisement4.png",
+      image: "/images/advertisement/bank.png",
       title: "Bank",
       description: "Slinandman life orcopession aind for amelef to asses.",
     },
