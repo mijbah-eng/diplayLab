@@ -1,10 +1,26 @@
 "use client";
+import { logoBlue, navData } from "@/utils";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
-
 function Navber2() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
   return (
     <>
       <nav className="relative w-full fixed-nav ">
@@ -24,22 +40,15 @@ function Navber2() {
         >
           <div className="flex justify-between  py-[15px] items-center container">
             <Link href={"/"} className="logo w-50">
-              <img src="images/logo/logo.png" alt="Logo" />
+              <img src={logoBlue} alt="Logo" />
             </Link>
 
             <div className="menu md:flex gap-10 hidden font-bold text-black">
-              <Link className="navLink" href={"/cms"}>
-                CMS
-              </Link>
-              <Link className="navLink" href={"/products"}>
-                PRODUCTS
-              </Link>
-              <Link className="navLink" href={"/rental"}>
-                RENTAL
-              </Link>
-              <Link className="navLink" href={"/advertisement"}>
-                ADVERTISEMENT
-              </Link>
+              {navData.map((item, index) => (
+                <Link key={index} href={item.navLink}>
+                  {item.navTab}
+                </Link>
+              ))}
             </div>
 
             <div
@@ -51,6 +60,7 @@ function Navber2() {
 
             {/* Menu Start */}
             <div
+              ref={menuRef}
               className={`absolute top-0 left-0 w-full bg-black flex flex-col gap-6 py-6 font-bold text-slate-100 md:hidden transition-all duration-500 ease-in-out ${
                 isOpen ? "translate-x-0" : "translate-x-full"
               }`}
@@ -66,34 +76,16 @@ function Navber2() {
               </div>
               <hr className="text-slate-700" />
               <div className="flex flex-col px-5 gap-6 py-6 font-bold">
-                <Link
-                  className="hover:text-slate-300 transition-all duration-200 ease-in"
-                  href="/cms"
-                  onClick={() => setIsOpen(false)}
-                >
-                  CMS
-                </Link>
-                <Link
-                  className="hover:text-slate-300 transition-all duration-200 ease-in"
-                  href="/products"
-                  onClick={() => setIsOpen(false)}
-                >
-                  PRODUCTS
-                </Link>
-                <Link
-                  className="hover:text-slate-300 transition-all duration-200 ease-in"
-                  href="/rental"
-                  onClick={() => setIsOpen(false)}
-                >
-                  RENTAL
-                </Link>
-                <Link
-                  className="hover:text-slate-300 transition-all duration-200 ease-in"
-                  href="/advertisement"
-                  onClick={() => setIsOpen(false)}
-                >
-                  ADVERTISEMENT
-                </Link>
+                {navData.map((item, index) => (
+                  <Link
+                    className="hover:text-slate-300 transition-all duration-200 ease-in"
+                    key={index}
+                    href={item.navLink}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.navTab}
+                  </Link>
+                ))}
               </div>
             </div>
             {/* Menu End */}

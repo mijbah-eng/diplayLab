@@ -1,9 +1,11 @@
 import Navber2 from "@/components/navber2";
 import Footer from "@/components/Footer/footer";
+import Navber from "@/components/navber";
 
 function page() {
     return ( <>
     <Navber2 />
+    <Navber />
     <div className="hero-section mt-20">
         <div className="">
             <div className="container">

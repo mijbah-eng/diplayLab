@@ -57,7 +57,12 @@ function Advertisement_Solutions() {
   return (
     <>
       <div className="space-large"></div>
-      <h3 className="section_sub_title text-center">Advertisement Solutions</h3>
+      <h3 className="section_sub_title text-center">
+        Advertisement <br /> Solutions
+      </h3>
+      <p class="section_desc">
+        These kiosks are designed to engage and inform users in public spaces.
+      </p>
       {/* flex flex-col md:flex-row justify-center items-center */}
       <div className="fore_column_grid">
         {advertisement_Content?.map((single_Advertisement_Card, index) => (
