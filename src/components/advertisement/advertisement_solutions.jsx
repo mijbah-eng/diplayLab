@@ -60,7 +60,7 @@ function Advertisement_Solutions() {
       <h3 className="section_sub_title text-center">
         Advertisement <br /> Solutions
       </h3>
-      <p class="section_desc">
+      <p className="section_desc">
         These kiosks are designed to engage and inform users in public spaces.
       </p>
       {/* flex flex-col md:flex-row justify-center items-center */}
