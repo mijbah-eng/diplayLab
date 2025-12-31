@@ -29,7 +29,7 @@ function STEPS_SECTION() {
       <div className="space-large"></div>
       <div className="container">
         <h2 className="title text-center">DisplayLab: Digital Signage In 3 Easy Staps</h2>
-        <div className="grid grid-cols-1 place-items-center md:grid-cols-3 mt-15 gap-5">
+        <div className="grid grid-cols-1 place-items-center md:grid-cols-2 xl:grid-cols-3 mt-15 gap-5">
           {steps.map((step, index) => (
             <div className="w-sm" key={index}>
               <div className="image">

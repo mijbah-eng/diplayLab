@@ -47,7 +47,7 @@ function DIGITAL_SIGNAGE_SECTION2() {
             matter your industry.
           </p>
         </div>
-        <div className="grid grid-cols-1 place-items-center md:grid-cols-3 mt-15 gap-5">
+        <div className="grid grid-cols-1 place-items-center md:grid-cols-2 xl:grid-cols-3 mt-15 gap-5">
         {advertisement_Content?.map((single_Advertisement_Card, index) => (
             <div className="w-full md:w-xs px-4 py-2 flex flex-col items-center" key={index}>
                 <Image
