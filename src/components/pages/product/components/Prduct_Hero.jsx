@@ -1,22 +1,22 @@
-"use client"
-import Button from "@/components/ui/button";
-import Image from "next/image";
+"use client";
+import CalandlyButton from "@/components/calandlyButton";
 
 function Prduct_Hero() {
-    return ( <>
-    <div className="hero-section">
+  return (
+    <>
+      <div className="hero-section">
         <div className=" product-hero-bg h-[100vh]">
-            <div className="container">
-                <div className="md:w-2xl mr-auto px-4 pt-20 md:pt-50 ">
-                    <div className="max-md:text-center pr-0 md:pr-[22%]">
-                        <h2 className="title text-white">
-                        Versatile Dispaly Procuts
-                        </h2>
-                        <p className="mt-4 two_column_desc text-white mb-8">
-                        Discover a wide range of diplay products from interactive kiosks to outdoor screens-perfect for any enviroment.
-                        </p>
-                    </div>
-                    {/* <div className="w-[400px] mx-auto">
+          <div className="container h-full">
+            <div className="hero_section_content">
+              <div className="max-md:text-center pr-0 md:pr-[22%]">
+                <h2 className="title text-white">Versatile Dispaly Procuts</h2>
+                <p className="mt-4 two_column_desc text-white mb-8">
+                  Discover a wide range of diplay products from interactive
+                  kiosks to outdoor screens-perfect for any enviroment.
+                </p>
+                <CalandlyButton />
+              </div>
+              {/* <div className="w-[400px] mx-auto">
                         <Image
                         width={1000}
                         height={1000}
@@ -25,12 +25,12 @@ function Prduct_Hero() {
                         alt="rental"
                         ></Image>
                     </div> */}
-                </div>
             </div>
-                
-            </div>
-    </div>
-    </> );
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Prduct_Hero;

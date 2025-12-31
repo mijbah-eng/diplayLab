@@ -3,11 +3,12 @@ import Link from "next/link";
 import { HiMenu, HiX } from "react-icons/hi";
 
 import { navData } from "@/utils";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function Navber() {
   const [showFixedNav, setShowFixedNav] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +22,21 @@ function Navber() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
   return (
     <>
       <nav className="w-full">
@@ -44,6 +60,7 @@ function Navber() {
 
           {/* Menu Start */}
           <div
+            ref={menuRef}
             className={`absolute top-0 left-0 w-full bg-black flex flex-col gap-6 py-6 font-bold text-slate-100 md:hidden transition-all duration-500 ease-in-out ${
               isOpen ? "translate-x-0" : "translate-x-full"
             }`}
@@ -112,6 +129,7 @@ function Navber() {
 
             {/* Menu Start */}
             <div
+              ref={menuRef}
               className={`absolute top-0 left-0 w-full bg-black flex flex-col gap-6 py-6 font-bold text-slate-100 md:hidden transition-all duration-500 ease-in-out ${
                 isOpen ? "translate-x-0" : "translate-x-full"
               }`}

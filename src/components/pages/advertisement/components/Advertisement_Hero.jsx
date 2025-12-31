@@ -1,10 +1,12 @@
+import CalandlyButton from "@/components/calandlyButton";
+
 function Advertisement_Hero() {
   return (
     <>
       <div className="hero-section">
         <div className="advertisement-hero-bg h-[100vh]">
-          <div className="container">
-            <div className="md:w-2xl mr-auto px-4 pt-20 md:pt-50 ">
+          <div className="container h-full">
+            <div className="hero_section_content">
               <div className="max-md:text-center pr-0 md:pr-[22%]">
                 <h2 className="title text-white">Advertisement</h2>
                 <p className="mt-4 two_column_desc text-white mb-8">
@@ -12,6 +14,7 @@ function Advertisement_Hero() {
                   flexible solutions for events, businesses and special
                   occasions.
                 </p>
+                <CalandlyButton />
               </div>
               {/* <div className="w-[400px] mx-auto">
                         <Image

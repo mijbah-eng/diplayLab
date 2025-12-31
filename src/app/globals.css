@@ -155,7 +155,9 @@
 .fore_column_grid_single_item {
   @apply w-full md:w-xs px-4 py-2 flex flex-col items-center;
 }
-
+.hero_section_content{
+  @apply md:w-2xl mr-auto px-4 pt-20 md:pt-50 h-full flex flex-col justify-center md:justify-start
+}
 .fixed-nav {
   animation: fadeIn 0.3s ease-in-out;
 }
