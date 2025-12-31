@@ -1,6 +1,7 @@
 import About_Us from "@/components/about_us/about_us";
 import Advertisement_1 from "@/components/advertisement/advertisement1";
-import Advertisement_2 from "@/components/advertisement/advertisement2";
+import Advertisement_Solutions from "@/components/advertisement/advertisement_solutions";
+
 import CMS_Content from "@/components/cms/cms_content";
 import CMS_Marketing from "@/components/cms/cms_section_1";
 import FAQ from "@/components/faq/faq";
@@ -12,7 +13,6 @@ import Products from "@/components/products/products";
 import Rental_1 from "@/components/rental/rental_1";
 import Rental_2 from "@/components/rental/rental_2";
 import SolutionCard from "@/components/solution-card";
-
 
 export default function Home() {
   return (
@@ -38,7 +38,7 @@ export default function Home() {
           <div className="space-large"></div>
           <Advertisement_1 />
           <div className="space-large"></div>
-          <Advertisement_2 />
+          <Advertisement_Solutions />
           <div className="space-large"></div>
           <About_Us />
           <div className="space-large"></div>

@@ -1,6 +1,7 @@
+"use client";
 import Image from "next/image";
 
-function Advertisement_2() {
+function Advertisement_Solutions() {
   const advertisement_Content = [
     {
       image: "/images/advertisement/advertisement2.png",
@@ -56,7 +57,7 @@ function Advertisement_2() {
   return (
     <>
       <div className="space-large"></div>
-      <h3 className="section_sub_title text-center">Advertising</h3>
+      <h3 className="section_sub_title text-center">Advertisement Solutions</h3>
       {/* flex flex-col md:flex-row justify-center items-center */}
       <div className="fore_column_grid">
         {advertisement_Content?.map((single_Advertisement_Card, index) => (
@@ -79,4 +80,4 @@ function Advertisement_2() {
   );
 }
 
-export default Advertisement_2;
+export default Advertisement_Solutions;
