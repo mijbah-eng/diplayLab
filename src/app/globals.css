@@ -105,7 +105,7 @@
   @apply grid grid-cols-1 md:grid-cols-2 gap-[40px] mx-auto px-4;
 }
 .button {
-  @apply w-fit text-center self-center px-6 py-3 text-base font-semibold text-white bg-[#105783] hover:bg-[#003051] transition-all duration-300 transform focus:ring-2 rounded-md;
+  @apply w-fit text-center self-center px-6 py-3 text-base font-semibold text-white bg-[#105783] hover:bg-[#003051] transition-all duration-300 transform focus:ring-2 rounded-md cursor-pointer;
 }
 .section_sub_title {
   @apply text-4xl font-bold text-center mx-auto;
