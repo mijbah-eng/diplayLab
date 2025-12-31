@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { HiMenu, HiX } from "react-icons/hi";
 
-import { navData } from "@/utils";
+import { logoBlue, logoWhite, navData } from "@/utils";
 import { useEffect, useRef, useState } from "react";
 
 function Navber() {
@@ -42,7 +42,7 @@ function Navber() {
       <nav className="w-full">
         <div className="absolute z-10 px-[20px] md:px-[160px] py-[15px] flex justify-between items-center w-full">
           <Link href={"/"} className="logo w-50">
-            <img src="images/logo/logo.png" alt="Logo" />
+            <img src={logoWhite} alt="Logo" />
           </Link>
           <div className="menu md:flex gap-10 hidden font-bold text-white">
             {navData.map((item, index) => (
@@ -109,7 +109,7 @@ function Navber() {
             }}
           >
             <Link href={"/"} className="logo w-50">
-              <img src="images/logo/logo.png" alt="Logo" />
+              <img src={logoBlue} alt="Logo" />
             </Link>
 
             <div className="menu md:flex gap-10 hidden font-bold text-black">

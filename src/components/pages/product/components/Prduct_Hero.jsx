@@ -9,7 +9,7 @@ function Prduct_Hero() {
           <div className="container h-full">
             <div className="hero_section_content">
               <div className="max-md:text-center pr-0 md:pr-[22%]">
-                <h2 className="title text-white">Versatile Dispaly Procuts</h2>
+                <h2 className="title text-white">Versatile Display Products</h2>
                 <p className="mt-4 two_column_desc text-white mb-8">
                   Discover a wide range of diplay products from interactive
                   kiosks to outdoor screens-perfect for any enviroment.

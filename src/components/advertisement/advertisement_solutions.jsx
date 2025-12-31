@@ -4,7 +4,7 @@ import Image from "next/image";
 function Advertisement_Solutions() {
   const advertisement_Content = [
     {
-      image: "/images/advertisement/advertisement2.png",
+      image: "/images/advertisement/restaurant.png",
       title: "Restaurant",
       description: "Elnminuate your ontine from using Simple exapoles.",
     },
@@ -14,12 +14,12 @@ function Advertisement_Solutions() {
       description: "Induslibal content onmkellaons on fotral istars.",
     },
     {
-      image: "/images/advertisement/advertisement4.png",
+      image: "/images/advertisement/corporate_office.png",
       title: "Corporate Office",
       description: "Slinandman life orcopession aind for amelef to asses.",
     },
     {
-      image: "/images/advertisement/hospital.jpg",
+      image: "/images/advertisement/hospital.png",
       title: "Hospital",
       description: "Elnminuate your ontine from using Simple exapoles.",
     },
@@ -34,17 +34,17 @@ function Advertisement_Solutions() {
       description: "Slinandman life orcopession aind for amelef to asses.",
     },
     {
-      image: "/images/advertisement/advertisement4.png",
+      image: "/images/advertisement/corporate_office.png",
       title: "Airport",
       description: "Slinandman life orcopession aind for amelef to asses.",
     },
     {
-      image: "/images/advertisement/advertisement4.png",
+      image: "/images/advertisement/corporate_office.png",
       title: "Train Station",
       description: "Slinandman life orcopession aind for amelef to asses.",
     },
     {
-      image: "/images/advertisement/advertisement4.png",
+      image: "/images/advertisement/corporate_office.png",
       title: "High-Traffic-Location",
       description: "Slinandman life orcopession aind for amelef to asses.",
     },
@@ -69,9 +69,11 @@ function Advertisement_Solutions() {
               className="object-cover rounded-lg"
               alt=""
             ></Image>
-            <h4 className="section_sub_sub_title ">{single_Advertisement_Card?.title}</h4>
+            <h4 className="section_sub_sub_title ">
+              {single_Advertisement_Card?.title}
+            </h4>
             <p className="section_sub_sub_desc ">
-                {single_Advertisement_Card?.description}
+              {single_Advertisement_Card?.description}
             </p>
           </div>
         ))}

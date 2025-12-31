@@ -53,3 +53,5 @@ export const footerSupportData = [
     }, 
 
 ]
+export const logoWhite = "images/logo/logo_white.png"
+export const logoBlue = "images/logo/logo_blue.png"
