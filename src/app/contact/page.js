@@ -20,11 +20,11 @@ function page() {
                 <div className="">
             <h4 className="title">Get in touch</h4>
             <p className="mt-4 w-5/6 font-semibold">We would love to hear from you! Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.</p>
-            <p className="mt-4 w-5/6"> <span> Flipnode LLC </span><br/>
-            <span> 505 Montgomery St. </span><br/>
-            <span> 11th Floor, San Francisco </span><br/>
-            <span> CA 94111 </span><br/>
-            <span> +1 888 970 8756 </span><br/>
+            <p className="mt-4 w-5/6"> <span> Arlington </span><br/>
+            <span> 901 S Highland St  </span><br/>
+            <span> Suite 301, United States</span><br/>
+            <span> VA 22204 </span><br/>
+            <span> +1 571-501-8246 </span><br/>
 </p>
                 </div>
 
