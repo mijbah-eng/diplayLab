@@ -29,7 +29,7 @@ function Rental_1() {
         </div>
         <div className="mt-8 flex flex-wrap max-md:justify-center gap-4">
           <Link
-            href="javascript:void(0);"
+            href="/rental"
             className="button"
           >
             Explore Rental

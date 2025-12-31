@@ -1,4 +1,4 @@
-import Navber2 from "@/components/navber2";
+import Navber from "@/components/navber";
 import Advertisement_Hero from "./components/Advertisement_Hero";
 
 import Footer from "@/components/Footer/footer";
@@ -7,7 +7,7 @@ import Advertisement_Solutions from "@/components/advertisement/advertisement_so
 function Advertisement() {
   return (
     <>
-      <Navber2 />
+      <Navber />
       <Advertisement_Hero />
       <div className="container">
         <Advertisement_Solutions />

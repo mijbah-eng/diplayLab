@@ -18,9 +18,8 @@ function Footer() {
 
             <ul className="mt-2 space-y-2">
               {footerProductData.map((item, index) => (
-                <li>
+                <li key={index}>
                   <Link
-                    key={index}
                     href={item.navLink}
                     className="hover:text-[#105783] transition"
                   >
@@ -36,9 +35,8 @@ function Footer() {
 
             <ul className="mt-2 space-y-2">
               {footerCompanyData.map((item, index) => (
-                <li>
+                <li key={index}>
                   <Link
-                    key={index}
                     href={item.navLink}
                     className="hover:text-[#105783] transition"
                   >
@@ -54,9 +52,8 @@ function Footer() {
 
             <ul className="mt-2 space-y-2">
               {footerSupportData.map((item, index) => (
-                <li>
+                <li key={index}>
                   <Link
-                    key={index}
                     href={item.navLink}
                     className="hover:text-[#105783] transition"
                   >

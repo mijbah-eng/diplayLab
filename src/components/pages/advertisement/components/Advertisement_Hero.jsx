@@ -1,7 +1,7 @@
 function Advertisement_Hero() {
   return (
     <>
-      <div className="hero-section mt-20">
+      <div className="hero-section">
         <div className="advertisement-hero-bg h-[100vh]">
           <div className="container">
             <div className="md:w-2xl mr-auto px-4 pt-20 md:pt-50 ">

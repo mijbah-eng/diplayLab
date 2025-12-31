@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function CMS_Marketing() {
     return ( <>
@@ -11,7 +12,7 @@ function CMS_Marketing() {
           Display Lab CMS offors an advanced yet user-friendly system that lallows you create pload and manage content effortlessly. Esillsix schedule, campalgns, ann-unccements and make real-time updates across multiple screens across multiple screens.
         </p>
         <div className="mt-8 flex flex-wrap max-md:justify-center gap-4">
-          <a href="javascript:void(0);" className="button">Explore CMS</a>
+          <Link href="/cms" className="button">Explore CMS</Link>
         </div>
       </div>
       <div className="">

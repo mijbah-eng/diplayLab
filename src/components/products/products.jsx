@@ -67,49 +67,38 @@ function Products() {
 
   return (
     <>
-    <div className="space-large"></div>
-    <div className="flex flex-col gap-20">
-      <div>
-        
-            <h1 className="title text-center mr_b">
-              Display Lab Products
-            </h1>
-        
-        
-        <p className="section_desc">
-          Explore our range of digital signage displays for various
-          applications.
-        </p>
+      <div className="space-large"></div>
+      <div className="flex flex-col gap-20">
+        <div>
+          <h1 className="title text-center mr_b">Display Lab Products</h1>
 
-        <div className="four_columns_items">
-          {Products.map((product) => (
-            <div
-              key={product?.id}
-              className="single_product"
-            >
-              <Image
-                src={product?.image}
-                width={200}
-                height={100}
-                className="single_product_image"
-                alt="Stand_Kiosk"
-              ></Image>
+          <p className="section_desc">
+            Explore our range of digital signage displays for various
+            applications.
+          </p>
 
-              <h4 className="single_product_name">{product?.name}</h4>
-            </div>
-          ))}
+          <div className="four_columns_items">
+            {Products.map((product) => (
+              <div key={product?.id} className="single_product">
+                <Image
+                  src={product?.image}
+                  width={200}
+                  height={100}
+                  className="single_product_image"
+                  alt="Stand_Kiosk"
+                ></Image>
+
+                <h4 className="single_product_name">{product?.name}</h4>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      <Link
-        className="button"
-        href={"#"}
-      >
-        View All Products
-      </Link>
-    </div>
+        <Link className="button" href={"/products"}>
+          View All Products
+        </Link>
+      </div>
     </>
-    
   );
 }
 

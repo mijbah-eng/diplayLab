@@ -1,4 +1,4 @@
-import Navber2 from "@/components/navber2";
+import Navber from "@/components/navber";
 import CMS_HERO from "./components/hero";
 import CORE_FEATURES from "./components/CORE_FEATURES";
 import DEVICE_SECTION from "./components/DeviceSection";
@@ -12,9 +12,10 @@ import FAQ from "@/components/faq/faq";
 import { HeroVideoDialogDemo } from "./components/Video_Section";
 import Testimonial from "./components/CUSTOMMER_SECTION";
 
+
 function CMS() {
     return ( <>
-        <Navber2/>
+        <Navber />
         <CMS_HERO />
         <CORE_FEATURES />
         <DEVICE_SECTION />
