@@ -1,36 +1,120 @@
 function GetStarted() {
+  const getStartedStap = [
+    {
+      cardNumber: "01",
+      cardColor: "from-blue-500 to-cyan-500",
+      svg: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-monitor text-white"
+          aria-hidden="true"
+        >
+          <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+          <line x1="8" x2="16" y1="21" y2="21"></line>
+          <line x1="12" x2="12" y1="17" y2="21"></line>
+        </svg>
+      ),
+      title: "Select your hardware",
+      description:
+        "Choose from any screen or device. We work with all major brands and platforms.",
+    },
+    {
+      cardNumber: "02",
+      cardColor: "rom-purple-500 to-pink-500",
+      svg: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-settings text-white"
+          aria-hidden="true"
+        >
+          <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+          <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+      ),
+      title: "Set up your software",
+      description:
+        "Quick and easy installation. Get up and running in minutes with our guided setup.",
+    },
+    {
+      cardNumber: "03",
+      cardColor: "from-orange-500 to-red-500",
+      svg: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-rocket text-white"
+          aria-hidden="true"
+        >
+          <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+          <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+          <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+          <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+        </svg>
+      ),
+      title: "Engage your audience",
+      description:
+        "Start creating and displaying stunning content that captures attention and drives results.",
+    },
+  ];
   return (
     <section className="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
-            <p className="text-cyan-600 font-semibold text-lg mb-2">
-                Fast & Easy Start
-            </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                Get Started with OptiSigns
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Three simple steps to transform your digital signage experience
-            </p>
+          <p className="text-cyan-600 font-semibold text-lg mb-2">
+            Fast & Easy Start
+          </p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Get Started with OptiSigns
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Three simple steps to transform your digital signage experience
+          </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-            <div className="group relative">
-                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all h-full relative overflow-hidden group">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-5 transition-opacity"></div>
-                    <div className="relative text-center">
-                        <div className="group-hover:opacity-70 opacity-0 absolute top-0 right-0 text-6xl font-bold bg-gradient-to-br from-blue-500 to-cyan-500 bg-clip-text text-transparent mb-6">01</div>
-                        <div className="mx-auto w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-monitor text-white" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>
-                        </div>
-                        <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
-                            Select your hardware
-                        </h3>
-                        <p className="text-base text-gray-600 leading-relaxed">
-                            Choose from any screen or device. We work with all major brands and platforms.
-                        </p>
-                    </div>
+          {getStartedStap.map((singleStartedStap, index) => (
+            <div className="group relative" key={index}>
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all h-full relative overflow-hidden group">
+                <div className={`absolute inset-0 bg-gradient-to-br ${singleStartedStap?.cardColor} opacity-0 group-hover:opacity-5 transition-opacity`}></div>
+                <div className="relative text-center">
+                  <div className={`group-hover:opacity-70 opacity-0 transition-opacity absolute top-0 right-0 text-6xl font-bold bg-gradient-to-br ${singleStartedStap?.cardColor} bg-clip-text text-transparent mb-6`}>
+                    {singleStartedStap?.cardNumber}
+                  </div>
+                  <div className={`mx-auto w-16 h-16 bg-gradient-to-br ${singleStartedStap?.cardColor} rounded-2xl flex items-center justify-center mb-6 shadow-lg`}>
+                    {singleStartedStap?.svg}
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+                    {singleStartedStap?.title}
+                  </h3>
+                  <p className="text-base text-gray-600 leading-relaxed">
+                    {singleStartedStap?.description}
+                  </p>
                 </div>
+              </div>
             </div>
+          ))}
         </div>
       </div>
     </section>
