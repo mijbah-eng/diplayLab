@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { motion } from "motion/react";
 import Link from "next/link";
 import Script from "next/script";
 
@@ -19,50 +19,128 @@ function CMS_HERO() {
         strategy="afterInteractive"
       />
       {/* .......................................... */}
-      <div className="hero-section h-full md:h-[100vh]">
-        <div className="bg-linear-gradient">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[80px] md:gap-[40px] mx-auto px-4 py-30 pt-10 md:pt-30 container">
-            <div className="mt-20 max-md:text-center pr-0 md:pr-[22%] flex flex-col justify-center">
-              <h2 className="title">About the CMS</h2>
-              <p className="two_column_desc_black">
-                Display Lab CMS lets you control, schedule and design your
-                digital screens remotely
+      <section className="relative bg-gradient-to-br from-cyan-50 via-blue-50 to-purple-50 py-16 md:py-24 lg:py-32 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <div className="inline-block mb-4">
+                <span className="bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-semibold uppercase tracking-wide">
+                  Digital Signage
+                </span>
+              </div>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                Digital Signage That Brings Your Content
+                <span className="text-cyan-600">To Life</span>
+              </h1>
+              <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                Create, manage, and display stunning content across all your
+                screens with the most reliable and easy-to-use digital signage
+                solution.
               </p>
-              <div className="mt-8 flex flex-wrap max-md:justify-center gap-4">
-                {/* <Button btnName={"Try For Free"} /> */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
-                  className="button"
-                  href={"https://displaylab.net/"}
+                  href={"https://www.youtube.com/"}
+                  className=""
                   target="_blank"
                 >
-                  Try For Free
+                  <motion.button
+                    whileHover={{
+                      scale: 1.04,
+                      transition: { duration: 0.3 },
+                    }}
+                    className="bg-cyan-600 text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-cyan-700 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-play"
+                      aria-hidden="true"
+                    >
+                      <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                    </svg>
+                    Book A Demo
+                  </motion.button>
                 </Link>
-                {/* Calendly Button */}
-                <button
-                  className="button"
-                  onClick={() =>
-                    window.Calendly.initPopupWidget({
-                      url: "https://calendly.com/displaylab/30min",
-                    })
-                  }
+                <Link
+                  href={"https://www.youtube.com/"}
+                  className=""
+                  target="_blank"
                 >
-                  Book A Demo
-                </button>
+                  <motion.button
+                    whileHover={{
+                      scale: 1.04,
+                      transition: { duration: 0.3 },
+                    }}
+                    className="border-2 border-cyan-600 text-cyan-600 px-8 py-4 rounded-full font-semibold text-base hover:bg-cyan-50 transition-all cursor-pointer"
+                  >
+                    Try For Free
+                  </motion.button>
+                </Link>
               </div>
             </div>
-            <div className="w-[400px] mx-auto">
-              <Image
-                width={1000}
-                height={1000}
-                src={"/images/rental/rental.png"}
-                className="object-cover max-w-full h-full"
-                alt="rental"
-              ></Image>
+            <div className="relative">
+              <div className="relative">
+                <motion.div
+                  animate={{
+                    y: [0, 15, 0],
+                  }}
+                  transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                  className="bg-white rounded-2xl shadow-2xl p-4 relative z-10"
+                >
+                  <video
+                    className="rounded-xl aspect-video w-full h-full object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    preload="none"
+                  >
+                    <source src="https://cdn.pickcel.com/videos/main/hero-video.hMW0RsrCv5Su.webm" />
+                  </video>
+                </motion.div>
+                <motion.div
+                  animate={{
+                    y: [5, 15, 5],
+                    rotate: [0, 10, 0],
+                  }}
+                  transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                  className="absolute -bottom-8 -left-8 bg-white rounded-lg shadow-xl p-2 w-32 md:w-40"
+                >
+                  <div className="bg-gradient-to-br from-green-400 to-emerald-600 rounded aspect-video"></div>
+                </motion.div>
+                <motion.div
+                  animate={{
+                    y: [5, 15, 5],
+                    rotate: [0, -10, 0],
+                  }}
+                  transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                  className="absolute -top-8 -right-8 bg-white rounded-lg shadow-xl p-2 w-32 md:w-40"
+                >
+                  <div className="bg-gradient-to-br from-orange-400 to-pink-600 rounded aspect-video"></div>
+                </motion.div>
+              </div>
             </div>
           </div>
-          <div className="hero-section-fade"></div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

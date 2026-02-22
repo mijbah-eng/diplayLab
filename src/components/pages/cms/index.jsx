@@ -4,6 +4,7 @@ import Navber from "@/components/navber";
 import CORE_FEATURES from "./components/CORE_FEATURES";
 import Testimonial from "./components/CUSTOMMER_SECTION";
 import DEVICE_SECTION from "./components/DeviceSection";
+import DigitalSignage from "./components/Digital Signage";
 import DIGITAL_SIGNAGE_SECTION from "./components/DIGITAL_SIGNAGE_SECTION";
 import DIGITAL_SIGNAGE_SECTION2 from "./components/DIGITAL_SIGNAGE_SECTION2";
 import CMS_HERO from "./components/hero";
@@ -18,6 +19,7 @@ function CMS() {
       <Navber />
       <CMS_HERO />
       <CORE_FEATURES />
+      <DigitalSignage />
       <DEVICE_SECTION />
       <HeroVideoDialogDemo />
       <DIGITAL_SIGNAGE_SECTION />
