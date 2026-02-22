@@ -12,6 +12,9 @@ import HOW_TO_WORK from "./components/HOW_TO_WORK";
 import STEPS_SECTION from "./components/STEPS";
 import { HeroVideoDialogDemo } from "./components/Video_Section";
 import WHY_SECTION from "./components/WHY_SECTION";
+import MobileApp from "./components/MobileApp";
+import BusinessGrow from "./components/BusinessGrow";
+import GetStarted from "./components/GetStarted";
 
 function CMS() {
   return (
@@ -20,6 +23,9 @@ function CMS() {
       <CMS_HERO />
       <CORE_FEATURES />
       <DigitalSignage />
+      <MobileApp />
+      <GetStarted />
+      <BusinessGrow />
       <DEVICE_SECTION />
       <HeroVideoDialogDemo />
       <DIGITAL_SIGNAGE_SECTION />
