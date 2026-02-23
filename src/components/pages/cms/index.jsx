@@ -17,11 +17,14 @@ import BusinessGrow from "./components/BusinessGrow";
 import GetStarted from "./components/GetStarted";
 import LeadingFeatures from "./components/LeadingFeatures";
 import LotMore from "./components/LotMore";
+import NavberMain from "@/components/NavberMain";
 
 function CMS() {
   return (
     <>
       {/* <Navber /> */}
+      <NavberMain />
+      <div className="main_div">
       <CMS_HERO />
       <CORE_FEATURES />
       <DigitalSignage />
@@ -31,6 +34,7 @@ function CMS() {
       <MobileApp />
       <FAQ />
       <BusinessGrow />
+      </div>
       <Footer />
     </>
   );
