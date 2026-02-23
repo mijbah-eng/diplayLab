@@ -14,7 +14,7 @@ function BusinessGrow() {
                         Level Up Your Business
                     </h2>
                     <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-                    Join thousands of businesses already using OptiSigns to create stunning digital experiences. Start your free trial today - no credit card required.
+                    Join thousands of businesses already using Dispaly Lab to create stunning digital experiences. Start your free trial today - no credit card required.
                     </p>
                     <button className="bg-white text-green-600 px-12 py-5 rounded-full font-bold text-lg hover:bg-gray-50 transition-all shadow-2xl">
                         Try For Free

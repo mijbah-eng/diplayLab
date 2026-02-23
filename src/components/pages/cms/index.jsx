@@ -15,26 +15,22 @@ import WHY_SECTION from "./components/WHY_SECTION";
 import MobileApp from "./components/MobileApp";
 import BusinessGrow from "./components/BusinessGrow";
 import GetStarted from "./components/GetStarted";
+import LeadingFeatures from "./components/LeadingFeatures";
+import LotMore from "./components/LotMore";
 
 function CMS() {
   return (
     <>
-      <Navber />
+      {/* <Navber /> */}
       <CMS_HERO />
       <CORE_FEATURES />
       <DigitalSignage />
-      <MobileApp />
+      <LotMore />
       <GetStarted />
-      <BusinessGrow />
-      <DEVICE_SECTION />
-      <HeroVideoDialogDemo />
-      <DIGITAL_SIGNAGE_SECTION />
-      <DIGITAL_SIGNAGE_SECTION2 />
-      <STEPS_SECTION />
-      <HOW_TO_WORK />
-      <WHY_SECTION />
-      <Testimonial />
+      <LeadingFeatures />
+      <MobileApp />
       <FAQ />
+      <BusinessGrow />
       <Footer />
     </>
   );

@@ -87,7 +87,7 @@ function GetStarted() {
             Fast & Easy Start
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Get Started with OptiSigns
+            Get Started with Dispaly Lab
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Three simple steps to transform your digital signage experience

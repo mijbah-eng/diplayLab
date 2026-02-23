@@ -20,11 +20,33 @@ function CMS_HERO() {
       />
       {/* .......................................... */}
       <section className="relative bg-gradient-to-br from-cyan-50 via-blue-50 to-purple-50 py-16 md:py-24 lg:py-32 overflow-hidden">
+        <div className="absolute text-right top-2 left-1/2 -translate-x-1/2 ">
+          <div className="flex justify-center items-center gap-2">
+                <Link href={""} className="bg-yellow-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-fit text-center tracking-wide">
+                  Products
+                </Link>
+                <Link href={""} className="bg-purple-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-[80px] text-center tracking-wide">
+                  Use Cases
+                </Link>
+                <Link href={""} className="bg-green-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-fit text-center tracking-wide">
+                  Download
+                </Link>
+                <Link href={""} className="bg-green-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-fit text-center tracking-wide">
+                  Pricing
+                </Link>
+                <Link href={""} className="bg-blue-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-fit text-center tracking-wide">
+                  Apps
+                </Link>
+                <Link href={""} className="bg-orange-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-fit text-center tracking-wide">
+                  Resources
+                </Link>
+              </div>
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <div className="inline-block mb-4">
-                <span className="bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-semibold uppercase tracking-wide">
+                <span className="bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wide">
                   Digital Signage
                 </span>
               </div>
@@ -38,51 +60,51 @@ function CMS_HERO() {
                 solution.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link
+                <motion.a
                   href={"https://www.youtube.com/"}
-                  className=""
+                  className="bg-cyan-600 text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-cyan-700 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
                   target="_blank"
+                  whileHover={{
+                    scale: 1.04,
+                    transition: { duration: 0.3 },
+                  }}
+                  transition={{
+                    duration: 0.5,
+                    ease: "linear",
+                  }}
                 >
-                  <motion.button
-                    whileHover={{
-                      scale: 1.04,
-                      transition: { duration: 0.3 },
-                    }}
-                    className="bg-cyan-600 text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-cyan-700 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="white"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-play"
+                    aria-hidden="true"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="white"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="lucide lucide-play"
-                      aria-hidden="true"
-                    >
-                      <polygon points="6 3 20 12 6 21 6 3"></polygon>
-                    </svg>
-                    Book A Demo
-                  </motion.button>
-                </Link>
-                <Link
+                    <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                  </svg>
+                  Book A Demo
+                </motion.a>
+                <motion.a
                   href={"https://www.youtube.com/"}
-                  className=""
                   target="_blank"
+                  whileHover={{
+                    scale: 1.04,
+                    transition: { duration: 0.3 },
+                  }}
+                  className="border-2 border-cyan-600 text-cyan-600 px-8 py-4 rounded-full font-semibold text-base hover:bg-cyan-50 transition-all cursor-pointer"
+                  transition={{
+                    duration: 0.5,
+                    ease: "linear",
+                  }}
                 >
-                  <motion.button
-                    whileHover={{
-                      scale: 1.04,
-                      transition: { duration: 0.3 },
-                    }}
-                    className="border-2 border-cyan-600 text-cyan-600 px-8 py-4 rounded-full font-semibold text-base hover:bg-cyan-50 transition-all cursor-pointer"
-                  >
-                    Try For Free
-                  </motion.button>
-                </Link>
+                  Try For Free
+                </motion.a>
               </div>
             </div>
             <div className="relative">
