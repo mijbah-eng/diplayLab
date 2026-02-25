@@ -13,6 +13,28 @@ export const navData = [
         navTab: "ADVERTISEMENT", navLink: "/advertisement"
     }, 
 ];
+export const heroSectionLink = [
+    {
+        link: "#",
+        linkName: "Products"
+    },
+    {
+        link: "#",
+        linkName: "Use Cases"
+    },
+    {
+        link: "#",
+        linkName: "Pricing"
+    },
+    {
+        link: "#",
+        linkName: "Apps"
+    },
+    {
+        link: "#",
+        linkName: "Resources"
+    },
+]
 export const footerProductData = [
     {
         navTab: "Overview", navLink: "/"

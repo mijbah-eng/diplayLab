@@ -58,7 +58,7 @@ function NavberMain() {
                     {navData.map((singleNav, index) => (
                       <Link
                         key={index}
-                        className="nav_link-mm flex items-center py-[.75rem] px-[1.25rem] font-semibold transition-[all .2s] text-[#425466] hover:text-[#333]"
+                        className="nav_link-mm flex items-center py-[.75rem] px-[1.25rem] font-semibold transition-[all .2s] text-[#333] hover:text-[#000] hover:font-bold"
                         href={singleNav?.navLink}
                       >
                         {singleNav?.navTab}
@@ -68,13 +68,13 @@ function NavberMain() {
                   {/* nav buttons group */}
                   <div className=" menu_action flex justify-center items-center gap-4">
                     <Link
-                      className="border-[1.5px] border-[#00be5f] bg-[#00be5f] text-white text-center capitalize whitespace-nowrap rounded flex justify-center items-center px-6 py-[.4rem] text-base font-medium leading-[180%] transition-colors duration-200 hover:text-black hover:bg-white"
+                      className="border-[1.5px] border-[#005582] bg-[#005582] text-white text-center capitalize whitespace-nowrap rounded flex justify-center items-center px-6 py-[.4rem] text-base font-medium leading-[180%] transition-colors duration-200 hover:text-black hover:bg-white"
                       href={"#"}
                     >
                       Log in
                     </Link>
                     <Link
-                      className="border-[1.5px] border-[#105783] bg-[#105783] text-white text-center capitalize whitespace-nowrap rounded flex justify-center items-center px-6 py-[.4rem] text-base font-medium leading-[180%] transition-colors duration-200 hover:bg-white hover:text-black"
+                      className="border-[1.5px] border-[#3095b5] bg-[#3095b5] text-white text-center capitalize whitespace-nowrap rounded flex justify-center items-center px-6 py-[.4rem] text-base font-medium leading-[180%] transition-colors duration-200 hover:bg-white hover:text-black"
                       href={"#"}
                     >
                       Try For Free

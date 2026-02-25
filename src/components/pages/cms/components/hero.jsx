@@ -1,5 +1,6 @@
 "use client";
 
+import { heroSectionLink } from "@/utils";
 import { motion } from "motion/react";
 import Link from "next/link";
 import Script from "next/script";
@@ -20,16 +21,18 @@ function CMS_HERO() {
       />
       {/* .......................................... */}
       <section className="relative bg-gradient-to-br from-cyan-50 via-blue-50 to-purple-50 py-16 md:py-24 lg:py-32 overflow-hidden">
-        <div className="absolute text-right top-2 left-1/2 -translate-x-1/2 ">
+        <div className="absolute text-right top-2 left-1/2 md:left-[47.2%] 2xl:left-[48.2%] -translate-x-1/2 ">
           <div className="flex justify-center items-center gap-2">
-                <Link href={""} className="bg-yellow-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-fit text-center tracking-wide">
+            {heroSectionLink.map(((singleLink,index) => (
+              <Link key={index} href={singleLink?.link} className="bg-transparent border-[1px] border-[#3096b6] text-[#333] hover:bg-[#3096b6] hover:text-zinc-100 px-4 py-2 rounded-full text-[10px] font-semibold w-fit text-center tracking-wide underline transition-colors duration-200 ">
+                  {singleLink?.linkName}
+                </Link>
+            )))}
+                {/* <Link href={""} className="bg-transparent border-[1px] border-[#3096b6] text-[#333] hover:bg-[#3096b6] hover:text-zinc-100 px-4 py-2 rounded text-[10px] font-semibold w-fit text-center tracking-wide">
                   Products
                 </Link>
                 <Link href={""} className="bg-purple-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-[80px] text-center tracking-wide">
                   Use Cases
-                </Link>
-                <Link href={""} className="bg-green-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-fit text-center tracking-wide">
-                  Download
                 </Link>
                 <Link href={""} className="bg-green-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-fit text-center tracking-wide">
                   Pricing
@@ -39,7 +42,7 @@ function CMS_HERO() {
                 </Link>
                 <Link href={""} className="bg-orange-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-fit text-center tracking-wide">
                   Resources
-                </Link>
+                </Link> */}
               </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
