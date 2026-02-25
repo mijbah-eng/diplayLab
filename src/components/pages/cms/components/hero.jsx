@@ -24,7 +24,7 @@ function CMS_HERO() {
         <div className="absolute text-right top-2 left-1/2 md:left-[47.2%] 2xl:left-[48.2%] -translate-x-1/2 ">
           <div className="flex justify-center items-center gap-2">
             {heroSectionLink.map(((singleLink,index) => (
-              <Link key={index} href={singleLink?.link} className="bg-transparent border-[1px] border-[#3096b6] text-[#333] hover:bg-[#3096b6] hover:text-zinc-100 px-4 py-2 rounded-full text-[10px] font-semibold w-fit text-center tracking-wide underline transition-colors duration-200 ">
+              <Link key={index} href={singleLink?.link} className="bg-transparent border-[1px] border-[#3096b6] text-[#333] hover:bg-[#3096b6] hover:text-zinc-100 px-4 py-2 rounded text-[10px] font-semibold w-fit text-center tracking-wide underline transition-colors duration-200 flex justify-center items-center ">
                   {singleLink?.linkName}
                 </Link>
             )))}
