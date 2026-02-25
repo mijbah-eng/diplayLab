@@ -1,16 +1,19 @@
-import Navber from "@/components/navber";
-
-import Rental_Options from "./components/Rental_Options";
-import Rental_Hero from "./components/Rental_Hero";
 import Footer from "@/components/Footer/footer";
+import NavberMain from "@/components/NavberMain";
+import Rental_Hero from "./components/Rental_Hero";
+import Rental_Options from "./components/Rental_Options";
 
 function Rental() {
-    return ( <>
-    <Navber />
-    <Rental_Hero />
-    <Rental_Options />
-    <Footer />
-    </> );
+  return (
+    <>
+      <NavberMain />
+      <div className="main_div">
+        <Rental_Hero />
+        <Rental_Options />
+      </div>
+      <Footer />
+    </>
+  );
 }
 
 export default Rental;
