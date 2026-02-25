@@ -55,7 +55,7 @@ function CMS_HERO() {
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Digital Signage That Brings Your Content
-                <span className="text-cyan-600">To Life</span>
+                <span className="text-cyan-600 inline-block">To Life</span>
               </h1>
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
                 Create, manage, and display stunning content across all your
@@ -145,7 +145,7 @@ function CMS_HERO() {
                   }}
                   className="absolute -bottom-8 -left-8 bg-white rounded-lg shadow-xl p-2 w-32 md:w-40"
                 >
-                  <div className="bg-gradient-to-br from-green-400 to-emerald-600 rounded aspect-video"></div>
+                  <div className="bg-gradient-to-br from-[#3095b5] to-[#105783] rounded aspect-video"></div>
                 </motion.div>
                 <motion.div
                   animate={{
@@ -159,7 +159,7 @@ function CMS_HERO() {
                   }}
                   className="absolute -top-8 -right-8 bg-white rounded-lg shadow-xl p-2 w-32 md:w-40"
                 >
-                  <div className="bg-gradient-to-br from-orange-400 to-pink-600 rounded aspect-video"></div>
+                  <div className="bg-gradient-to-br from-[#105783] to-[#3095b5] rounded aspect-video"></div>
                 </motion.div>
               </div>
             </div>
