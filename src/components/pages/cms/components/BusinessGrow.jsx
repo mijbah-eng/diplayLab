@@ -1,7 +1,7 @@
 function BusinessGrow() {
     return ( <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="relative overflow-hidden bg-gradient-to-r from-green-500 via-emerald-600 to-teal-600 rounded-3xl p-12 md:p-16 lg:p-20 text-center shadow-2xl">
+            <div className="relative overflow-hidden bg-gradient-to-r from-[#105783] via-[#1f7399] to-[#3095b5] rounded-3xl p-12 md:p-16 lg:p-20 text-center shadow-2xl">
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute -top-20 -right-20 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
                     <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
@@ -16,7 +16,7 @@ function BusinessGrow() {
                     <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto">
                     Join thousands of businesses already using Dispaly Lab to create stunning digital experiences. Start your free trial today - no credit card required.
                     </p>
-                    <button className="bg-white text-green-600 px-12 py-5 rounded-full font-bold text-lg hover:bg-gray-50 transition-all shadow-2xl">
+                    <button className="bg-white text-[#105783] px-12 py-5 rounded-full font-bold text-lg hover:bg-gray-50 transition-all shadow-2xl">
                         Try For Free
                     </button>
                     <p className="text-white/80 text-sm mt-6">No credit card required • Free 14-day trial • Cancel anytime</p>
