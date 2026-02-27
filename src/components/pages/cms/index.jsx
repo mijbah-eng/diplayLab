@@ -27,13 +27,22 @@ function CMS() {
       <div className="main_div">
       <CMS_HERO />
       <CORE_FEATURES />
+      <DEVICE_SECTION />
       <DigitalSignage />
+      <DIGITAL_SIGNAGE_SECTION />
       <LotMore />
+      <HeroVideoDialogDemo />
       <GetStarted />
       <LeadingFeatures />
+      <WHY_SECTION />
       <MobileApp />
-      <FAQ />
       <BusinessGrow />
+      {/* <DIGITAL_SIGNAGE_SECTION2 /> */}
+      <STEPS_SECTION />
+      <HOW_TO_WORK />
+      <Testimonial />
+      <FAQ />
+
       </div>
       <Footer />
     </>

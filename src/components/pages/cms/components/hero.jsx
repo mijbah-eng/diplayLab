@@ -4,6 +4,7 @@ import { heroSectionLink } from "@/utils";
 import { motion } from "motion/react";
 import Link from "next/link";
 import Script from "next/script";
+import Typewriter from "typewriter-effect";
 
 function CMS_HERO() {
   return (
@@ -23,12 +24,16 @@ function CMS_HERO() {
       <section className="relative bg-gradient-to-br from-cyan-50 via-blue-50 to-purple-50 py-16 md:py-24 lg:py-32 overflow-hidden">
         <div className="absolute text-right top-2 left-1/2 md:left-[47.2%] 2xl:left-[48.2%] -translate-x-1/2 ">
           <div className="flex justify-center items-center gap-2">
-            {heroSectionLink.map(((singleLink,index) => (
-              <Link key={index} href={singleLink?.link} className="bg-transparent border-[1px] border-[#3096b6] text-[#333] hover:bg-[#3096b6] hover:text-zinc-100 px-4 py-2 rounded text-[10px] font-semibold w-fit text-center tracking-wide underline transition-colors duration-200 flex justify-center items-center ">
-                  {singleLink?.linkName}
-                </Link>
-            )))}
-                {/* <Link href={""} className="bg-transparent border-[1px] border-[#3096b6] text-[#333] hover:bg-[#3096b6] hover:text-zinc-100 px-4 py-2 rounded text-[10px] font-semibold w-fit text-center tracking-wide">
+            {heroSectionLink.map((singleLink, index) => (
+              <Link
+                key={index}
+                href={singleLink?.link}
+                className="bg-transparent border-[1px] border-[#3096b6] text-[#333] hover:bg-[#3096b6] hover:text-zinc-100 px-4 py-2 rounded text-[10px] font-semibold w-fit text-center tracking-wide underline transition-colors duration-200 flex justify-center items-center "
+              >
+                {singleLink?.linkName}
+              </Link>
+            ))}
+            {/* <Link href={""} className="bg-transparent border-[1px] border-[#3096b6] text-[#333] hover:bg-[#3096b6] hover:text-zinc-100 px-4 py-2 rounded text-[10px] font-semibold w-fit text-center tracking-wide">
                   Products
                 </Link>
                 <Link href={""} className="bg-purple-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-[80px] text-center tracking-wide">
@@ -43,7 +48,7 @@ function CMS_HERO() {
                 <Link href={""} className="bg-orange-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-fit text-center tracking-wide">
                   Resources
                 </Link> */}
-              </div>
+          </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -55,7 +60,16 @@ function CMS_HERO() {
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Digital Signage That Brings Your Content
-                <span className="text-cyan-600 inline-block">To Life</span>
+                <span className="text-cyan-600 inline-block">
+                  {" "}
+                  <Typewriter
+                    options={{
+                      strings: ["Web Developer", "To Life"],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />{" "}
+                </span>
               </h1>
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
                 Create, manage, and display stunning content across all your
