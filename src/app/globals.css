@@ -111,14 +111,26 @@
 .button {
   @apply w-fit text-center self-center px-6 py-3 text-base font-semibold text-white bg-[#105783] hover:bg-[#003051] transition-all duration-300 transform focus:ring-2 rounded-md cursor-pointer;
 }
+.grid_one_col{
+  @apply grid grid-cols-1 gap-[40px] mx-auto py-10 md:py-5 px-4 place-items-center
+}
+.why_section_card{
+  @apply w-[280px] flex flex-col items-center text-center
+}
+.grid_two_col{
+  @apply grid grid-cols-1 md:grid-cols-2 gap-[40px] mx-auto px-4 place-items-center
+}
 .section_sub_title {
   @apply text-4xl font-bold text-center mx-auto;
 }
+.section_sub_sub_icon {
+  @apply w-14 h-14 bg-white rounded-xl shadow-md flex items-center justify-center mb-4 group-hover:shadow-lg transition-shadow;
+}
 .section_sub_sub_title {
-  @apply text-2xl font-semibold mt-2;
+  @apply text-lg font-bold mb-2;
 }
 .section_sub_sub_desc {
-  @apply text-gray-500 text-center mt-4;
+  @apply text-sm text-gray-600;
 }
 .three_columns_items {
   @apply flex flex-col md:flex-row justify-center items-center mt-15 gap-5;
