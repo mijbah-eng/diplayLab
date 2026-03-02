@@ -79,7 +79,7 @@ function Products() {
 
           <div className="four_columns_items">
             {Products.map((product) => (
-              <div key={product?.id} className="single_product">
+              <Link target="_blank" href={"/details"} key={product?.id} className="single_product">
                 <Image
                   src={product?.image}
                   width={200}
@@ -89,7 +89,7 @@ function Products() {
                 ></Image>
 
                 <h4 className="single_product_name">{product?.name}</h4>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

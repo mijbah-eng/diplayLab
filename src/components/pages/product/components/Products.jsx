@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 function Products() {
@@ -88,7 +89,9 @@ function Products() {
 
           <div className="four_columns_items">
             {productsToShow.map((product) => (
-              <div
+              <Link
+              target="_blank"
+              href={"/details"}
                 key={product?.id}
                 className="single_product"
               >
@@ -101,7 +104,7 @@ function Products() {
                 ></Image>
 
                 <h4 className="single_product_name">{product?.name}</h4>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
