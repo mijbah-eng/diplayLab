@@ -1,12 +1,6 @@
 import { displayPerformance, systemConnectivity } from "@/utils";
 
-function DetailsTechnical() {
-    console.log(displayPerformance);
-    displayPerformance.map((item, index) => {
-        console.log(item.name, index);
-        
-    })
-    
+function DetailsTechnical() {    
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
