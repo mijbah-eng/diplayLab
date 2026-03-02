@@ -33,21 +33,6 @@ function CMS_HERO() {
                 {singleLink?.linkName}
               </Link>
             ))}
-            {/* <Link href={""} className="bg-transparent border-[1px] border-[#3096b6] text-[#333] hover:bg-[#3096b6] hover:text-zinc-100 px-4 py-2 rounded text-[10px] font-semibold w-fit text-center tracking-wide">
-                  Products
-                </Link>
-                <Link href={""} className="bg-purple-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-[80px] text-center tracking-wide">
-                  Use Cases
-                </Link>
-                <Link href={""} className="bg-green-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-fit text-center tracking-wide">
-                  Pricing
-                </Link>
-                <Link href={""} className="bg-blue-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-fit text-center tracking-wide">
-                  Apps
-                </Link>
-                <Link href={""} className="bg-orange-100 text-cyan-800 px-4 py-2 rounded-full text-[10px] font-semibold w-fit text-center tracking-wide">
-                  Resources
-                </Link> */}
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

@@ -1,7 +1,7 @@
 function CORE_FEATURES() {
   const core_features = [
     {
-        svg_color: "bg-blue-50 text-blue-600",
+      svg_color: "bg-blue-50 text-blue-600",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ function CORE_FEATURES() {
         "99.9% uptime with 24/7 customer support to keep your digital signage running smoothly.",
     },
     {
-        svg_color: "bg-purple-50 text-purple-600",
+      svg_color: "bg-purple-50 text-purple-600",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ function CORE_FEATURES() {
         "Works with any screen and supports all content types. Adapt to your unique business needs.",
     },
     {
-        svg_color: "bg-cyan-50 text-cyan-600",
+      svg_color: "bg-cyan-50 text-cyan-600",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,9 @@ function CORE_FEATURES() {
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             {core_features.map((item, index) => (
               <div className="text-center group" key={index}>
-                <div className={`${item?.svg_color} w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-xl transition-shadow`}>
+                <div
+                  className={`${item?.svg_color} w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-xl transition-shadow`}
+                >
                   {item?.svg}
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
