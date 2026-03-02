@@ -44,7 +44,7 @@ function NavberMain() {
         <div className="bg-white flex flex-col justify-center h-[5rem]">
           <div className="px-[1.25rem] md:px-[1.5rem] lg:px-[2.5rem]">
             <div className="static lg:relative flex justify-between items-center w-full max-w-7xl m-auto px-0">
-              <Link className="w-50" href={"#"}>
+              <Link className="w-50" href={"/"}>
                 {" "}
                 <img src={logoBlue} alt="Logo" />
               </Link>
