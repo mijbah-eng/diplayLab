@@ -27,33 +27,10 @@ function RWInstallation() {
               src={singleRWIData?.image}
               width={300}
               height={300}
-              className="w-full md:w-[250px] "
+              alt=""
+              className="w-full md:w-[250px]"
             />
           ))}
-          {/* <Image
-            src={"/images/details/keyFeatureImg.png"}
-            width={300}
-            height={300}
-            className="w-full md:w-[250px] lg:w-[400px]"
-          />
-          <Image
-            src={"/images/details/picture1.png"}
-            width={300}
-            height={300}
-            className="w-full md:w-[250px] lg:w-[400px]"
-          />
-          <Image
-            src={"/images/details/picture2.png"}
-            width={300}
-            height={300}
-            className="w-full md:w-[250px] lg:w-[400px]"
-          />
-          <Image
-            src={"/images/details/picture3.png"}
-            width={300}
-            height={300}
-            className="w-full md:w-[250px] lg:w-[400px]"
-          /> */}
         </div>
       </div>
     </div>

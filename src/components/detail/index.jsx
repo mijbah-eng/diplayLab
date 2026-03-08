@@ -1,9 +1,9 @@
+import Footer from "../Footer/footer";
 import NavberMain from "../NavberMain";
+import AvailableSizes from "./availableSizes";
 import DetailsHero from "./detailsHero";
 import DetailsTechnical from "./detailsTechnical";
 import KeyFeatures from "./keyFeatures";
-import Packaging from "./Packaging";
-import Footer from "../Footer/footer";
 import RWInstallation from "./rWInstallations";
 
 function Detail() {
@@ -14,7 +14,7 @@ function Detail() {
         <DetailsHero />
         <DetailsTechnical />
         <KeyFeatures />
-        <Packaging />
+        <AvailableSizes />
         <RWInstallation />
       </div>
       <Footer />
