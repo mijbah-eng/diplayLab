@@ -1,8 +1,6 @@
 "use client";
 
-import { heroSectionLink } from "@/utils";
 import { motion } from "motion/react";
-import Link from "next/link";
 import Script from "next/script";
 import Typewriter from "typewriter-effect";
 
@@ -30,10 +28,10 @@ function CMS_HERO() {
                   Digital Signage
                 </span>
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Digital Signage That Brings Your Content
-                <span className="text-cyan-600 inline-block">
-                  {" "}
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                Digital Signage That Brings Your Content 
+                <span className="text-cyan-600 block">
+                  {" "} {" "} 
                   <Typewriter
                     options={{
                       strings: ["...", "To Life"],

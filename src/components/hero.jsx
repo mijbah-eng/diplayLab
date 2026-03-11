@@ -1,90 +1,104 @@
 "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
+import Link from "next/link";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
+import MarqueeSection from "./marquee/marquee";
 
 function Hero() {
-
-  const slides = [
-    {
-      id: 1,
-      title: "Welcome to Our Website",
-      text: "Discover amazing content and services here.",
-      image: "/images/hero/slide_1.png",
-    },
-    {
-      id: 2,
-      title: "Explore New Features",
-      text: "We keep improving your experience.",
-      image: "/images/hero/slide_2.png",
-    },
-    {
-      id: 3,
-      title: "Join Us Today",
-      text: "Sign up and be part of our community.",
-      image: "/images/hero/slide_3.png",
-    },
-    {
-      id: 4,
-      title: "Join Us Today",
-      text: "Sign up and be part of our community.",
-      image: "/images/hero/slide_4.png",
-    },
-    {
-      id: 5,
-      title: "Join Us Today",
-      text: "Sign up and be part of our community.",
-      image: "/images/hero/slide_5.png",
-    },
-    {
-      id: 6,
-      title: "Join Us Today",
-      text: "Sign up and be part of our community.",
-      image: "/images/hero/slide_6.png",
-    },
-  ];
-
   return (
-    <div className="w-full h-[100dvh] relative">
-
-      <Swiper dir="ltr" pagination={{ clickable: true, }} modules={[Autoplay, Pagination]}
-        autoplay={{ delay: 2500, disableOnInteraction: false }} loop={true}
-        className="w-full h-full">
-        {slides.map((slide) => (
-          <SwiperSlide key={slide.id}>
-            <div
-              className="w-full h-full bg-cover bg-no-repeat relative"
-              style={{ backgroundImage: `url(${slide.image})`, backgroundPosition: "70% 50%" }}
-            >
-            <div className="absolute inset-0 bg-black/40"></div>
-              <div className="relative z-100 flex flex-col items-center justify-center h-full text-white text-center font-bold">
-                <h1 className="text-3xl md:text-5xl font-bold">{slide.title}</h1>
-                <p className="text-sm md:text-2xl mt-4">{slide.text}</p>
-              </div>
-              
+    <section className="relative  py-16 md:py-24 lg:py-32 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="text-center lg:text-left">
+            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              Digital Signage Software to Power Screens Anywhere
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+              Turn any screen into a powerful communication and marketing
+              platform. Create, manage, and publish content across multiple
+              displays from one cloud dashboard.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Link
+                href={"https://www.youtube.com/"}
+                className="bg-cyan-600 text-white px-8 py-4 rounded font-semibold text-base hover:bg-cyan-700 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
+                target="_blank"
+                whileHover={{
+                  scale: 1.04,
+                  transition: { duration: 0.3 },
+                }}
+                transition={{
+                  duration: 0.5,
+                  ease: "linear",
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-play"
+                  aria-hidden="true"
+                >
+                  <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                </svg>
+                Book A Demo
+              </Link>
+              <Link
+                href={"https://www.youtube.com/"}
+                target="_blank"
+                whileHover={{
+                  scale: 1.04,
+                  transition: { duration: 0.3 },
+                }}
+                className="border-2 border-cyan-600 text-cyan-600 px-8 py-4 rounded font-semibold text-base hover:bg-cyan-50 transition-all cursor-pointer"
+                transition={{
+                  duration: 0.5,
+                  ease: "linear",
+                }}
+              >
+                Start Free Trial
+              </Link>
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <style jsx global>{`
-      .swiper-pagination-bullet {
-      background: #fff;
-      opacity: 0.6;
-      width: 10px;
-      height: 10px;
-      transition: all 0.3s ease;
-      }
-      .swiper-pagination-bullet-active {
-      background: #00bcd4;
-      opacity: 1;
-      transform: scale(1.2);
-      }
-      `}</style>
-    </div>
-
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
+          </div>
+          <div className="relative">
+            <div className="relative">
+              <div
+                animate={{
+                  y: [0, 15, 0],
+                }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                className="bg-white rounded-2xl shadow-2xl p-4 relative z-10"
+              >
+                <video
+                  className="rounded-xl aspect-video w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  preload="none"
+                >
+                  <source src="https://cdn.pickcel.com/videos/main/hero-video.hMW0RsrCv5Su.webm" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="space-large"></div>
+      <MarqueeSection />
+    </section>
   );
 }
 
