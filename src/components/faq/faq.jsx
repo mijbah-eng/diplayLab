@@ -7,30 +7,42 @@ function FAQ() {
 
   const faqsData = [
     {
-      question: "What is DisplayLab?",
+      question: "What is digital signage?",
 
-      answer: "Built with speed — minimal load times and optimized rendering.",
+      answer: "Digital signage is a technology that allows businesses to display dynamic content such as advertisements, promotions, menus, announcements, and information on digital screens. With Display Lab, businesses can easily manage and update content across multiple screens from a centralized platform.",
     },
 
     {
-      question: "How do I start using DisplayLab CMS?",
+      question: "How does Display Lab digital signage work?",
 
       answer:
-        "Easily adjust styles, structure, and behavior to match your project needs.",
+        "Display Lab uses a cloud-based CMS that allows you to upload, manage, and schedule content remotely. Once your screens are connected, your content can be updated instantly across multiple locations from a single dashboard.",
     },
 
     {
-      question: "What types of displays do you offer?",
+      question: "What types of content can be displayed on digital signage?",
 
       answer:
-        "Every component are responsive by default — no extra CSS required.",
+        "Display Lab supports a wide range of content including images, videos, web pages, menus, dashboards, social media feeds, and advertisements. Content can also be scheduled to play at specific times and locations.",
     },
 
     {
-      question: "How flexible are your rental terms?",
+      question: "Does Display Lab provide digital signage hardware?",
 
       answer:
-        "Built using Tailwind utility classes — no extra CSS or frameworks required.",
+        "Yes. Display Lab offers a variety of professional digital signage displays including indoor displays, kiosks, menu boards, wall-mounted screens, and outdoor signage designed for commercial environments.",
+    },
+    {
+      question: "Do you offer digital signage rental services?",
+
+      answer:
+        "Display Lab provides flexible rental solutions for events, exhibitions, product launches, and temporary installations. Businesses can rent high-quality digital displays and kiosks without investing in permanent hardware.",
+    },
+    {
+      question: " Can digital signage be used for advertising?",
+
+      answer:
+        "Yes. Display Lab digital signage solutions allow businesses to display advertisements and promotional campaigns on screens in high-traffic locations, helping increase brand visibility and engagement.",
     },
   ];
 
@@ -42,14 +54,14 @@ function FAQ() {
           Frequently Asked Questions
         </h1>
 
-        <div className="max-w-3xl w-full mt-6 flex flex-col gap-4 items-start text-left">
+        <div className="max-w-7xl w-full mt-6 flex flex-col gap-4 items-start text-left">
           {faqsData.map((faq, index) => (
             <div key={index} className="flex flex-col items-start w-full">
               <div
                 className="flex items-center justify-between w-full cursor-pointer bg-gradient-to-r from-indigo-50 to-white border border-indigo-100 p-4 rounded"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <h2 className="text-sm">{faq.question}</h2>
+                <h2 className="text-lg">{faq.question}</h2>
 
                 <svg
                   width="18"
@@ -72,7 +84,7 @@ function FAQ() {
               </div>
 
               <p
-                className={`text-sm text-slate-500 px-4 transition-all duration-500 ease-in-out ${
+                className={`text-lg text-slate-500 px-4 transition-all duration-500 ease-in-out ${
                   openIndex === index
                     ? "opacity-100 max-h-[300px] translate-y-0 pt-4"
                     : "opacity-0 max-h-0 -translate-y-2"

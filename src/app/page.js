@@ -20,12 +20,10 @@ export default function Home() {
       <NavberMain />
       <div className="main_div">
         <Hero />
-        <div className="container">
+        <div>
           {/* <div className="space-large"></div>
           <MarqueeSection /> */}
-          <div className="space-large"></div>
           <CMS_Marketing />
-          <div className="space-large"></div>
           <SolutionCard />
           <div className="space-large"></div>
           <CMS_Content />

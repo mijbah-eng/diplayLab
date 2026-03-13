@@ -28,7 +28,7 @@ function CMS_HERO() {
                   Digital Signage
                 </span>
               </div>
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="h1_text">
                 Digital Signage That Brings Your Content 
                 <span className="text-cyan-600 block">
                   {" "} {" "} 

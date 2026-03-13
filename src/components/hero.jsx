@@ -8,7 +8,7 @@ import MarqueeSection from "./marquee/marquee";
 
 function Hero() {
   return (
-    <section className="relative  py-16 md:py-24 lg:py-32 overflow-hidden">
+    <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
@@ -95,9 +95,9 @@ function Hero() {
             </div>
           </div>
         </div>
+        <div className="space-large"></div>
+        <MarqueeSection />
       </div>
-      <div className="space-large"></div>
-      <MarqueeSection />
     </section>
   );
 }

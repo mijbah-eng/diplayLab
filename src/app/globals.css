@@ -84,6 +84,16 @@
   opacity: 1;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+.h1_text{
+  @apply text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight
+}
+.h2_text{
+  @apply text-[34px] md:text-[42px] md:leading-12 font-bold text-slate-900
+}
+.space-small{
+  @apply pb-4
+}
 .mr_b {
   @apply mb-6;
 }
@@ -200,10 +210,6 @@ img {
   max-width: 100%;
 }
 
-.container {
-  max-width: 1280px;
-  margin: auto;
-}
 .twoContent {
   padding-right: 22%;
 }
