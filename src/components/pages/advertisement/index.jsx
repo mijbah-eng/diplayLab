@@ -2,8 +2,8 @@ import Navber from "@/components/navber";
 import Advertisement_Hero from "./components/Advertisement_Hero";
 
 import Footer from "@/components/Footer/footer";
-import Advertisement_Solutions from "@/components/advertisement/advertisement_solutions";
 import NavberMain from "@/components/NavberMain";
+import Advertisement_Solutions from "@/components/advertisement";
 
 function Advertisement() {
   return (
