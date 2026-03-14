@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-function Advertisement_Solutions() {
+function Advertisement_Solutions2() {
   const advertisement_Content = [
     {
       image: "/images/advertisement/restaurant.png",
