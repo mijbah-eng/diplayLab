@@ -9,6 +9,7 @@ import Footer from "@/components/Footer/footer";
 import Hero from "@/components/hero";
 import MarqueeSection from "@/components/marquee/marquee";
 import NavberMain from "@/components/NavberMain";
+import STEPS_SECTION from "@/components/pages/cms/components/STEPS";
 import Products from "@/components/products/products";
 import Rental_1 from "@/components/rental/rental_1";
 import Rental_2 from "@/components/rental/rental_2";
@@ -26,18 +27,10 @@ export default function Home() {
           <MarqueeSection /> */}
           <CMS_Marketing />
           <SolutionCard />
-          <div className="space-large"></div>
-          <CMS_Content />
-          <div className="space-large"></div>
           <UseCase />
-          <div className="space-large"></div>
-          <Products />
-          <div className="space-large"></div>
-          <Rental_1 />
+          <STEPS_SECTION />
           <div className="space-large"></div>
           <Rental_2 />
-          <div className="space-large"></div>
-          <Advertisement_1 />
           <div className="space-large"></div>
           <Advertisement_Solutions />
           <div className="space-large"></div>

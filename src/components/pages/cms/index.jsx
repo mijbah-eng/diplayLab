@@ -37,7 +37,6 @@ function CMS() {
       <WHY_SECTION />
       <MobileApp />
       <BusinessGrow />
-      {/* <DIGITAL_SIGNAGE_SECTION2 /> */}
       <STEPS_SECTION />
       <HOW_TO_WORK />
       <Testimonial />

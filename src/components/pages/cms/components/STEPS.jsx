@@ -3,36 +3,41 @@ import Image from "next/image";
 function STEPS_SECTION() {
   const steps = [
     {
-      image: "/images/advertisement/advertisement2.png",
+      image: "/images/advertisement/showroom.jpg",
       number: "1",
-      title: "Pair Your Device",
+      title: "Connect Your Screen",
       description:
-        "Set up your device or player, download and install the DisplayLab Player app on it, and pair it using the code.",
+        "Install the player on your device and connect it to any screen.",
     },
     {
       image: "/images/advertisement/advertisement3.png",
       number: "2",
-      title: "Create Your Playlist",
+      title: "Upload or Create Content",
       description:
-        "Set up your device or player, download and install the DisplayLab Player app on it, and pair it using the code.",
+        "Add images, videos, dashboards, or templates through the cloud dashboard.",
     },
     {
-      image: "/images/advertisement/advertisement4.png",
+      image: "/images/advertisement/bank.png",
       number: "3",
-      title: "Sent To Display",
+      title: "Publish to Displays",
       description:
-        "Set up your device or player, download and install the DisplayLab Player app on it, and pair it using the code.",
+        "Assign content to screens and schedule when it should appear. Your screens update automatically in real time.",
     },
   ];
   return (
     <>
-      <div className="space-large"></div>
-      <div className="container">
-        <h2 className="title text-center">DisplayLab: Digital Signage In 3 Easy Staps</h2>
-        <div className="grid grid-cols-1 place-items-center md:grid-cols-2 xl:grid-cols-3 mt-15 gap-5">
+      <div className="py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            Display Lab Digital Signage In 3 Easy Steps 
+          </h2>
+          <p className="text-lg text-gray-600 mb-8 text-center">
+            Setting up digital signage is simple.
+          </p>
+          <div className="grid grid-cols-1 place-items-center md:grid-cols-2 xl:grid-cols-3 gap-5">
           {steps.map((step, index) => (
             <div className="w-sm" key={index}>
-              <div className="image">
+              <div className="image mb-4">
                 <Image
                   width={1000}
                   height={1000}
@@ -41,15 +46,16 @@ function STEPS_SECTION() {
                   className="w-full h-full object-cover rounded-md"
                 />
               </div>
-              <h4 className="text-2xl font-semibold mt-5 ">
-                <span className="bg-[#125884] px-3 py-1 rounded-md text-white">
+              <h4 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 ">
+                <span className="bg-[#125884] px-4 py-2 rounded-md text-white">
                   {step?.number}
                 </span>{" "}
                 {step?.title}
               </h4>
-              <p className="mt-3">{step?.description}</p>
+              <p className="text-lg text-gray-600 leading-relaxed mb-8">{step?.description}</p>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </>
