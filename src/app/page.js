@@ -13,6 +13,7 @@ import Products from "@/components/products/products";
 import Rental_1 from "@/components/rental/rental_1";
 import Rental_2 from "@/components/rental/rental_2";
 import SolutionCard from "@/components/solution-card";
+import UseCase from "@/components/useCase";
 
 export default function Home() {
   return (
@@ -27,6 +28,8 @@ export default function Home() {
           <SolutionCard />
           <div className="space-large"></div>
           <CMS_Content />
+          <div className="space-large"></div>
+          <UseCase />
           <div className="space-large"></div>
           <Products />
           <div className="space-large"></div>
