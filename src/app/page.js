@@ -8,7 +8,6 @@ import NavberMain from "@/components/NavberMain";
 import STEPS_SECTION from "@/components/pages/cms/components/STEPS";
 import RentalProducts from "@/components/rental";
 import SolutionCard from "@/components/solution_card";
-
 import UseCase from "@/components/useCase";
 
 export default function Home() {
