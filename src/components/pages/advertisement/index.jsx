@@ -1,4 +1,3 @@
-import Navber from "@/components/navber";
 import Advertisement_Hero from "./components/Advertisement_Hero";
 
 import Footer from "@/components/Footer/footer";
