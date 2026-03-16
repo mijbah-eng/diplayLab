@@ -1,0 +1,22 @@
+
+.logoSection {
+  padding: 40px 0;
+  /* background: #0f0f0f; */
+}
+
+.mySwiper {
+  width: 80%;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoImg {
+  max-width: 180px;
+  opacity: 0.9;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}

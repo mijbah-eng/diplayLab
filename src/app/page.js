@@ -1,4 +1,5 @@
 import Advertisement_Solutions from "@/components/advertisement";
+import ClientLogoSlider from "@/components/client_logo_slider";
 
 import CMS_Marketing from "@/components/cms/cms_section_1";
 import ContactUs from "@/components/contact_us";
@@ -20,8 +21,6 @@ export default function Home() {
       <div className="main_div">
         <Hero />
         <div>
-          {/* <div className="space-large"></div>
-          <MarqueeSection /> */}
           <CMS_Marketing />
           <SolutionCard />
           <UseCase />
