@@ -1,8 +1,5 @@
 import Advertisement_Solutions from "@/components/advertisement";
-import ClientLogoSlider from "@/components/client_logo_slider";
-
 import CMS_Marketing from "@/components/cms/cms_section_1";
-import ContactUs from "@/components/contact_us";
 import CustomerReviews from "@/components/customer";
 import FAQ from "@/components/faq/faq";
 import Footer from "@/components/Footer/footer";
