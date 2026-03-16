@@ -28,7 +28,7 @@ function TabSection() {
     },
   ];
   const tabStyle =
-    "text-left text-lg shadow-none px-6 py-4 border-l-2 border-r-0 border-b-0 border-t-0 border-gray-300 rounded-none justify-start data-[state=active]:border-[#003051] data-[state=active]:text-[#003051]";
+    "text-left text-2xl shadow-none p-5 border-l-2 border-r-0 border-b-0 border-t-0 border-gray-300 rounded-none justify-start data-[state=active]:border-[#003051] data-[state=active]:text-[#003051] data-[state=active]:text-xl md:data-[state=active]:text-3xl cursor-pointer";
 
   return (
     <>

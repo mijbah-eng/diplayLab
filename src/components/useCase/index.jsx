@@ -17,7 +17,7 @@ function UseCase() {
             customers, and deliver impactful digital experiences.
           </p>
 
-          <Tabs defaultValue="retail" orientation="vertical">
+          <Tabs className={"pt-10"} defaultValue="retail" orientation="vertical">
             {/* Layout wrapper */}
             <div className="flex flex-col md:flex-row gap-5 pt-5">
               {/* LEFT SIDE */}

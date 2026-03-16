@@ -28,12 +28,7 @@ export default function Home() {
           <Advertisement_Solutions />
           <RentalProducts />
           <CustomerReviews />
-          {/* <div className="space-large"></div> */}
-          {/* <About_Us /> */}
-          <div className="space-large"></div>
           <FAQ />
-          <div className="space-large"></div>
-          <ContactUs />
         </div>
       </div>
       <Footer />

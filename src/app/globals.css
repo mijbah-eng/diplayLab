@@ -85,14 +85,14 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.h1_text{
-  @apply text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight
+.h1_text {
+  @apply text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight;
 }
-.h2_text{
-  @apply text-[34px] md:text-[42px] md:leading-12 font-bold text-slate-900
+.h2_text {
+  @apply text-[34px] md:text-[42px] md:leading-12 font-bold text-slate-900;
 }
-.space-small{
-  @apply pb-4
+.space-small {
+  @apply pb-4;
 }
 .mr_b {
   @apply mb-6;
@@ -121,14 +121,14 @@
 .button {
   @apply w-fit text-center self-center px-6 py-3 text-base font-semibold text-white bg-[#105783] hover:bg-[#003051] transition-all duration-300 transform focus:ring-2 rounded-md cursor-pointer;
 }
-.grid_one_col{
-  @apply grid grid-cols-1 gap-[40px] mx-auto py-10 md:py-5 px-4 place-items-center
+.grid_one_col {
+  @apply grid grid-cols-1 gap-[40px] mx-auto py-10 md:py-5 px-4 place-items-center;
 }
-.why_section_card{
-  @apply w-[280px] flex flex-col items-center text-center
+.why_section_card {
+  @apply w-[280px] flex flex-col items-center text-center;
 }
-.grid_two_col{
-  @apply grid grid-cols-1 md:grid-cols-2 gap-[40px] mx-auto px-4 place-items-center
+.grid_two_col {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-[40px] mx-auto px-4 place-items-center;
 }
 .section_sub_title {
   @apply text-4xl font-bold text-center mx-auto;

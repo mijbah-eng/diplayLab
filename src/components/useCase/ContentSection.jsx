@@ -46,22 +46,28 @@ function ContentSection() {
   return (
     <>
       {contentDatas?.map((singleContentData, index) => (
-        <TabsContent key={index} value={singleContentData?.contentValue}>
+        <TabsContent
+          className={
+            "data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-2 duration-500"
+          }
+          key={index}
+          value={singleContentData?.contentValue}
+        >
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            {/* Image */}
-            <img
-              src={singleContentData?.contentImageUrl}
-              className="rounded-xl shadow-lg"
-            />
+            <div className="h-[300px] overflow-hidden rounded-xl">
+              <img
+                src={singleContentData?.contentImageUrl}
+                className="w-full h-full object-cover"
+              />
+            </div>
 
-            {/* Text */}
             <div>
               <h3 className="text-2xl font-semibold mb-4">
                 {singleContentData?.contentTitle}
               </h3>
 
               <p className="text-gray-600 leading-relaxed mb-6">
-               {singleContentData?.contentDescription}
+                {singleContentData?.contentDescription}
               </p>
 
               <button className="bg-[#105783] hover:bg-[#003051] text-white px-6 py-3 rounded-lg cursor-pointer">
