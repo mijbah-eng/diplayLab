@@ -40,7 +40,7 @@ function NavberMain() {
       className={`flex flex-col sticky w-full  justify-center bg-white top-0 z-[999] ${showNavShadow ? "scrolled" : ""}`}
     >
       <div className="navShadow !top-0 !h-full  opacity-0 transition-opacity duration-300 ease-in-out pointer-events-none pb-0 flex absolute inset-x-0"></div>
-      <div className="static z-[1000] bg-[#ddd]">
+      <div className="static z-[1000] ">
         <div className="bg-white flex flex-col justify-center h-[5rem]">
           <div className="px-[1.25rem] md:px-[1.5rem] lg:px-[2.5rem]">
             <div className="static lg:relative flex justify-between items-center w-full max-w-7xl m-auto px-0">
