@@ -3,15 +3,15 @@ import Link from "next/link";
 
 function SingleSolutionCard({ card }) {
   return (
-    <div className="bg-white rounded-xl p-6 flex gap-5 shadow-sm hover:shadow-md transition">
+    <div className="bg-white rounded-xl p-6 flex gap-5 shadow-sm hover:shadow-md transition lg:w-sm">
 
       {/* Icon */}
-      <div className="w-12 h-12 flex-shrink-0">
+      <div className="flex-shrink-0">
         <Image
           src={card.icon}
           alt={card.title}
-          width={48}
-          height={48}
+          width={60}
+          height={60}
         />
       </div>
 

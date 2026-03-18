@@ -1,10 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import "swiper/css";
-import "swiper/css/autoplay";
-import "swiper/css/pagination";
-import MarqueeSection from "./marquee/marquee";
 import ClientLogoSlider from "@/components/client_logo_slider";
 
 function Hero() {
@@ -23,7 +19,7 @@ function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
-                href={"https://www.youtube.com/"}
+                href={"/"}
                 className="bg-cyan-600 text-white px-8 py-4 rounded font-semibold text-base hover:bg-cyan-700 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
                 target="_blank"
                 whileHover={{
@@ -53,7 +49,7 @@ function Hero() {
                 Book A Demo
               </Link>
               <Link
-                href={"https://www.youtube.com/"}
+                href={"/"}
                 target="_blank"
                 whileHover={{
                   scale: 1.04,
