@@ -1,21 +1,77 @@
+import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
-function MarqueeSection() {
+function MarqueeSection({ images }) {
   return (
     <>
-      <Marquee gradient={true}>
-        <div className="flex gap-10 text-3xl font-bold items-center justify-center overflow-y-hidden">
-            *
-          <span>Educations</span>
-          *
-          <span>Real Estate & Corporation Office</span>
-          *
-          <span>Government</span>
-          *
-          <span>Religious Venues </span>
-          *
-          <span className="mr-10">Healthcare</span>
-        </div>
+      <Marquee pauseOnHover direction="left">
+        {images.map((image, index) => (
+          <div className="relative group rounded-md overflow-hidden mx-2 flex flex-col gap-4">
+            {/* Image */}
+            <Image
+              src={image}
+              alt={`slide-${index}`}
+              width={400}
+              height={400}
+              className="w-full h-[220px] md:w-[349px] md:h-[192px] lg:w-[559px] lg:h-[316px] object-cover 
+    transform transition-transform duration-700 ease-in-out group-hover:scale-105"
+            />
+
+            {/* Overlay */}
+            <div
+              className="absolute inset-0 flex items-center justify-center 
+    opacity-0 group-hover:opacity-100 
+    transition-opacity duration-700 ease-in-out delay-100"
+            >
+              {/* Dark layer */}
+              <div className="absolute inset-0 bg-black/40"></div>
+
+              {/* Text */}
+              <p
+                className="relative z-10 text-white font-semibold text-2xl text-center 
+      transform translate-y-4 group-hover:translate-y-0 
+      transition duration-700 ease-in-out"
+              >
+                Bank
+              </p>
+            </div>
+          </div>
+        ))}
+      </Marquee>
+      <div className="mt-4"></div>
+      <Marquee pauseOnHover direction="right">
+        {images.map((image, index) => (
+          <div className="relative group rounded-md overflow-hidden mx-2 flex flex-col gap-4">
+            {/* Image */}
+            <Image
+              src={image}
+              alt={`slide-${index}`}
+              width={400}
+              height={400}
+              className="w-full h-[220px] md:w-[349px] md:h-[192px] lg:w-[559px] lg:h-[316px] object-cover 
+    transform transition-transform duration-700 ease-in-out group-hover:scale-105"
+            />
+
+            {/* Overlay */}
+            <div
+              className="absolute inset-0 flex items-center justify-center 
+    opacity-0 group-hover:opacity-100 
+    transition-opacity duration-700 ease-in-out delay-100"
+            >
+              {/* Dark layer */}
+              <div className="absolute inset-0 bg-black/40"></div>
+
+              {/* Text */}
+              <p
+                className="relative z-10 text-white font-semibold text-2xl text-center 
+      transform translate-y-4 group-hover:translate-y-0 
+      transition duration-700 ease-in-out"
+              >
+                Bank
+              </p>
+            </div>
+          </div>
+        ))}
       </Marquee>
     </>
   );

@@ -4,6 +4,8 @@ import CustomerReviews from "@/components/customer";
 import FAQ from "@/components/faq/faq";
 import Footer from "@/components/Footer/footer";
 import Hero from "@/components/hero";
+import ImageSlide from "@/components/image_slide";
+
 import NavberMain from "@/components/NavberMain";
 import STEPS_SECTION from "@/components/pages/cms/components/STEPS";
 import RentalProducts from "@/components/rental";
@@ -17,6 +19,7 @@ export default function Home() {
       <div className="main_div">
         <Hero />
         <div>
+          <ImageSlide />
           <CMS_Marketing />
           <SolutionCard />
           <UseCase />
