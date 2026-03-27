@@ -1,10 +1,10 @@
-"use client"
+"use client";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./styles.css";
 
 function ClientLogoSlider() {
-    const logos = [
+  const logos = [
     "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd67837a212dc9acdf39b_levis.svg",
     "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd56841528275fbdc40e9_yamaha.svg",
     "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd44e13ae75901836e593_redbull.svg",
@@ -15,8 +15,6 @@ function ClientLogoSlider() {
     <>
       <div className="logoSection">
         <Swiper
-          className="mySwiper"
-          slidesPerView={4}
           spaceBetween={80}
           loop={true}
           autoplay={{
@@ -24,6 +22,20 @@ function ClientLogoSlider() {
             disableOnInteraction: false,
           }}
           speed={4000}
+          breakpoints={{
+            0: {
+              slidesPerView: 2, // 📱 mobile → 2 logos
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 3, // small devices
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4, // desktop
+              spaceBetween: 80,
+            },
+          }}
         >
           {logos.map((logo, index) => (
             <SwiperSlide key={index}>

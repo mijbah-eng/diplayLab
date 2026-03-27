@@ -1,12 +1,11 @@
-"use client"
-import Link from "next/link";
+"use client";
 import SingleSolutionCard2 from "./SingleSolutionCard2";
 
 function SolutionCard() {
   const card_Data = [
     {
       icon: "/images/explore-Display/Icon-01.png",
-      title: "Cloud-Based CMS",
+      title: "Works on Any Screen, Any Device",
       description:
         "Manage content from anywhere with a centralized digital signage CMS. Upload media, organize playlists, and control screens remotely.",
       link_Text: "Learn more",
@@ -30,9 +29,9 @@ function SolutionCard() {
     },
     {
       icon: "/images/explore-Display/Icon-04.png",
-      title: "App & Data Integrations",
+      title: "Easy Content Management",
       description:
-        "Display social media feeds, dashboards, news, calendar events, and real-time data from business apps and systems.",
+        "Easily display content and publish updates with our simple, user-friendly CMS.Create engaging designs with drag-and-drop tools and customizable templates.",
       link_Text: "Learn more",
       link: "",
     },
@@ -42,19 +41,8 @@ function SolutionCard() {
     <>
       <div className="py-16 md:py-24 bg-[#f5f7fb]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center pb-24">
-            <div className="text-center lg:text-left">
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Digital Signage Software to Power Screens Anywhere
-              </h1>
-              <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                Turn any screen into a powerful communication and marketing
-                platform. Create, manage, and publish content across multiple
-                displays from one cloud dashboard.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
-            </div>
-            <div className="relative">
+          <div className="hero_section pb-24">
+            <div className="relative w-full md:w-3xl lg:w-5xl mx-auto">
               <div className="relative">
                 <div
                   animate={{
@@ -86,7 +74,7 @@ function SolutionCard() {
 
           <div className="h-6"></div>
 
-          <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto">
+          <p className="title_desc">
             Everything you need to manage, schedule, and control digital signage
             displays from one platform.
           </p>

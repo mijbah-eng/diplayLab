@@ -8,25 +8,6 @@ function CMS_Marketing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="">
-              <h2 className="h2_text mb-6">
-                One Platform to Power Your Entire Digital Signage Network
-              </h2>
-              <p className="text-[16px] text-gray-600 mb-4">
-                Display Lab provides everything businesses need to deploy and
-                manage digital signage.
-              </p>
-              <p className="text-lg md:text-xl mb-8">
-                From our powerful cloud CMS to hardware players, rental
-                displays, and advertising solutions, our platform helps
-                organizations communicate, promote, and engage audiences across
-                every screen. Whether you're running one screen or thousands,
-                Display Lab makes digital signage simple and scalable.
-              </p>
-              <Link href="/cms" className="button">
-                Explore CMS
-              </Link>
-            </div>
-            <div className="">
               <Image
                 width={1000}
                 height={1000}
@@ -35,6 +16,18 @@ function CMS_Marketing() {
                 alt="CMS_Image"
               ></Image>
             </div>
+            <div className="">
+              <h2 className="h2_text mb-6">
+                A Single Platform to Power Digital Signage
+              </h2>
+              <p className="text-[1rem] mb-8">
+                Display Lab offers complete digital signage solutions, from CMS to hardware and displays. Simple, scalable tools to communicate and engage across any number of screens.
+              </p>
+              <Link href="/cms" className="button">
+                Explore CMS
+              </Link>
+            </div>
+            
           </div>
         </div>
       </div>

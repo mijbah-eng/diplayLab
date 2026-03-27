@@ -53,7 +53,7 @@ function ContentSection() {
           key={index}
           value={singleContentData?.contentValue}
         >
-          <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div className="grid gap-10 items-center">
             <div className="h-[300px] overflow-hidden rounded-xl">
               <img
                 src={singleContentData?.contentImageUrl}

@@ -1,4 +1,6 @@
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import AdsCard from "./adsCard";
+import AdsCard2 from "./adsCard2";
 
 function Advertisement_Solutions() {
   const adsCardDatas = [
@@ -66,14 +68,14 @@ function Advertisement_Solutions() {
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
     },
-    {
-      ads_card_image_url: "/images/advertisement/high-traffic.png",
-      ads_card_title: "High-Traffic Locations",
-      ads_card_description:
-        "Maximize visibility in areas with constant foot traffic such as malls, streets, and transit hubs. Digital signage helps businesses deliver impactful advertising campaigns to large audiences. Turn screens into revenue-generating platforms through targeted advertising.",
-      ads_card_link_text: "Learn More",
-      ads_card_link_address: "/",
-    },
+    // {
+    //   ads_card_image_url: "/images/advertisement/high-traffic.png",
+    //   ads_card_title: "High-Traffic Locations",
+    //   ads_card_description:
+    //     "Maximize visibility in areas with constant foot traffic such as malls, streets, and transit hubs. Digital signage helps businesses deliver impactful advertising campaigns to large audiences. Turn screens into revenue-generating platforms through targeted advertising.",
+    //   ads_card_link_text: "Learn More",
+    //   ads_card_link_address: "/",
+    // },
     {
       ads_card_image_url: "/images/advertisement/showroom.jpg",
       ads_card_title: "Showroom",
@@ -87,17 +89,33 @@ function Advertisement_Solutions() {
     <>
       <div className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-center h2_text">
             Display Lab Advertisement Solutions
           </h2>
-          <p className="text-lg text-gray-600 mb-8 text-center">
+           <div className="h-6"></div>
+          <p className="title_desc">
             Turn screens into revenue-generating advertising platforms.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {adsCardDatas.map((item, index) => (
-              <AdsCard key={index} data={item} />
-            ))}
-          </div>
+          <Tabs defaultValue="cardstyle1" className="w-full">
+            <TabsList>
+              <TabsTrigger value="cardstyle1">Card Style1</TabsTrigger>
+              <TabsTrigger value="cardstyle2">Card Style2</TabsTrigger>
+            </TabsList>
+            <TabsContent value="cardstyle1">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {adsCardDatas.map((item, index) => (
+                  <AdsCard key={index} data={item} />
+                ))}
+              </div>
+            </TabsContent>
+            <TabsContent value="cardstyle2">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {adsCardDatas.map((item, index) => (
+                  <AdsCard2 key={index} data={item} />
+                ))}
+              </div>
+            </TabsContent>
+          </Tabs>
         </div>
       </div>
     </>

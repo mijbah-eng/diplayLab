@@ -91,6 +91,9 @@
 .h2_text {
   @apply text-[34px] md:text-[42px] md:leading-12 font-bold text-slate-900;
 }
+.title_desc {
+  @apply text-[1rem] text-gray-600 text-center max-w-3xl mx-auto;
+}
 .space-small {
   @apply pb-4;
 }

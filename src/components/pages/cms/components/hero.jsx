@@ -46,10 +46,10 @@ function CMS_HERO() {
                 screens with the most reliable and easy-to-use digital signage
                 solution.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
                 <motion.a
                   href={"https://www.youtube.com/"}
-                  className="bg-cyan-600 text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-cyan-700 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-xs sm:w-fit bg-cyan-600 text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-cyan-700 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
                   target="_blank"
                   whileHover={{
                     scale: 1.04,
@@ -84,7 +84,7 @@ function CMS_HERO() {
                     scale: 1.04,
                     transition: { duration: 0.3 },
                   }}
-                  className="border-2 border-cyan-600 text-cyan-600 px-8 py-4 rounded-full font-semibold text-base hover:bg-cyan-50 transition-all cursor-pointer"
+                  className="w-xs sm:w-fit border-2 border-cyan-600 text-cyan-600 px-8 py-4 rounded-full font-semibold text-base hover:bg-cyan-50 transition-all cursor-pointer"
                   transition={{
                     duration: 0.5,
                     ease: "linear",

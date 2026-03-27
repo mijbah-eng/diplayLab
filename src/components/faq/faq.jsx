@@ -51,13 +51,13 @@ function FAQ() {
       <div className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col items-center text-center text-slate-800 px-3">
-            <h1 className="text-3xl md:text-4xl font-semibold mt-2">
+            <h1 className="h2_text mt-2">
               Frequently Asked Questions
             </h1>
 
             <div className="max-w-7xl w-full mt-6 flex flex-col gap-4 items-start text-left">
               {faqsData.map((faq, index) => (
-                <div key={index} className="flex flex-col items-start w-full">
+                <div key={index} className="flex flex-col items-start w-full lg:w-5xl mx-auto">
                   <div
                     className="flex items-center justify-between w-full cursor-pointer bg-gradient-to-r from-indigo-50 to-white border border-indigo-100 p-4 rounded"
                     onClick={() =>
