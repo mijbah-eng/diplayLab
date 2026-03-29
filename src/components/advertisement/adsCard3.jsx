@@ -2,13 +2,13 @@ function AdsCard3({ data }) {
   
   return (
     <div
-      className={`border rounded-xl bg-gradient-to-b  from-[${data?.color_from}] to-[${data?.color_to}] hover:shadow-lg transition overflow-hidden`}
+      className={`border rounded-xl bg-linear-to-b  from-[${data?.color_from}] to-[${data?.color_to}] hover:shadow-lg transition overflow-hidden`}
     >
       <div className="">
         <img
           src={data.ads_card_image_url}
           alt={data.ads_card_title}
-          className="w-full h-full lg:h-[250px] object-cover mb-4"
+          className="w-full h-full lg:h-62.5 object-cover mb-4"
         />
       </div>
 
