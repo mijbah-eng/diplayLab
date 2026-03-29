@@ -28,32 +28,37 @@ function DEVICE_SECTION() {
   return (
     <>
       <div className="space-large"></div>
-      <div className="container d_flex mx-auto">
-        <div className="image">
-          <Image
-            src={"/images/rental/rental.png"}
-            alt=""
-            width={1000}
-            height={1000}
-            className="object-cover w-sm h-full"
-          />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-3xl mx-auto flex flex-col items-center">
+          <div className="image">
+            <Image
+              src={"/images/rental/rental.png"}
+              alt=""
+              width={1000}
+              height={1000}
+              className="object-cover w-sm h-full"
+            />
+          </div>
+
+          <h2 className="h2_text text-center mb-4">
+            Digital Signage for Every Industry
+          </h2>
+          <span className="title_desc">
+            Tailored digital signage solutions designed to inform, engage, and
+            inspire your audience.
+          </span>
         </div>
-        <div className="content d_flex">
-          <div className="flex flex-col  items-center gap-5">
-            <h2 className="h2_text">Ready to simplify</h2>
-            <span className="title_desc mt-5">Your screen management?</span>
-          </div>
-          <div className="deviceFeatures grid grid-cols-3 md:grid-cols-5 gap-10 mt-8">
-            {devices.map((device, index) => (
-              <div
-                key={index}
-                className="singleFeature flex flex-col items-center gap-2 text-[#fff] bg-[#125884] px-5 rounded-xl py-2"
-              >
-                {device?.icon}
-                <h4 className="text-lg font-semibold">{device?.title}</h4>
-              </div>
-            ))}
-          </div>
+
+        <div className="deviceFeatures grid grid-cols-3 md:grid-cols-5 gap-10 mt-8">
+          {devices.map((device, index) => (
+            <div
+              key={index}
+              className="singleFeature flex flex-col items-center gap-2 text-white bg-[#125884] px-5 rounded-xl py-2"
+            >
+              {device?.icon}
+              <h4 className="text-lg font-semibold">{device?.title}</h4>
+            </div>
+          ))}
         </div>
       </div>
     </>
