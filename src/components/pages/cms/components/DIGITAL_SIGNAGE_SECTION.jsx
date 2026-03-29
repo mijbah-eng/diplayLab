@@ -12,8 +12,8 @@ function DIGITAL_SIGNAGE_SECTION() {
         <div className="space-large"></div>
         <div className="container">
             <div className="flex flex-col gap-5">
-                <h2 className="title text-center">Unlock Your Potential <br /> With Out Digital Signage Software</h2>
-                <p className="section_desc">Turn any screen or TV into captivating digital signage with our powerful, easy-to-use digital signage platform.</p>
+                <h2 className="h2_text text-center">Unlock Your Potential <br /> With Out Digital Signage Software</h2>
+                <p className="title_desc">Turn any screen or TV into captivating digital signage with our powerful, easy-to-use digital signage platform.</p>
             </div>
             <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-10">
                 <div className="md:w-1/2 flex justify-center">

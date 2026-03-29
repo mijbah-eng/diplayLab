@@ -763,7 +763,7 @@ function WHY_SECTION() {
   return (
     <>
       <div className="space-large"></div>
-      <div className="container">
+      <div className="container mx-auto">
         <div className="title">
           <h2 className="title mb-10 text-center">Why Display Lab</h2>
         </div>

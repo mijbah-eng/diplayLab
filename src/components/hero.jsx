@@ -5,8 +5,8 @@ import ClientLogoSlider from "@/components/client_logo_slider";
 
 function Hero() {
   return (
-    <section className="relative pt-16 md:pt-24 lg:pt-32 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="relative pt-8 md:pt-24 lg:pt-30 overflow-hidden">
+      <div className="max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">

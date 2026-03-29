@@ -4,7 +4,7 @@ import Image from "next/image";
 function HOW_TO_WORK() {
     return ( <>
     <div className="space-large"></div>
-    <div className="container">
+    <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px] mx-auto px-4">
             <div className="">
             <Image width={800} height={500} src={'/images/about_us/about_us.png'} alt="about_us" className="object-cover rounded-lg shadow-xl max-w-full h-full"></Image>

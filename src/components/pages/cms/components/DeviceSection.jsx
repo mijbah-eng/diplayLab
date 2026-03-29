@@ -28,7 +28,7 @@ function DEVICE_SECTION() {
   return (
     <>
       <div className="space-large"></div>
-      <div className="container d_flex">
+      <div className="container d_flex mx-auto">
         <div className="image">
           <Image
             src={"/images/rental/rental.png"}
@@ -40,8 +40,8 @@ function DEVICE_SECTION() {
         </div>
         <div className="content d_flex">
           <div className="flex flex-col  items-center gap-5">
-            <h2 className="title">Ready to simplify</h2>
-            <span className="section_desc mt-5">Your screen management?</span>
+            <h2 className="h2_text">Ready to simplify</h2>
+            <span className="title_desc mt-5">Your screen management?</span>
           </div>
           <div className="deviceFeatures grid grid-cols-3 md:grid-cols-5 gap-10 mt-8">
             {devices.map((device, index) => (

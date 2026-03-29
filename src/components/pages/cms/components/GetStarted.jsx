@@ -86,10 +86,10 @@ function GetStarted() {
           <p className="text-cyan-600 font-semibold text-lg mb-2">
             Fast & Easy Start
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="h2_text mb-4">
             Get Started with Dispaly Lab
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="title_desc mx-auto">
             Three simple steps to transform your digital signage experience
           </p>
         </div>

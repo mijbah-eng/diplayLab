@@ -1,6 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import AdsCard from "./adsCard";
 import AdsCard2 from "./adsCard2";
+import AdsCard3 from "./adsCard3";
 
 function Advertisement_Solutions() {
   const adsCardDatas = [
@@ -8,65 +9,89 @@ function Advertisement_Solutions() {
       ads_card_image_url: "/images/advertisement/restaurant.png",
       ads_card_title: "Restaurant",
       ads_card_description:
-        "Promote menu items, daily specials, and limited-time offers using vibrant digital displays. Digital signage helps restaurants attract customer attention and influence purchasing decisions. Update promotions instantly across locations to keep menus fresh and engaging.",
+        "Promote menu items, specials, and offers with dynamic digital displays that attract attention and update instantly across locations.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
+      color_from: "#796655",
+      color_to: "#2b231d",
+      product_name: ["Digital Menu Board"],
     },
     {
       ads_card_image_url: "/images/advertisement/shopping-mall.png",
       ads_card_title: "Shopping Mall",
       ads_card_description:
-        "Engage shoppers with dynamic advertisements, promotions, and brand campaigns. Digital displays placed in high-traffic mall areas increase visibility for retailers and advertisers. Deliver targeted messaging to influence purchasing decisions and improve customer experience.",
+        "Engage shoppers with dynamic ads and targeted messaging on high-traffic digital displays to boost visibility, influence purchases, and enhance customer experience.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
+      color_from: "#dfdfdf",
+      color_to: "#474747",
+      product_name: ["Indoor Display"],
     },
     {
       ads_card_image_url: "/images/advertisement/corporate-office.png",
       ads_card_title: "Corporate Office",
       ads_card_description:
-        "Improve internal communication with company announcements, dashboards, and updates. Digital signage helps organizations share important information across departments and locations. Display meeting schedules, KPIs, and corporate messaging in real time.",
+        "Improve internal communication by sharing real-time announcements, dashboards, and updates across locations with dynamic digital signage.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
+      color_from: "#814f4f",
+      color_to: "#201313",
+      product_name:['Digital Menu Board',"Indoor Display"],
     },
     {
       ads_card_image_url: "/images/advertisement/hospital.png",
       ads_card_title: "Hospital",
       ads_card_description:
-        "Provide patients and visitors with important information, directions, and health announcements. Digital signage improves communication in waiting areas, lobbies, and departments. Display appointment updates, health tips, and emergency notifications effectively.",
+        "Provide patients and visitors with real-time information, directions, and health updates through digital signage that enhances communication across healthcare spaces.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
+      color_from: "#dfdfdf",
+      color_to: "#474747",
+      product_name:["Presentation Display"],
     },
     {
       ads_card_image_url: "/images/advertisement/grocery-shop.png",
       ads_card_title: "Grocery Shop",
       ads_card_description:
-        "Highlight weekly promotions, discounts, and featured products with digital signage displays. Attract customer attention near checkout counters, aisles, and store entrances. Improve in-store engagement while increasing product visibility and sales.",
+        "Highlight promotions, discounts, and featured products with digital signage to boost visibility, engage shoppers, and drive in-store sales.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
+      color_from: "#3d3b91",
+      color_to: "#151533",
+      product_name:["Digital Menu Board"],
     },
     {
       ads_card_image_url: "/images/advertisement/bank.png",
       ads_card_title: "Bank",
       ads_card_description:
-        "Digital signage helps banks communicate financial services, promotions, and important updates. Display queue information, customer guidance, and banking services across branches. Improve customer experience while promoting new products such as loans or credit services.",
+        "Use digital signage in banks to share services, updates, and queue info while promoting products and enhancing customer experience.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
+      color_from: "#dfdfdf",
+      color_to: "#474747",
+      product_name:["Digital Menu Board","Indoor Display"],
     },
     {
       ads_card_image_url: "/images/advertisement/airport.png",
       ads_card_title: "Airport",
       ads_card_description:
-        "Keep passengers informed with real-time updates on flights, schedules, and gate changes. Digital signage can also display advertisements and promotions across airport terminals. Enhance passenger experience while maximizing advertising opportunities in high-traffic locations.",
+        "Keep passengers informed with real-time flight updates while displaying ads to enhance experience and maximize visibility in busy terminals.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
+      color_from: "#dfdfdf",
+      color_to: "#474747",
+      product_name:[],
     },
     {
       ads_card_image_url: "/images/advertisement/train-station.png",
       ads_card_title: "Train Station",
       ads_card_description:
-        "Deliver real-time travel information including arrival times, delays, and platform updates. Digital displays help commuters navigate stations efficiently while staying informed. Advertising spaces also allow brands to reach thousands of daily travelers.",
+        "Deliver real-time travel updates and navigation info with digital displays while enabling brands to reach thousands of daily commuters.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
+      color_from: "#dfdfdf",
+      color_to: "#474747",
+      product_name:[],
     },
     // {
     //   ads_card_image_url: "/images/advertisement/high-traffic.png",
@@ -80,9 +105,12 @@ function Advertisement_Solutions() {
       ads_card_image_url: "/images/advertisement/showroom.jpg",
       ads_card_title: "Showroom",
       ads_card_description:
-        "Showcase products, brand stories, and promotional campaigns using immersive digital displays. Digital signage enhances the showroom experience by presenting dynamic visual content. Help customers explore products, promotions, and features in an engaging way.",
+        "Showcase products and brand stories with immersive digital displays that engage customers and enhance the showroom experience.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
+      color_from: "#dfdfdf",
+      color_to: "#474747",
+      product_name:["Indoor Display"],
     },
   ];
   return (
@@ -92,7 +120,7 @@ function Advertisement_Solutions() {
           <h2 className="text-center h2_text">
             Display Lab Advertisement Solutions
           </h2>
-           <div className="h-6"></div>
+          <div className="h-6"></div>
           <p className="title_desc">
             Turn screens into revenue-generating advertising platforms.
           </p>
@@ -100,6 +128,7 @@ function Advertisement_Solutions() {
             <TabsList>
               <TabsTrigger value="cardstyle1">Card Style1</TabsTrigger>
               <TabsTrigger value="cardstyle2">Card Style2</TabsTrigger>
+              <TabsTrigger value="cardstyle3">Card Style3</TabsTrigger>
             </TabsList>
             <TabsContent value="cardstyle1">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -112,6 +141,13 @@ function Advertisement_Solutions() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {adsCardDatas.map((item, index) => (
                   <AdsCard2 key={index} data={item} />
+                ))}
+              </div>
+            </TabsContent>
+            <TabsContent value="cardstyle3">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {adsCardDatas.map((item, index) => (
+                  <AdsCard3 key={index} data={item} />
                 ))}
               </div>
             </TabsContent>
