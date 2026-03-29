@@ -54,7 +54,7 @@ function ContentSection() {
           value={singleContentData?.contentValue}
         >
           <div className="grid gap-10 items-center">
-            <div className="h-[300px] overflow-hidden rounded-xl">
+            <div className=" overflow-hidden rounded-xl">
               <img
                 src={singleContentData?.contentImageUrl}
                 className="w-full h-full object-cover"

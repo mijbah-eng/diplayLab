@@ -126,9 +126,9 @@ function Advertisement_Solutions() {
           </p>
           <Tabs defaultValue="cardstyle1" className="w-full">
             <TabsList>
-              <TabsTrigger value="cardstyle1">Card Style1</TabsTrigger>
-              <TabsTrigger value="cardstyle2">Card Style2</TabsTrigger>
-              <TabsTrigger value="cardstyle3">Card Style3</TabsTrigger>
+              <TabsTrigger className={"cursor-pointer"}  value="cardstyle1">Card Style1</TabsTrigger>
+              <TabsTrigger className={"cursor-pointer"} value="cardstyle2">Card Style2</TabsTrigger>
+              <TabsTrigger className={"cursor-pointer"} value="cardstyle3">Card Style3</TabsTrigger>
             </TabsList>
             <TabsContent value="cardstyle1">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

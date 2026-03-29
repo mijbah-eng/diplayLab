@@ -6,11 +6,11 @@ import ClientLogoSlider from "@/components/client_logo_slider";
 function Hero() {
   return (
     <section className="relative pt-8 md:pt-24 lg:pt-30 overflow-hidden">
-      <div className="max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Digital Signage Software to Power Screens Anywhere
+              Digital Signage <br /> Software to Power <br /> Screens Anywhere
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
               Turn any screen into a powerful communication and marketing
