@@ -31,7 +31,7 @@ function Advertisement_Solutions() {
       product_name: ["Digital Menu Board", "Indoor Display"],
     },
     {
-      ads_card_image_url: "/images/advertisement/Hospital.png",
+      ads_card_image_url: "/images/advertisement/Hospital12.png",
       ads_card_title: "Hospital",
       ads_card_description:
         "Provide patients and visitors with realtime information directions and health updates through digital signage spaces.",
@@ -49,7 +49,7 @@ function Advertisement_Solutions() {
       product_name: ["Digital Menu Board"],
     },
     {
-      ads_card_image_url: "/images/advertisement/Bank.png",
+      ads_card_image_url: "/images/advertisement/Bank12.png",
       ads_card_title: "Bank",
       ads_card_description:
         "Use digital signage in banks to share services, updates, and queue info while promoting products and enhancing customer experience.",

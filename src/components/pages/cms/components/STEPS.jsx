@@ -17,7 +17,7 @@ function STEPS_SECTION() {
         "Add images, videos, dashboards, or templates through the cloud dashboard.",
     },
     {
-      image: "/images/advertisement/Bank.png",
+      image: "/images/advertisement/Bank12.png",
       number: "3",
       title: "Publish to Displays",
       description:

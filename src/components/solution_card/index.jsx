@@ -62,7 +62,7 @@ function SolutionCard() {
                     muted
                     preload="none"
                   >
-                    <source src="/videos/Digital Signage Network.mp4" />
+                    <source src="/videos/hero.mp4" />
                   </video>
                 </div>
               </div>
