@@ -10,6 +10,7 @@ import NavberMain from "@/components/NavberMain";
 import RentalProducts from "@/components/rental";
 import SolutionCard from "@/components/solution_card";
 import UseCase from "@/components/useCase";
+import { homeFaqsData } from "@/utils";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
           <Advertisement_Solutions />
           <RentalProducts />
           <CustomerReviews />
-          <FAQ />
+          <FAQ datas={homeFaqsData} />
         </div>
       </div>
       <Footer />

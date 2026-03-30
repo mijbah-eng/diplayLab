@@ -5,7 +5,7 @@ function DigitalSignage() {
         "https://www.yodeck.com/wp-content/uploads/2023/09/TV-Screen-1.jpg",
       title: "Manufacturing",
       description:
-        "From HQ to the factory floor, our web based digital signage improves productivity and safety.",
+        " Improve safety and productivity from the factory floor to the office.Share real-time updates, alerts, and operational insights.",
     },
 
     {
@@ -13,7 +13,7 @@ function DigitalSignage() {
         "https://www.yodeck.com/wp-content/uploads/2023/09/Education-1.jpg",
       title: "Education",
       description:
-        "Inspire students and faculty with captivating digital screens that bring a sense of belongingness.",
+        "Engage students and staff with dynamic and informative displays.Share announcements, schedules, and campus updates بسهولة.",
     },
 
     {
@@ -21,21 +21,21 @@ function DigitalSignage() {
         "https://www.yodeck.com/wp-content/uploads/2023/09/restaurant-digital-signage-yodeck.jpg",
       title: "Restaurants",
       description:
-        "Dazzling menu boards and posters will take upselling & customer satisfaction to new heights.",
+        "Showcase menus, promotions, and special offers with eye-catching visuals.Boost upselling and enhance the dining experience.",
     },
 
     {
       img_src: "https://www.yodeck.com/wp-content/uploads/2023/09/Retail.jpg",
       title: "Retail",
       description:
-        "Amaze shoppers using digital billboard software to showcase products and boost sales.",
+        "Highlight products, promotions, and campaigns to attract shoppers.Increase engagement and drive more in-store sales.",
     },
 
     {
       img_src: "https://www.yodeck.com/wp-content/uploads/2023/09/Offices.jpg",
       title: "Offices",
       description:
-        "Improve performance in your office environment with screens that inform and engage.",
+        "Enhance workplace communication with news, dashboards, and updates.Keep teams informed, connected, and productive.",
     },
 
     {
@@ -43,12 +43,13 @@ function DigitalSignage() {
         "https://www.yodeck.com/wp-content/uploads/2023/09/Healthcare.jpg",
       title: "Healthcare",
       description:
-        "Promote health tips, raise awareness and improve facilities navigation with engaging screens.",
+        "Share important information, directions, and health awareness content.Improve patient experience and streamline communication.",
     },
   ];
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {DigitalSignagePlatfroms.map(
             (singleDigitalSignagePlatfrom, index) => (

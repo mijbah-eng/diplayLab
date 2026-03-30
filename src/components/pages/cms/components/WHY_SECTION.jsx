@@ -763,10 +763,8 @@ function WHY_SECTION() {
   return (
     <>
       <div className="space-large"></div>
-      <div className="container mx-auto">
-        <div className="title">
-          <h2 className="title mb-10 text-center">Why Display Lab</h2>
-        </div>
+      <section className="py-16 md:py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {featureSections.map((singleFeature, index) => (
           <div
             className={`${singleFeature?.columns === 2 ? "grid_two_col" : "grid_one_col"}`}
@@ -781,11 +779,11 @@ function WHY_SECTION() {
             ))}
           </div>
         ))}
-
         <div className="flex justify-center items-center">
           <Button className={"my-10"} btnName={"Get Started"} route={"/cms"} />
         </div>
       </div>
+      </section>
     </>
   );
 }

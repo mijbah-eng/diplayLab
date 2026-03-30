@@ -107,7 +107,7 @@ export const systemConnectivity = [
   { name: "Control", value: "Infrared remote control (notouch)" },
   { name: "CMS Software", value: "www.signagemall.com" },
 ];
-// slug 
+// slug
 export const displayPerformanceAll = {
   "kiosk-pro": [
     { name: "Resolution", value: "1080×1920 Full HD" },
@@ -145,3 +145,75 @@ export const systemConnectivityAll = {
     { name: "CMS Software", value: "www.signagemall.com" },
   ],
 };
+
+export const homeFaqsData = [
+  {
+    question: "What is digital signage?",
+
+    answer:
+      "Digital signage is a technology that allows businesses to display dynamic content such as advertisements, promotions, menus, announcements, and information on digital screens. With Display Lab, businesses can easily manage and update content across multiple screens from a centralized platform.",
+  },
+
+  {
+    question: "How does Display Lab digital signage work?",
+
+    answer:
+      "Display Lab uses a cloud-based CMS that allows you to upload, manage, and schedule content remotely. Once your screens are connected, your content can be updated instantly across multiple locations from a single dashboard.",
+  },
+
+  {
+    question: "What types of content can be displayed on digital signage?",
+
+    answer:
+      "Display Lab supports a wide range of content including images, videos, web pages, menus, dashboards, social media feeds, and advertisements. Content can also be scheduled to play at specific times and locations.",
+  },
+
+  {
+    question: "Does Display Lab provide digital signage hardware?",
+
+    answer:
+      "Yes. Display Lab offers a variety of professional digital signage displays including indoor displays, kiosks, menu boards, wall-mounted screens, and outdoor signage designed for commercial environments.",
+  },
+  {
+    question: "Do you offer digital signage rental services?",
+
+    answer:
+      "Display Lab provides flexible rental solutions for events, exhibitions, product launches, and temporary installations. Businesses can rent high-quality digital displays and kiosks without investing in permanent hardware.",
+  },
+  {
+    question: " Can digital signage be used for advertising?",
+
+    answer:
+      "Yes. Display Lab digital signage solutions allow businesses to display advertisements and promotional campaigns on screens in high-traffic locations, helping increase brand visibility and engagement.",
+  },
+];
+export const cmsFaqsData = [
+  {
+    question: "What Is Digital Signage And How Does It Work?",
+
+    answer:
+      "Digital signage is a system that uses screens to display content like images, videos, and real-time information. It works through a cloud-based CMS that allows you to create, manage, and publish content remotely. Updates can be made instantly and displayed across one or multiple screens.",
+  },
+
+  {
+    question:
+      "What Are The Benefits Of Digital Signage For Workplace Communication?",
+
+    answer:
+      "Digital signage improves internal communication by sharing announcements, KPIs, and updates in real time. It keeps employees informed, engaged, and aligned across departments. It also reduces reliance on emails and printed materials.",
+  },
+
+  {
+    question: "How Can Digital Signage Improve Customer Engagement?",
+
+    answer:
+      "Digital signage captures attention with dynamic and visually appealing content. It helps promote products, offers, and important information effectively. This leads to better customer experiences and influences purchasing decisions.",
+  },
+
+  {
+    question: "What Are Some Different Types Of Digital Signage Displays?",
+
+    answer:
+      " Common types include video walls, interactive kiosks, menu boards, and single-screen displays. They can be used in retail stores, offices, restaurants, and public spaces. Each type is designed to suit different business needs and environments.",
+  },
+];

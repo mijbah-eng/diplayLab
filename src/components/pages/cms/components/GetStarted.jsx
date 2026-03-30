@@ -22,9 +22,9 @@ function GetStarted() {
           <line x1="12" x2="12" y1="17" y2="21"></line>
         </svg>
       ),
-      title: "Select your hardware",
+      title: "Connect Your Device",
       description:
-        "Choose from any screen or device. We work with all major brands and platforms.",
+        "Install the player app on your screen or media device.Pair it instantly using a secure code to get started in seconds.",
     },
     {
       cardNumber: "02",
@@ -47,9 +47,9 @@ function GetStarted() {
           <circle cx="12" cy="12" r="3"></circle>
         </svg>
       ),
-      title: "Set up your software",
+      title: "Create & Upload Content",
       description:
-        "Quick and easy installation. Get up and running in minutes with our guided setup.",
+        "Upload your media, use templates, or design content بسهولة. Add apps,images, and videos to build engaging playlists.",
     },
     {
       cardNumber: "03",
@@ -74,21 +74,19 @@ function GetStarted() {
           <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
         </svg>
       ),
-      title: "Engage your audience",
+      title: "Publish to Your Screens",
       description:
-        "Start creating and displaying stunning content that captures attention and drives results.",
+        "Assign content to one or multiple displays instantly.Update and manage everything remotely, anytime.",
     },
   ];
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section className="py-16 md:py-24 bg-linear-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <p className="text-cyan-600 font-semibold text-lg mb-2">
             Fast & Easy Start
           </p>
-          <h2 className="h2_text mb-4">
-            Get Started with Dispaly Lab
-          </h2>
+          <h2 className="h2_text mb-4">Get Started with Dispaly Lab</h2>
           <p className="title_desc mx-auto">
             Three simple steps to transform your digital signage experience
           </p>
@@ -97,12 +95,18 @@ function GetStarted() {
           {getStartedStap.map((singleStartedStap, index) => (
             <div className="group relative" key={index}>
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all h-full relative overflow-hidden group">
-                <div className={`absolute inset-0 bg-gradient-to-br ${singleStartedStap?.cardColor} opacity-0 group-hover:opacity-5 transition-opacity`}></div>
+                <div
+                  className={`absolute inset-0 bg-linear-to-br ${singleStartedStap?.cardColor} opacity-0 group-hover:opacity-5 transition-opacity`}
+                ></div>
                 <div className="relative text-center">
-                  <div className={`group-hover:opacity-70 opacity-0 transition-opacity absolute top-0 right-0 text-6xl font-bold bg-gradient-to-br ${singleStartedStap?.cardColor} bg-clip-text text-transparent mb-6`}>
+                  <div
+                    className={`group-hover:opacity-70 opacity-0 transition-opacity absolute top-0 right-0 text-6xl font-bold bg-linear-to-br ${singleStartedStap?.cardColor} bg-clip-text text-transparent mb-6`}
+                  >
                     {singleStartedStap?.cardNumber}
                   </div>
-                  <div className={`mx-auto w-16 h-16 bg-gradient-to-br ${singleStartedStap?.cardColor} rounded-2xl flex items-center justify-center mb-6 shadow-lg`}>
+                  <div
+                    className={`mx-auto w-16 h-16 bg-linear-to-br ${singleStartedStap?.cardColor} rounded-2xl flex items-center justify-center mb-6 shadow-lg`}
+                  >
                     {singleStartedStap?.svg}
                   </div>
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
