@@ -2,7 +2,7 @@ import { Tabs, TabsList } from "../ui/tabs";
 import ContentSection from "./ContentSection";
 import TabSection from "./TabSection";
 
-function UseCase() {
+function DigitalSignageSolutions() {
   return (
     <>
       <div className="py-16 md:py-24">
@@ -80,4 +80,4 @@ function UseCase() {
   );
 }
 
-export default UseCase;
+export default DigitalSignageSolutions;

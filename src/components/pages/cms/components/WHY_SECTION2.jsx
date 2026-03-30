@@ -135,11 +135,10 @@ function WHY_SECTION2() {
   ];
   return (
     <>
-      <section className="py-16 md:py-24 bg-white">
+      <section className="">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {featureSections?.map((singleFeature, index) => (
-
               <div className="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-sm text-center">
                 <div className="mb-4">
                   {/* Icon */}
@@ -152,7 +151,6 @@ function WHY_SECTION2() {
                   {singleFeature?.description}
                 </p>
               </div>
-
             ))}
           </div>
         </div>

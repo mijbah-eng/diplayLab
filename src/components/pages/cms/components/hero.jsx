@@ -19,7 +19,7 @@ function CMS_HERO() {
         strategy="afterInteractive"
       />
       {/* .......................................... */}
-      <section className="relative bg-gradient-to-br from-cyan-50 via-blue-50 to-purple-50 py-16 md:py-24 lg:py-32 overflow-hidden">
+      <section className="relative bg-linear-to-br from-cyan-50 via-blue-50 to-purple-50 py-16 md:py-24 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
@@ -29,9 +29,9 @@ function CMS_HERO() {
                 </span>
               </div>
               <h1 className="h1_text">
-                Digital Signage That Brings Your Content 
+                Digital Signage That Brings Your Content
                 <span className="text-cyan-600 block">
-                  {" "} {" "} 
+                  {" "}
                   <Typewriter
                     options={{
                       strings: ["...", "To Life"],
@@ -129,7 +129,7 @@ function CMS_HERO() {
                   }}
                   className="absolute -bottom-8 -left-8 bg-white rounded-lg shadow-xl p-2 w-32 md:w-40"
                 >
-                  <div className="bg-gradient-to-br from-[#3095b5] to-[#105783] rounded aspect-video"></div>
+                  <div className="bg-linear-to-br from-[#3095b5] to-[#105783] rounded aspect-video"></div>
                 </motion.div>
                 <motion.div
                   animate={{
@@ -143,7 +143,7 @@ function CMS_HERO() {
                   }}
                   className="absolute -top-8 -right-8 bg-white rounded-lg shadow-xl p-2 w-32 md:w-40"
                 >
-                  <div className="bg-gradient-to-br from-[#105783] to-[#3095b5] rounded aspect-video"></div>
+                  <div className="bg-linear-to-br from-[#105783] to-[#3095b5] rounded aspect-video"></div>
                 </motion.div>
               </div>
             </div>

@@ -1,12 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import ClientLogoSlider from "@/components/client_logo_slider";
+import Link from "next/link";
 
 function Hero() {
   return (
-    <section className="relative pt-8 md:pt-24 lg:pt-30 overflow-hidden">
-      <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="relative bg-linear-to-br from-cyan-50 via-blue-50 to-purple-50 py-16 md:py-24 lg:py-32 overflow-hidden">
+      <div className="max-w-375 mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
@@ -93,7 +93,7 @@ function Hero() {
           </div>
         </div>
         <div className="space-large"></div>
-         <ClientLogoSlider />
+        <ClientLogoSlider />
       </div>
     </section>
   );
