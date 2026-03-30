@@ -1,7 +1,4 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import AdsCard from "./adsCard";
-import AdsCard2 from "./adsCard2";
-import AdsCard3 from "./adsCard3";
 
 function Advertisement_Solutions() {
   const adsCardDatas = [
@@ -30,7 +27,7 @@ function Advertisement_Solutions() {
         "Improve internal communication by sharing realtime updates and dashboards across locations with digital signage",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
-      product_name:['Digital Menu Board',"Indoor Display"],
+      product_name: ["Digital Menu Board", "Indoor Display"],
     },
     {
       ads_card_image_url: "/images/advertisement/Hospital.png",
@@ -39,7 +36,7 @@ function Advertisement_Solutions() {
         "Provide patients and visitors with realtime information directions and health updates through digital signage spaces.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
-      product_name:["Presentation Display"],
+      product_name: ["Presentation Display"],
     },
     {
       ads_card_image_url: "/images/advertisement/Groceryshoop.png",
@@ -48,7 +45,7 @@ function Advertisement_Solutions() {
         "Highlight promotions, discounts, and featured products with digital signage to boost visibility, engage shoppers, and drive in-store sales.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
-      product_name:["Digital Menu Board"],
+      product_name: ["Digital Menu Board"],
     },
     {
       ads_card_image_url: "/images/advertisement/Bank.png",
@@ -57,7 +54,7 @@ function Advertisement_Solutions() {
         "Use digital signage in banks to share services, updates, and queue info while promoting products and enhancing customer experience.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
-      product_name:["Digital Menu Board","Indoor Display"],
+      product_name: ["Digital Menu Board", "Indoor Display"],
     },
     {
       ads_card_image_url: "/images/advertisement/Airport.jpg",
@@ -66,7 +63,7 @@ function Advertisement_Solutions() {
         "Keep passengers informed with realtime flight updates while displaying to enhance experience and maximize visibility.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
-      product_name:[],
+      product_name: [],
     },
     {
       ads_card_image_url: "/images/advertisement/Train Station.jpg",
@@ -75,7 +72,7 @@ function Advertisement_Solutions() {
         "Deliver real-time travel updates and navigation info with digital displays while enabling brands to reach thousands of daily commuters.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
-      product_name:[],
+      product_name: [],
     },
     {
       ads_card_image_url: "/images/advertisement/High-Traffic Locations.jpg",
@@ -84,7 +81,7 @@ function Advertisement_Solutions() {
         "Maximize visibility in high traffic areas using digital signage to deliver targeted ads and grow revenue for businesses.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
-      product_name:[],
+      product_name: [],
     },
     {
       ads_card_image_url: "/images/advertisement/Shwroom.png",
@@ -93,7 +90,7 @@ function Advertisement_Solutions() {
         "Showcase products and brand stories with immersive digital displays that engage customers and enhance showroom experience.",
       ads_card_link_text: "Learn More",
       ads_card_link_address: "/",
-      product_name:["Indoor Display"],
+      product_name: ["Indoor Display"],
     },
   ];
   return (
@@ -104,37 +101,16 @@ function Advertisement_Solutions() {
             Display Lab Advertisement Solutions
           </h2>
           <div className="h-6"></div>
-          <p className="title_desc">
+          <p className="title_desc mb-8">
             Turn screens into revenue-generating advertising platforms.
           </p>
-          <Tabs defaultValue="cardstyle1" className="w-full">
-            <TabsList>
-              <TabsTrigger className={"cursor-pointer"}  value="cardstyle1">Card Style1</TabsTrigger>
-              <TabsTrigger className={"cursor-pointer"} value="cardstyle2">Card Style2</TabsTrigger>
-              <TabsTrigger className={"cursor-pointer"} value="cardstyle3">Card Style3</TabsTrigger>
-            </TabsList>
-            <TabsContent value="cardstyle1">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {adsCardDatas.map((item, index) => (
-                  <AdsCard key={index} data={item} />
-                ))}
-              </div>
-            </TabsContent>
-            <TabsContent value="cardstyle2">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {adsCardDatas.map((item, index) => (
-                  <AdsCard2 key={index} data={item} />
-                ))}
-              </div>
-            </TabsContent>
-            <TabsContent value="cardstyle3">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {adsCardDatas.map((item, index) => (
-                  <AdsCard3 key={index} data={item} />
-                ))}
-              </div>
-            </TabsContent>
-          </Tabs>
+          <div className="h-6"></div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {adsCardDatas.map((item, index) => (
+              <AdsCard key={index} data={item} />
+            ))}
+          </div>
         </div>
       </div>
     </>
