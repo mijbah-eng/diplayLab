@@ -4,7 +4,7 @@ function ContentSection() {
   const contentDatas = [
     {
       contentImageUrl:
-        "https://www.dotsignage.com/wp-content/uploads/2024/03/retail-store-digital-tv-screen.jpg",
+        "/images/Every-Industry/Retail.jpg",
       contentTitle: "Retail",
       contentDescription:
         "Promote offers, highlight products, and create engaging in-store experiences.",
@@ -12,7 +12,7 @@ function ContentSection() {
     },
     {
       contentImageUrl:
-        "https://www.dotsignage.com/wp-content/uploads/2024/03/corporate-digital-tv-signage.jpg",
+        "/images/Every-Industry/Corporate Offices.jpg",
       contentTitle: "Corporate Offices",
       contentDescription:
         "Improve internal communication with company news, dashboards, and announcements.",
@@ -20,7 +20,7 @@ function ContentSection() {
     },
     {
       contentImageUrl:
-        "https://www.dotsignage.com/wp-content/uploads/2024/03/school-digital-signage.jpg",
+        "/images/Every-Industry/Restaurants.jpg",
       contentTitle: "Restaurants",
       contentDescription:
         "Display digital menus, promotions, and dynamic pricing updates.",
@@ -28,7 +28,7 @@ function ContentSection() {
     },
     {
       contentImageUrl:
-        "https://www.dotsignage.com/wp-content/uploads/2024/03/healthcare-digital-display.jpg",
+        "/images/Every-Industry/Healthcare.jpg",
       contentTitle: "Healthcare",
       contentDescription:
         "Share important information with patients, visitors, and staff across facilities.",
@@ -36,7 +36,7 @@ function ContentSection() {
     },
     {
       contentImageUrl:
-        "https://www.dotsignage.com/wp-content/uploads/2024/03/school-digital-signage.jpg",
+        "/images/Every-Industry/Education.jpg",
       contentTitle: "Education",
       contentDescription:
         "Communicate announcements, schedules, and campus updates on digital screens.",

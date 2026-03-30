@@ -86,7 +86,7 @@ function Hero() {
                   muted
                   preload="none"
                 >
-                  <source src="https://cdn.pickcel.com/videos/main/hero-video.hMW0RsrCv5Su.webm" />
+                  <source src="/videos/hero.mp4" />
                 </video>
               </div>
             </div>

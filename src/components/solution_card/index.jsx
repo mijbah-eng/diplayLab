@@ -62,7 +62,7 @@ function SolutionCard() {
                     muted
                     preload="none"
                   >
-                    <source src="https://cdn.pickcel.com/videos/main/hero-video.hMW0RsrCv5Su.webm" />
+                    <source src="/videos/Digital Signage Network.mp4" />
                   </video>
                 </div>
               </div>
