@@ -1,5 +1,6 @@
 import AdsCard from "./adsCard";
 
+
 function Advertisement_Solutions() {
   const adsCardDatas = [
     {
@@ -66,7 +67,7 @@ function Advertisement_Solutions() {
       product_name: [],
     },
     {
-      ads_card_image_url: "/images/advertisement/Train Station.jpg",
+      ads_card_image_url: "/images/advertisement/Train_Station.jpg",
       ads_card_title: "Train Station",
       ads_card_description:
         "Deliver real-time travel updates and navigation info with digital displays while enabling brands to reach thousands of daily commuters.",
@@ -75,7 +76,7 @@ function Advertisement_Solutions() {
       product_name: [],
     },
     {
-      ads_card_image_url: "/images/advertisement/High-Traffic Locations.jpg",
+      ads_card_image_url: "/images/advertisement/High-Traffic_Locations.jpg",
       ads_card_title: "High-Traffic Locations",
       ads_card_description:
         "Maximize visibility in high traffic areas using digital signage to deliver targeted ads and grow revenue for businesses.",

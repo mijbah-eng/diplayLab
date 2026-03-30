@@ -1,11 +1,15 @@
+"use client";
+import Image from "next/image";
+
 function AdsCard({ data }) {
-  
   return (
     <div
       className={`border rounded-xl hover:shadow-lg transition overflow-hidden`}
     >
       <div className="">
-        <img
+        <Image
+          width={1000}
+          height={1000}
           src={data.ads_card_image_url}
           alt={data.ads_card_title}
           className="w-full h-full lg:h-62.5 object-cover mb-4"

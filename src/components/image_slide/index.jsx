@@ -9,7 +9,7 @@ const images = [
   "/images/advertisement/Groceryshoop.png",
   "/images/advertisement/Bank.png",
   "/images/advertisement/Airport.jpg",
-  "/images/advertisement/Train Station.jpg",
+  "/images/advertisement/Train_Station.jpg",
   "/images/advertisement/High-Traffic Locations.jpg",
   "/images/advertisement/Shwroom.png",
 ];

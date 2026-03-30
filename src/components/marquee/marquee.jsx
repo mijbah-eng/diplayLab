@@ -13,7 +13,7 @@ function MarqueeSection({ images }) {
               alt={`slide-${index}`}
               width={400}
               height={400}
-              className="w-full h-[220px] md:w-[349px] md:h-[192px] lg:w-[559px] lg:h-[316px] object-cover 
+              className="w-full h-55 md:w-87.25 md:h-48 lg:w-139.75 lg:h-79 object-cover 
     transform transition-transform duration-700 ease-in-out group-hover:scale-105"
             />
 
@@ -48,7 +48,7 @@ function MarqueeSection({ images }) {
               alt={`slide-${index}`}
               width={400}
               height={400}
-              className="w-full h-[220px] md:w-[349px] md:h-[192px] lg:w-[559px] lg:h-[316px] object-cover 
+              className="w-full h-55 md:w-87.25 md:h-48 lg:w-139.75 lg:h-79 object-cover 
     transform transition-transform duration-700 ease-in-out group-hover:scale-105"
             />
 

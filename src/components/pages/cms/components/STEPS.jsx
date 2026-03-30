@@ -3,21 +3,21 @@ import Image from "next/image";
 function STEPS_SECTION() {
   const steps = [
     {
-      image: "/images/advertisement/showroom.jpg",
+      image: "/images/advertisement/Shwroom.png",
       number: "1",
       title: "Connect Your Screen",
       description:
         "Install the player on your device and connect it to any screen.",
     },
     {
-      image: "/images/advertisement/advertisement3.png",
+      image: "/images/advertisement/Shoopingmall.png",
       number: "2",
       title: "Upload or Create Content",
       description:
         "Add images, videos, dashboards, or templates through the cloud dashboard.",
     },
     {
-      image: "/images/advertisement/bank.png",
+      image: "/images/advertisement/Bank.png",
       number: "3",
       title: "Publish to Displays",
       description:
