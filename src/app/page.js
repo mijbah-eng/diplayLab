@@ -19,7 +19,6 @@ export default function Home() {
       <div className="main_div">
         <Hero />
         <div>
-          <ImageSlide />
           <CMS_Marketing />
           <SolutionCard />
           <DigitalSignageSolutions />
@@ -27,6 +26,7 @@ export default function Home() {
           <RentalProducts />
           <CustomerReviews />
           <FAQ datas={homeFaqsData} />
+          <ImageSlide />
         </div>
       </div>
       <Footer />
