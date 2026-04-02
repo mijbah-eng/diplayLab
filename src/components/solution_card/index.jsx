@@ -35,6 +35,22 @@ function SolutionCard() {
       link_Text: "Learn more",
       link: "",
     },
+    {
+      icon: "/images/explore-Display/Icon-04.png",
+      title: "Easy Content Management",
+      description:
+        "Easily display content and publish updates with our simple, user-friendly CMS.Create engaging designs with drag-and-drop tools and customizable templates.",
+      link_Text: "Learn more",
+      link: "",
+    },
+    {
+      icon: "/images/explore-Display/Icon-04.png",
+      title: "Easy Content Management",
+      description:
+        "Easily display content and publish updates with our simple, user-friendly CMS.Create engaging designs with drag-and-drop tools and customizable templates.",
+      link_Text: "Learn more",
+      link: "",
+    },
   ];
 
   return (
@@ -68,6 +84,7 @@ function SolutionCard() {
               </div>
             </div>
           </div>
+          {/* video Section end */}
           <h2 className="h2_text text-center">
             Powerful Tools to Run <br /> Your Digital Signage Network
           </h2>
@@ -82,9 +99,8 @@ function SolutionCard() {
           <div className="h-14"></div>
 
           {/* Cards */}
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {card_Data.map((card, index) => (
-              // <SingleSolutionCard key={index} card={card} />
               <SingleSolutionCard2 key={index} card={card} />
             ))}
           </div>

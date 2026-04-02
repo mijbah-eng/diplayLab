@@ -217,3 +217,73 @@ export const cmsFaqsData = [
       " Common types include video walls, interactive kiosks, menu boards, and single-screen displays. They can be used in retail stores, offices, restaurants, and public spaces. Each type is designed to suit different business needs and environments.",
   },
 ];
+
+export const home_hero_logos = [
+  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd67837a212dc9acdf39b_levis.svg",
+  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd56841528275fbdc40e9_yamaha.svg",
+  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd44e13ae75901836e593_redbull.svg",
+  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd61041528275fbdcd41f_instacart.svg",
+  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd6c96b44f080a5f5abe7_goodwill.svg",
+  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd67837a212dc9acdf39b_levis.svg",
+  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd56841528275fbdc40e9_yamaha.svg",
+  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd44e13ae75901836e593_redbull.svg",
+  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd61041528275fbdcd41f_instacart.svg",
+  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd6c96b44f080a5f5abe7_goodwill.svg",
+];
+
+export const adsCardDatas = [
+  {
+    ads_card_image_url: "/images/advertisement/Shoopingmall.png",
+    ads_card_title: "Shopping Mall",
+    ads_card_description:
+      "Engage shoppers with dynamic ads and targeted messaging on high traffic displays to boost reach and influence purchases",
+    ads_card_link_text: "See More",
+    ads_card_link_address: "/",
+    product_name: ["Indoor Display"],
+  },
+  {
+    ads_card_image_url: "/images/advertisement/Hospital12.png",
+    ads_card_title: "Hospital",
+    ads_card_description:
+      "Provide patients and visitors with realtime information directions and health updates through digital signage spaces.",
+    ads_card_link_text: "See More",
+    ads_card_link_address: "/",
+    product_name: ["Presentation Display"],
+  },
+  {
+    ads_card_image_url: "/images/advertisement/Groceryshoop.png",
+    ads_card_title: "Grocery Shop",
+    ads_card_description:
+      "Highlight promotions, discounts, and featured products with digital signage to boost visibility, engage shoppers, and drive in-store sales.",
+    ads_card_link_text: "See More",
+    ads_card_link_address: "/",
+    product_name: ["Digital Menu Board"],
+  },
+  {
+    ads_card_image_url: "/images/advertisement/Airport.jpg",
+    ads_card_title: "Airport",
+    ads_card_description:
+      "Keep passengers informed with realtime flight updates while displaying to enhance experience and maximize visibility.",
+    ads_card_link_text: "See More",
+    ads_card_link_address: "/",
+    product_name: [],
+  },
+  {
+    ads_card_image_url: "/images/advertisement/Train_Station.jpg",
+    ads_card_title: "Train Station",
+    ads_card_description:
+      "Deliver real-time travel updates and navigation info with digital displays while enabling brands to reach thousands of daily commuters.",
+    ads_card_link_text: "See More",
+    ads_card_link_address: "/",
+    product_name: [],
+  },
+  {
+    ads_card_image_url: "/images/advertisement/High-Traffic_Locations.jpg",
+    ads_card_title: "High-Traffic Locations",
+    ads_card_description:
+      "Maximize visibility in high traffic areas using digital signage to deliver targeted ads and grow revenue for businesses.",
+    ads_card_link_text: "See More",
+    ads_card_link_address: "/",
+    product_name: [],
+  },
+];

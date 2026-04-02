@@ -5,19 +5,8 @@ function RentalProducts() {
     <>
       <div className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
-          {/* Hero Section Start */}
-          {/* <div className="hero_section grid lg:grid-cols-2 gap-12 items-center pb-24">
-            <div className="text-center lg:text-left">
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Digital Signage Software to Power Screens Anywhere
-              </h1>
-              <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                Turn any screen into a powerful communication and marketing
-                platform. Create, manage, and publish content across multiple
-                displays from one cloud dashboard.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
-            </div>
+          {/* Hero Section */}
+          <div className="hero_section grid lg:grid-cols-2 gap-12 items-center pb-24">
             <div className="relative">
               <div className="relative">
                 <div
@@ -43,9 +32,19 @@ function RentalProducts() {
                 </div>
               </div>
             </div>
-          </div> */}
-          {/* Hero Section End */}
-
+            <div className="text-center lg:text-left">
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                Rental Products
+              </h1>
+              <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                Turn any screen into a powerful communication and marketing
+                platform. Create, manage, and publish content across multiple
+                displays from one cloud dashboard.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
+            </div>
+          </div>
+          {/* Heading */}
           <h2 className="h2_text text-center mb-6">
             Display Lab Rental Products
           </h2>

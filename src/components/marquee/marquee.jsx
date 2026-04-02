@@ -2,14 +2,19 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 function MarqueeSection({ images }) {
+  images.map((image,index) => {
+
+    console.log(image.src, image.label);
+  })
+  
   return (
     <>
       <Marquee pauseOnHover direction="left">
         {images.map((image, index) => (
-          <div className="relative group rounded-md overflow-hidden mx-2 flex flex-col gap-4">
+          <div className="relative group rounded-md overflow-hidden mx-2 flex flex-col gap-4" key={index}>
             {/* Image */}
             <Image
-              src={image}
+              src={image.src}
               alt={`slide-${index}`}
               width={400}
               height={400}
@@ -32,7 +37,7 @@ function MarqueeSection({ images }) {
       transform translate-y-4 group-hover:translate-y-0 
       transition duration-700 ease-in-out"
               >
-                Bank
+                {image.label}
               </p>
             </div>
           </div>
@@ -44,7 +49,7 @@ function MarqueeSection({ images }) {
           <div className="relative group rounded-md overflow-hidden mx-2 flex flex-col gap-4">
             {/* Image */}
             <Image
-              src={image}
+              src={image.src}
               alt={`slide-${index}`}
               width={400}
               height={400}
@@ -67,7 +72,7 @@ function MarqueeSection({ images }) {
       transform translate-y-4 group-hover:translate-y-0 
       transition duration-700 ease-in-out"
               >
-                Bank
+                {image.label}
               </p>
             </div>
           </div>

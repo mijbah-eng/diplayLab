@@ -4,7 +4,9 @@
   /* background: #0f0f0f; */
 }
 
-
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
 
 .swiper-slide {
   display: flex;

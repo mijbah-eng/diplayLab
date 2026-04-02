@@ -1,103 +1,51 @@
+import { adsCardDatas } from "@/utils";
 import AdsCard from "./adsCard";
 
-
 function Advertisement_Solutions() {
-  const adsCardDatas = [
-    {
-      ads_card_image_url: "/images/advertisement/Restaurant.jpg",
-      ads_card_title: "Restaurant",
-      ads_card_description:
-        "Promote menu items, specials, and offers with dynamic digital displays that attract attention and update instantly across locations.",
-      ads_card_link_text: "Learn More",
-      ads_card_link_address: "/",
-      product_name: ["Digital Menu Board"],
-    },
-    {
-      ads_card_image_url: "/images/advertisement/Shoopingmall.png",
-      ads_card_title: "Shopping Mall",
-      ads_card_description:
-        "Engage shoppers with dynamic ads and targeted messaging on high traffic displays to boost reach and influence purchases",
-      ads_card_link_text: "Learn More",
-      ads_card_link_address: "/",
-      product_name: ["Indoor Display"],
-    },
-    {
-      ads_card_image_url: "/images/advertisement/Corporate_Office.jpg",
-      ads_card_title: "Corporate Office",
-      ads_card_description:
-        "Improve internal communication by sharing realtime updates and dashboards across locations with digital signage",
-      ads_card_link_text: "Learn More",
-      ads_card_link_address: "/",
-      product_name: ["Digital Menu Board", "Indoor Display"],
-    },
-    {
-      ads_card_image_url: "/images/advertisement/Hospital12.png",
-      ads_card_title: "Hospital",
-      ads_card_description:
-        "Provide patients and visitors with realtime information directions and health updates through digital signage spaces.",
-      ads_card_link_text: "Learn More",
-      ads_card_link_address: "/",
-      product_name: ["Presentation Display"],
-    },
-    {
-      ads_card_image_url: "/images/advertisement/Groceryshoop.png",
-      ads_card_title: "Grocery Shop",
-      ads_card_description:
-        "Highlight promotions, discounts, and featured products with digital signage to boost visibility, engage shoppers, and drive in-store sales.",
-      ads_card_link_text: "Learn More",
-      ads_card_link_address: "/",
-      product_name: ["Digital Menu Board"],
-    },
-    {
-      ads_card_image_url: "/images/advertisement/Bank12.png",
-      ads_card_title: "Bank",
-      ads_card_description:
-        "Use digital signage in banks to share services, updates, and queue info while promoting products and enhancing customer experience.",
-      ads_card_link_text: "Learn More",
-      ads_card_link_address: "/",
-      product_name: ["Digital Menu Board", "Indoor Display"],
-    },
-    {
-      ads_card_image_url: "/images/advertisement/Airport.jpg",
-      ads_card_title: "Airport",
-      ads_card_description:
-        "Keep passengers informed with realtime flight updates while displaying to enhance experience and maximize visibility.",
-      ads_card_link_text: "Learn More",
-      ads_card_link_address: "/",
-      product_name: [],
-    },
-    {
-      ads_card_image_url: "/images/advertisement/Train_Station.jpg",
-      ads_card_title: "Train Station",
-      ads_card_description:
-        "Deliver real-time travel updates and navigation info with digital displays while enabling brands to reach thousands of daily commuters.",
-      ads_card_link_text: "Learn More",
-      ads_card_link_address: "/",
-      product_name: [],
-    },
-    {
-      ads_card_image_url: "/images/advertisement/High-Traffic_Locations.jpg",
-      ads_card_title: "High-Traffic Locations",
-      ads_card_description:
-        "Maximize visibility in high traffic areas using digital signage to deliver targeted ads and grow revenue for businesses.",
-      ads_card_link_text: "Learn More",
-      ads_card_link_address: "/",
-      product_name: [],
-    },
-    {
-      ads_card_image_url: "/images/advertisement/Shwroom.png",
-      ads_card_title: "Showroom",
-      ads_card_description:
-        "Showcase products and brand stories with immersive digital displays that engage customers and enhance showroom experience.",
-      ads_card_link_text: "Learn More",
-      ads_card_link_address: "/",
-      product_name: ["Indoor Display"],
-    },
-  ];
   return (
     <>
       <div className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
+          {/* Hero Section */}
+          <div className="hero_section grid lg:grid-cols-2 gap-12 items-center pb-24">
+            <div className="text-center lg:text-left">
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                Advertisement Solutions
+              </h1>
+              <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                Turn any screen into a powerful communication and marketing
+                platform. Create, manage, and publish content across multiple
+                displays from one cloud dashboard.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
+            </div>
+            <div className="relative">
+              <div className="relative">
+                <div
+                  animate={{
+                    y: [0, 15, 0],
+                  }}
+                  transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                  className="bg-white rounded-2xl shadow-2xl p-4 relative z-10"
+                >
+                  <video
+                    className="rounded-xl aspect-video w-full h-full object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    preload="none"
+                  >
+                    <source src="https://cdn.pickcel.com/videos/main/hero-video.hMW0RsrCv5Su.webm" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Heading */}
           <h2 className="text-center h2_text">
             Display Lab Advertisement Solutions
           </h2>
