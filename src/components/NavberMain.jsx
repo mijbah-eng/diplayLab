@@ -1,12 +1,16 @@
 "use client";
 import { logoBlue, navData } from "@/utils";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 function NavberMain() {
   const [showNavShadow, setShowNavShadow] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const pathName = usePathname();
+
+  console.log(pathName, "pathName");
 
   const toggleHandler = () => {
     setIsOpen((prev) => !prev);
@@ -37,12 +41,12 @@ function NavberMain() {
   }, []);
   return (
     <nav
-      className={`flex flex-col sticky w-full  justify-center bg-white top-0 z-[999] ${showNavShadow ? "scrolled" : ""}`}
+      className={`flex flex-col sticky w-full  justify-center bg-white top-0 z-999 ${showNavShadow ? "scrolled" : ""}`}
     >
-      <div className="navShadow !top-0 !h-full  opacity-0 transition-opacity duration-300 ease-in-out pointer-events-none pb-0 flex absolute inset-x-0"></div>
-      <div className="static z-[1000] ">
-        <div className="bg-white flex flex-col justify-center h-[5rem]">
-          <div className="px-[1.25rem] md:px-[1.5rem] lg:px-[2.5rem]">
+      <div className="navShadow top-0! h-full!  opacity-0 transition-opacity duration-300 ease-in-out pointer-events-none pb-0 flex absolute inset-x-0"></div>
+      <div className="static z-1000 ">
+        <div className="bg-white flex flex-col justify-center h-20">
+          <div className="px-5 md:px-6 lg:px-10">
             <div className="static lg:relative flex justify-between items-center w-full max-w-7xl m-auto px-0">
               <Link className="w-50" href={"/"}>
                 {" "}
@@ -50,20 +54,24 @@ function NavberMain() {
               </Link>
               {/* nav tab group wrapper  */}
               <div
-                className={`mobile_nav_tab lg:static flex justify-between items-center w-full transition-all duration-300 ease-in-out transform-gpu [transform-style:preserve-3d] ${isMobile ? (isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-8 pointer-events-none") : ""}`}
+                className={`mobile_nav_tab lg:static flex justify-between items-center w-full transition-all duration-300 ease-in-out transform-gpu transform-3d ${isMobile ? (isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-8 pointer-events-none") : ""}`}
               >
                 <div className="menu_wrapper flex w-full justify-center">
                   {/* nav tabs group */}
                   <div className="menu_main flex items-center mx-auto">
-                    {navData.map((singleNav, index) => (
-                      <Link
-                        key={index}
-                        className="nav_link-mm flex items-center py-[.75rem] px-[1.25rem] font-semibold transition-[all .2s] text-[#333] hover:text-[#000] hover:font-bold"
-                        href={singleNav?.navLink}
-                      >
-                        {singleNav?.navTab}
-                      </Link>
-                    ))}
+                    {navData
+                      .filter(
+                        (item) => !item.onlyOn || item.onlyOn === pathName,
+                      )
+                      .map((singleNav, index) => (
+                        <Link
+                          key={index}
+                          className="nav_link-mm flex items-center py-3 px-5 font-semibold transition-[all .2s] text-[#333] hover:text-black hover:font-bold"
+                          href={singleNav?.navLink}
+                        >
+                          {singleNav?.navTab}
+                        </Link>
+                      ))}
                   </div>
                   {/* nav buttons group */}
                   <div className=" menu_action flex justify-center items-center gap-4">
