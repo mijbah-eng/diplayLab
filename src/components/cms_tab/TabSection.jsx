@@ -40,7 +40,7 @@ function TabSection() {
             className={tabStyle}
             value={singleTab?.tabValue}
           >
-            <h3 className="text-lg font-semibold text-gray-900">
+            <h3 className="text-2xl font-semibold text-gray-900">
               {singleTab?.tabName}
             </h3>
             <p className="text-sm text-gray-600 leading-relaxed">

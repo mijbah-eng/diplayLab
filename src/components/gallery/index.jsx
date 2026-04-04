@@ -13,7 +13,7 @@ const images = [
   { src: "/images/advertisement/Shwroom.png", label: "Showroom" },
 ];
 
-function ImageSlide() {
+function Gallery() {
   return (
     <div className="py-16 md:py-24">
       <MarqueeSection images={images} />
@@ -21,4 +21,4 @@ function ImageSlide() {
   );
 }
 
-export default ImageSlide;
+export default Gallery;

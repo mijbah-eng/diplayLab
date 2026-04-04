@@ -3,6 +3,14 @@ import Link from "next/link";
 function LeadingFeatures() {
   const leadingFeatureDataList = [
     {
+      img: "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/655bb871ceff6c00f550ce68_digital_signage-3.webp",
+      title: "Simple & User-Friendly",
+      description:
+        "Manage content easily with an intuitive, cloud-based platform.Access and update your screens anytime from desktop or mobile. Create and control digital signage without complexity.",
+      linkText: "Explore Apps",
+      link: "#",
+    },
+    {
       img: "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/655bb19b05ff356cc9f5dc9f_digital_signage-1.webp",
       title: "Reliable Performance & Dedicated Support",
       description:
@@ -17,14 +25,6 @@ function LeadingFeatures() {
       description:
         "Connect seamlessly with tools like Power BI, Instagram, and Google Sheets.Bring all your content together with powerful app integrations.Adapt your signage to fit your workflow and evolving business needs.",
       linkText: "Learn More",
-      link: "#",
-    },
-    {
-      img: "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/655bb871ceff6c00f550ce68_digital_signage-3.webp",
-      title: "Simple & User-Friendly",
-      description:
-        "Manage content easily with an intuitive, cloud-based platform.Access and update your screens anytime from desktop or mobile. Create and control digital signage without complexity.",
-      linkText: "Explore Apps",
       link: "#",
     },
   ];

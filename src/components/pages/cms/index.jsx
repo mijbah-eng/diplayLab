@@ -8,9 +8,10 @@ import DigitalSignage from "./components/Digital Signage";
 import GetStarted from "./components/GetStarted";
 import CMS_HERO from "./components/hero";
 import LeadingFeatures from "./components/LeadingFeatures";
-import STEPS_SECTION from "./components/STEPS";
 import { HeroVideoDialogDemo } from "./components/Video_Section";
 import WHY_SECTION2 from "./components/WHY_SECTION2";
+import MobileApp from "./components/MobileApp";
+import Gallery from "@/components/gallery";
 
 function CMS() {
   return (
@@ -25,15 +26,8 @@ function CMS() {
         <WHY_SECTION2 />
         <DEVICE_SECTION />
         <DigitalSignage />
-        {/* <CORE_FEATURES /> */}
-        {/* <DIGITAL_SIGNAGE_SECTION /> */}
-        {/* <LotMore /> */}
-        {/* <WHY_SECTION /> */}
-        {/* <MobileApp /> */}
-        {/* <BusinessGrow /> */}
-        <STEPS_SECTION />
-        {/* <HOW_TO_WORK /> */}
-        {/* <Testimonial /> */}
+        <MobileApp />
+        <Gallery />
         <FAQ datas={cmsFaqsData} />
       </div>
       <Footer />

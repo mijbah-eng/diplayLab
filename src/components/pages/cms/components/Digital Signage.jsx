@@ -57,7 +57,7 @@ function DigitalSignage() {
                 <div className="mb-6 flex justify-center">
                   <img src={singleDigitalSignagePlatfrom?.img_src} alt="" />
                 </div>
-                <h3 className="text-xl font-semibold text-orange-500 underline underline-offset-4 mb-4">
+                <h3 className="text-xl font-semibold text-[#105783] underline underline-offset-4 mb-4">
                   {singleDigitalSignagePlatfrom?.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed max-w-sm mx-auto">

@@ -1,6 +1,8 @@
 "use client";
 
+import CalandlyButton from "@/components/calandlyButton";
 import { motion } from "motion/react";
+import Link from "next/link";
 import Script from "next/script";
 import Typewriter from "typewriter-effect";
 
@@ -47,51 +49,36 @@ function CMS_HERO() {
                 solution.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
-                <motion.a
-                  href={"https://www.youtube.com/"}
-                  className="w-xs sm:w-fit bg-cyan-600 text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-cyan-700 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
+                <CalandlyButton
+                  text={"Book A Demo"}
+                  classNamestyle={
+                    "w-xs sm:w-fit bg-cyan-600 text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-cyan-700 transition-all duration-300 ease-linear hover:scale-105 shadow-lg flex items-center justify-center gap-2 cursor-pointer"
+                  }
+                  icon={
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-play"
+                      aria-hidden="true"
+                    >
+                      <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                    </svg>
+                  }
+                />
+                <Link
+                  href={"https://displaylab.net/signup"}
                   target="_blank"
-                  whileHover={{
-                    scale: 1.04,
-                    transition: { duration: 0.3 },
-                  }}
-                  transition={{
-                    duration: 0.5,
-                    ease: "linear",
-                  }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="white"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-play"
-                    aria-hidden="true"
-                  >
-                    <polygon points="6 3 20 12 6 21 6 3"></polygon>
-                  </svg>
-                  Book A Demo
-                </motion.a>
-                <motion.a
-                  href={"https://www.youtube.com/"}
-                  target="_blank"
-                  whileHover={{
-                    scale: 1.04,
-                    transition: { duration: 0.3 },
-                  }}
-                  className="w-xs sm:w-fit border-2 border-cyan-600 text-cyan-600 px-8 py-4 rounded-full font-semibold text-base hover:bg-cyan-50 transition-all cursor-pointer"
-                  transition={{
-                    duration: 0.5,
-                    ease: "linear",
-                  }}
+                  className="w-xs sm:w-fit border-2 border-cyan-600 text-cyan-600 px-8 py-4 rounded-full font-semibold text-base hover:bg-cyan-50 transition-all duration-300 ease-linear hover:scale-105 cursor-pointer"
                 >
                   Try For Free
-                </motion.a>
+                </Link>
               </div>
             </div>
             <div className="relative">

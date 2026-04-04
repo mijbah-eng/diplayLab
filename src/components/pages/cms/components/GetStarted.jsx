@@ -93,7 +93,7 @@ function GetStarted() {
         </div>
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           {getStartedStap.map((singleStartedStap, index) => (
-            <div className="group relative" key={index}>
+            <div className={`group relative `} key={index}>
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all h-full relative overflow-hidden group">
                 <div
                   className={`absolute inset-0 bg-linear-to-br ${singleStartedStap?.cardColor} opacity-0 group-hover:opacity-5 transition-opacity`}

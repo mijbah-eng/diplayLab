@@ -4,8 +4,8 @@ import CustomerReviews from "@/components/customer";
 import DigitalSignageSolutions from "@/components/DigitalSignageSolutions";
 import FAQ from "@/components/faq/faq";
 import Footer from "@/components/Footer/footer";
+import Gallery from "@/components/gallery";
 import Hero from "@/components/hero";
-import ImageSlide from "@/components/image_slide";
 
 import NavberMain from "@/components/NavberMain";
 import RentalProducts from "@/components/rental";
@@ -26,7 +26,7 @@ export default function Home() {
           <RentalProducts />
           <CustomerReviews />
           <FAQ datas={homeFaqsData} />
-          <ImageSlide />
+          <Gallery />
         </div>
       </div>
       <Footer />
