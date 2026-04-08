@@ -132,9 +132,9 @@ function ContentSection() {
     <>
       {contentDatas?.map((singleContentData, index) => (
         <TabsContent key={index} value={singleContentData.contentValue}>
-          <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8">
+          
             {/* IMAGE */}
-            <div className="rounded-xl overflow-hidden mb-6">
+            <div className="hero rounded-xl overflow-hidden mb-6">
               <img
                 src={singleContentData.contentImageUrl}
                 className="w-full h-65 md:h-87.5 object-cover"
@@ -142,7 +142,7 @@ function ContentSection() {
             </div>
 
             {/* TITLE + DESC */}
-            <div className="mb-8">
+            <div className="content mb-8">
               <h3 className="text-3xl font-bold mb-4">
                 {singleContentData.contentTitle}
               </h3>
@@ -152,7 +152,7 @@ function ContentSection() {
             </div>
 
             {/* FEATURES GRID */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div className=" features grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
               {singleContentData?.features?.map((feature, i) => (
                 <div key={i} className="flex gap-3">
                   <div className="w-10 h-10 flex items-center justify-center bg-blue-50 text-[#105783] rounded-lg">
@@ -169,12 +169,12 @@ function ContentSection() {
             </div>
 
             {/* CTA */}
-            <div className="text-center">
+            {/* <div className="text-center">
               <button className="bg-[#105783] hover:bg-[#003051] text-white px-8 py-3 rounded-lg">
                 Lets Setup a Demo Online
               </button>
-            </div>
-          </div>
+            </div> */}
+          
         </TabsContent>
       ))}
     </>

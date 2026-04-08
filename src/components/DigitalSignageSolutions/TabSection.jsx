@@ -38,8 +38,6 @@ function TabSection() {
             {singleTab?.tabName}
           </TabsTrigger>
         ))}
-
-        
       </div>
     </>
   );
