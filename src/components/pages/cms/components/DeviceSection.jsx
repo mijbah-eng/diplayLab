@@ -90,7 +90,7 @@ function DEVICE_SECTION() {
         >
           {devices.map((device, index) => (
             <SwiperSlide key={index}>
-              <div className="singleFeature flex flex-col items-center gap-2 text-white bg-[#125884] px-5 rounded-xl py-4">
+              <div className="w-37.75 singleFeature flex flex-col items-center gap-2 text-white bg-[#125884] px-5 rounded-xl py-4">
                 {device.icon}
                 <h4 className="text-lg font-semibold">{device.title}</h4>
               </div>

@@ -12,6 +12,7 @@ import { HeroVideoDialogDemo } from "./components/Video_Section";
 import WHY_SECTION2 from "./components/WHY_SECTION2";
 import MobileApp from "./components/MobileApp";
 import Gallery from "@/components/gallery";
+import Footer2 from "@/components/footer2";
 
 function CMS() {
   return (
@@ -30,7 +31,8 @@ function CMS() {
         <Gallery />
         <FAQ datas={cmsFaqsData} />
       </div>
-      <Footer />
+      {/* <Footer /> */}
+      <Footer2 />
     </>
   );
 }
