@@ -3,8 +3,8 @@ import CMS_Marketing from "@/components/cms/cms_section_1";
 import CustomerReviews from "@/components/customer";
 import DigitalSignageSolutions from "@/components/DigitalSignageSolutions";
 import FAQ from "@/components/faq/faq";
-import Footer from "@/components/Footer/footer";
-import Footer2 from "@/components/footer2";
+import Footer from "@/components/footer";
+
 import Gallery from "@/components/gallery";
 import Hero from "@/components/hero";
 
@@ -30,8 +30,7 @@ export default function Home() {
           <Gallery />
         </div>
       </div>
-      {/* <Footer /> */}
-      <Footer2 />
+      <Footer />
     </>
   );
 }

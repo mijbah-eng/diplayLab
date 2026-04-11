@@ -1,8 +1,7 @@
 import Advertisement_Hero from "./components/Advertisement_Hero";
-
-import Footer from "@/components/Footer/footer";
 import NavberMain from "@/components/NavberMain";
 import Advertisement_Solutions from "@/components/advertisement";
+import Footer from "@/components/footer";
 
 function Advertisement() {
   return (

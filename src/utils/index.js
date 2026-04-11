@@ -93,8 +93,8 @@ export const footerSupportData = [
     navLink: "/",
   },
 ];
-export const logoWhite = "images/logo/logo_white.png";
-export const logoBlue = "images/logo/logo_blue.png";
+export const logoWhite = "/images/logo/logo_white.png";
+export const logoBlue = "/images/logo/logo_blue.png";
 
 export const displayPerformance = [
   { name: "Resolution", value: "1080×1920 Full HD" },

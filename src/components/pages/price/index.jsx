@@ -1,6 +1,6 @@
-import Footer from "@/components/Footer/footer";
 import NavberMain from "@/components/NavberMain";
 import PriceCards from "./components/PriceCards";
+import Footer from "@/components/footer";
 
 function Price() {
   return (
