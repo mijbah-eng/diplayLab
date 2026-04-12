@@ -1,8 +1,7 @@
-
 import NavberMain from "@/components/NavberMain";
 import AboutHero from "./components/AboutHero";
 import AboutSection from "./components/AboutSection";
-import Footer from "@/components/Footer";
+import Footer from "@/components/footer";
 
 
 function AboutUs() {

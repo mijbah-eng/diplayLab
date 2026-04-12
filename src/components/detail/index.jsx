@@ -1,4 +1,4 @@
-import Footer from "../Footer";
+import Footer from "../footer";
 import NavberMain from "../NavberMain";
 import AvailableSizes from "./availableSizes";
 import DetailsHero from "./detailsHero";

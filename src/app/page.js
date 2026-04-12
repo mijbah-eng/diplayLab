@@ -8,8 +8,8 @@ import Hero from "@/components/hero";
 import RentalProducts from "@/components/rental";
 import SolutionCard from "@/components/solution_card";
 import { homeFaqsData } from "@/utils";
-import Footer from "@/components/Footer";
 import NavberMain from "@/components/NavberMain";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
