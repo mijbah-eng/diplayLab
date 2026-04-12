@@ -1,7 +1,7 @@
 import Advertisement_Hero from "./components/Advertisement_Hero";
 import NavberMain from "@/components/NavberMain";
 import Advertisement_Solutions from "@/components/advertisement";
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer/Footer";
 
 function Advertisement() {
   return (
@@ -13,7 +13,6 @@ function Advertisement() {
           <Advertisement_Solutions />
         </div>
       </div>
-
       <Footer />
     </>
   );

@@ -2,7 +2,7 @@ import NavberMain from "@/components/NavberMain";
 import Prduct_Hero from "./components/Prduct_Hero";
 import Product_Feature from "./components/Product_Feature";
 import Products from "./components/Products";
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer/Footer";
 
 function Product() {
   return (
