@@ -3,15 +3,13 @@ import CMS_Marketing from "@/components/cms/cms_section_1";
 import CustomerReviews from "@/components/customer";
 import DigitalSignageSolutions from "@/components/DigitalSignageSolutions";
 import FAQ from "@/components/faq/faq";
-import Footer from "@/components/Footer/Footer";
-
 import Gallery from "@/components/gallery";
 import Hero from "@/components/hero";
-
-import NavberMain from "./components/NavberMain";
 import RentalProducts from "@/components/rental";
 import SolutionCard from "@/components/solution_card";
 import { homeFaqsData } from "@/utils";
+import Footer from "@/components/Footer";
+import NavberMain from "@/components/NavberMain";
 
 export default function Home() {
   return (

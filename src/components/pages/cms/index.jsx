@@ -11,7 +11,7 @@ import { HeroVideoDialogDemo } from "./components/Video_Section";
 import WHY_SECTION2 from "./components/WHY_SECTION2";
 import MobileApp from "./components/MobileApp";
 import Gallery from "@/components/gallery";
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/Footer";
 
 
 function CMS() {
