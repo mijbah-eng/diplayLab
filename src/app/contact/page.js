@@ -1,4 +1,4 @@
-import Footer from "@/components/Footer/footer";
+import Footer from "@/components/Footer";
 import NavberMain from "@/components/NavberMain";
 
 function page() {
