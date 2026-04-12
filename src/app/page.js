@@ -3,7 +3,7 @@ import CMS_Marketing from "@/components/cms/cms_section_1";
 import CustomerReviews from "@/components/customer";
 import DigitalSignageSolutions from "@/components/DigitalSignageSolutions";
 import FAQ from "@/components/faq/faq";
-import Footer from "@/components/footer";
+import Footer from "@/components/Footer";
 
 import Gallery from "@/components/gallery";
 import Hero from "@/components/hero";
