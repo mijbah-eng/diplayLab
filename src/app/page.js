@@ -10,6 +10,7 @@ import SolutionCard from "@/components/solution_card";
 import { homeFaqsData } from "@/utils";
 import NavberMain from "@/components/NavberMain";
 import Footer from "@/components/footer";
+import ProductSection from "@/components/product";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           <CMS_Marketing />
           <SolutionCard />
           <DigitalSignageSolutions />
+          <ProductSection />
           <Advertisement_Solutions />
           <RentalProducts />
           <CustomerReviews />
