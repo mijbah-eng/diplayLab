@@ -22,12 +22,12 @@ export default function Home() {
           <CMS_Marketing />
           <SolutionCard />
           <DigitalSignageSolutions />
+          <Gallery />
           <ProductSection />
           <Advertisement_Solutions />
           <RentalProducts />
           <CustomerReviews />
           <FAQ datas={homeFaqsData} />
-          <Gallery />
         </div>
       </div>
       <Footer />
