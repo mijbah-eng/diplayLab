@@ -267,12 +267,12 @@ img {
   );
   z-index: 0;
 }
-.product-hero-bg {
+/* .product-hero-bg {
   background-image: url("../../public/images/pages/products/hero/hero.png");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 .rental-hero-bg {
   background-image: url("../../public/images/pages/rental/hero/hero.png");
   background-position: bottom center;
