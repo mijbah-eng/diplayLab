@@ -224,16 +224,12 @@ export const cmsFaqsData = [
 ];
 
 export const home_hero_logos = [
-  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd67837a212dc9acdf39b_levis.svg",
-  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd56841528275fbdc40e9_yamaha.svg",
-  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd44e13ae75901836e593_redbull.svg",
-  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd61041528275fbdcd41f_instacart.svg",
-  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd6c96b44f080a5f5abe7_goodwill.svg",
-  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd67837a212dc9acdf39b_levis.svg",
-  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd56841528275fbdc40e9_yamaha.svg",
-  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd44e13ae75901836e593_redbull.svg",
-  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd61041528275fbdcd41f_instacart.svg",
-  "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/66fcd6c96b44f080a5f5abe7_goodwill.svg",
+  "/images/client_logo/Aladdin.png",
+  "/images/client_logo/American best.png",
+  "/images/client_logo/baba biryani.png",
+  "/images/client_logo/barg.png",
+  "/images/client_logo/us best.png",
+  "/images/client_logo/Wingland.png",
 ];
 
 export const adsCardDatas = [

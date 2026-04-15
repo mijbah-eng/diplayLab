@@ -3,6 +3,7 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./styles.css";
+import Image from "next/image";
 
 function ClientLogoSlider({ autoPlay,touchMove,slideDatas }) {
   return (
@@ -36,7 +37,7 @@ function ClientLogoSlider({ autoPlay,touchMove,slideDatas }) {
         >
           {slideDatas.map((singleData, index) => (
             <SwiperSlide key={index}>
-              <img src={singleData} alt="logo" className="logoImg" />
+              <Image width={150} height={100} src={singleData} alt="logo" className="logoImg" />
             </SwiperSlide>
           ))}
         </Swiper>

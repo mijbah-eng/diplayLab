@@ -184,7 +184,7 @@ function DigitalSignageSolutions() {
             Our platform helps organizations communicate better, engage
             customers, and deliver impactful digital experiences.
           </p>
-          <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8">
+          <div className="bg-white rounded-2xl shadow-xl p-6">
             <Tabs defaultValue="retail" orientation="vertical">
               {contentDatas?.map((singleContentData, index) => (
                 <TabsContent key={index} value={singleContentData.contentValue}>
@@ -218,11 +218,11 @@ function DigitalSignageSolutions() {
                     <div className=" features grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                       {singleContentData?.features?.map((feature, i) => (
                         <div key={i} className="flex gap-3">
-                          <div className="w-10 h-10 flex items-center justify-center bg-blue-50 text-[#105783] rounded-lg">
+                          <div className="w-10 h-10 flex items-center justify-center text-2xl text-[#105783] rounded-lg">
                             📢
                           </div>
                           <div>
-                            <h4 className="font-semibold text-gray-900">
+                            <h4 className="font-semibold text-xl mb-5 text-gray-900">
                               {feature.title}
                             </h4>
                             <p className="text-sm text-gray-600">

@@ -15,12 +15,8 @@ function CustomerReviews() {
             ★ ★ ★ ★ ★
           </div>
 
-          <p className="text-sm text-gray-500 mt-1">
-            Based on 6300+ reviews
-          </p>
-
           <div className="flex justify-center gap-6 mt-2 text-gray-600 font-semibold">
-           <img src="https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/652825f6520509db4f278e55_review_logos.svg" alt="" />
+           <img className="w-41.75" src="/svg/details/our_logos.svg" alt="our_logos" />
           </div>
         </div>
 
