@@ -9,8 +9,7 @@ function ClientLogoSlider({ autoPlay,touchMove,slideDatas }) {
   return (
     <>
       <div className="logoSection">
-        <Swiper
-        
+        <Swiper className="client-logo-swiper"
           modules={autoPlay ? [Autoplay] : ""}
           spaceBetween={80}
           loop={true}

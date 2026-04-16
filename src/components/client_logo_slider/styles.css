@@ -4,11 +4,11 @@
   /* background: #0f0f0f; */
 }
 
-.swiper-wrapper {
+.client-logo-swiper .swiper-wrapper {
   transition-timing-function: linear !important;
 }
 
-.swiper-slide {
+.client-logo-swiper .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;

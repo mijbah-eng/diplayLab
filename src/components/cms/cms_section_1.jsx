@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 function CMS_Marketing() {
@@ -39,7 +38,7 @@ function CMS_Marketing() {
               <p className="text-[1rem] mb-8">
                 Display Lab offers complete digital signage solutions, from CMS to hardware and displays. Simple, scalable tools to communicate and engage across any number of screens.
               </p>
-              <Link href="/cms" className="button">
+              <Link href="/cms" className="border-[1.5px] border-[#005582] bg-[#005582] text-white text-center capitalize whitespace-nowrap rounded flex justify-center items-center px-6 py-[.4rem] text-base font-medium leading-[180%] transition-colors duration-200 hover:text-black hover:bg-white w-fit">
                 Explore CMS
               </Link>
             </div>

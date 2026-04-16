@@ -1,12 +1,22 @@
-import "./style.css";
-
+"use client";
+import Image from "next/image";
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Tabs, TabsContent, TabsList } from "../ui/tabs";
+import "./everyIndstyle.css";
 import TabSection from "./TabSection";
 
 function DigitalSignageSolutions() {
   const contentDatas = [
     {
-      contentImageUrl: "/images/Every-Industry/Retail.jpg",
+      contentImageUrls: [
+        { image_url: "/images/Every-Industry/Retail.jpg" },
+        { image_url: "/images/Every-Industry/Healthcare.jpg" },
+        { image_url: "/images/Every-Industry/Education.jpg" },
+        { image_url: "/images/Every-Industry/Corporate Offices.jpg" },
+        { image_url: "/images/Every-Industry/Restaurants.jpg" },
+      ],
       contentTitle: "Retail",
       contentDescription:
         "Promote offers, highlight products, and create engaging in-store experiences.",
@@ -31,7 +41,13 @@ function DigitalSignageSolutions() {
       ],
     },
     {
-      contentImageUrl: "/images/Every-Industry/Corporate Offices.jpg",
+      contentImageUrls: [
+        { image_url: "/images/Every-Industry/Retail.jpg" },
+        { image_url: "/images/Every-Industry/Restaurants.jpg" },
+        { image_url: "/images/Every-Industry/Healthcare.jpg" },
+        { image_url: "/images/Every-Industry/Corporate Offices.jpg" },
+        { image_url: "/images/Every-Industry/Education.jpg" },
+      ],
       contentTitle: "Corporate Offices",
       contentDescription:
         "Improve internal communication with company news, dashboards, and announcements.",
@@ -56,7 +72,13 @@ function DigitalSignageSolutions() {
       ],
     },
     {
-      contentImageUrl: "/images/Every-Industry/Restaurants.jpg",
+      contentImageUrls: [
+        { image_url: "/images/Every-Industry/Retail.jpg" },
+        { image_url: "/images/Every-Industry/Restaurants.jpg" },
+        { image_url: "/images/Every-Industry/Education.jpg" },
+        { image_url: "/images/Every-Industry/Healthcare.jpg" },
+        { image_url: "/images/Every-Industry/Corporate Offices.jpg" },
+      ],
       contentTitle: "Restaurants",
       contentDescription:
         "Display digital menus, promotions, and dynamic pricing updates.",
@@ -81,7 +103,13 @@ function DigitalSignageSolutions() {
       ],
     },
     {
-      contentImageUrl: "/images/Every-Industry/Healthcare.jpg",
+      contentImageUrls: [
+        { image_url: "/images/Every-Industry/Corporate Offices.jpg" },
+        { image_url: "/images/Every-Industry/Healthcare.jpg" },
+        { image_url: "/images/Every-Industry/Education.jpg" },
+        { image_url: "/images/Every-Industry/Restaurants.jpg" },
+        { image_url: "/images/Every-Industry/Retail.jpg" },
+      ],
       contentTitle: "Healthcare",
       contentDescription:
         "Share important information with patients, visitors, and staff across facilities.",
@@ -106,7 +134,13 @@ function DigitalSignageSolutions() {
       ],
     },
     {
-      contentImageUrl: "/images/Every-Industry/Education.jpg",
+      contentImageUrls: [
+        { image_url: "/images/Every-Industry/Restaurants.jpg" },
+        { image_url: "/images/Every-Industry/Retail.jpg" },
+        { image_url: "/images/Every-Industry/Healthcare.jpg" },
+        { image_url: "/images/Every-Industry/Corporate Offices.jpg" },
+        { image_url: "/images/Every-Industry/Education.jpg" },
+      ],
       contentTitle: "Education",
       contentDescription:
         "Communicate announcements, schedules, and campus updates on digital screens.",
@@ -197,11 +231,33 @@ function DigitalSignageSolutions() {
 
                     {/* RIGHT SIDE */}
                     {/* IMAGE */}
-                    <div className="hero rounded-xl overflow-hidden mb-6">
-                      <img
-                        src={singleContentData.contentImageUrl}
-                        className="w-full h-65 md:h-full object-cover"
-                      />
+                    <div className="hero rounded-xl overflow-hidden mb-6 w-136.25 h-86.25 md:w-220 md:h-139">
+                      <Swiper
+                        modules={[Autoplay]}
+                        className="w-full h-full"
+                        spaceBetween={20}
+                        loop
+                        allowTouchMove={true}
+                        autoplay={{
+                          delay: 1,
+                          disableOnInteraction: false,
+                        }}
+                        speed={4000}
+                      >
+                        {singleContentData.contentImageUrls.map(
+                          (singleImageUrl, index) => (
+                            <SwiperSlide key={index} className="w-full h-full">
+                              <Image
+                                width={500}
+                                height={500}
+                                src={singleImageUrl.image_url}
+                                alt="contentImage"
+                                className="w-full h-full object-cover rounded"
+                              />
+                            </SwiperSlide>
+                          ),
+                        )}
+                      </Swiper>
                     </div>
 
                     {/* TITLE + DESC */}
@@ -232,14 +288,12 @@ function DigitalSignageSolutions() {
                         </div>
                       ))}
                     </div>
-                    
 
                     {/* <div className="">
                       <button className="bg-[#105783] hover:bg-[#003051] text-white px-8 py-3 rounded-lg">
                         Lets Setup a Demo Online
                       </button>
                     </div> */}
-                    
                   </div>
                 </TabsContent>
               ))}

@@ -252,7 +252,7 @@ export const adsCardDatas = [
     product_name: ["Presentation Display"],
   },
   {
-    ads_card_image_url: "/images/advertisement/Groceryshoop.png",
+    ads_card_image_url: "/images/advertisement/Groceryshoop2.png",
     ads_card_title: "Grocery Shop",
     ads_card_description:
       "Highlight promotions, discounts, and featured products with digital signage to boost visibility, engage shoppers, and drive in-store sales.",
