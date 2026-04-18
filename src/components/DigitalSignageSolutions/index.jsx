@@ -19,7 +19,7 @@ function DigitalSignageSolutions() {
       ],
       contentTitle: "Retail",
       contentDescription:
-        "Promote offers, highlight products, and create engaging in-store experiences.",
+        " Enhance the in-store experience with dynamic digital signage that captures attention and drives sales. Showcase promotions, highlight featured products, and deliver real-time updates to influence customer decisions at the point of purchase.",
       contentValue: "retail",
       features: [
         {
@@ -46,7 +46,7 @@ function DigitalSignageSolutions() {
       ],
       contentTitle: "Corporate Offices",
       contentDescription:
-        "Improve internal communication with company news, dashboards, and announcements.",
+        "Improve internal communication with company news and announcements.Share dashboards, KPIs, and updates to keep teams aligned.Enhance workplace engagement with dynamic and timely content.",
       contentValue: "corporate_offices",
       features: [
         {
@@ -73,7 +73,7 @@ function DigitalSignageSolutions() {
       ],
       contentTitle: "Restaurants",
       contentDescription:
-        "Display digital menus, promotions, and dynamic pricing updates.",
+        "Display digital menus with clear visuals and easy updates.Promote special offers and adjust pricing in real time.Enhance customer experience with dynamic and engaging content.",
       contentValue: "restaurants",
       features: [
         {
@@ -100,7 +100,7 @@ function DigitalSignageSolutions() {
       ],
       contentTitle: "Healthcare",
       contentDescription:
-        "Share important information with patients, visitors, and staff across facilities.",
+        "Share important information with patients, visitors, and staff.Display directions, wait times, and health updates clearly.Improve communication across facilities with centralized content control.",
       contentValue: "healthcare",
       features: [
         {
@@ -127,7 +127,7 @@ function DigitalSignageSolutions() {
       ],
       contentTitle: "Education",
       contentDescription:
-        "Communicate announcements, schedules, and campus updates on digital screens.",
+        "Communicate announcements and schedules effectively on campus.Share important updates with students, staff, and visitors.Keep everyone informed with dynamic and easy-to-manage displays.",
       contentValue: "education",
       features: [
         {
@@ -251,7 +251,7 @@ function DigitalSignageSolutions() {
                     </div>
 
                     {/* FEATURES GRID */}
-                    <div className=" features grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div className=" features grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                       {singleContentData?.features?.map((feature, i) => (
                         <div key={i} className="flex gap-3">
                           <div className="w-10 h-10 flex items-center justify-center text-2xl text-[#105783] rounded-lg">
