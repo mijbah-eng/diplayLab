@@ -6,7 +6,7 @@ const images = [
   { src: "/images/advertisement/Shoopingmall.png", label: "Shopping Mall" },
   { src: "/images/advertisement/Corporate_Office.jpg", label: "Corporate Office" },
   { src: "/images/advertisement/Hospital12.png", label: "Hospital" },
-  { src: "/images/advertisement/Groceryshoop.png", label: "Grocery Shop" },
+  { src: "/images/advertisement/Groceryshoop2.png", label: "Grocery Shop" },
   { src: "/images/advertisement/Airport.jpg", label: "Airport" },
   { src: "/images/advertisement/Train_Station.jpg", label: "Train Station" },
   { src: "/images/advertisement/High_Traffic_Locations.jpg", label: "High Traffic Locations" },
