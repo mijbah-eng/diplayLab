@@ -23,20 +23,16 @@ function DigitalSignageSolutions() {
       contentValue: "retail",
       features: [
         {
-          title: "Engage Students",
-          desc: "Display announcements,updates,event promotions,and motivational content in common areas,hallways, and classrooms.",
+          title: "Boost In-Store Engagement",
+          desc: "Capture customer attention with vibrant, dynamic displays.Promote offers, new arrivals, and seasonal campaigns in real time.Create immersive shopping experiences that increase dwell time.",
         },
         {
-          title: "Improve Campus Navigation",
-          desc: "Use interactive maps and directories to help students and visitors easily find their way around campus.",
+          title: "Smart Product Promotion",
+          desc: "Showcase bestsellers and high-margin products effectively.Use targeted content to influence purchasing decisions instantly.Update promotions across multiple locations with ease.",
         },
         {
-          title: "Schedule & Alerts",
-          desc: "Share class schedules, exam dates, and important alerts, like emergency notifications and weather advisories.",
-        },
-        {
-          title: "Promote Campus Events",
-          desc: "Advertise sports games, club activities, guest speakers, and school events to boost participation and awareness.",
+          title: "Real-Time Updates & Offers",
+          desc: "Instantly push discounts, flash sales, and announcements.Keep content fresh and relevant throughout the day.Ensure customers never miss important deals or updates.",
         },
       ],
     },
@@ -54,20 +50,16 @@ function DigitalSignageSolutions() {
       contentValue: "corporate_offices",
       features: [
         {
-          title: "Engage Students",
-          desc: "Display announcements,updates,event promotions,and motivational content in common areas,hallways, and classrooms.",
+          title: "Enhance Internal Communication",
+          desc: "Share company news, announcements, and updates instantly.Keep teams aligned across departments and locations.Reduce email overload with centralized displays.",
         },
         {
-          title: "Improve Campus Navigation",
-          desc: "Use interactive maps and directories to help students and visitors easily find their way around campus.",
+          title: "Visualize Data & KPIs",
+          desc: "Display dashboards, metrics, and performance insights.Keep employees informed with real-time business data.Drive transparency and better decision-making.",
         },
         {
-          title: "Schedule & Alerts",
-          desc: "Share class schedules, exam dates, and important alerts, like emergency notifications and weather advisories.",
-        },
-        {
-          title: "Promote Campus Events",
-          desc: "Advertise sports games, club activities, guest speakers, and school events to boost participation and awareness.",
+          title: "Boost Workplace Engagement",
+          desc: "Promote company culture, events, and achievements.Recognize employees and share success stories.Create a more connected and motivated workforce.",
         },
       ],
     },
@@ -85,20 +77,16 @@ function DigitalSignageSolutions() {
       contentValue: "restaurants",
       features: [
         {
-          title: "Engage Students",
-          desc: "Display announcements,updates,event promotions,and motivational content in common areas,hallways, and classrooms.",
+          title: "Dynamic Digital Menus",
+          desc: "Show menus with rich visuals and clear pricing.Update items, prices, and availability instantly.Reduce printing costs with fully digital displays.",
         },
         {
-          title: "Improve Campus Navigation",
-          desc: "Use interactive maps and directories to help students and visitors easily find their way around campus.",
+          title: "IPromotions & Upselling",
+          desc: "Highlight combos, specials, and high-margin items.Encourage impulse purchases with eye-catching visuals.Adapt promotions based on time of day or demand.",
         },
         {
-          title: "Schedule & Alerts",
-          desc: "Share class schedules, exam dates, and important alerts, like emergency notifications and weather advisories.",
-        },
-        {
-          title: "Promote Campus Events",
-          desc: "Advertise sports games, club activities, guest speakers, and school events to boost participation and awareness.",
+          title: "Faster Service Experience",
+          desc: "Improve order flow with clear and visible menus.Reduce wait times and customer confusion.Enhance overall dining experience with smooth communication.",
         },
       ],
     },
@@ -116,20 +104,16 @@ function DigitalSignageSolutions() {
       contentValue: "healthcare",
       features: [
         {
-          title: "Engage Students",
-          desc: "Display announcements,updates,event promotions,and motivational content in common areas,hallways, and classrooms.",
+          title: "Patient Information Displays",
+          desc: "Share important notices, health tips, and updates.Keep patients informed in waiting and common areas.Improve overall communication and transparency.",
         },
         {
-          title: "Improve Campus Navigation",
-          desc: "Use interactive maps and directories to help students and visitors easily find their way around campus.",
+          title: "Wayfinding & Navigation",
+          desc: "Guide visitors with clear directions and maps.Reduce confusion in large or complex facilities.Help patients reach destinations quickly and easily.",
         },
         {
-          title: "Schedule & Alerts",
-          desc: "Share class schedules, exam dates, and important alerts, like emergency notifications and weather advisories.",
-        },
-        {
-          title: "Promote Campus Events",
-          desc: "Advertise sports games, club activities, guest speakers, and school events to boost participation and awareness.",
+          title: "Real-Time Alerts & Updates",
+          desc: "Display wait times, emergency alerts, and announcements.Communicate critical information instantly.Ensure staff and visitors stay informed at all times.",
         },
       ],
     },
@@ -148,19 +132,15 @@ function DigitalSignageSolutions() {
       features: [
         {
           title: "Engage Students",
-          desc: "Display announcements,updates,event promotions,and motivational content in common areas,hallways, and classrooms.",
+          desc: "Display announcements, events, and campus updates.Share motivational and educational content.Keep students informed across common areas and classrooms.",
         },
         {
           title: "Improve Campus Navigation",
-          desc: "Use interactive maps and directories to help students and visitors easily find their way around campus.",
+          desc: "Use interactive maps and directories for guidance.Help students and visitors find locations بسهولة.Enhance campus accessibility and experience.",
         },
         {
-          title: "Schedule & Alerts",
-          desc: "Share class schedules, exam dates, and important alerts, like emergency notifications and weather advisories.",
-        },
-        {
-          title: "Promote Campus Events",
-          desc: "Advertise sports games, club activities, guest speakers, and school events to boost participation and awareness.",
+          title: "Schedules & Alerts",
+          desc: "Share class schedules, exam dates, and notices.Provide real-time updates and emergency alerts.Keep everyone informed with timely communication.",
         },
       ],
     },
