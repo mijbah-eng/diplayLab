@@ -12,9 +12,7 @@ function RentalProducts() {
                 Rental Products
               </h1>
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                Turn any screen into a powerful communication and marketing
-                platform. Create, manage, and publish content across multiple
-                displays from one cloud dashboard.
+                Flexible digital signage rental solutions designed for events, promotions, and temporary installations. Deploy high-quality digital displays without the cost of purchasing hardware.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
             </div>

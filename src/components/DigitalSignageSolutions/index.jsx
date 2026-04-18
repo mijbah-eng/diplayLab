@@ -179,12 +179,10 @@ function DigitalSignageSolutions() {
             </div>
             <div className="text-center lg:text-left">
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Digital Signage Software to Power Screens Anywhere
+                Drive Impact with Smarter Digital Experiences
               </h1>
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                Turn any screen into a powerful communication and marketing
-                platform. Create, manage, and publish content across multiple
-                displays from one cloud dashboard.
+                Digital signage goes beyond simple displays—it transforms how businesses connect with their audiences. By delivering the right message at the right time, it helps increase engagement, improve operational efficiency, and create memorable experiences that influence behavior and drive results across every industry.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
             </div>

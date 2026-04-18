@@ -38,9 +38,7 @@ function Advertisement_Solutions() {
                 Advertisement Solutions
               </h1>
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                Turn any screen into a powerful communication and marketing
-                platform. Create, manage, and publish content across multiple
-                displays from one cloud dashboard.
+                Turn screens into revenue-generating advertising platforms.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
             </div>
