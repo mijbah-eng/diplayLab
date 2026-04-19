@@ -11,6 +11,7 @@ import { homeFaqsData } from "@/utils";
 import NavberMain from "@/components/NavberMain";
 import Footer from "@/components/footer";
 import ProductSection from "@/components/product";
+import Rental2 from "@/components/rental2";
 
 export default function Home() {
   return (
@@ -25,7 +26,8 @@ export default function Home() {
           <Gallery />
           <ProductSection />
           <Advertisement_Solutions />
-          <RentalProducts />
+          {/* <RentalProducts /> */}
+          <Rental2 />
           <CustomerReviews />
           <FAQ datas={homeFaqsData} />
         </div>
