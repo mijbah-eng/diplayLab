@@ -234,7 +234,7 @@ export const home_hero_logos = [
 
 export const adsCardDatas = [
   {
-    ads_card_image_url: "/images/advertisement/Shoopingmall.png",
+    ads_card_image_url: "/images/advertisement/Shoopingmall.jpg",
     ads_card_title: "Shopping Mall",
     ads_card_description:
       "Engage shoppers with dynamic ads and targeted messaging on high traffic displays to boost reach and influence purchases",
@@ -243,7 +243,7 @@ export const adsCardDatas = [
     product_name: ["Indoor Display"],
   },
   {
-    ads_card_image_url: "/images/advertisement/Hospital12.png",
+    ads_card_image_url: "/images/advertisement/Hospital.jpg",
     ads_card_title: "Hospital",
     ads_card_description:
       "Provide patients and visitors with realtime information directions and health updates through digital signage spaces.",
@@ -252,7 +252,7 @@ export const adsCardDatas = [
     product_name: ["Presentation Display"],
   },
   {
-    ads_card_image_url: "/images/advertisement/Groceryshoop2.png",
+    ads_card_image_url: "/images/advertisement/Groceryshoop.jpg",
     ads_card_title: "Grocery Shop",
     ads_card_description:
       "Highlight promotions, discounts, and featured products with digital signage to boost visibility, engage shoppers, and drive in-store sales.",
@@ -270,7 +270,7 @@ export const adsCardDatas = [
     product_name: [],
   },
   {
-    ads_card_image_url: "/images/advertisement/Train_Station.jpg",
+    ads_card_image_url: "/images/advertisement/Train Station.jpg",
     ads_card_title: "Train Station",
     ads_card_description:
       "Deliver real-time travel updates and navigation info with digital displays while enabling brands to reach thousands of daily commuters.",
@@ -279,7 +279,7 @@ export const adsCardDatas = [
     product_name: [],
   },
   {
-    ads_card_image_url: "/images/advertisement/High_Traffic_Locations.jpg",
+    ads_card_image_url: "/images/advertisement/High-Traffic Locations.jpg",
     ads_card_title: "High-Traffic Locations",
     ads_card_description:
       "Maximize visibility in high traffic areas using digital signage to deliver targeted ads and grow revenue for businesses.",
