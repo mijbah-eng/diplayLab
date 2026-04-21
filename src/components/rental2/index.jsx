@@ -6,19 +6,19 @@ function Rental2() {
   const rentalProducts = [
     {
       product_name: "IndoorDigital-Kiosk",
-      product_url: "/images/rental/IndoorDigital-Kiosk.jpeg",
+      product_url: "/images/rental/IndoorDigital-Kiosk.jpg",
     },
     {
       product_name: "Interactive-Digital-Display",
-      product_url: "/images/rental/Interactive-Digital-Display.jpeg",
+      product_url: "/images/rental/Interactive-Digital-Display.jpg",
     },
     {
       product_name: "Outdoor-Digital-Kiosk",
-      product_url: "/images/rental/Outdoor-Digital-Kiosk.jpeg",
+      product_url: "/images/rental/Outdoor-Digital-Kiosk.jpg",
     },
     {
       product_name: "Promotional-Display-Screens",
-      product_url: "/images/rental/Promotional-Display-Screens.jpeg",
+      product_url: "/images/rental/Promotional-Display-Screens.jpg",
     },
   ];
   return (
