@@ -182,7 +182,11 @@ function DigitalSignageSolutions() {
                 Drive Impact with Smarter Digital Experiences
               </h1>
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                Digital signage goes beyond simple displays—it transforms how businesses connect with their audiences. By delivering the right message at the right time, it helps increase engagement, improve operational efficiency, and create memorable experiences that influence behavior and drive results across every industry.
+                Digital signage goes beyond simple displays—it transforms how
+                businesses connect with their audiences. By delivering the right
+                message at the right time, it helps increase engagement, improve
+                operational efficiency, and create memorable experiences that
+                influence behavior and drive results across every industry.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
             </div>
@@ -217,10 +221,10 @@ function DigitalSignageSolutions() {
                         loop
                         allowTouchMove={true}
                         autoplay={{
-                          delay: 1,
+                          delay: 2000,
                           disableOnInteraction: false,
                         }}
-                        speed={4000}
+                        speed={1000}
                       >
                         {singleContentData.contentImageUrls.map(
                           (singleImageUrl, index) => (
