@@ -75,7 +75,7 @@ function Rental2() {
                         href={""}
                         style={{
                           paddingTop: "125%",
-                          backgroundImage: "url('/images/rental/indoor.jpeg')",
+                          backgroundImage: "url('/images/rental/indoor.jpg')",
                           backgroundSize: "cover",
                           backgroundPosition: "center",
                         }}
@@ -84,7 +84,7 @@ function Rental2() {
                           width={1200}
                           height={1200}
                           className="max-w-full hidden!"
-                          src={"/images/rental/indoor.jpeg"}
+                          src={"/images/rental/indoor.jpg"}
                           alt=""
                         ></Image>
                       </Link>
@@ -97,7 +97,7 @@ function Rental2() {
                         className="relative z-10 h-full overflow-hidden flex flex-col justify-end items-center text-center pointer-events-none p-4 text-[#333] bg-white/90"
                       >
                         <h3 className="text-[#161414] font-medium no-underline font-[Urbanist-Medium]">
-                          Dual screen
+                          Dual screen Kiosk
                         </h3>
                       </span>
                     </div>
