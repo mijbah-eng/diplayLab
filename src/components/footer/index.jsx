@@ -27,10 +27,10 @@ function Footer() {
       <div className="bg-black text-white">
         <div className="px-5 md:px-12">
           <div className="max-w-7xl mx-auto">
-            <div className="">
+            <div className="w-full">
               {/* Footer top */}
               <div className="relative z-1 grid w-full md:grid-cols-[2fr_1fr] auto-rows-auto gap-8 border-b border-[#e9e9e966] py-10 place-items-center md:place-items-start stretch justify-between">
-                <div className="md:px-10">
+                <div className="w-full md:px-10">
                   <h4 className="font-medium text-xl md:text-2xl leading-[130%]">
                     Utilize Display Lab to unlock your business' potential
                   </h4>
@@ -65,7 +65,7 @@ function Footer() {
 
                   <Link
                     href={"#"}
-                    className="inline-flex items-center justify-center text-center capitalize whitespace-nowrap bg-[#3095b5] text-white border-[1.5px] border-transparent rounded px-8 py-3.5 text-base font-medium leading-[180%] hover:text-[#3095b5] hover:bg-transparent hover:border-[#3095b5]  transition-colors duration-200"
+                    className="w-full inline-flex items-center justify-center text-center capitalize whitespace-nowrap bg-[#3095b5] text-white border-[1.5px] border-transparent rounded px-8 py-3.5 text-base font-medium leading-[180%] hover:text-[#3095b5] hover:bg-transparent hover:border-[#3095b5]  transition-colors duration-200"
                   >
                     Try For Free
                   </Link>

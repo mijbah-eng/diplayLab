@@ -2,13 +2,20 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 function ProductSection() {
+  const productImages = [
+    { image: "/images/products/product-images.jpeg" },
+    { image: "/images/products/product-images2.jpeg" },
+  ];
   return (
     <>
-      <div className="max-w-7xl mx-auto">
+      <div className="">
         {/* Hero Section */}
-        <div className="hero_section grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto hero_section grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Digital Signage Software to Power Screens Anywhere
@@ -47,21 +54,39 @@ function ProductSection() {
           </div>
         </div>
         {/* Heading */}
-        <div className="flex flex-col gap-20">
-          <div className="py-5">
-              <Image
-                className="w-full h-full rounded-2xl"
-                src={"/images/products/product-images.jpeg"}
-                width={1000}
-                height={1000}
-                alt=""
-              />
-          </div>
+        <Swiper
+          modules={[Autoplay]}
+          className="w-full h-full"
+          spaceBetween={20}
+          loop
+          allowTouchMove={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          speed={1000}
+        >
+          {productImages?.map((singleProduct, index) => (
+            <SwiperSlide key={index}>
+              <div className="py-50 ">
+                <Link href={"/products"}>
+                  <Image
+                    className="w-full h-full rounded-2xl"
+                    src={singleProduct?.image}
+                    width={1000}
+                    height={1000}
+                    alt=""
+                  />
+                </Link>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-          <Link href={"/products"} className={"button cursor-pointer"}>
+          {/* <Link href={"/products"} className={"button cursor-pointer"}>
             View All Products
-          </Link>
-        </div>
+          </Link> */}
+        
       </div>
     </>
   );

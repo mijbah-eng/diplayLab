@@ -55,7 +55,7 @@ function Rental2() {
                         style={{
                           backgroundColor: "rgba(99,213,150,0) !important",
                         }}
-                        className="flex flex-col relative overflow-hidden z-1 bg-white/90 text-[#333] p-[15px] h-full box-border justify-end items-center text-center pointer-events-none cursor-pointer text-base"
+                        className="flex flex-col relative overflow-hidden z-1 text-[#333] p-[15px] h-full box-border justify-end items-center text-center pointer-events-none cursor-pointer text-base"
                       >
                         <h3 className="text-[#161414] font-medium no-underline font-[Urbanist-Medium]">
                           {singleProduct?.product_name}
@@ -94,7 +94,7 @@ function Rental2() {
                         style={{
                           backgroundColor: "rgba(99,213,150,0) !important",
                         }}
-                        className="relative z-10 h-full overflow-hidden flex flex-col justify-end items-center text-center pointer-events-none p-4 text-[#333] bg-white/90"
+                        className="relative z-10 h-full overflow-hidden flex flex-col justify-end items-center text-center pointer-events-none p-4 text-[#333]"
                       >
                         <h3 className="text-[#161414] font-medium no-underline font-[Urbanist-Medium]">
                           Dual screen Kiosk
