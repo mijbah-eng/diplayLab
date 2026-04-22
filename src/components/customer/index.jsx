@@ -1,12 +1,10 @@
 import Link from "next/link";
-import CustomerCounting from "./CustomerCounting";
 import CustomerText from "./CustomerText";
 
 function CustomerReviews() {
   return (
     <div className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
-
         {/* Counter Section */}
         {/* <CustomerCounting /> */}
 
@@ -17,7 +15,26 @@ function CustomerReviews() {
           </div>
 
           <div className="flex justify-center gap-6 mt-2 text-gray-600 font-semibold">
-           <img className="w-41.75" src="/svg/details/our_logos.svg" alt="our_logos" />
+            <img
+              className="w-41.75"
+              src="/images/our_account_logos/b-1.png"
+              alt="our_logos"
+            />
+            <img
+              className="w-41.75"
+              src="/images/our_account_logos/b-2.png"
+              alt="our_logos"
+            />
+            <img
+              className="w-41.75"
+              src="/images/our_account_logos/b-3.png"
+              alt="our_logos"
+            />
+            <img
+              className="w-41.75"
+              src="/images/our_account_logos/b-4.png"
+              alt="our_logos"
+            />
           </div>
         </div>
 
@@ -28,11 +45,13 @@ function CustomerReviews() {
 
         {/* Button */}
         <div className="flex justify-center mt-12">
-          <Link href={"/"} className="border-[1.5px] border-[#005582] bg-[#005582] text-white text-center capitalize whitespace-nowrap rounded flex justify-center items-center px-6 py-[.4rem] text-base font-medium leading-[180%] transition-colors duration-200 hover:text-black hover:bg-white">
+          <Link
+            href={"/"}
+            className="border-[1.5px] border-[#005582] bg-[#005582] text-white text-center capitalize whitespace-nowrap rounded flex justify-center items-center px-6 py-[.4rem] text-base font-medium leading-[180%] transition-colors duration-200 hover:text-black hover:bg-white"
+          >
             Try For Free →
           </Link>
         </div>
-
       </div>
     </div>
   );
