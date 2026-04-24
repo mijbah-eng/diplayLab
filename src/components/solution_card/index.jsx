@@ -36,18 +36,18 @@ function SolutionCard() {
       link: "",
     },
     {
-      icon: "/images/explore-Display/Icon-04.png",
-      title: "Easy Content Management",
+      icon: "/images/explore-Display/Icon-05.png",
+      title: "Pre-Mage Templates to Use",
       description:
-        "Easily display content and publish updates with our simple, user-friendly CMS.Create engaging designs with drag-and-drop tools and customizable templates.",
+        "Select from ready-to-use templates.",
       link_Text: "Learn more",
       link: "",
     },
     {
-      icon: "/images/explore-Display/Icon-04.png",
-      title: "Easy Content Management",
+      icon: "/images/explore-Display/Icon-06.png",
+      title: "Multi-Screen Management",
       description:
-        "Easily display content and publish updates with our simple, user-friendly CMS.Create engaging designs with drag-and-drop tools and customizable templates.",
+        "Manage multiple screens in one accout.",
       link_Text: "Learn more",
       link: "",
     },

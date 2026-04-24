@@ -8,8 +8,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 function ProductSection() {
   const productImages = [
-    { image: "/images/products/product-images.jpeg" },
-    { image: "/images/products/product-images2.jpeg" },
+    { image: "/images/products/product-images1.jpeg" },
+    { image: "/images/products/product-images2.1.jpeg" },
   ];
   return (
     <>

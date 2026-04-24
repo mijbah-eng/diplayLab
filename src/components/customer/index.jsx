@@ -16,25 +16,26 @@ function CustomerReviews() {
 
           <div className="flex justify-center gap-6 mt-2 text-gray-600 font-semibold">
             <img
-              className="w-41.75"
-              src="/images/our_account_logos/b-1.png"
+              className="w-10"
+              src="/svg/our_account_logos/3.svg"
               alt="our_logos"
             />
             <img
-              className="w-41.75"
-              src="/images/our_account_logos/b-2.png"
+              className="w-40"
+              src="/svg/our_account_logos/4.svg"
               alt="our_logos"
             />
             <img
-              className="w-41.75"
-              src="/images/our_account_logos/b-3.png"
+              className="w-10"
+              src="/svg/our_account_logos/2.svg"
               alt="our_logos"
             />
             <img
-              className="w-41.75"
-              src="/images/our_account_logos/b-4.png"
+              className="w-10"
+              src="/svg/our_account_logos/1.svg"
               alt="our_logos"
             />
+
           </div>
         </div>
 

@@ -13,7 +13,7 @@ function SingleSolutionCard2({ card }) {
       <h3 className="text-lg font-semibold mt-3">{card.title}</h3>
 
       {/* Hover Details */}
-      <div className="absolute inset-0 bg-[#3095b5] text-white flex flex-col justify-center items-center p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+      <div className="absolute inset-0 bg-[#005582] text-white flex flex-col justify-center items-center p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
         <p className="text-sm mb-3">{card.description}</p>
       </div>
     </Link>
