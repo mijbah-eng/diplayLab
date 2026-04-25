@@ -1,5 +1,6 @@
 "use client";
 import MarqueeSection from "../marquee/marquee";
+import Reveal from "../utils/Reveal";
 
 const images = [
   { src: "/images/advertisement/Restaurant.jpg", label: "Restaurant" },
@@ -22,7 +23,9 @@ const images = [
 function Gallery() {
   return (
     <div className="py-16 md:py-24">
-      <MarqueeSection images={images} />
+      <Reveal props={"w-full"}>
+        <MarqueeSection images={images} />
+      </Reveal>
     </div>
   );
 }

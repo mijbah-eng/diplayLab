@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CustomerText from "./CustomerText";
+import Reveal from "../utils/Reveal";
 
 function CustomerReviews() {
   return (
@@ -10,41 +11,47 @@ function CustomerReviews() {
 
         {/* Rating */}
         <div className="text-center mt-10">
-          <div className="flex justify-center items-center gap-1 text-orange-400 text-xl">
-            ★ ★ ★ ★ ★
-          </div>
-
-          <div className="flex justify-center gap-6 mt-2 text-gray-600 font-semibold">
-            <img
-              className="w-10"
-              src="/svg/our_account_logos/3.svg"
-              alt="our_logos"
-            />
-            <img
-              className="w-40"
-              src="/svg/our_account_logos/4.svg"
-              alt="our_logos"
-            />
-            <img
-              className="w-10"
-              src="/svg/our_account_logos/2.svg"
-              alt="our_logos"
-            />
-            <img
-              className="w-10"
-              src="/svg/our_account_logos/1.svg"
-              alt="our_logos"
-            />
-
-          </div>
+          <Reveal props={"w-full"}>
+            <div className="flex justify-center items-center gap-1 text-orange-400 text-xl">
+              ★ ★ ★ ★ ★
+            </div>
+          </Reveal>
+          <Reveal props={"w-full"}>
+            <div className="flex justify-center gap-6 mt-2 text-gray-600 font-semibold">
+              <img
+                className="w-10"
+                src="/svg/our_account_logos/3.svg"
+                alt="our_logos"
+              />
+              <img
+                className="w-40"
+                src="/svg/our_account_logos/4.svg"
+                alt="our_logos"
+              />
+              <img
+                className="w-10"
+                src="/svg/our_account_logos/2.svg"
+                alt="our_logos"
+              />
+              <img
+                className="w-10"
+                src="/svg/our_account_logos/1.svg"
+                alt="our_logos"
+              />
+            </div>
+          </Reveal>
         </div>
 
         {/* Testimonials */}
         <div className="mt-14">
-          <CustomerText />
+          <Reveal props={"w-full"}>
+            <CustomerText />
+          </Reveal>
         </div>
 
         {/* Button */}
+        <Reveal props={"w-full"}>
+          
         <div className="flex justify-center mt-12">
           <Link
             href={"/"}
@@ -53,6 +60,7 @@ function CustomerReviews() {
             Try For Free →
           </Link>
         </div>
+        </Reveal>
       </div>
     </div>
   );

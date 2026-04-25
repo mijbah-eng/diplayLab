@@ -1,4 +1,5 @@
 import { adsCardDatas } from "@/utils";
+import Reveal from "../utils/Reveal";
 import AdsCard from "./adsCard";
 
 function Advertisement_Solutions() {
@@ -8,50 +9,59 @@ function Advertisement_Solutions() {
         <div className="max-w-7xl mx-auto px-4">
           {/* Hero Section */}
           <div className="hero_section grid lg:grid-cols-2 gap-12 items-center pb-24">
-            <div className="relative">
+            <Reveal props={"w-full"}>
               <div className="relative">
-                <div
-                  animate={{
-                    y: [0, 15, 0],
-                  }}
-                  transition={{
-                    duration: 5,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                  className="bg-white rounded-2xl shadow-2xl p-4 relative z-10"
-                >
-                  <video
-                    className="rounded-xl aspect-video w-full h-full object-cover"
-                    autoPlay
-                    loop
-                    muted
-                    preload="none"
+                <div className="relative">
+                  <div
+                    animate={{
+                      y: [0, 15, 0],
+                    }}
+                    transition={{
+                      duration: 5,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                    className="bg-white rounded-2xl shadow-2xl p-4 relative z-10"
                   >
-                    <source src="https://cdn.pickcel.com/videos/main/hero-video.hMW0RsrCv5Su.webm" />
-                  </video>
+                    <video
+                      className="rounded-xl aspect-video w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                      preload="none"
+                    >
+                      <source src="https://cdn.pickcel.com/videos/main/hero-video.hMW0RsrCv5Su.webm" />
+                    </video>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Reveal>
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Advertisement Solutions
-              </h1>
-              <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                Turn screens into revenue-generating advertising platforms.
-              </p>
+              <Reveal props={"w-full"}>
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                  Advertisement Solutions
+                </h1>
+              </Reveal>
+              <Reveal props={"w-full"}>
+                <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                  Turn screens into revenue-generating advertising platforms.
+                </p>
+              </Reveal>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
             </div>
-            
           </div>
           {/* Heading */}
-          <h2 className="text-center h2_text">
-            Display Lab Advertisement Solutions
-          </h2>
+          <Reveal props={"w-full"}>
+            <h2 className="text-center h2_text">
+              Display Lab Advertisement Solutions
+            </h2>
+          </Reveal>
           <div className="h-6"></div>
-          <p className="title_desc mb-8">
-            Turn screens into revenue-generating advertising platforms.
-          </p>
+          <Reveal props={"w-full"}>
+            <p className="title_desc mb-8">
+              Turn screens into revenue-generating advertising platforms.
+            </p>
+          </Reveal>
           <div className="h-6"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

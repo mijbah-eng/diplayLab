@@ -1,4 +1,5 @@
 "use client";
+import Reveal from "../utils/Reveal";
 import SingleSolutionCard2 from "./SingleSolutionCard2";
 
 function SolutionCard() {
@@ -38,16 +39,14 @@ function SolutionCard() {
     {
       icon: "/images/explore-Display/Icon-05.png",
       title: "Pre-Mage Templates to Use",
-      description:
-        "Select from ready-to-use templates.",
+      description: "Select from ready-to-use templates.",
       link_Text: "Learn more",
       link: "",
     },
     {
       icon: "/images/explore-Display/Icon-06.png",
       title: "Multi-Screen Management",
-      description:
-        "Manage multiple screens in one accout.",
+      description: "Manage multiple screens in one accout.",
       link_Text: "Learn more",
       link: "",
     },
@@ -85,25 +84,30 @@ function SolutionCard() {
             </div>
           </div>
           {/* video Section end */}
-          <h2 className="h2_text text-center">
-            Powerful Tools to Run <br /> Your Digital Signage Network
-          </h2>
+          <Reveal props={"w-full"}>
+            <h2 className="h2_text text-center">
+              Powerful Tools to Run <br /> Your Digital Signage Network
+            </h2>
+          </Reveal>
 
           <div className="h-6"></div>
-
-          <p className="title_desc">
-            Everything you need to manage, schedule, and control digital signage
-            displays from one platform.
-          </p>
+          <Reveal props={"w-full"}>
+            <p className="title_desc">
+              Everything you need to manage, schedule, and control digital
+              signage displays from one platform.
+            </p>
+          </Reveal>
 
           <div className="h-14"></div>
 
           {/* Cards */}
-          <div className="grid md:grid-cols-3 gap-6">
-            {card_Data.map((card, index) => (
-              <SingleSolutionCard2 key={index} card={card} />
-            ))}
-          </div>
+          
+            <div className="grid md:grid-cols-3 gap-6">
+              {card_Data.map((card, index) => (
+                <SingleSolutionCard2 key={index} card={card} />
+              ))}
+            </div>
+          
         </div>
       </div>
     </>

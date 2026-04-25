@@ -4,6 +4,7 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Tabs, TabsContent, TabsList } from "../ui/tabs";
+import Reveal from "../utils/Reveal";
 import "./everyIndstyle.css";
 import TabSection from "./TabSection";
 
@@ -152,135 +153,154 @@ function DigitalSignageSolutions() {
         <div className="max-w-7xl mx-auto px-4">
           {/* Hero Section */}
           <div className="hero_section grid lg:grid-cols-2 gap-12 items-center pb-24">
-            <div className="relative">
+            <Reveal props={"w-full"}>
               <div className="relative">
-                <div
-                  animate={{
-                    y: [0, 15, 0],
-                  }}
-                  transition={{
-                    duration: 5,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                  className="bg-white rounded-2xl shadow-2xl p-4 relative z-10"
-                >
-                  <video
-                    className="rounded-xl aspect-video w-full h-full object-cover"
-                    autoPlay
-                    loop
-                    muted
-                    preload="none"
+                <div className="relative">
+                  <div
+                    animate={{
+                      y: [0, 15, 0],
+                    }}
+                    transition={{
+                      duration: 5,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                    className="bg-[#005582] rounded-2xl shadow-2xl p-4 relative z-10"
                   >
-                    <source src="https://cdn.pickcel.com/videos/main/hero-video.hMW0RsrCv5Su.webm" />
-                  </video>
+                    <video
+                      className="rounded-xl aspect-video w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                      preload="none"
+                    >
+                      <source src="https://cdn.pickcel.com/videos/main/hero-video.hMW0RsrCv5Su.webm" />
+                    </video>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Reveal>
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Drive Impact with Smarter Digital Experiences
-              </h1>
-              <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                Digital signage goes beyond simple displays—it transforms how
-                businesses connect with their audiences. By delivering the right
-                message at the right time, it helps increase engagement, improve
-                operational efficiency, and create memorable experiences that
-                influence behavior and drive results across every industry.
-              </p>
+              <Reveal>
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                  Drive Impact with Smarter Digital Experiences
+                </h1>
+              </Reveal>
+              <Reveal>
+                <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                  Digital signage goes beyond simple displays—it transforms how
+                  businesses connect with their audiences. By delivering the
+                  right message at the right time, it helps increase engagement,
+                  improve operational efficiency, and create memorable
+                  experiences that influence behavior and drive results across
+                  every industry.
+                </p>
+              </Reveal>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
             </div>
           </div>
           {/* Heading */}
-          <h2 className="h2_text text-center">
-            Digital Signage Solutions for Every Industry
-          </h2>
+          <Reveal props={"w-full"}>
+            <h2 className="h2_text text-center">
+              Digital Signage Solutions for Every Industry
+            </h2>
+          </Reveal>
           <div className="h-6"></div>
-          <p className="title_desc">
-            Our platform helps organizations communicate better, engage
-            customers, and deliver impactful digital experiences.
-          </p>
-          <div className="bg-white rounded-2xl shadow-xl p-6">
-            <Tabs defaultValue="retail" orientation="vertical">
-              {contentDatas?.map((singleContentData, index) => (
-                <TabsContent key={index} value={singleContentData.contentValue}>
-                  {/* Layout wrapper */}
-                  <div className="grid-container">
-                    {/* LEFT SIDE */}
-                    <TabsList className="sidebar flex flex-col w-full h-fit bg-transparent p-0">
-                      <TabSection />
-                    </TabsList>
+          <Reveal props={"w-full"}>
+            <p className="title_desc">
+              Our platform helps organizations communicate better, engage
+              customers, and deliver impactful digital experiences.
+            </p>
+          </Reveal>
+          <Reveal>
+            <div className="bg-white rounded-2xl shadow-xl p-6">
+              <Tabs defaultValue="retail" orientation="vertical">
+                {contentDatas?.map((singleContentData, index) => (
+                  <TabsContent
+                    key={index}
+                    value={singleContentData.contentValue}
+                  >
+                    {/* Layout wrapper */}
+                    <div className="grid-container">
+                      {/* LEFT SIDE */}
+                      <TabsList className="sidebar flex flex-col w-full h-fit bg-transparent p-0">
+                        <TabSection />
+                      </TabsList>
 
-                    {/* RIGHT SIDE */}
-                    {/* IMAGE */}
-                    <div className="hero rounded-xl overflow-hidden mb-6 w-136.25 h-86.25 md:w-220 md:h-139">
-                      <Swiper
-                        modules={[Autoplay]}
-                        className="w-full h-full"
-                        spaceBetween={20}
-                        loop
-                        allowTouchMove={true}
-                        autoplay={{
-                          delay: 2000,
-                          disableOnInteraction: false,
-                        }}
-                        speed={1000}
-                      >
-                        {singleContentData.contentImageUrls.map(
-                          (singleImageUrl, index) => (
-                            <SwiperSlide key={index} className="w-full h-full">
-                              <Image
-                                width={500}
-                                height={500}
-                                src={singleImageUrl.image_url}
-                                alt="contentImage"
-                                className="w-full h-full object-cover rounded"
-                              />
-                            </SwiperSlide>
-                          ),
-                        )}
-                      </Swiper>
-                    </div>
+                      {/* RIGHT SIDE */}
+                      {/* IMAGE */}
+                      <div className="hero rounded-xl overflow-hidden mb-6 w-136.25 h-86.25 md:w-220 md:h-139">
+                        <Swiper
+                          modules={[Autoplay]}
+                          className="w-full h-full"
+                          spaceBetween={20}
+                          loop
+                          allowTouchMove={true}
+                          autoplay={{
+                            delay: 2000,
+                            disableOnInteraction: false,
+                          }}
+                          speed={1000}
+                        >
+                          {singleContentData.contentImageUrls.map(
+                            (singleImageUrl, index) => (
+                              <SwiperSlide
+                                key={index}
+                                className="w-full h-full"
+                              >
+                                <Image
+                                  width={500}
+                                  height={500}
+                                  src={singleImageUrl.image_url}
+                                  alt="contentImage"
+                                  className="w-full h-full object-cover rounded"
+                                />
+                              </SwiperSlide>
+                            ),
+                          )}
+                        </Swiper>
+                      </div>
 
-                    {/* TITLE + DESC */}
-                    <div className="content mb-8">
-                      <h3 className="text-3xl font-bold mb-4">
-                        {singleContentData.contentTitle}
-                      </h3>
-                      <p className="text-gray-600 max-w-2xl">
-                        {singleContentData.contentDescription}
-                      </p>
-                    </div>
+                      {/* TITLE + DESC */}
+                      <div className="content mb-8">
+                        <h3 className="text-3xl font-bold mb-4">
+                          {singleContentData.contentTitle}
+                        </h3>
+                        <p className="text-gray-600 max-w-2xl">
+                          {singleContentData.contentDescription}
+                        </p>
+                      </div>
 
-                    {/* FEATURES GRID */}
-                    <div className=" features grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                      {singleContentData?.features?.map((feature, i) => (
-                        <div key={i} className="flex gap-3">
-                          <div className="w-10 h-10 flex items-center justify-center text-2xl text-[#105783] rounded-lg">
-                            📢
+                      {/* FEATURES GRID */}
+                      <div className=" features grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                        {singleContentData?.features?.map((feature, i) => (
+                          <div key={i} className="flex gap-3">
+                            <div className="w-10 h-10 flex items-center justify-center text-2xl text-[#105783] rounded-lg">
+                              📢
+                            </div>
+                            <div>
+                              <h4 className="font-semibold text-xl mb-5 text-gray-900">
+                                {feature.title}
+                              </h4>
+                              <p className="text-sm text-gray-600">
+                                {feature.desc}
+                              </p>
+                            </div>
                           </div>
-                          <div>
-                            <h4 className="font-semibold text-xl mb-5 text-gray-900">
-                              {feature.title}
-                            </h4>
-                            <p className="text-sm text-gray-600">
-                              {feature.desc}
-                            </p>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
+                        ))}
+                      </div>
 
-                    {/* <div className="">
+                      {/* <div className="">
                       <button className="bg-[#105783] hover:bg-[#003051] text-white px-8 py-3 rounded-lg">
                         Lets Setup a Demo Online
                       </button>
                     </div> */}
-                  </div>
-                </TabsContent>
-              ))}
-            </Tabs>
-          </div>
+                    </div>
+                  </TabsContent>
+                ))}
+              </Tabs>
+            </div>
+          </Reveal>
         </div>
       </div>
     </>

@@ -9,6 +9,7 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io5";
+import Reveal from "../utils/Reveal";
 
 function Footer() {
   const footerProductsLinks = [
@@ -24,6 +25,8 @@ function Footer() {
 
   return (
     <>
+    <Reveal props={"w-full"}>
+
       <div className="bg-black text-white">
         <div className="px-5 md:px-12">
           <div className="max-w-7xl mx-auto">
@@ -31,9 +34,11 @@ function Footer() {
               {/* Footer top */}
               <div className="relative z-1 grid w-full md:grid-cols-[2fr_1fr] auto-rows-auto gap-8 border-b border-[#e9e9e966] py-10 place-items-center md:place-items-start stretch justify-between">
                 <div className="w-full md:px-10">
-                  <h4 className="font-medium text-xl md:text-2xl leading-[130%]">
-                    Utilize Display Lab to unlock your business' potential
-                  </h4>
+                  <Reveal props={"w-full"}>
+                    <h4 className="font-medium text-xl md:text-2xl leading-[130%]">
+                      Utilize Display Lab to unlock your business' potential
+                    </h4>
+                  </Reveal>
                   <div className="space-small"></div>
                   <div className="hidden md:flex items-start justify-start gap-8">
                     <div className="">
@@ -61,7 +66,12 @@ function Footer() {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4 text-center md:px-10 w-md md:w-fit">
-                  <h3 className="text-lg md:text-[28px] font-bold">Get Started For Free</h3>
+                  <Reveal props={"w-full"}>
+
+                  <h3 className="text-lg md:text-[28px] font-bold">
+                    Get Started For Free
+                  </h3>
+                  </Reveal>
 
                   <Link
                     href={"#"}
@@ -172,19 +182,34 @@ function Footer() {
                         <span className="block">Houston, TX 77040</span>
                       </div>
                       <div className="flex items-center gap-6">
-                        <Link className="hover:text-[#3095b5] text-xl" href={""}>
+                        <Link
+                          className="hover:text-[#3095b5] text-xl"
+                          href={""}
+                        >
                           <FaFacebookF />
                         </Link>
-                        <Link className="hover:text-[#3095b5] text-xl" href={""}>
+                        <Link
+                          className="hover:text-[#3095b5] text-xl"
+                          href={""}
+                        >
                           <IoLogoInstagram />
                         </Link>
-                        <Link className="hover:text-[#3095b5] text-xl" href={""}>
+                        <Link
+                          className="hover:text-[#3095b5] text-xl"
+                          href={""}
+                        >
                           <FaLinkedin />
                         </Link>
-                        <Link className="hover:text-[#3095b5] text-xl" href={""}>
+                        <Link
+                          className="hover:text-[#3095b5] text-xl"
+                          href={""}
+                        >
                           <FaYoutube />
                         </Link>
-                        <Link className="hover:text-[#3095b5] text-xl" href={""}>
+                        <Link
+                          className="hover:text-[#3095b5] text-xl"
+                          href={""}
+                        >
                           <FaXTwitter />
                         </Link>
                       </div>
@@ -249,6 +274,7 @@ function Footer() {
           </div>
         </div>
       </div>
+    </Reveal>
     </>
   );
 }
