@@ -221,7 +221,7 @@ function Footer() {
               <div className="relative z-1 flex flex-col items-center md:flex-row md:justify-start md:items-end gap-x-12 gap-y-8 pt-12 pb-12">
                 <div className="">
                   <div className="flex flex-col gap-4">
-                    <Link href="/" className="flex justify-center">
+                    <Link href="/" className="flex justify-center md:justify-start">
                       <Image
                         src={logoBlue}
                         alt="Display Lab - Digital Signage Software Solutions"

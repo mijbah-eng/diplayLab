@@ -27,7 +27,7 @@ function Rental2() {
       <div className="">
         <Reveal props={"w-full"}>
           <h2 className="h2_text text-center mb-6">
-            Display Lab Rental Products
+            Display Lab <br /> Rental Products
           </h2>
         </Reveal>
         <Reveal props={"w-full"}>
@@ -75,7 +75,7 @@ function Rental2() {
                             }}
                             className="flex flex-col relative overflow-hidden z-1 text-[#333] p-[15px] h-full box-border justify-end items-center text-center pointer-events-none cursor-pointer text-base"
                           >
-                            <h3 className="text-[#161414] font-medium no-underline font-[Urbanist-Medium]">
+                            <h3 className="text-white bg-[#3095b5] px-2 py-1 rounded font-bold">
                               {singleProduct?.product_name}
                             </h3>
                           </span>
@@ -114,7 +114,7 @@ function Rental2() {
                           }}
                           className="relative z-10 h-full overflow-hidden flex flex-col justify-end items-center text-center pointer-events-none p-4 text-[#333]"
                         >
-                          <h3 className="text-[#161414] font-medium no-underline font-[Urbanist-Medium]">
+                          <h3 className="text-white bg-[#3095b5] px-2 py-1 rounded font-bold">
                             Dual screen Kiosk
                           </h3>
                         </span>

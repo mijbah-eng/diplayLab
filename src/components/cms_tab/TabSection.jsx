@@ -28,7 +28,7 @@ function TabSection() {
     },
   ];
   const tabStyle =
-    "w-full text-center p-6 rounded-xl border border-gray-200  bg-gray-50 hover:bg-gray-100 transition-all duration-200  flex flex-col items-center gap-2  whitespace-normal break-words  data-[state=active]:bg-blue-50   data-[state=active]:border-blue-400   data-[state=active]:shadow-sm ";
+    "w-full text-start p-6 rounded-xl border border-gray-200  bg-gray-50 hover:bg-gray-100 transition-all duration-200  flex flex-col items-center gap-2  whitespace-normal break-words  data-[state=active]:bg-blue-50   data-[state=active]:border-blue-400   data-[state=active]:shadow-sm ";
   // "text-left text-2xl shadow-none p-5 border-l-2 border-r-0 border-b-0 border-t-0 border-gray-300 rounded-none justify-start data-[state=active]:border-[#003051] data-[state=active]:text-[#003051] data-[state=active]:text-xl md:data-[state=active]:text-3xl cursor-pointer";
 
   return (

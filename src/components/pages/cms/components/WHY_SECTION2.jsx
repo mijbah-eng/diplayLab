@@ -45,7 +45,7 @@ function WHY_SECTION2() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {featureSections?.map((singleFeature, index) => (
-              <div key={index} className="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-sm text-center">
+              <div key={index} className="flex flex-col items-center px-6 py-8 bg-gray-50 rounded-lg shadow-sm text-center">
                 <div className="mb-4">
                   {/* Icon */}
                   {singleFeature?.icon}

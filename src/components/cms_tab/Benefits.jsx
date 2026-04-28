@@ -9,7 +9,7 @@ function Benefits() {
         <div className="max-w-7xl mx-auto px-4">
           {/* Heading */}
           <h2 className="h2_text text-center">
-            Everything You Need, All in One Platform
+            Everything You Need, <br /> All in One Platform
           </h2>
           <div className="h-6"></div>
 

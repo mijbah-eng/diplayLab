@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { FaHospitalAlt } from "react-icons/fa";
 import { IoRestaurantSharp, IoSchool } from "react-icons/io5";
 import { MdEvent, MdOutlineHomeWork } from "react-icons/md";

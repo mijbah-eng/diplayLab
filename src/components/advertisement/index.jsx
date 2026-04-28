@@ -53,7 +53,7 @@ function Advertisement_Solutions() {
           {/* Heading */}
           <Reveal props={"w-full"}>
             <h2 className="text-center h2_text">
-              Display Lab Advertisement Solutions
+              Display Lab <br /> Advertisement Solutions
             </h2>
           </Reveal>
           <div className="h-6"></div>

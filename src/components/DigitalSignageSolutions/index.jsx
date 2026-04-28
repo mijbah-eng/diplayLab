@@ -183,7 +183,7 @@ function DigitalSignageSolutions() {
             <div className="text-center lg:text-left">
               <Reveal>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                  Drive Impact with Smarter Digital Experiences
+                  Smarter Digital Experiences
                 </h1>
               </Reveal>
               <Reveal>
@@ -202,7 +202,7 @@ function DigitalSignageSolutions() {
           {/* Heading */}
           <Reveal props={"w-full"}>
             <h2 className="h2_text text-center">
-              Digital Signage Solutions for Every Industry
+              Digital Signage Solutions <br /> for Every Industry
             </h2>
           </Reveal>
           <div className="h-6"></div>
@@ -212,7 +212,7 @@ function DigitalSignageSolutions() {
               customers, and deliver impactful digital experiences.
             </p>
           </Reveal>
-          <Reveal>
+          <Reveal props={"w-full"}>
             <div className="bg-white rounded-2xl shadow-xl p-6">
               <Tabs defaultValue="retail" orientation="vertical">
                 {contentDatas?.map((singleContentData, index) => (
