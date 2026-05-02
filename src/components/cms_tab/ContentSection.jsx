@@ -41,20 +41,20 @@ function ContentSection() {
       {contentDatas?.map((singleContentData, index) => (
         <TabsContent
           className={
-            "data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-2 duration-500"
+            "data-[state=active]:animate-in data-[state=active]:fade-in-0 data-[state=active]:slide-in-from-bottom-2 duration-500 h-full"
           }
           key={index}
           value={singleContentData?.contentValue}
         >
-          <div className="grid gap-10 items-center">
-            <div className=" overflow-hidden rounded-xl">
+          <div className="flex flex-col justify-center h-full">
+            <div className="overflow-hidden rounded-xl">
               <img
                 src={singleContentData?.contentImageUrl}
                 className="w-full h-full object-cover"
               />
             </div>
 
-            <div>
+            {/* <div>
               <h3 className="text-2xl font-semibold mb-4">
                 {singleContentData?.contentTitle}
               </h3>
@@ -66,7 +66,7 @@ function ContentSection() {
               <button className="bg-[#105783] hover:bg-[#003051] text-white px-6 py-3 rounded-lg cursor-pointer">
                 Setup Digital Signage in Retail Store
               </button>
-            </div>
+            </div> */}
           </div>
         </TabsContent>
       ))}
