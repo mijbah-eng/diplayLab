@@ -24,6 +24,60 @@ function Rental2() {
   ];
   return (
     <>
+    <div className="py-16 md:py-24">
+ <div className="max-w-7xl mx-auto px-4 ">
+       {/* Hero Section */}
+          <div className="hero_section grid lg:grid-cols-2 gap-12 items-center pb-24">
+            <div className="text-center lg:text-left">
+              <Reveal props={"w-full"}>
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                  Display Lab Rental Products
+                </h1>
+              </Reveal>
+              <Reveal props={"w-full"}>
+                <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                  Flexible digital signage rental solutions for events, promotions, and temporary setups. Use high-quality displays without buying hardware. Ideal for exhibitions, trade shows, and seasonal campaigns. Quick setup and easy management ensure smooth execution at any venue.
+                </p>
+              </Reveal>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Link
+                href={"/rental"}
+                className="w-xs sm:w-fit bg-cyan-600 text-white px-8 py-4 rounded font-semibold text-base hover:bg-cyan-700 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
+              >
+                Learn More
+              </Link>
+              </div>
+            </div>
+            <Reveal props={"w-full"}>
+              <div className="relative">
+                <div className="relative">
+                  <div
+                    animate={{
+                      y: [0, 15, 0],
+                    }}
+                    transition={{
+                      duration: 5,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                    className="bg-white rounded-2xl shadow-2xl p-4 relative z-10"
+                  >
+                    <video
+                      className="rounded-xl aspect-video w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                      preload="none"
+                    >
+                      <source src="https://cdn.pickcel.com/videos/main/hero-video.hMW0RsrCv5Su.webm" />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+          {/* Heading */}
+    </div>
       <div className="">
         <Reveal props={"w-full"}>
           <h2 className="h2_text text-center mb-6">
@@ -127,6 +181,8 @@ function Rental2() {
           </div>
         </div>
       </Reveal>
+    </div>
+   
     </>
   );
 }

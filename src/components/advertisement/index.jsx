@@ -1,6 +1,7 @@
 import { adsCardDatas } from "@/utils";
 import Reveal from "../utils/Reveal";
 import AdsCard from "./adsCard";
+import Link from "next/link";
 
 function Advertisement_Solutions() {
   return (
@@ -21,7 +22,7 @@ function Advertisement_Solutions() {
                       repeat: Infinity,
                       ease: "linear",
                     }}
-                    className="bg-white rounded-2xl shadow-2xl p-4 relative z-10"
+                    className="bg-[#005582] rounded-2xl shadow-2xl p-4 relative z-10"
                   >
                     <video
                       className="rounded-xl aspect-video w-full h-full object-cover"
@@ -39,27 +40,37 @@ function Advertisement_Solutions() {
             <div className="text-center lg:text-left">
               <Reveal props={"w-full"}>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                  Advertisement Solutions
+                  Smart Digital Advertising Solutions
                 </h1>
               </Reveal>
               <Reveal props={"w-full"}>
                 <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                  Turn screens into revenue-generating advertising platforms.
+                  Display Lab enables businesses to deliver impactful advertising through dynamic digital signage. Showcase targeted content across multiple screens with real-time updates and centralized control. Easily manage campaigns, boost engagement, and enhance brand visibility.
                 </p>
               </Reveal>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
+              <Reveal props={"w-full"}>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Link
+                href={"/advertisement"}
+                className="w-xs sm:w-fit bg-cyan-600 text-white px-8 py-4 rounded font-semibold text-base hover:bg-cyan-700 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
+              >
+                Learn More
+              </Link>
+              </div>
+              </Reveal>
             </div>
           </div>
           {/* Heading */}
           <Reveal props={"w-full"}>
             <h2 className="text-center h2_text">
-              Display Lab <br /> Advertisement Solutions
+              Useing Real World <br /> Advertisement Solutions
             </h2>
           </Reveal>
           <div className="h-6"></div>
           <Reveal props={"w-full"}>
             <p className="title_desc mb-8">
-              Turn screens into revenue-generating advertising platforms.
+             Turn screens into revenue-generating advertising platforms.Deliver dynamic and eye-catching content that captures audience attention instantly. Manage and update campaigns in real time across all connected displays. Maximize brand visibility with targeted and impactful digital advertising experiences. 
             </p>
           </Reveal>
           <div className="h-6"></div>

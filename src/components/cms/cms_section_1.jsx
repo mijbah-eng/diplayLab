@@ -42,9 +42,7 @@ function CMS_Marketing() {
               </Reveal>
               <Reveal>
                 <p className="text-[1rem] mb-8">
-                  Display Lab offers complete digital signage solutions, from
-                  CMS to hardware and displays. Simple, scalable tools to
-                  communicate and engage across any number of screens.
+                  Display Lab offers complete digital signage solutions, from CMS to hardware and displays. Simple, scalable tools to communicate and engage across any number of screens. Our platform is designed for ease of use, allowing you to manage content effortlessly in real time. Whether for retail, corporate, or public spaces, we help you deliver impactful visual experiences that captivate your audience.
                 </p>
               </Reveal>
               <Reveal>

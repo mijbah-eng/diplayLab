@@ -24,7 +24,7 @@ function GetStarted() {
       ),
       title: "Connect Your Device",
       description:
-        "Install the player app on your screen or media device.Pair it instantly using a secure code to get started in seconds.",
+        "Easily connect your screens, kiosks, or displays to the Display Lab system.Supports multiple devices for seamless multi-screen management.Ensure stable and secure connectivity for uninterrupted content delivery.",
     },
     {
       cardNumber: "02",
@@ -49,7 +49,7 @@ function GetStarted() {
       ),
       title: "Create & Upload Content",
       description:
-        "Upload your media, use templates, or design content بسهولة. Add apps,images, and videos to build engaging playlists.",
+        " Design engaging visuals and upload your content in just a few clicks.Support for images, videos, and dynamic media formats.Make your messaging more powerful with creative and flexible content tools.",
     },
     {
       cardNumber: "03",
@@ -76,7 +76,7 @@ function GetStarted() {
       ),
       title: "Publish to Your Screens",
       description:
-        "Assign content to one or multiple displays instantly.Update and manage everything remotely, anytime.",
+        "Schedule and publish your content instantly across all connected displays.Control what appears on each screen with precision and ease.Deliver real-time updates to keep your audience informed and engaged.",
     },
   ];
   return (
@@ -88,7 +88,7 @@ function GetStarted() {
           </p>
           <h2 className="h2_text mb-4">Get Started with Dispaly Lab</h2>
           <p className="title_desc mx-auto">
-            Three simple steps to transform your digital signage experience
+            Begin your digital signage journey with powerful tools built for simplicity and impact.Access your dashboard and start managing content within minutes.Transform your communication with smart, scalable display solutions. 
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">

@@ -2,74 +2,76 @@ import Link from "next/link";
 
 function DigitalSignage() {
   const DigitalSignagePlatfroms = [
-    {
-      img_src:
-        "https://www.yodeck.com/wp-content/uploads/2023/09/restaurant-digital-signage-yodeck.jpg",
-      title: "Restaurants",
-      description:
-        "Showcase menus, promotions, and special offers with eye-catching visuals.Boost upselling and enhance the dining experience.",
-    },
+  {
+    img_src:
+      "https://www.yodeck.com/wp-content/uploads/2023/09/restaurant-digital-signage-yodeck.jpg",
+    title: "Restaurant",
+    description:
+      "Boost orders and enhance dining experience with dynamic menus, promotions, and real-time updates that keep customers engaged.",
+  },
 
-    {
-      img_src:
-        "https://www.yodeck.com/wp-content/uploads/2023/09/TV-Screen-1.jpg",
-      title: "Grocery Stores",
-      description:
-        " Improve safety and productivity from the factory floor to the office.Share real-time updates, alerts, and operational insights.",
-    },
+  {
+    img_src:
+      "https://www.yodeck.com/wp-content/uploads/2023/09/TV-Screen-1.jpg",
+    title: "Grocery",
+    description:
+      "Promote deals, flash discounts, and product information instantly to improve shopper experience and increase basket size.",
+  },
 
-    {
-      img_src: "https://www.yodeck.com/wp-content/uploads/2023/09/Retail.jpg",
-      title: "Retail & Mall",
-      description:
-        "Highlight products, promotions, and campaigns to attract shoppers.Increase engagement and drive more in-store sales.",
-    },
+  {
+    img_src: "https://www.yodeck.com/wp-content/uploads/2023/09/Retail.jpg",
+    title: "Retail",
+    description:
+      "Drive sales with eye-catching in-store displays, promotions, and product highlights that influence purchase decisions at the point of sale.",
+  },
 
-    {
-      img_src:
-        "https://www.yodeck.com/wp-content/uploads/2023/09/Education-1.jpg",
-      title: "Education",
-      description:
-        "Engage students and staff with dynamic and informative displays.Share announcements, schedules, and campus updates بسهولة.",
-    },
+  {
+    img_src:
+      "https://www.yodeck.com/wp-content/uploads/2023/09/Education-1.jpg",
+    title: "Education",
+    description:
+      "Share announcements, schedules, emergency alerts, and campus information in real time for better communication across institutions.",
+  },
 
-    {
-      img_src: "https://www.yodeck.com/wp-content/uploads/2023/09/Offices.jpg",
-      title: "Offices",
-      description:
-        "Enhance workplace communication with news, dashboards, and updates.Keep teams informed, connected, and productive.",
-    },
-    
-    {
-      img_src:
-        "https://www.yodeck.com/wp-content/uploads/2023/09/TV-Screen-1.jpg",
-      title: "Government",
-      description:
-        " Improve safety and productivity from the factory floor to the office.Share real-time updates, alerts, and operational insights.",
-    },
-    {
-      img_src:
-        "https://www.yodeck.com/wp-content/uploads/2023/09/TV-Screen-1.jpg",
-      title: "Religious Venues",
-      description:
-        " Improve safety and productivity from the factory floor to the office.Share real-time updates, alerts, and operational insights.",
-    },
-    {
-      img_src:
-        "https://www.yodeck.com/wp-content/uploads/2023/09/TV-Screen-1.jpg",
-      title: "Manufacturing",
-      description:
-        " Improve safety and productivity from the factory floor to the office.Share real-time updates, alerts, and operational insights.",
-    },
+  {
+    img_src: "https://www.yodeck.com/wp-content/uploads/2023/09/Offices.jpg",
+    title: "Offices",
+    description:
+      "Improve internal communication with dashboards, KPIs, announcements, and visitor information displayed clearly and professionally.",
+  },
 
-    {
-      img_src:
-        "https://www.yodeck.com/wp-content/uploads/2023/09/Healthcare.jpg",
-      title: "Healthcare",
-      description:
-        "Share important information, directions, and health awareness content.Improve patient experience and streamline communication.",
-    },
-  ];
+  {
+    img_src:
+      "https://www.yodeck.com/wp-content/uploads/2023/09/TV-Screen-1.jpg",
+    title: "Government",
+    description:
+      "Deliver public information, service updates, alerts, and announcements efficiently to ensure transparency and accessibility.",
+  },
+
+  {
+    img_src:
+      "https://www.yodeck.com/wp-content/uploads/2023/09/TV-Screen-1.jpg",
+    title: "Religious Venues",
+    description:
+      "Share prayer timings, sermons, events, and community messages to enhance engagement and keep congregations informed.",
+  },
+
+  {
+    img_src:
+      "https://www.yodeck.com/wp-content/uploads/2023/09/TV-Screen-1.jpg",
+    title: "Manufacturing",
+    description:
+      "Display safety alerts, production metrics, shift schedules, and operational updates to improve efficiency and workplace safety.",
+  },
+
+  {
+    img_src:
+      "https://www.yodeck.com/wp-content/uploads/2023/09/Healthcare.jpg",
+    title: "Healthcare",
+    description:
+      "Inform patients with wait times, health tips, announcements, and wayfinding to improve experience and streamline operations.",
+  },
+];
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

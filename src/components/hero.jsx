@@ -15,12 +15,12 @@ function Hero() {
           <div className="text-center lg:text-left">
             <Reveal>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Digital Signage <br /> Software to Power <br />{" "}
+               Powering Business <br /> Growth Through Smart <br />{" "}
                 <span className="text-cyan-600 block">
                   {" "}
                   <Typewriter
                     options={{
-                      strings: ["Screens Anywhere", "To Life"],
+                      strings: ["Display Lab CMS", "Display Products", "Display Rentals", "Advertising Solutions"],
                       autoStart: true,
                       loop: true,
                     }}
@@ -30,9 +30,7 @@ function Hero() {
             </Reveal>
             <Reveal>
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                Turn any screen into a powerful communication and marketing
-                platform. Create, manage, and publish content across multiple
-                displays from one cloud dashboard.
+                Manage, promote, and scale your business with an all-in-one platform built for digital signage, hardware solutions, event rentals, and advertising opportunities.
               </p>
             </Reveal>
             <Reveal>

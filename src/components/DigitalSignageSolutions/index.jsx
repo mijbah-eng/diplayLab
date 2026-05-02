@@ -20,12 +20,12 @@ function DigitalSignageSolutions() {
       ],
       contentTitle: "Retail",
       contentDescription:
-        " Enhance the in-store experience with dynamic digital signage that captures attention and drives sales. Showcase promotions, highlight featured products, and deliver real-time updates to influence customer decisions at the point of purchase.",
+        "Enhance the in-store experience with dynamic digital signage that captures attention and drives sales. Showcase promotions, highlight featured products, and deliver real-time updates to influence customer decisions at the point of purchase.",
       contentValue: "retail",
       features: [
         {
           title: "Boost In-Store Engagement",
-          desc: "Capture customer attention with vibrant, dynamic displays.Promote offers, new arrivals, and seasonal campaigns in real time.Create immersive shopping experiences that increase dwell time.",
+          desc: " Capture customer attention with vibrant, dynamic displays.Promote offers, new arrivals, and seasonal campaigns in real time.Create immersive shopping experiences that increase dwell time.",
         },
         {
           title: "Smart Product Promotion",
@@ -137,7 +137,7 @@ function DigitalSignageSolutions() {
         },
         {
           title: "Improve Campus Navigation",
-          desc: "Use interactive maps and directories for guidance.Help students and visitors find locations بسهولة.Enhance campus accessibility and experience.",
+          desc: " Use interactive maps and directories for guidance.Help students and visitors find exact locations.Enhance campus accessibility and experience.",
         },
         {
           title: "Schedules & Alerts",
@@ -183,17 +183,12 @@ function DigitalSignageSolutions() {
             <div className="text-center lg:text-left">
               <Reveal>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                  Smarter Digital Experiences
+                  Digital Signage Solutions Across Industries
                 </h1>
               </Reveal>
               <Reveal>
                 <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                  Digital signage goes beyond simple displays—it transforms how
-                  businesses connect with their audiences. By delivering the
-                  right message at the right time, it helps increase engagement,
-                  improve operational efficiency, and create memorable
-                  experiences that influence behavior and drive results across
-                  every industry.
+                  Display Lab Digital Signage lets businesses manage and deliver dynamic content across screens with ease. It enables real-time updates and centralized control, supporting retail, offices, restaurants, healthcare, and education with engaging promotions, clear communication, and live information.
                 </p>
               </Reveal>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
@@ -208,8 +203,7 @@ function DigitalSignageSolutions() {
           <div className="h-6"></div>
           <Reveal props={"w-full"}>
             <p className="title_desc">
-              Our platform helps organizations communicate better, engage
-              customers, and deliver impactful digital experiences.
+              Our platform helps organizations communicate better, engage customers, and deliver impactful digital CMS experiences.  It simplifies content management with intuitive tools designed for efficiency and control. With real-time updates, your messaging stays relevant, timely, and consistent across all screens. Built for scalability, it grows with your business needs across any industry or environment.
             </p>
           </Reveal>
           <Reveal props={"w-full"}>

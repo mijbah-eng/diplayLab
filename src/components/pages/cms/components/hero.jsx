@@ -31,12 +31,12 @@ function CMS_HERO() {
                 </span>
               </div>
               <h1 className="h1_text">
-                Digital Signage That Brings Your Content
+                Powerful CMS for Dynamic Digital
                 <span className="text-cyan-600 block">
                   {" "}
                   <Typewriter
                     options={{
-                      strings: ["...", "To Life"],
+                      strings: ["Signage Experiences", "CMS Experience", "Powerful CMS"],
                       autoStart: true,
                       loop: true,
                     }}
@@ -44,9 +44,7 @@ function CMS_HERO() {
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                Create, manage, and display stunning content across all your
-                screens with the most reliable and easy-to-use digital signage
-                solution.
+               Create, manage, and display content across screens with an easy digital signage solution. Control messaging with a cloud-based CMS and deliver real-time updates to keep audiences engaged. Simplify operations with a scalable, intuitive platform.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
                 <CalandlyButton

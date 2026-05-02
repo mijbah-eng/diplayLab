@@ -20,14 +20,12 @@ function ProductSection() {
           <div className="text-center lg:text-left">
             <Reveal>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Digital Signage Software to Power Screens Anywhere
+                Innovative Digital Signage Products by Display Lab
               </h1>
             </Reveal>
             <Reveal>
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                Turn any screen into a powerful communication and marketing
-                platform. Create, manage, and publish content across multiple
-                displays from one cloud dashboard.
+                Display Lab offers a versatile range of digital signage solutions designed to meet diverse business needs.Our Stand Kiosk provides a sleek, freestanding display ideal for high-traffic areas and interactive use.The Indoor Display delivers high-quality visuals for retail stores, offices, and indoor environments. Our 3D Hologram Display creates eye-catching, futuristic visuals that capture attention and enhance brand appeal.The Self-Ordering Kiosk streamlines customer service by enabling quick, efficient, and contactless ordering experiences 
               </p>
             </Reveal>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
