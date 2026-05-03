@@ -12,11 +12,12 @@ function DigitalSignageSolutions() {
   const contentDatas = [
     {
       contentImageUrls: [
-        { image_url: "/images/Every-Industry/Retail.jpg" },
-        { image_url: "/images/Every-Industry/Healthcare.jpg" },
-        { image_url: "/images/Every-Industry/Education.jpg" },
-        { image_url: "/images/Every-Industry/Corporate Offices.jpg" },
-        { image_url: "/images/Every-Industry/Restaurants.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Retail/Retail_1.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Retail/Retail_2.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Retail/Retail_3.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Retail/Retail_4.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Retail/Retail_5.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Retail/Retail_6.jpg" },
       ],
       contentTitle: "Retail",
       contentDescription:
@@ -39,11 +40,8 @@ function DigitalSignageSolutions() {
     },
     {
       contentImageUrls: [
-        { image_url: "/images/Every-Industry/Retail.jpg" },
-        { image_url: "/images/Every-Industry/Restaurants.jpg" },
-        { image_url: "/images/Every-Industry/Healthcare.jpg" },
-        { image_url: "/images/Every-Industry/Corporate Offices.jpg" },
-        { image_url: "/images/Every-Industry/Education.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Corporate-Offices/Corporate-Offices.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Corporate-Offices/v2-awcgl-fbeds.png" },
       ],
       contentTitle: "Corporate Offices",
       contentDescription:
@@ -66,11 +64,11 @@ function DigitalSignageSolutions() {
     },
     {
       contentImageUrls: [
-        { image_url: "/images/Every-Industry/Retail.jpg" },
-        { image_url: "/images/Every-Industry/Restaurants.jpg" },
-        { image_url: "/images/Every-Industry/Education.jpg" },
-        { image_url: "/images/Every-Industry/Healthcare.jpg" },
-        { image_url: "/images/Every-Industry/Corporate Offices.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Restaurants/Restaurants_1.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Restaurants/Restaurants_2.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Restaurants/Restaurants_3.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Restaurants/Restaurants_4.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Restaurants/Restaurants_5.jpg" },
       ],
       contentTitle: "Restaurants",
       contentDescription:
@@ -93,11 +91,12 @@ function DigitalSignageSolutions() {
     },
     {
       contentImageUrls: [
-        { image_url: "/images/Every-Industry/Corporate Offices.jpg" },
-        { image_url: "/images/Every-Industry/Healthcare.jpg" },
-        { image_url: "/images/Every-Industry/Education.jpg" },
-        { image_url: "/images/Every-Industry/Restaurants.jpg" },
-        { image_url: "/images/Every-Industry/Retail.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Healthcare/Healthcare.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Healthcare/Healthcare_1.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Healthcare/Healthcare_2.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Healthcare/Healthcare_3.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Healthcare/Healthcare_4.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Healthcare/Healthcare_5.jpg" },
       ],
       contentTitle: "Healthcare",
       contentDescription:
@@ -120,11 +119,11 @@ function DigitalSignageSolutions() {
     },
     {
       contentImageUrls: [
-        { image_url: "/images/Every-Industry/Restaurants.jpg" },
-        { image_url: "/images/Every-Industry/Retail.jpg" },
-        { image_url: "/images/Every-Industry/Healthcare.jpg" },
-        { image_url: "/images/Every-Industry/Corporate Offices.jpg" },
-        { image_url: "/images/Every-Industry/Education.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Education/Education_1.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Education/Education_2.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Education/Education_3.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Education/Education_4.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Education/Education_5.jpg" },
       ],
       contentTitle: "Education",
       contentDescription:

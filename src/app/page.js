@@ -1,5 +1,6 @@
 import Advertisement_Solutions from "@/components/advertisement";
 import CMS_Marketing from "@/components/cms/cms_section_1";
+import Count from "@/components/count_client/Count";
 import CustomerReviews from "@/components/customer";
 import DigitalSignageSolutions from "@/components/DigitalSignageSolutions";
 import FAQ from "@/components/faq/faq";
@@ -18,17 +19,17 @@ export default function Home() {
       <NavberMain />
       <div className="main_div">
         <Hero />
-          <DigitalSignageSolutions />
-          <CMS_Marketing />
-          <SolutionCard />
-          <Gallery />
-          <ProductSection />
-          <Advertisement_Solutions />
-          {/* <RentalProducts /> */}
-          <Rental2 />
-          <CustomerReviews />
-          <FAQ datas={homeFaqsData} />
-        
+        <Count />
+        <DigitalSignageSolutions />
+        <CMS_Marketing />
+        <SolutionCard />
+        <Gallery />
+        <ProductSection />
+        <Advertisement_Solutions />
+        {/* <RentalProducts /> */}
+        <Rental2 />
+        <CustomerReviews />
+        <FAQ datas={homeFaqsData} />
       </div>
       <Footer />
     </>
