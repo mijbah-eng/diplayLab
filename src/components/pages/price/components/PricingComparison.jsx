@@ -1,12 +1,14 @@
-export default function PricingComparison() {
-  const plans = [
-    { name: "Free", price: "Free", btn: "Get Started" },
-    { name: "Standard", price: "$10.00", btn: "Try for Free" },
-    { name: "Pro Plus", price: "$15.00", btn: "Try for Free", highlight: true },
-    { name: "Engage", price: "$30.00", btn: "Try for Free" },
-    { name: "Enterprise", price: "$45.00", btn: "Talk With Sales" },
-  ];
-
+export default function PricingComparison({plans, billing, symbols, rates,currency}) {
+  // const plans = [
+  //   { name: "Pro Plus", price: "$15.00", btn: "Try for Free", highlight: true },
+  //   { name: "Engage", price: "$30.00", btn: "Try for Free" },
+  //   { name: "Enterprise", price: "$45.00", btn: "Talk With Sales" },
+  // ];
+  const convertPrice = (price) => {
+      return (price * rates[currency]).toFixed(2);
+    };
+    const PlansSlice = plans.slice(1) 
+    
   const features = [
     "Scheduling",
     "Content Library",
@@ -26,33 +28,38 @@ export default function PricingComparison() {
             Compare Features
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 items-end">
-            <div></div>
-
-            {plans.map((plan, i) => (
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-4 items-end">
+<div></div>
+            {PlansSlice.map((plan, i) => {
+              const basePrice =
+              billing === "monthly" ? plan.monthly : plan.annual;
+              
+              return(
               <div
                 key={i}
                 className={`rounded-xl p-4 text-center border ${
-                  plan.highlight
-                    ? "bg-green-50 border-green-500 shadow-md"
+                  plan.popular
+                    ? "bg-green-50 border-[#3095b5] shadow-md"
                     : "bg-white"
                 }`}
               >
                 <h3 className="font-semibold">{plan.name}</h3>
-                <p className="text-lg font-bold mt-1">{plan.price}</p>
+                <p className="text-lg font-bold mt-1">{symbols}
+                  {convertPrice(basePrice)}</p>
                 <p className="text-xs text-gray-500">/month</p>
 
                 <button
                   className={`mt-3 w-full py-2 rounded-md text-sm font-medium ${
-                    plan.highlight
-                      ? "bg-green-600 text-white"
+                    plan.name === "Pro Plus"
+                      ? "bg-[#005582] text-white"
                       : "bg-gray-100"
                   }`}
                 >
-                  {plan.btn}
+                  Try for Free
                 </button>
               </div>
-            ))}
+            )}
+            )}
           </div>
         </div>
 

@@ -25,7 +25,7 @@ function ProductSection() {
             </Reveal>
             <Reveal>
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                Display Lab offers a versatile range of digital signage solutions designed to meet diverse business needs.Our Stand Kiosk provides a sleek, freestanding display ideal for high-traffic areas and interactive use.The Indoor Display delivers high-quality visuals for retail stores, offices, and indoor environments. Our 3D Hologram Display creates eye-catching, futuristic visuals that capture attention and enhance brand appeal.The Self-Ordering Kiosk streamlines customer service by enabling quick, efficient, and contactless ordering experiences 
+              Display Lab offers versatile digital signage solutions for diverse business needs, including Stand Kiosk, Indoor Display, 3D Hologram Display, and Self-Ordering Kiosk, designed to enhance engagement, improve efficiency, and deliver modern interactive customer experiences.
               </p>
             </Reveal>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>

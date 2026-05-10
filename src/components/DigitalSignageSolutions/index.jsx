@@ -187,7 +187,7 @@ function DigitalSignageSolutions() {
               </Reveal>
               <Reveal>
                 <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                  Display Lab Digital Signage lets businesses manage and deliver dynamic content across screens with ease. It enables real-time updates and centralized control, supporting retail, offices, restaurants, healthcare, and education with engaging promotions, clear communication, and live information.
+                  Display Lab Digital Signage helps businesses manage and deliver dynamic content across screens with ease. It enables real time updates and centralized control supporting retail offices restaurants and education.
                 </p>
               </Reveal>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>

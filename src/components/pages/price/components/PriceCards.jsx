@@ -7,72 +7,232 @@ export default function PriceCards() {
 
   const plans = [
     {
-      name: "Free",
+      name: "Basic",
+      screen: "7 Days",
       monthly: 0,
       annual: 0,
       features: [
-        "Upload Images, Videos, Documents",
-        "Manage screens remotely",
-        "1GB Cloud Storage",
-        "25 Basic Apps",
-        "3 screen limit",
+      {
+        feature_name:"Display Device",
+        feature_has: true,
+      },
+      {
+        feature_name:"Asset Storage",
+        feature_has: true,
+      },
+      {
+        feature_name:"Playlists",
+        feature_has: true,
+      },
+      
+      {
+        feature_name:"Schedule",
+        feature_has: false,
+      },
+      {
+        feature_name:"Templates",
+        feature_has: false,
+      },
+      {
+        feature_name:"Canvas Template Create",
+        feature_has: true,
+      },
+      {
+        feature_name:"Works Offline",
+        feature_has: true,
+      },
+      {
+        feature_name:"4k Resolution Support",
+        feature_has: true,
+      },
+      {
+        feature_name:"Support All Formats",
+        feature_has: true,
+      },
+      {
+        feature_name:"Only Single User",
+        feature_has: true,
+      },
+      {
+        feature_name:"Custom User Role",
+        feature_has: false,
+      },
+      {
+        feature_name:"Drag And Drop",
+        feature_has: true,
+      },
       ],
     },
     {
       name: "Standard",
+      screen: "screen/month",
       monthly: 10,
       annual: 8,
       features: [
-        "Build playlists & schedule content",
-        "100+ Apps & Integrations",
-        "Ready-to-use Templates",
-        "Multi Users",
-        "Unlimited Cloud Storage",
-        "Split Screen Zones",
+      {
+        feature_name:"Display Device",
+        feature_has: true,
+      },
+      {
+        feature_name:"Asset Storage",
+        feature_has: true,
+      },
+      {
+        feature_name:"Playlists",
+        feature_has: true,
+      },
+      
+      {
+        feature_name:"Schedule",
+        feature_has: false,
+      },
+      {
+        feature_name:"Templates",
+        feature_has: false,
+      },
+      {
+        feature_name:"Canvas Template Create",
+        feature_has: false,
+      },
+      {
+        feature_name:"Works Offline",
+        feature_has: true,
+      },
+      {
+        feature_name:"4k Resolution Support",
+        feature_has: true,
+      },
+      {
+        feature_name:"Support All Formats",
+        feature_has: true,
+      },
+      {
+        feature_name:"Only Single User",
+        feature_has: true,
+      },
+      {
+        feature_name:"Custom User Role",
+        feature_has: false,
+      },
+      {
+        feature_name:"Drag And Drop",
+        feature_has: true,
+      },
       ],
     },
     {
       name: "Pro Plus",
+      screen: "screen/month",
       monthly: 15,
       annual: 12,
       popular: true,
       features: [
-        "Everything in Standard, and:",
-        "Microsoft 365 & Google Workspace",
-        "Display Dashboards (Power BI, etc.)",
-        "Display Secure Websites",
-        "Slack & Teams Integration",
-        "Dynamic Data Mapping",
-        "Auto Power On/Off TV",
+      {
+        feature_name:"Display Device",
+        feature_has: true,
+      },
+      {
+        feature_name:"Asset Storage",
+        feature_has: true,
+      },
+      {
+        feature_name:"Playlists",
+        feature_has: true,
+      },
+      
+      {
+        feature_name:"Schedule",
+        feature_has: true,
+      },
+      {
+        feature_name:"Templates",
+        feature_has: true,
+      },
+      {
+        feature_name:"Canvas Template Create",
+        feature_has: true,
+      },
+      {
+        feature_name:"Works Offline",
+        feature_has: true,
+      },
+      {
+        feature_name:"4k Resolution Support",
+        feature_has: true,
+      },
+      {
+        feature_name:"Support All Formats",
+        feature_has: true,
+      },
+      {
+        feature_name:"Only Single User",
+        feature_has: true,
+      },
+      {
+        feature_name:"Custom User Role",
+        feature_has: false,
+      },
+      {
+        feature_name:"Drag And Drop",
+        feature_has: true,
+      },
       ],
     },
     {
       name: "Engage",
+      screen: "screen/month",
       monthly: 30,
       annual: 25,
       features: [
-        "Everything in Pro Plus, and:",
-        "Interactive Kiosk Designer",
-        "Transform Catalogues into Kiosks",
-        "Lift & Learn",
-        "Check-in App",
-        "QR Scan-to-Interact",
-        "Live TV Ads Overlay",
-        "Event-Based Analytics",
-      ],
-    },
-    {
-      name: "Enterprise",
-      monthly: 45,
-      annual: 40,
-      features: [
-        "Everything in Engage, and:",
-        "Dedicated Customer Success Manager",
-        "Onboarding & Training",
-        "Tailored Deployments",
-        "Priority Support",
-        "GraphQL API Access",
-        "Custom Digital Signage System",
+      {
+        feature_name:"Display Device",
+        feature_has: true,
+      },
+      {
+        feature_name:"Asset Storage",
+        feature_has: true,
+      },
+      {
+        feature_name:"Playlists",
+        feature_has: true,
+      },
+      
+      {
+        feature_name:"Schedule",
+        feature_has: true,
+      },
+      {
+        feature_name:"Templates",
+        feature_has: true,
+      },
+      {
+        feature_name:"Canvas Template Create",
+        feature_has: true,
+      },
+      {
+        feature_name:"Works Offline",
+        feature_has: true,
+      },
+      {
+        feature_name:"4k Resolution Support",
+        feature_has: true,
+      },
+      {
+        feature_name:"Support All Formats",
+        feature_has: true,
+      },
+      {
+        feature_name:"Only Single User",
+        feature_has: true,
+      },
+      {
+        feature_name:"Custom User Role",
+        feature_has: true,
+      },
+      {
+        feature_name:"Drag And Drop",
+        feature_has: true,
+      },
       ],
     },
   ];
@@ -144,7 +304,7 @@ export default function PriceCards() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
           {plans.map((plan, i) => {
             const basePrice =
@@ -160,20 +320,20 @@ export default function PriceCards() {
                 }`}
               >
                 {plan.popular && (
-                  <div className="text-xs font-semibold text-[#3095b5] mb-2">
+                  <div className="text-xs font-semibold text-[#3095b5] mb-2 text-center">
                     MOST POPULAR
                   </div>
                 )}
 
-                <h3 className="text-xl font-semibold mb-2">{plan.name}</h3>
+                <h3 className="text-xl font-semibold mb-2 text-center">{plan.name}</h3>
 
-                <p className="text-3xl font-bold mb-1">
+                <p className="text-3xl font-bold mb-1 text-center">
                   {symbols[currency]}
                   {convertPrice(basePrice)}
                 </p>
 
-                <p className="text-sm text-gray-500 mb-4">
-                  /screen/month
+                <p className="text-sm text-gray-500 mb-4 text-center">
+                  {plan.screen}
                 </p>
 
                 <button
@@ -189,9 +349,10 @@ export default function PriceCards() {
                 {/* Features */}
                 <ul className="space-y-2 text-sm text-gray-600 mt-auto">
                   {plan.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <span className="text-[#3095b5]">✔</span>
-                      <span>{feature}</span>
+                    <li key={idx} className="flex justify-between items-start gap-2">
+                      <span>{feature?.feature_name}</span>
+                      {feature?.feature_has ? (<span className="text-white w-4 h-4 bg-green-400 p-2 rounded-2xl relative"><span className="absolute top-0 left-[.9] flex justify-center items-center w-full h-full text-[10px]">✔ </span></span>) : (<span className="text-white w-4 h-4 bg-red-400 p-2 rounded-2xl relative"><span className="absolute top-0 left-[.9] flex justify-center items-center w-full h-full text-[10px]">✘</span></span>) }
+                      
                     </li>
                   ))}
                 </ul>

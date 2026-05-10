@@ -1,4 +1,61 @@
-function PriceCard2() {
+"use client";
+import { useEffect } from "react";
+
+function PriceCard2({ billing, symbols}) {
+
+    const reasons = {
+        monthly: {
+            usa: [20, 24, 28],
+            erop: [12, 15, 18],
+            aud: [23, 27, 30],
+            cad: [18, 22, 25],
+            gbp: [10, 12, 15],
+        },
+        annual: {
+            usa: [18.5, 21, 25],
+            erop: [10, 12, 15],
+            aud: [20, 24, 28],
+            cad: [15, 18, 22],
+            gbp: [8, 10, 12],
+        }
+    }
+
+    const autoReason = () => {
+        if (symbols === "$" && billing === "monthly") {
+            return reasons.monthly.usa;
+        }
+        else if (symbols === "€" && billing === "monthly") {
+            return reasons.monthly.erop;
+        }
+        else if (symbols === "£" && billing === "monthly") {
+            return reasons.monthly.gbp;
+        }
+        else if (symbols === "AU$" && billing === "monthly") {
+            return reasons.monthly.aud;
+        }
+        else if (symbols === "CA$" && billing === "monthly") {
+            return reasons.monthly.cad;
+        }
+        else if (symbols === "$" && billing === "annual") {
+            return reasons.annual.usa;
+        }
+        else if (symbols === "€" && billing === "annual") {
+            return reasons.annual.erop;
+        }
+        else if (symbols === "£" && billing === "annual") {
+            return reasons.annual.gbp;
+        }
+        else if (symbols === "AU$" && billing === "annual") {
+            return reasons.annual.aud;
+        }
+        else if (symbols === "CA$" && billing === "annual") {
+            return reasons.annual.cad;
+        }
+    }
+
+    useEffect(()=> {
+        autoReason()
+    },[billing, symbols])
     return (
         <div className="py-16 md:py-24 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,7 +77,7 @@ function PriceCard2() {
                             </button>
                         </div>
                         <div className="text-right">
-                            <p className="text-2xl font-bold">AU$38.00</p>
+                            <p className="text-2xl font-bold">{billing === "monthly" ? `${symbols}${autoReason()[0]}` : `${symbols}${autoReason()[0]}`}</p>
                             <p className="text-sm text-gray-300">per video wall/month</p>
                         </div>
                     </div>
@@ -34,7 +91,7 @@ function PriceCard2() {
                             </button>
                         </div>
                         <div className="text-right">
-                            <p className="text-2xl font-bold">AU$24.00</p>
+                            <p className="text-2xl font-bold">{billing === "monthly" ? `${symbols}${autoReason()[1]}` : `${symbols}${autoReason()[1]}`}</p>
                             <p className="text-sm text-gray-300">per screen/month</p>
                         </div>
                     </div>
@@ -48,7 +105,7 @@ function PriceCard2() {
                             </button>
                         </div>
                         <div className="text-right">
-                            <p className="text-2xl font-bold">AU$28.00</p>
+                            <p className="text-2xl font-bold">{billing === "monthly" ? `${symbols}${autoReason()[2]}` : `${symbols}${autoReason()[2]}`}</p>
                             <p className="text-sm text-gray-300">per screen/month</p>
                         </div>
                     </div>

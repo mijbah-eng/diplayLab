@@ -10,7 +10,7 @@ function Product() {
   return (
     <>
       <NavberMain />
-      <div className="main_div">
+      
         <Prduct_Hero />
         <div className="max-w-7xl mx-auto">
           <ProductCetagory />
@@ -19,7 +19,7 @@ function Product() {
           <NewProdcutDesign />
           <Products />
         
-      </div>
+      
       <Footer />
     </>
   );
