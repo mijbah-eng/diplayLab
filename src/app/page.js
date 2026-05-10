@@ -19,7 +19,6 @@ export default function Home() {
       <NavberMain />
       <div className="main_div">
         <Hero />
-        <Count />
         <DigitalSignageSolutions />
         <CMS_Marketing />
         <SolutionCard />
@@ -28,6 +27,7 @@ export default function Home() {
         <Advertisement_Solutions />
         {/* <RentalProducts /> */}
         <Rental2 />
+        <Count />
         <CustomerReviews />
         <FAQ datas={homeFaqsData} />
       </div>
