@@ -148,7 +148,7 @@ function DigitalSignageSolutions() {
 
   return (
     <>
-      <div className="py-16 md:py-24">
+      <div className="pt-16 md:pt-24">
         <div className="max-w-7xl mx-auto px-4">
           {/* Hero Section */}
           <div className="hero_section grid lg:grid-cols-2 gap-12 items-center pb-24">
@@ -182,7 +182,7 @@ function DigitalSignageSolutions() {
             <div className="text-center lg:text-left">
               <Reveal>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                  Digital Signage Solutions Across Industries
+                  Digital Signage Solutions <br /> for Every Industry
                 </h1>
               </Reveal>
               <Reveal>
@@ -195,18 +195,7 @@ function DigitalSignageSolutions() {
           </div>
           {/* Heading */}
           <Reveal props={"w-full"}>
-            <h2 className="h2_text text-center">
-              Digital Signage Solutions <br /> for Every Industry
-            </h2>
-          </Reveal>
-          <div className="h-6"></div>
-          <Reveal props={"w-full"}>
-            <p className="title_desc">
-              Our platform helps organizations communicate better, engage customers, and deliver impactful digital CMS experiences.  It simplifies content management with intuitive tools designed for efficiency and control. With real-time updates, your messaging stays relevant, timely, and consistent across all screens. Built for scalability, it grows with your business needs across any industry or environment.
-            </p>
-          </Reveal>
-          <Reveal props={"w-full"}>
-            <div className="bg-white rounded-2xl shadow-xl p-6">
+            <div className="bg-white rounded-2xl shadow-xl ">
               <Tabs defaultValue="retail" orientation="vertical">
                 {contentDatas?.map((singleContentData, index) => (
                   <TabsContent

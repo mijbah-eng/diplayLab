@@ -85,11 +85,30 @@ function Footer() {
       name: "Corporate Offices",
       href: "#",
     },
-    {
-      name: "Retail",
+
+  ]
+  const quickLinksRental = [
+     {
+      name: "Indoor Digital Kiosk",
       href: "#",
     },
-
+    {
+      name: "Interactive Digital Display",
+      href: "#",  
+    },
+    
+    {
+      name: "Outdoor Digital kiosk",
+      href: "#",  
+    },
+    {
+      name: "Promotional Display Screens",
+      href: "#",  
+    },
+    {
+      name: "Dual Screen Kiosk",
+      href: "#",  
+    },
   ]
   const footerProductsLinks = [
     {
@@ -171,8 +190,8 @@ function Footer() {
                     </div>
                     <div className="flex flex-col items-start gap-12">
                       <div className="flex flex-col items-start gap-4">
-                        <div className="text-[#3095b5]">Other pages</div>
-                        {footerProductsLinks.map((link, index) => (
+                        <div className="text-[#3095b5]">Rental</div>
+                        {quickLinksRental.map((link, index) => (
                           <Link
                             href={link.href}
                             key={index}
@@ -181,6 +200,20 @@ function Footer() {
                             {link.name}
                           </Link>
                         ))}
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start gap-12">
+                      <div className="flex flex-col items-start gap-4">
+                        {/* <div className="text-[#3095b5]">Other pages</div> */}
+                        {/* {footerProductsLinks.map((link, index) => (
+                          <Link
+                            href={link.href}
+                            key={index}
+                            className="text-[#e9e9e9] hover:underline"
+                          >
+                            {link.name}
+                          </Link>
+                        ))} */}
                         <Link href="/careers" className="border-[1.5px] border-[#3095b5] bg-[#3095b5] text-white text-center capitalize whitespace-nowrap rounded flex justify-center items-center px-6 py-[.4rem] text-base font-medium leading-[180%] transition-colors duration-200 hover:text-black">
                           Try For Free
                         </Link>
@@ -188,8 +221,8 @@ function Footer() {
                       <div className="flex flex-col items-start gap-4">
                         <div className="text-[#3095b5]">Contact Us</div>
                         <div className="">
-                          7676 Hillmont Street, #300,{" "}
-                          <span className="block">Houston, TX 77040</span>
+                          901 S Highland St, # 301, {" "}
+                          <span className="block">Arlington, VA, United States, 22204</span>
                         </div>
                         <div className="flex items-center gap-6">
                           <Link
