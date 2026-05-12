@@ -1,3 +1,4 @@
+
 export default function PricingComparison({plans, billing, symbols, rates,currency}) {
   // const plans = [
   //   { name: "Pro Plus", price: "$15.00", btn: "Try for Free", highlight: true },
@@ -9,27 +10,75 @@ export default function PricingComparison({plans, billing, symbols, rates,curren
     };
     const PlansSlice = plans.slice(1) 
     
-  const features = [
-    "Scheduling",
-    "Content Library",
-    "API & Secure Automation",
-    "HD Update Automation",
-    "Proof of Play",
-    "Templates, Format and Orientation",
-  ];
+  const featureDetails = [
+    {
+      feature_section_title: "Content Automation and Integration",
+      features: [
+        {
+          name: "Scheduling",
+          cardAllow: [true, true, true],
+        },
+        {
+          name: "Content Library",
+          cardAllow: [true, true, true],
+        },
+        {
+          name: "API & Secure Automation",
+          cardAllow: [false, true, true],
+        },
+        {
+          name: "HD Update Automation",
+          cardAllow: [false, true, true],
+        },
+        {
+          name: "Proof of Play",
+          cardAllow: [false, true, true],
+        },
+        {
+          name: "Templates, Format and Orientation",
+          cardAllow: [false, true, true],
+        }
+      ]
+    },
+    {
+      feature_section_title: "Campaign Management & Advanced Playback",
+      features: [
+        {
+          name: "Advanced Scheduling",
+          cardAllow: [false, true, true],
+        },
+        {
+          name: "Playlist Management",
+          cardAllow: [false, true, true],
+        },
+        {
+          name: "Conditional Playback",
+          cardAllow: [false, true, true],
+        },
+        {
+          name: "Real-time Updates",
+          cardAllow: [false, false, true],
+        },
+        {
+          name: "Multi-User Collaboration",
+          cardAllow: [false, false, true],
+        },
+      ]
+    }
+  ]
 
   return (
     <div className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Sticky Pricing Header */}
-        <div className="sticky top-0 z-20 bg-gray-50 pb-6">
+        <div className="sticky top-10 z-20 bg-gray-50 pb-6">
           <h2 className="text-center text-2xl font-semibold mb-6">
             Compare Features
           </h2>
 
           <div className="grid grid-cols-3 md:grid-cols-4 gap-4 items-end">
-<div></div>
+            <div className="hidden md:flex"></div>
             {PlansSlice.map((plan, i) => {
               const basePrice =
               billing === "monthly" ? plan.monthly : plan.annual;
@@ -63,59 +112,48 @@ export default function PricingComparison({plans, billing, symbols, rates,curren
           </div>
         </div>
 
-        {/* Table */}
-        <div className="mt-6 bg-white rounded-xl shadow-sm overflow-hidden">
+{/* Table */}
+        {
+          featureDetails.map((section, i) => (
+             <div key={i} className="mt-6 bg-white rounded-xl shadow-sm overflow-hidden">
           {/* Section Header */}
-          <div className="px-6 py-4 border-b font-medium text-gray-700 flex justify-between">
-            <span>Content Automation and Integration</span>
-            <span>⌄</span>
+          <div className="px-6 py-4 border-b text-xl text-white font-bold flex justify-between bg-[#3095b5]">
+            <span>{section.feature_section_title}</span>
           </div>
 
           {/* Features */}
-          {features.map((feature, i) => (
+          {section.features.map((feature, i) => (
             <div
               key={i}
-              className="grid grid-cols-2 md:grid-cols-6 border-b last:border-none"
+              className="grid grid-cols-3 md:grid-cols-4 border-b last:border-none"
             >
               {/* Feature Name */}
-              <div className="px-6 py-4 text-gray-600">{feature}</div>
+              <div className="px-6 py-4 text-black md:text-gray-600 col-span-full md:col-span-1 md:bg-transparent font-bold bg-gray-300 ">{feature.name}</div>
 
               {/* Plan Columns */}
-              {plans.map((_, idx) => (
+              {feature.cardAllow.map((value, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center justify-center py-4"
+                  className={`${idx === 1 ? "bg-green-50 text-green-500 text-lg" : ""} flex items-center justify-center py-4`}
                 >
-                  {idx >= 2 ? (
-                    <span className="text-green-500 text-lg">✓</span>
+                  {value ? (
+                    <span className={`text-green-500 text-lg `}>✓</span>
                   ) : (
-                    <span className="text-gray-300">—</span>
+                    <span className="text-red-500">X</span>
                   )}
                 </div>
               ))}
             </div>
           ))}
         </div>
+          ))
+         }
 
-        {/* Additional Sections (collapsed style placeholders) */}
-        {[
-          "Campaign Management & Advanced Playback",
-          "Device Management",
-          "Engage - Create Interactive Experiences",
-          "User Management and Security",
-          "Reporting & Analytics",
-          "Branding",
-          "Enterprise",
-          "Support",
-        ].map((section, i) => (
-          <div
-            key={i}
-            className="mt-4 bg-white rounded-lg border px-6 py-4 flex justify-between"
-          >
-            <span>{section}</span>
-            <span>⌄</span>
-          </div>
-        ))}
+
+
+       
+       
+
       </div>
     </div>
   );
