@@ -28,7 +28,7 @@ function GetStarted() {
     },
     {
       cardNumber: "02",
-      cardColor: "rom-purple-500 to-pink-500",
+      cardColor: "from-purple-500 to-pink-500",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ function GetStarted() {
     },
     {
       cardNumber: "03",
-      cardColor: "from-orange-500 to-red-500",
+      cardColor: "from-blue-500 to-purple-500",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -77,6 +77,7 @@ function DEVICE_SECTION() {
         <Swiper
           spaceBetween={20}
           loop={true}
+          align={"center"}
           breakpoints={{
             0: {
               slidesPerView: 2,

@@ -5,7 +5,7 @@ function ContentSection() {
   const contentDatas = [
     {
       contentImageUrl:
-        "/images/Every-Industry/Retail.jpg",
+        "/images/Digital-Signage-Solutions-for-Every-Industry/Retail/Retail_1.jpg",
       contentTitle: "Retail",
       contentDescription:
         "Promote offers, highlight products, and create engaging in-store experiences.",
@@ -13,7 +13,7 @@ function ContentSection() {
     },
     {
       contentImageUrl:
-        "/images/Every-Industry/Corporate Offices.jpg",
+        "/images/Digital-Signage-Solutions-for-Every-Industry/Corporate-Offices/Corporate-Offices.jpg",
       contentTitle: "Corporate Offices",
       contentDescription:
         "Improve internal communication with company news, dashboards, and announcements.",
@@ -21,7 +21,7 @@ function ContentSection() {
     },
     {
       contentImageUrl:
-        "/images/Every-Industry/Restaurants.jpg",
+        "/images/Digital-Signage-Solutions-for-Every-Industry/Restaurants/Restaurants_2.jpg",
       contentTitle: "Restaurants",
       contentDescription:
         "Display digital menus, promotions, and dynamic pricing updates.",
@@ -29,7 +29,7 @@ function ContentSection() {
     },
     {
       contentImageUrl:
-        "/images/Every-Industry/Healthcare.jpg",
+        "/images/Digital-Signage-Solutions-for-Every-Industry/Healthcare/Healthcare_4.jpg",
       contentTitle: "Healthcare",
       contentDescription:
         "Share important information with patients, visitors, and staff across facilities.",
