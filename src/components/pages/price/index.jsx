@@ -277,7 +277,7 @@ function Price() {
 
         {/* Toggles */}
         <div className="flex flex-wrap justify-between items-center mb-10 gap-4">
-
+<div className="hidden md:flex"></div>
           {/* Billing Toggle */}
           <div className="flex bg-gray-200 rounded-full p-1">
             <button
