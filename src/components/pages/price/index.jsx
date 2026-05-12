@@ -4,7 +4,6 @@ import NavberMain from "@/components/NavberMain";
 import { useState } from "react";
 import PriceCard2 from "./components/PriceCard2";
 import PricingComparison from "./components/PricingComparison";
-import { Table } from "@/components/ui/table";
 
 
 function Price() {
@@ -266,7 +265,6 @@ function Price() {
   
   return (
     <>
-    <Table></Table>
       <NavberMain />
       {/* <PriceCards /> */}
       <div className="py-16 md:py-24 bg-gray-50">
