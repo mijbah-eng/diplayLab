@@ -50,7 +50,7 @@ function SolutionCard() {
     },
     {
       icon: "/images/explore-Display/Icon-06.png",
-      title: "Multi-Screen Management",
+      title: "Dashboard Navigation",
       description: "Manage multiple screens in one accout.",
       hoverImage: "/images/advertisement/Airport.jpg",
       link_Text: "Learn more",
