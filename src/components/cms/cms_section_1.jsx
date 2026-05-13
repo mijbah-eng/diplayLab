@@ -37,7 +37,7 @@ function CMS_Marketing() {
             <div className="">
               <Reveal>
                 <h2 className="h2_text mb-6">
-                  A Single Platform to Power Digital Signage
+                  A Single CMS <br /> Platform to Power <br /> Digital Signage
                 </h2>
               </Reveal>
               <Reveal>

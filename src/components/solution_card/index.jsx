@@ -42,7 +42,7 @@ function SolutionCard() {
     },
     {
       icon: "/images/explore-Display/Icon-05.png",
-      title: "Pre-Mage Templates to Use",
+      title: "Pre-Made Templates to Use",
       description: "Select from ready-to-use templates.",
       hoverImage: "/images/advertisement/Airport.jpg",
       link_Text: "Learn more",
@@ -50,8 +50,8 @@ function SolutionCard() {
     },
     {
       icon: "/images/explore-Display/Icon-06.png",
-      title: "Dashboard Navigation",
-      description: "Manage multiple screens in one accout.",
+      title: "User Roles & Access",
+      description: "Manage multiple screens in one account.",
       hoverImage: "/images/advertisement/Airport.jpg",
       link_Text: "Learn more",
       link: "",
