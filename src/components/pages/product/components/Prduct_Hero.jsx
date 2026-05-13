@@ -1,29 +1,30 @@
 "use client";
 import CalandlyButton from "@/components/calandlyButton";
+import Galaxy from "@/components/Galaxy";
 import LightRays from '@/components/LightRays';
 function Prduct_Hero() {
   return (
     <>
     <div className="w-full h-screen relative flex justify-center items-center bg-black">
- <div className="h-180 md:h-200 w-full relative">
-   <LightRays
-    raysOrigin="top-center"
-    raysColor="#ffffff"
-    raysSpeed={1}
-    lightSpread={0.5}
-    rayLength={3}
-    followMouse={true}
-    mouseInfluence={0.1}
-    noiseAmount={0}
-    distortion={0}
-    className="custom-rays"
-    pulsating={false}
-    fadeDistance={1}
-    saturation={1}
-/>
+ <div className="h-full w-full relative">
+
+  <Galaxy
+    starSpeed={0.1}
+    density={2.6}
+    hueShift={80}
+    speed={0.1}
+    glowIntensity={0.2}
+    saturation={0}
+    mouseRepulsion={false}
+    repulsionStrength={1.5}
+    twinkleIntensity={0}
+    rotationSpeed={0.1}
+    transparent
+  />
+
 </div>
 <div className="absolute hero-section">
-      <section className="relative bg-linear-to-br from-black via-black to-black py-16 md:py-24 lg:py-32 overflow-hidden">
+      <section className="relative bg-linear-to-br bg-transparent py-16 md:py-24 lg:py-32 overflow-hidden">
       <div className="max-w-375 mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
