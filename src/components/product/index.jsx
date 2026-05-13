@@ -20,7 +20,7 @@ function ProductSection() {
           <div className="text-center lg:text-left">
             <Reveal>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Innovative Digital Signage Products by Display Lab
+                Display Products, <br /> Smart Solutions for Business Growth
               </h1>
             </Reveal>
             <Reveal>
