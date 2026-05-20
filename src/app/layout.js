@@ -12,8 +12,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${montserrat.className} antialiased overflow-x-hidden`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${montserrat.className}`} suppressHydrationWarning>
         {children}
         <ScrollToTopButton />
       </body>

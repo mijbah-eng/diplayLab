@@ -31,7 +31,7 @@ function Prduct_Hero() {
             <h1 className="text-4xl lg:text-5xl font-bold text-zinc-100 mb-6 leading-tight">
               Versatile Display <br /> Products
             </h1>
-            <p className="text-lg md:text-xl text-zinc-300 mb-8 max-w-2xl mx-auto lg:mx-0">
+            <p className="text-lg md:text-xl text-zinc-300 mb-8 max-w-2xl mx-auto lg:mx-0 opacity-70">
               Discover a wide range of diplay products from interactive kiosks to outdoor screens-perfect for any enviroment.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">

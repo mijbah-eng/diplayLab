@@ -1,7 +1,8 @@
+import Footer from "@/components/footer";
 import NavberMain from "@/components/NavberMain";
 import Rental_Hero from "./components/Rental_Hero";
-import Rental_Options from "./components/Rental_Options";
-import Footer from "@/components/footer";
+import RentalDivision from "./components/RentalDivision";
+import { RentalOffer } from "./components/RentalOffer";
 
 
 
@@ -11,7 +12,8 @@ function Rental() {
       <NavberMain />
       <div className="main_div">
         <Rental_Hero />
-        <Rental_Options />
+      <RentalDivision />
+      <RentalOffer />
       </div>
       <Footer />
     </>
