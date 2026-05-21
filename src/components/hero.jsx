@@ -9,10 +9,10 @@ import Reveal from "./utils/Reveal";
 
 function Hero() {
   return (
-    <section className="relative bg-linear-to-br from-cyan-50 via-blue-50 to-purple-50 py-16 md:py-24 lg:py-32 overflow-hidden">
+    <section className="relative bg-linear-to-br from-cyan-50 via-blue-50 to-purple-50 py-16 md:py-24 lg:pt-32 lg:pb-5 overflow-hidden">
       <div className="max-w-375 mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
             <Reveal>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                Powering Business <br /> Growth Through Smart <br />{" "}

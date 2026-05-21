@@ -235,7 +235,7 @@ export const home_hero_logos = [
 "/images/client_logo/Bic.png",
 "/images/client_logo/Burger.png",
 "/images/client_logo/Classic.png",
-"/images/client_logo/DELTA_ROOCK.png",
+"/images/client_logo/Delta_Rock.png",
 "/images/client_logo/Deshi.png",
 "/images/client_logo/ecdc.png",
 "/images/client_logo/FH.png",
@@ -251,7 +251,7 @@ export const home_hero_logos = [
 "/images/client_logo/SUPER.png",
 "/images/client_logo/us_best.png",
 "/images/client_logo/Wingland.png",
-"/images/client_logo/wust.jpeg",
+"/images/client_logo/wust.png",
 ];
 
 export const adsCardDatas = [
