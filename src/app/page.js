@@ -11,6 +11,7 @@ import Hero from "@/components/hero";
 import NavberMain from "@/components/NavberMain";
 import ProductSection from "@/components/product";
 import ProductsFiveCard from "@/components/ProductsFiveCard/ProductsFiveCard";
+import ProductSlider from "@/components/productsSlider/productSlider";
 import Rental2 from "@/components/rental2";
 import SolutionCard from "@/components/solution_card";
 import { homeFaqsData } from "@/utils";
@@ -22,11 +23,12 @@ export default function Home() {
       <div className="main_div">
         <Hero />
         <DigitalSignageSolutions />
-        <ProductsFiveCard />
         <CMS_Marketing />
         <SolutionCard />
         <Gallery />
         <ProductSection />
+        <ProductsFiveCard />
+        <ProductSlider />
         <Advertisement_Solutions />
         {/* <Animation /> */}
         {/* <RentalProducts /> */}

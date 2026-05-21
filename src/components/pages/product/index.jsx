@@ -5,6 +5,7 @@ import Products from "./components/Products";
 import Footer from "@/components/footer";
 import ProductCetagory from "@/components/ProductCetagory";
 import NewProdcutDesign from "@/components/newProductsDesign";
+import SingleProdcut from "./components/SingleProdcut";
 
 function Product() {
   return (
@@ -14,10 +15,11 @@ function Product() {
         <Prduct_Hero />
         <div className="max-w-7xl mx-auto">
           <ProductCetagory />
-          
         </div>
-          <NewProdcutDesign />
+          {/* <NewProdcutDesign /> */}
           <Products />
+          <SingleProdcut />
+          
         
       
       <Footer />

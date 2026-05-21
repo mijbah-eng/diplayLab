@@ -12,6 +12,7 @@ import WHY_SECTION2 from "./components/WHY_SECTION2";
 import MobileApp from "./components/MobileApp";
 import Gallery from "@/components/gallery";
 import Footer from "@/components/footer";
+import CurvedLoop from "@/components/CurvedLoop/CurvedLoop";
 
 
 function CMS() {
@@ -20,6 +21,16 @@ function CMS() {
       <NavberMain />
       <div className="main_div">
         <CMS_HERO />
+
+
+        <CurvedLoop
+          marqueeText="Display Lab ✦ Creative ✦ With ✦ Digital ✦ Business ✦"
+          speed={2}
+          curveAmount={0}
+          direction="left"
+          interactive={false}
+          className="custom-text-style" />
+
         <GetStarted />
         <LeadingFeatures />
         <Benefits />
