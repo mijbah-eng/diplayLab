@@ -1,4 +1,5 @@
 "use client";
+import SingleProduct from "@/components/SingleProduct";
 import { ProductsDatas } from "@/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,7 +17,7 @@ function Products() {
   return (
     <>
       <div className="space-large"></div>
-      <div className="flex flex-col gap-20">
+      <div className="flex flex-col gap-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="">
           <div className="flex flex-col gap-5">
             <h1 className="title text-center">Display Lab Products</h1>
@@ -25,8 +26,11 @@ function Products() {
               applications.
             </p>
           </div>
-
-          <div className="four_columns_items">
+      <div className="space-large"></div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <SingleProduct />
+      </div>
+          {/* <div className="four_columns_items">
             {productsToShow.map((product) => (
               <Link
               target="_blank"
@@ -45,7 +49,8 @@ function Products() {
                 <h4 className="single_product_name">{product?.name}</h4>
               </Link>
             ))}
-          </div>
+          </div> */}
+          
         </div>
 
         <button

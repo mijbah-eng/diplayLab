@@ -83,7 +83,7 @@ function SolutionCard() {
                     muted
                     preload="none"
                   >
-                    <source src="/videos/hero.mp4" />
+                    <source src="/videos/Powerful_Tools_Section.mp4" />
                   </video>
                 </div>
               </div>
