@@ -99,7 +99,7 @@ function CMS_HERO() {
                     muted
                     preload="none"
                   >
-                    <source src="https://cdn.pickcel.com/videos/main/hero-video.hMW0RsrCv5Su.webm" />
+                    <source src="/videos/Powerful_Tools_Section.mp4" />
                   </video>
                 </motion.div>
                 <motion.div

@@ -28,7 +28,7 @@ export default function ProductsFiveCard() {
                 
               </div>
               <div className="">
-                <Image width={1000} height={1000} className="w-full" src="/images/cms/displayLab CMS.png" alt="" />
+                <Image width={1000} height={1000} className="w-full" src="/images/products/products-1.png" alt="" />
               </div>
             </div>
 
@@ -41,7 +41,9 @@ export default function ProductsFiveCard() {
             <div className="rounded-2xl bg-slate-50 border border-slate-200 p-8 flex flex-col justify-between min-h-65">
               <div>
                 <h4 className="text-lg font-semibold text-slate-900 text-center">Push to deploy</h4>
-                <Image width={1000} height={1000} className="w-full" src="/images/cms/displayLab CMS.png" alt="Push to deploy" />
+                <Image width={1000} height={1000} className="w-full" src="/images/products/products-11.png" alt="Push to deploy" />
+                {/* <Image width={1000} height={1000} className="w-full" src="/images/cms/displayLab CMS.png" alt="Push to deploy" /> */}
+
               </div>
              
             </div>
@@ -50,7 +52,7 @@ export default function ProductsFiveCard() {
             <div className="rounded-2xl bg-slate-50 border border-slate-200 p-8 flex flex-col justify-between min-h-65">
               <div>
                 <h4 className="text-lg font-semibold text-slate-900 text-center">Push to deploy</h4>
-                <Image width={1000} height={1000} className="w-full" src="/images/cms/displayLab CMS.png" alt="Push to deploy" />
+                <Image width={1000} height={1000} className="w-full" src="/images/cms/Empowering.jpg" alt="Push to deploy" />
               </div>
              
             </div>

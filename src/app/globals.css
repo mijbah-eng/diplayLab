@@ -85,6 +85,9 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.container {
+  @apply max-w-375 mx-auto px-4 sm:px-6 lg:px-8 relative z-10;
+}
 .h1_text {
   @apply text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight;
 }

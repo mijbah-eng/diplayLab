@@ -29,7 +29,8 @@ function CMS() {
           curveAmount={0}
           direction="left"
           interactive={false}
-          className="custom-text-style" />
+          className="custom-text-style"
+          />
 
         <GetStarted />
         <LeadingFeatures />
