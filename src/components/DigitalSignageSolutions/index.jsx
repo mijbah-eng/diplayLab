@@ -173,7 +173,7 @@ function DigitalSignageSolutions() {
                       muted
                       preload="none"
                     >
-                      <source src="https://cdn.pickcel.com/videos/main/hero-video.hMW0RsrCv5Su.webm" />
+                      <source src="/videos/digital_signage_solutions.mp4" />
                     </video>
                   </div>
                 </div>

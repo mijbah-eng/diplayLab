@@ -9,7 +9,7 @@ function SolutionCard() {
       title: "Works on Any Screen, Any Device",
       description:
         "Manage content from anywhere with a centralized digital signage CMS. Upload media, organize playlists, and control displays remotely.",
-      hoverImage: "/images/advertisement/Airport.jpg",
+      hoverImage: "/images/Powerful-Tools/1.jpg",
       link_Text: "Learn more",
       link: "",
     },
@@ -18,7 +18,7 @@ function SolutionCard() {
       title: "Multi-Screen Management",
       description:
         "Control thousands of screens across multiple locations from one dashboard. Organize screens by groups, regions, or departments.",
-      hoverImage: "/images/advertisement/Airport.jpg",
+      hoverImage: "/images/Powerful-Tools/2.jpg",
       link_Text: "Learn more",
       link: "",
     },
@@ -27,7 +27,7 @@ function SolutionCard() {
       title: "Smart Content Scheduling",
       description:
         "Schedule content to display at specific times, days, or locations. Automate campaigns and announcements with ease.",
-      hoverImage: "/images/advertisement/Airport.jpg",
+      hoverImage: "/images/Powerful-Tools/3.jpg",
       link_Text: "Learn more",
       link: "",
     },
@@ -36,7 +36,7 @@ function SolutionCard() {
       title: "Easy Content Management",
       description:
         "Easily display content and publish updates with our simple, user-friendly CMS.Create engaging designs with drag-and-drop tools and customizable templates.",
-      hoverImage: "/images/advertisement/Airport.jpg",
+      hoverImage: "/images/Powerful-Tools/4.jpg",
       link_Text: "Learn more",
       link: "",
     },
@@ -44,7 +44,7 @@ function SolutionCard() {
       icon: "/images/explore-Display/Icon-05.png",
       title: "Pre-Made Templates to Use",
       description: "Select from ready-to-use templates.",
-      hoverImage: "/images/advertisement/Airport.jpg",
+      hoverImage: "/images/Powerful-Tools/5.jpg",
       link_Text: "Learn more",
       link: "",
     },
@@ -52,7 +52,7 @@ function SolutionCard() {
       icon: "/images/explore-Display/Icon-06.png",
       title: "User Roles & Access",
       description: "Manage multiple screens in one account.",
-      hoverImage: "/images/advertisement/Airport.jpg",
+      hoverImage: "/images/Powerful-Tools/6.jpg",
       link_Text: "Learn more",
       link: "",
     },
