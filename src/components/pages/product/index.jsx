@@ -11,17 +11,17 @@ function Product() {
   return (
     <>
       <NavberMain />
-      
-        <Prduct_Hero />
-        <div className="max-w-7xl mx-auto">
-          <ProductCetagory />
-        </div>
-          {/* <NewProdcutDesign /> */}
-          <Products />
-          <SingleProdcut />
-          
-        
-      
+
+      <Prduct_Hero />
+      <div className="max-w-7xl mx-auto">
+        <ProductCetagory />
+      </div>
+      {/* <NewProdcutDesign /> */}
+      <Products />
+      <SingleProdcut />
+
+
+
       <Footer />
     </>
   );
