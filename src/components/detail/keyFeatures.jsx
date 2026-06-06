@@ -1,32 +1,10 @@
 import Image from "next/image";
 
-function KeyFeatures() {
-  const keyFeatureData = [
-    {
-      feature_imgUrl: "monitor.svg",
-      feature_title: "Flexible Content Display",
-      feature_description:
-        "Customize pictures, videos, text time, weather, countdown,subtitles, and split-screen layouts. Supports full screen,split screen, and partition playback modes — multiple uses from one screen.Customize pictures, videos, text, time, weather, countdown,subtitles, and split-screen layouts. Supports full screen,split screen, and partition playback modes — multiple uses from one screen.",
-    },
-    {
-      feature_imgUrl: "wifi.svg",
-      feature_title: "Advanced Networking",
-      feature_description:
-        "Built-in high-performance WiFi (IEEE 802.11 b/g/n), 10/100M Ethernet, and optional 4G/5G support. Android motherboard with up to 1.6 GHz, 2GB RAM, 32GB EMMC storage.",
-    },
-    {
-      feature_imgUrl: "joystick.svg",
-      feature_title: "Smart Automation & Remote Control",
-      feature_description:
-        "Auto start, timing switch, and scheduled on/off across multiple periods per day. Remote advertising management via CMS cloud server (www.displaylab.net) — one account controls multiple machines.",
-    },
-    {
-      feature_imgUrl: "library.svg",
-      feature_title: "Multi-Format Playback",
-      feature_description:
-        "USB flash disk loop playback for pictures, videos, text scrolling, and PDFs. Supports cycle, timing, insert, split-screen, and partition playback. Multi-language system support included.",
-    },
-  ];
+function KeyFeatures({ productData }) {
+  if (!productData) return null;
+
+  const keyFeatureData = productData.key_features || [];
+
   return (
     <div className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -57,7 +35,7 @@ function KeyFeatures() {
             </div>
           </div>
           <div className="w-full h-full">
-            <Image src={"/images/details/keyFeatureImg.png"} width={1000} height={1000} className="w-full h-full" alt="" />
+            <Image src={productData.product_image || "/images/details/keyFeatureImg.png"} width={1000} height={1000} className="w-full h-full rounded-2xl shadow-md object-contain" alt="Key Features" />
           </div>
         </div>
       </div>

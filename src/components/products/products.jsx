@@ -79,13 +79,13 @@ function Products() {
 
           <div className="four_columns_items">
             {Products.map((product) => (
-              <Link target="_blank" href={"/details"} key={product?.id} className="single_product">
+              <Link target="_blank" href={`/details?id=${product?.id}`} key={product?.id} className="single_product">
                 <Image
                   src={product?.image}
                   width={200}
                   height={100}
                   className="single_product_image"
-                  alt="Stand_Kiosk"
+                  alt={product?.name}
                 ></Image>
 
                 <h4 className="single_product_name">{product?.name}</h4>

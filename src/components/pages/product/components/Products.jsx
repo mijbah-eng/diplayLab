@@ -28,13 +28,19 @@ function Products() {
           </div>
       <div className="space-large"></div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-      <SingleProduct />
+      <SingleProduct col={false} />
+      <SingleProduct col={false} />
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-5">
+      <SingleProduct col={true} />
+      <SingleProduct col={true} />
+      <SingleProduct col={true} />
       </div>
           {/* <div className="four_columns_items">
             {productsToShow.map((product) => (
               <Link
               target="_blank"
-              href={"/details"}
+              href={`/details?id=${product?.id}`}
                 key={product?.id}
                 className="single_product"
               >
@@ -43,7 +49,7 @@ function Products() {
                   width={200}
                   height={100}
                   className="single_product_image"
-                  alt="Stand_Kiosk"
+                  alt={product?.name}
                 ></Image>
 
                 <h4 className="single_product_name">{product?.name}</h4>

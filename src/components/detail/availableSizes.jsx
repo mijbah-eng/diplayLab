@@ -1,30 +1,19 @@
-export default function AvailableSizes() {
-  const sizes = [
-    {
-      size: '43"',
-      desc: "Compact footprint, ideal for corridors and small retail spaces.",
-    },
-    {
-      size: '50"',
-      desc: "Mid-size versatility for lobbies, showrooms, and waiting areas.",
-    },
-    {
-      size: '55"',
-      desc: "High-impact display for busy public areas and large retail floors.",
-    },
-    {
-      size: '65"',
-      desc: "Maximum visibility for large venues, airports, and event spaces.",
-    },
-  ];
+export default function AvailableSizes({ productData }) {
+  if (!productData) return null;
 
-  const boxItems = [
+  const sizes = productData.sizes || [];
+  const boxItems = productData.box_items || [
     "User manual",
     "Power cable",
     "Warranty card",
-    "Allen key + base screws",
-    "Infrared remote control",
+    "Base hardware screws",
+    "Remote control"
   ];
+  const shellBuild = productData.shell_build || {
+    frame: "Aluminum alloy bezel with glass front.",
+    back_shell: "Heavy duty sheet metal chassis.",
+    cms_software: "Supported by Display Lab CMS."
+  };
 
   return (
     <section className="py-16 md:py-24 bg-white">
@@ -35,7 +24,7 @@ export default function AvailableSizes() {
             Available Sizes & What's Included
           </h2>
           <p className="mt-3 text-gray-600 leading-relaxed">
-            The kiosk is available in four screen sizes to suit any space. All
+            The {productData.product_name} is available in multiple screen sizes to suit any space. All
             units ship with a complete accessory package for quick setup.
           </p>
         </div>
@@ -82,17 +71,17 @@ export default function AvailableSizes() {
             <div className="space-y-4 text-sm text-gray-600 leading-relaxed">
               <p>
                 <span className="font-medium text-gray-900">Frame:</span>{" "}
-                Aluminum alloy for a premium, durable finish.
+                {shellBuild.frame}
               </p>
 
               <p>
                 <span className="font-medium text-gray-900">Back shell:</span>{" "}
-                Sheet metal construction for structural rigidity.
+                {shellBuild.back_shell}
               </p>
 
               <p>
                 <span className="font-medium text-gray-900">CMS Software:</span>{" "}
-                Managed via displaylab.us cloud platform.
+                {shellBuild.cms_software}
               </p>
             </div>
 

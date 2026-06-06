@@ -1,9 +1,11 @@
 import Detail from "@/components/detail";
 
-function Details() {
-    return ( <>
-    <Detail />
-    </> );
+async function Details({ searchParams }) {
+    const resolvedParams = await searchParams;
+    const productId = resolvedParams?.id || "1";
+    return (
+        <Detail productId={productId} />
+    );
 }
 
 export default Details;

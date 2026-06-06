@@ -1,6 +1,24 @@
-import { displayPerformance, systemConnectivity } from "@/utils";
+function DetailsTechnical({ productData }) {    
+  if (!productData) return null;
 
-function DetailsTechnical() {    
+  const displayPerformance = [
+    { name: "Resolution", value: productData.resolution },
+    { name: "Brightness", value: productData.brightness },
+    { name: "Response Time", value: productData.response_time },
+    { name: "Contrast", value: productData.contrast },
+    { name: "Color Gamut", value: productData.color_gamut },
+    { name: "Viewing Angle", value: productData.viewing_angle || "89°/89°/89°/89° (CR≥10)" }
+  ];
+
+  const systemConnectivity = [
+    { name: "OS", value: productData.operating_system },
+    { name: "RAM / ROM", value: productData.ram_rom },
+    { name: "Interfaces", value: productData.interfaces },
+    { name: "Backlight", value: productData.backlight },
+    { name: "Control", value: productData.control },
+    { name: "CMS Software", value: productData.cms_software }
+  ];
+
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
