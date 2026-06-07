@@ -91,11 +91,10 @@ function Products() {
                       setSelectedCategory(cat.id);
                       setShowAll(false); // Reset showAll when switching categories
                     }}
-                    className={`flex items-center gap-2.5 px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-200 cursor-pointer ${
-                      isActive 
-                        ? "bg-cyan-600 text-white shadow-md shadow-cyan-600/20" 
-                        : "bg-white text-slate-600 border border-slate-200 hover:text-cyan-600 hover:bg-slate-50 shadow-[0_4px_25px_rgba(0,0,0,0.06)]"
-                    }`}
+                    className={`flex items-center gap-2.5 px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-200 cursor-pointer ${isActive
+                      ? "bg-cyan-600 text-white shadow-md shadow-cyan-600/20"
+                      : "bg-white text-slate-600 border border-slate-200 hover:text-cyan-600 hover:bg-slate-50 shadow-[0_4px_25px_rgba(0,0,0,0.06)]"
+                      }`}
                   >
                     <Icon size={18} />
                     <span>{cat.label}</span>
@@ -105,7 +104,7 @@ function Products() {
             </div>
 
             {/* Bottom row: Other Categories */}
-            <div className="w-full bg-white rounded-2xl shadow-[0_4px_25px_rgba(0,0,0,0.06)] border border-slate-100 p-2 overflow-x-auto scrollbar-none flex items-center justify-start lg:justify-center gap-2 md:gap-3 whitespace-nowrap">
+            <div className="w-full bg-white rounded-2xl shadow-[0_4px_25px_rgba(0,0,0,0.06)] border border-slate-100 p-2 overflow-x-auto scrollbar-none grid grid-cols-2  md:flex flex-wrap items-center justify-start lg:justify-center gap-2 md:gap-3">
               {CATEGORIES.filter(cat => cat.id !== "all").map((cat) => {
                 const Icon = cat.icon;
                 const isActive = selectedCategory === cat.id;
@@ -116,11 +115,10 @@ function Products() {
                       setSelectedCategory(cat.id);
                       setShowAll(false); // Reset showAll when switching categories
                     }}
-                    className={`flex items-center gap-2.5 px-5 py-3 rounded-xl text-sm font-semibold transition-all duration-200 cursor-pointer shrink-0 ${
-                      isActive 
-                        ? "bg-cyan-600 text-white shadow-md shadow-cyan-600/20" 
-                        : "text-slate-600 hover:text-cyan-600 hover:bg-slate-50"
-                    }`}
+                    className={`flex items-center gap-2.5 px-5 py-3 rounded-xl text-sm font-semibold transition-all duration-200 cursor-pointer shrink-0 ${isActive
+                      ? "bg-cyan-600 text-white shadow-md shadow-cyan-600/20"
+                      : "text-slate-600 hover:text-cyan-600 hover:bg-slate-50"
+                      }`}
                   >
                     <Icon size={18} />
                     <span>{cat.label}</span>
@@ -140,7 +138,7 @@ function Products() {
           ) : (
             <>
               {/* First row: 2 column layout for premium emphasis */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-6">
                 {productsToShow.slice(0, 2).map((product) => (
                   <SingleProduct key={product.id} product={product} col={false} />
                 ))}
@@ -148,7 +146,7 @@ function Products() {
 
               {/* Second row: 3 column layout */}
               {productsToShow.length > 2 && (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-2">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-2">
                   {productsToShow.slice(2).map((product) => (
                     <SingleProduct key={product.id} product={product} col={true} />
                   ))}
