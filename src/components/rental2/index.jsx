@@ -31,7 +31,7 @@ function Rental2() {
             <div className="text-center lg:text-left">
               <Reveal props={"w-full"}>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                  Display Lab Rental Products
+                  Display Lab <span className="highlight">Rental</span> Products
                 </h1>
               </Reveal>
               <Reveal props={"w-full"}>
@@ -39,7 +39,7 @@ function Rental2() {
                   Flexible digital signage rental solutions for events, promotions, and temporary setups. Use high-quality displays without buying hardware. Ideal for exhibitions, trade shows, and seasonal campaigns. Quick setup and easy management ensure smooth execution at any venue.
                 </p>
               </Reveal>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center lg:items-start lg:justify-start">
                 <Link
                 href={"/rental"}
                 className="w-xs sm:w-fit bg-cyan-600 text-white px-8 py-4 rounded font-semibold text-base hover:bg-cyan-700 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
@@ -96,12 +96,12 @@ function Rental2() {
         <div className="relative min-w-2.5 min-h-2.5 w-full h-auto max-w-full order-4 self-center box-border">
           <div className="w-full h-full m-0 p-0 clear-both overflow-hidden min-h-px cursor-pointer">
             <div className="p-2.5!">
-              <div className="flex">
-                <div className="w-[60%] flex flex-row flex-wrap">
+              <div className="flex md:flex-row flex-col">
+                <div className="w-full md:w-[60%] flex flex-col md:flex-row flex-wrap">
                   {rentalProducts?.map((singleProduct, index) => (
                     <div
                       key={index}
-                      className="relative w-[50%] overflow-hidden flex flex-col list-none duration-1000 fill-mode-both p-2.5!"
+                      className="relative w-full md:w-[50%] overflow-hidden flex flex-col list-none duration-1000 fill-mode-both p-2.5!"
                     >
                       <div className="opacity-100 overflow-hidden transform-gpu">
                         <div className="relative rounded-[10px] w-full overflow-hidden bg-transparent">
@@ -138,7 +138,7 @@ function Rental2() {
                     </div>
                   ))}
                 </div>
-                <div className="w-[40%] flex flex-col">
+                <div className="w-full md:w-[40%] flex flex-col">
                   <div className="relative overflow-hidden p-2.5! list-none duration-1000 fill-mode-both">
                     <div className="opacity-100 overflow-hidden transform-gpu">
                       <div className="bg-transparent w-full overflow-hidden rounded-[10px]! relative">

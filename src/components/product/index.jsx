@@ -16,7 +16,7 @@ function ProductSection() {
           <div className="text-center lg:text-left">
             <Reveal>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Display Products, <br /> Smart Solutions for Business Growth
+                Display <span className="highlight"> Products </span> <br /> Smart Solutions for Business Growth
               </h1>
             </Reveal>
             <Reveal>

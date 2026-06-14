@@ -40,7 +40,7 @@ function Advertisement_Solutions() {
             <div className="text-center lg:text-left">
               <Reveal props={"w-full"}>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                  Smart Digital Advertising Solutions
+                  Smart Digital <span className="highlight">Advertising</span> Solutions
                 </h1>
               </Reveal>
               <Reveal props={"w-full"}>

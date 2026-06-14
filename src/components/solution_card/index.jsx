@@ -60,7 +60,7 @@ function SolutionCard() {
 
   return (
     <>
-      <div className="py-16 md:py-24 bg-[#f5f7fb]">
+      <div className="container_paddingTop container_paddingBtm bg-[#f5f7fb]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hero_section pb-24">
             <div className="relative w-full md:w-3xl lg:w-5xl mx-auto">

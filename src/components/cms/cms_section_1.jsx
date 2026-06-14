@@ -4,9 +4,10 @@ import Reveal from "../utils/Reveal";
 function CMS_Marketing() {
   return (
     <>
-      <div className="py-16 md:py-24">
+    {/* py-16 md:py-24  */}
+      <div className="container_paddingTop">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center container_paddingBtm">
             <Reveal>
               <div className="relative">
                 <div className="relative">
@@ -37,7 +38,7 @@ function CMS_Marketing() {
             <div className="">
               <Reveal>
                 <h2 className="h2_text mb-6">
-                  A Single CMS <br /> Platform to Power <br /> Digital Signage
+                  A Complete <span className="highlight"> CMS </span> <br /> Platform to Power <br /> Your Digital Universe
                 </h2>
               </Reveal>
               <Reveal>

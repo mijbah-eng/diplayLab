@@ -107,7 +107,7 @@ const CurvedLoop = ({
     <div
       // FIXED: Removed 'py-8' padding and added 'h-fit' to match text bounds perfectly
       className={`w-full h-fit overflow-hidden select-none ${backgroundColor}`} 
-      style={{ visibility: ready ? 'visible' : 'hidden', cursor: cursorStyle }}
+      style={{ visibility: ready ? 'visible' : 'hidden', cursor: cursorStyle , background: "linear-gradient(to bottom right, #f9fafb, #eff6ff)"}}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={endDrag}

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { products_details_all_data } from "@/utils/products_details_data";
 import { Cloud, RotateCw, Users, Monitor, Wifi, Cpu, Layers, Award, ChevronRight, Download } from "lucide-react";
 
-function SingleProduct({ product, col }) {
+function SingleProduct({ product, index }) {
     if (!product) return null;
     const details = products_details_all_data[product.id] || {};
 
@@ -77,146 +77,64 @@ function SingleProduct({ product, col }) {
     })) || defaultFeatures;
 
     // Display Lab branding prefix
-    const brandedName = product.name.toLowerCase().startsWith("display lab") 
-        ? product.name 
+    const brandedName = product.name.toLowerCase().startsWith("display lab")
+        ? product.name
         : `Display Lab ${product.name}`;
 
     // Main description
     const description = details.product_description || "Premium commercial digital signage display designed for high-traffic environments.";
 
-    // Render horizontal wide layout for first row (2 columns in Products.jsx)
-    if (!col) {
-        return (
-            <div className="bg-white border border-slate-100 rounded-[24px] shadow-[0_4px_25px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-500 overflow-hidden flex flex-col lg:flex-row w-full group">
-                {/* Left Side: Product Image */}
-                <div className="w-full lg:w-[45%] bg-[#f8fafc] flex items-center justify-center p-8 lg:p-12 relative border-b lg:border-b-0 lg:border-r border-slate-100 min-h-[320px] lg:min-h-full">
-                    <Link href={`/details?id=${product.id}`} className="w-full h-full flex items-center justify-center">
-                        <img 
-                            className="max-h-[320px] lg:max-h-[380px] object-contain transition-transform duration-500 group-hover:scale-105" 
-                            src={product.image} 
-                            alt={product.name} 
-                        />
-                    </Link>
-                </div>
+    const isEven = index % 2 === 1;
 
-                {/* Right Side: Product Details */}
-                <div className="w-full lg:w-[55%] p-6 md:p-8 lg:p-10 flex flex-col justify-between">
-                    <div>
-                        {/* Badge */}
-                        <div className="bg-[#e0f2fe] text-[#007a9b] text-[10px] sm:text-[11px] font-bold tracking-wider uppercase px-3.5 py-1 rounded-full w-fit mb-4">
-                            {badgeTextUpper}
-                        </div>
-
-                        {/* Title */}
-                        <Link href={`/details?id=${product.id}`}>
-                            <h3 className="text-2xl lg:text-3xl font-bold tracking-tight text-slate-900 hover:text-[#007a9b] transition-colors leading-tight">
-                                {brandedName}
-                            </h3>
-                        </Link>
-
-                        {/* Description */}
-                        <p className="text-slate-500 text-sm md:text-base mt-3 leading-relaxed">
-                            {description}
-                        </p>
-
-                        {/* Divider */}
-                        <div className="border-t border-slate-100 my-6"></div>
-                    </div>
-
-                    {/* Features and Action Buttons side-by-side */}
-                    <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                        {/* Left Side inside: Features */}
-                        <div className="md:col-span-7 space-y-4">
-                            {features.map((feat, index) => (
-                                <div key={index} className="flex items-start gap-3">
-                                    {feat.icon}
-                                    <div>
-                                        <h4 className="font-bold text-slate-800 text-xs md:text-sm">
-                                            {feat.feature_title}
-                                        </h4>
-                                        <p className="text-slate-500 text-xs mt-0.5 leading-snug">
-                                            {feat.feature_description}
-                                        </p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-
-                        {/* Right Side inside: Action Buttons */}
-                        <div className="md:col-span-5 flex flex-col gap-3 justify-center w-full">
-                            <Link 
-                                href={`/details?id=${product.id}`} 
-                                className="bg-[#007a9b] hover:bg-[#006580] text-white font-semibold py-3 px-5 rounded-xl flex items-center justify-between transition-all shadow-sm hover:shadow-md cursor-pointer text-sm"
-                            >
-                                <span>Product Inquiry</span>
-                                <ChevronRight className="w-4 h-4" />
-                            </Link>
-
-                            <Link 
-                                href={`/contact?product=${encodeURIComponent(product.name)}`}
-                                className="border border-[#007a9b] text-[#007a9b] hover:bg-sky-50/50 font-semibold py-3 px-5 rounded-xl flex items-center justify-center gap-2 transition-all cursor-pointer text-sm"
-                            >
-                                <Download className="w-4 h-4" />
-                                <span>Download Brochure</span>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-    }
-
-    // Render vertical narrow layout for subsequent rows (3 columns in Products.jsx)
     return (
-        <div className="bg-white border border-slate-100 rounded-[24px] shadow-[0_4px_25px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-500 overflow-hidden flex flex-col w-full h-full group">
-            {/* Top Side: Product Image */}
-            <div className="bg-[#f8fafc] flex items-center justify-center p-6 relative border-b border-slate-100 h-64 shrink-0">
+        <div className={`bg-white border border-slate-100 rounded-[24px] shadow-[0_4px_25px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-500 overflow-hidden flex flex-col ${isEven ? "lg:flex-row-reverse" : "lg:flex-row"} w-full group`}>
+            {/* Product Image */}
+            <div className={`w-full lg:w-[45%] flex items-center justify-center p-8 lg:p-12 relative  min-h-[320px] lg:min-h-full`}>
                 <Link href={`/details?id=${product.id}`} className="w-full h-full flex items-center justify-center">
-                    <img 
-                        className="max-h-[200px] object-contain transition-transform duration-500 group-hover:scale-105" 
-                        src={product.image} 
-                        alt={product.name} 
+                    <img
+                        className="max-h-[320px] lg:max-h-[380px] object-contain transition-transform duration-500 group-hover:scale-105"
+                        src={product.image}
+                        alt={product.name}
                     />
                 </Link>
             </div>
 
-            {/* Bottom Side: Product Details */}
-            <div className="p-6 flex flex-col justify-between flex-grow">
+            {/* Product Details */}
+            <div className="w-full lg:w-[55%] p-6 md:p-8 lg:p-10 flex flex-col justify-between">
                 <div>
                     {/* Badge */}
-                    <div className="bg-[#e0f2fe] text-[#007a9b] text-[9px] font-bold tracking-wider uppercase px-2.5 py-0.5 rounded-full w-fit mb-3">
+                    <div className="bg-[#e0f2fe] text-[#007a9b] text-[10px] sm:text-[11px] font-bold tracking-wider uppercase px-3.5 py-1 rounded-full w-fit mb-4">
                         {badgeTextUpper}
                     </div>
 
                     {/* Title */}
                     <Link href={`/details?id=${product.id}`}>
-                        <h3 className="text-lg md:text-xl font-bold tracking-tight text-slate-900 hover:text-[#007a9b] transition-colors leading-tight">
+                        <h3 className="text-2xl lg:text-3xl font-bold tracking-tight text-slate-900 hover:text-[#007a9b] transition-colors leading-tight">
                             {brandedName}
                         </h3>
                     </Link>
 
                     {/* Description */}
-                    <p className="text-slate-500 text-xs md:text-sm mt-2 leading-relaxed line-clamp-3">
+                    <p className="text-slate-500 text-sm md:text-base mt-3 leading-relaxed">
                         {description}
                     </p>
 
                     {/* Divider */}
-                    <div className="border-t border-slate-100 my-4"></div>
+                    <div className="border-t border-slate-100 my-6"></div>
                 </div>
 
-                <div>
-                    {/* Features (Show top 2 to fit narrow cards elegantly) */}
-                    <div className="space-y-3 mb-5">
-                        {features.slice(0, 2).map((feat, index) => (
-                            <div key={index} className="flex items-start gap-2.5">
-                                <div className="mt-0.5 shrink-0 scale-90">
-                                    {feat.icon}
-                                </div>
+                {/* Features and Action Buttons side-by-side */}
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                    {/* Left Side inside: Features */}
+                    <div className="md:col-span-7 space-y-4">
+                        {features.map((feat, idx) => (
+                            <div key={idx} className="flex items-start gap-3">
+                                {feat.icon}
                                 <div>
-                                    <h4 className="font-bold text-slate-800 text-xs">
+                                    <h4 className="font-bold text-slate-800 text-xs md:text-sm">
                                         {feat.feature_title}
                                     </h4>
-                                    <p className="text-slate-500 text-[11px] mt-0.5 leading-snug line-clamp-2">
+                                    <p className="text-slate-500 text-xs mt-0.5 leading-snug">
                                         {feat.feature_description}
                                     </p>
                                 </div>
@@ -224,22 +142,22 @@ function SingleProduct({ product, col }) {
                         ))}
                     </div>
 
-                    {/* Action Buttons */}
-                    <div className="grid grid-cols-2 gap-3 mt-auto">
-                        <Link 
-                            href={`/details?id=${product.id}`} 
-                            className="bg-[#007a9b] hover:bg-[#006580] text-white font-semibold py-2.5 px-3 rounded-xl flex items-center justify-between transition-all cursor-pointer text-xs"
+                    {/* Right Side inside: Action Buttons */}
+                    <div className="md:col-span-5 flex flex-col gap-3 justify-center w-full">
+                        <Link
+                            href={`/details?id=${product.id}`}
+                            className="bg-[#007a9b] hover:bg-[#006580] text-white font-semibold py-3 px-5 rounded-xl flex items-center justify-between transition-all shadow-sm hover:shadow-md cursor-pointer text-sm"
                         >
-                            <span>Inquiry</span>
-                            <ChevronRight className="w-3.5 h-3.5" />
+                            <span>Product Inquiry</span>
+                            <ChevronRight className="w-4 h-4" />
                         </Link>
 
-                        <Link 
+                        <Link
                             href={`/contact?product=${encodeURIComponent(product.name)}`}
-                            className="border border-[#007a9b] text-[#007a9b] hover:bg-sky-50/50 font-semibold py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 transition-all cursor-pointer text-xs"
+                            className="border border-[#007a9b] text-[#007a9b] hover:bg-sky-50/50 font-semibold py-3 px-5 rounded-xl flex items-center justify-center gap-2 transition-all cursor-pointer text-sm"
                         >
-                            <Download className="w-3.5 h-3.5" />
-                            <span>Brochure</span>
+                            <Download className="w-4 h-4" />
+                            <span>Download Brochure</span>
                         </Link>
                     </div>
                 </div>

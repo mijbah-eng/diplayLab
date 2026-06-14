@@ -21,7 +21,7 @@ function Footer() {
       name: "Cms",
       href: "/cms"
     },
-    
+
     {
       name: "Porducts",
       href: "/products"
@@ -42,28 +42,28 @@ function Footer() {
     },
     {
       name: "Digital Poster",
-      href: "#",  
+      href: "#",
     },
-    
+
     {
       name: "Stand Kiosk",
-      href: "#",  
+      href: "#",
     },
     {
       name: "3D Holograph",
-      href: "#",  
+      href: "#",
     },
     {
       name: "Self Ordering Kiosk",
-      href: "#",  
+      href: "#",
     },
     {
       name: "Indoor Display",
-      href: "#",  
+      href: "#",
     },
     {
       name: "Stand Kiosk",
-      href: "#",  
+      href: "#",
     },
 
   ]
@@ -72,7 +72,7 @@ function Footer() {
       name: "Education",
       href: "#",
     },
-    
+
     {
       name: "Hospital",
       href: "#",
@@ -88,26 +88,26 @@ function Footer() {
 
   ]
   const quickLinksRental = [
-     {
+    {
       name: "Indoor Digital Kiosk",
       href: "#",
     },
     {
       name: "Interactive Digital Display",
-      href: "#",  
+      href: "#",
     },
-    
+
     {
       name: "Outdoor Digital kiosk",
-      href: "#",  
+      href: "#",
     },
     {
       name: "Promotional Display Screens",
-      href: "#",  
+      href: "#",
     },
     {
       name: "Dual Screen Kiosk",
-      href: "#",  
+      href: "#",
     },
   ]
   const footerProductsLinks = [
@@ -121,7 +121,7 @@ function Footer() {
     <>
       <Reveal props={"w-full"}>
 
-        <div className="bg-black text-white">
+        <div className="bg-black text-white mt-10">
           <div className="px-5 md:px-12">
             <div className="max-w-7xl mx-auto">
               <div className="w-full">
@@ -292,13 +292,13 @@ function Footer() {
                     </div>
                   </div>
                   <div className="">
-                        Display Lab Inc. ©{" "}
-                        <span className="copyright_year">
-                          {" "}
-                          {new Date().getFullYear()}
-                        </span>{" "}
-                        All Rights Reserved
-                      </div>
+                    Display Lab Inc. ©{" "}
+                    <span className="copyright_year">
+                      {" "}
+                      {new Date().getFullYear()}
+                    </span>{" "}
+                    All Rights Reserved
+                  </div>
                 </div>
               </div>
             </div>

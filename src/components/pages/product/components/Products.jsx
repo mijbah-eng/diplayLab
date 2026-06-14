@@ -1,7 +1,7 @@
 "use client";
 import SingleProduct from "@/components/SingleProduct";
 import { ProductsDatas } from "@/utils";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   LayoutGrid,
   Monitor,
@@ -24,9 +24,16 @@ const CATEGORIES = [
   { id: "rentals", label: "Rentals", icon: Calendar },
 ];
 
-function Products() {
-  const [selectedCategory, setSelectedCategory] = useState("all");
+function Products({ selectedCategory: propSelectedCategory, setSelectedCategory: propSetSelectedCategory }) {
+  const [localCategory, setLocalCategory] = useState("all");
+  const selectedCategory = propSelectedCategory !== undefined ? propSelectedCategory : localCategory;
+  const setSelectedCategory = propSetSelectedCategory !== undefined ? propSetSelectedCategory : setLocalCategory;
+  
   const [showAll, setShowAll] = useState(false);
+
+  useEffect(() => {
+    setShowAll(false);
+  }, [selectedCategory]);
 
   const handleShowAll = () => {
     setShowAll(!showAll);
@@ -67,7 +74,7 @@ function Products() {
 
   return (
     <>
-      <div className="space-large"></div>
+      <div id="products-section" className="space-large"></div>
       <div className="flex flex-col gap-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
@@ -137,21 +144,12 @@ function Products() {
             </div>
           ) : (
             <>
-              {/* First row: 2 column layout for premium emphasis */}
-              <div className="grid grid-cols-1 gap-6">
-                {productsToShow.slice(0, 2).map((product) => (
-                  <SingleProduct key={product.id} product={product} col={false} />
+              <div className="grid grid-cols-1 gap-8">
+                {productsToShow.map((product, index) => (
+                  <SingleProduct key={product.id} product={product} index={index} />
                 ))}
               </div>
 
-              {/* Second row: 3 column layout */}
-              {productsToShow.length > 2 && (
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-2">
-                  {productsToShow.slice(2).map((product) => (
-                    <SingleProduct key={product.id} product={product} col={true} />
-                  ))}
-                </div>
-              )}
             </>
           )}
         </div>

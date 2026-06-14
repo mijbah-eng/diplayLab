@@ -22,7 +22,7 @@ const images = [
 
 function Gallery() {
   return (
-    <div className="py-16 md:py-24">
+    <div className="container_paddingTop container_paddingBtm">
       <Reveal props={"w-full"}>
         <MarqueeSection images={images} />
       </Reveal>

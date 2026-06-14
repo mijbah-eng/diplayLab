@@ -109,6 +109,15 @@
 .title {
   @apply text-3xl md:text-5xl  font-bold;
 }
+.highlight {
+  @apply bg-[#005582] text-white rounded-sm px-2
+}
+.container_paddingTop {
+  @apply pt-16 md:pt-24;
+}
+.container_paddingBtm {
+  @apply pb-16 md:pb-24;
+}
 .card {
   @apply shadow-sm border border-gray-200 w-full max-w-sm rounded-lg overflow-hidden mx-auto mt-4;
 }
