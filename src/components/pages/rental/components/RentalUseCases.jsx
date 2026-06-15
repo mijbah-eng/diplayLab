@@ -37,35 +37,41 @@ function RentalUseCase() {
             icon: (<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="4 65.84200286865234 1015.7589721679688 892.571044921875" className="size-6 colorable-icon" data-export-recolorable-svg="true" overflow="visible"><g fill="none" stroke="white" strokeWidth="45" strokeLinecap="round" strokeLinejoin="round"><path d="M 519.605,797.539 C 518.791,764.046 516.607,739.039 512.399,718.349 C 505.267,697.505 494.467,676.578 482.617,659.984 C 467.264,643.984 458.9,636.986 446.363,628.182 C 425.56,617.086 400.716,607.774 371.611,600.177 C 342.586,594.909 334.374,594.597 326.269,596.393 C 305.673,606.954 288.72,613.167 276.36,615.692 C 259.734,616.803 243.117,615.338 226.407,611.174 L 186.473,593.455" data-line="nan" strokeWidth="45.0"></path><path d="M 590.972,870.159 C 597.658,862.06 602.981,851.621 605.132,841.159 C 604.928,832.697 602.275,821.899 598.044,813.285 Q 593.514,807.424 582.638,796.531" data-line="nan" strokeWidth="45.0"></path><path d="M 8.022,728.349 C 12.28,711.926 16.671,699.622 22.288,687.273 C 29.378,674.743 38.044,662.405 45.142,653.962 C 53.0,645.937 65.463,635.341 86.015,622.18 C 98.448,616.123 114.779,609.671 131.434,604.448 Q 147.962,600.315 186.473,593.455" data-line="nan" strokeWidth="45.0"></path><path d="M 1019.606,66.183 L 216.439,65.842" data-line="0.0" strokeWidth="45.0"></path><path d="M 216.183,196.351 L 216.439,65.842" data-line="1.0" strokeWidth="45.0"></path><path d="M 1019.759,627.613 L 1019.606,66.183" data-line="2.0" strokeWidth="45.0"></path><path d="M 761.111,627.562 L 1019.759,627.613" data-line="3.0" strokeWidth="45.0"></path><circle cx="260.44913357455823" cy="404.03026560439787" r="140.0866754497582" data-line="7.0" strokeWidth="45.0"></circle><path d="M 845.813,406.597 L 583.459,795.315" data-line="9.0" strokeWidth="45.0"></path><path d="M 580.7739852451358,794.9621494161205 A 79.6014914917049,79.6014914917049 0 0,0 525.1890520872688,795.9539388987406" data-line="10.0" strokeWidth="45.0"></path><path d="M 4.0,957.434 L 8.022,728.349" data-line="12.0" strokeWidth="45.0"></path><path d="M 519.666,801.313 L 414.4,904.108" data-line="13.0" strokeWidth="45.0"></path><path d="M 503.47,958.413 L 590.972,870.159" data-line="13.0" strokeWidth="45.0"></path><path d="M 414.437,791.738 L 414.374,957.674" data-line="14.0" strokeWidth="45.0"></path><path d="M 555.66,627.522 L 639.89,627.552" data-line="21.0" strokeWidth="45.0"></path><path d="M 109.1,794.686 L 109.12,957.674" data-line="22.0" strokeWidth="45.0"></path></g></svg>),
         },
     ]
-    return (<>
-        <div className="bg-white py-24 sm:py-32">
-            <div className="container">
+    return (
+        <section className="bg-white py-24 sm:py-32">
+            <div className="container max-w-6xl mx-auto">
                 <div className="mx-auto max-w-2xl lg:text-center">
                     <h2 className="mt-2 h2_text">
                         Built for Every Business Moment
                     </h2>
-                    <p className="mt-6 text-[1rem] text-gray-600 max-w-3xl mx-auto;">
+                    <p className="mt-6 text-[1rem] text-gray-600 max-w-3xl mx-auto">
                         Display Lab solutions are deployed across industries and event types that demand visual excellence.
                     </p>
                 </div>
                 <div className="mx-auto mt-16 sm:mt-20 lg:mt-24">
-                    <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-14">
                         {features.map((feature) => (
-                            <div key={feature.name} className="relative pl-16">
-                                <dt className="text-base/7 font-semibold text-gray-900">
-                                    <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-[#005582] text-white">
+                            <div key={feature.name} className="flex gap-4 items-start">
+                                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-xl bg-[#003452] text-white shadow-sm">
+                                    <div className="size-6 flex items-center justify-center">
                                         {feature.icon}
                                     </div>
-                                    {feature.name}
-                                </dt>
-                                <dd className="mt-2 text-base/7 text-gray-600">{feature.description}</dd>
+                                </div>
+                                <div className="flex-grow">
+                                    <h3 className="text-lg font-bold text-[#003452] leading-snug">
+                                        {feature.name}
+                                    </h3>
+                                    <p className="mt-2 text-[14px] leading-relaxed text-slate-600 font-medium">
+                                        {feature.description}
+                                    </p>
+                                </div>
                             </div>
                         ))}
-                    </dl>
+                    </div>
                 </div>
             </div>
-        </div>
-    </>);
+        </section>
+    );
 }
 
 export default RentalUseCase;
