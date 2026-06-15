@@ -177,7 +177,7 @@ function Accessories() {
             {ACCESSORIES_LIST.map((item) => (
               <div
                 key={item.id}
-                className="group flex flex-col items-center justify-between bg-white p-8 min-h-[190px] text-center transition-all duration-300 hover:bg-slate-50/50 cursor-pointer"
+                className="group flex flex-col items-center justify-between bg-white p-8 min-h-[190px] text-center transition-all duration-300 hover:bg-slate-50/50"
               >
                 {/* SVG Icon Illustration */}
                 <div className="h-24 flex items-center justify-center mb-4">
