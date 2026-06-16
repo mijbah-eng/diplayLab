@@ -315,61 +315,61 @@ export const ProductsDatas = [
   {
     id: 1,
     name: "Indoor Display",
-    image: "/images/products/products-1.png",
+    image: "/images/products/product 1.jpeg",
   },
   {
     id: 2,
     name: "Stand Kiosk",
-    image: "/images/products/products-2.png",
+    image: "/images/products/product 2.jpeg",
   },
   {
     id: 3,
     name: "3D Holograph",
-    image: "/images/products/product image-3.jpeg",
+    image: "/images/products/product 3.jpeg",
   },
   {
     id: 4,
     name: "Self Ordering Kiosk",
-    image: "/images/products/products-4.png",
+    image: "/images/products/product 4.jpeg",
   },
   {
     id: 5,
     name: "Indoor Display",
-    image: "/images/products/products-5.png",
+    image: "/images/products/product 5.jpeg",
   },
   {
     id: 6,
     name: "Stand Kiosk",
-    image: "/images/products/products-6.png",
+    image: "/images/products/product 6.jpeg",
   },
   {
     id: 7,
     name: "Digital Poster",
-    image: "/images/products/products-7.png",
+    image: "/images/products/product 7.jpeg",
   },
   {
     id: 8,
     name: "Window Display",
-    image: "/images/products/products-8.png",
+    image: "/images/products/product 8.jpeg",
   },
   {
     id: 9,
     name: "Presentation Display",
-    image: "/images/products/products-9.png",
+    image: "/images/products/product 9.jpeg",
   },
   {
     id: 10,
     name: "Outdoor Display",
-    image: "/images/products/products-10.png",
+    image: "/images/products/product 10.jpeg",
   },
   {
     id: 11,
     name: "Wall Mount",
-    image: "/images/products/products-11.png",
+    image: "/images/products/product 11.jpeg",
   },
   {
     id: 12,
     name: "Digital Menu Board",
-    image: "/images/products/products-12.png",
+    image: "/images/products/product 12.jpeg",
   },
 ];
