@@ -58,13 +58,13 @@ function CircularCheck() {
   );
 }
 
-export default function RentalPackages() {
+export default function Transparent() {
   return (
     <section className="relative isolate bg-slate-50/40 px-6 py-24 sm:py-32 lg:px-8">
       <div className="container max-w-6xl mx-auto">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="mt-2 h2_text">
-            Transparent Pricing. No Surprises
+            Transparent Pricing. <br /> No Surprises
           </h2>
           <p className="mt-6 title_desc max-w-2xl mx-auto">
             Flexible rental packages designed for one-day activations to multi-week deployments. Every package includes delivery, setup, and support.
@@ -111,7 +111,7 @@ export default function RentalPackages() {
                 </ul>
               </div>
 
-              <div className="mt-8">
+              {/* <div className="mt-8">
                 <button
                   type="button"
                   className={`w-full py-3.5 px-6 rounded-xl font-bold text-center transition-all duration-300 cursor-pointer ${tier.isPopular
@@ -121,7 +121,7 @@ export default function RentalPackages() {
                 >
                   {tier.buttonText}
                 </button>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

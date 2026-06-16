@@ -5,7 +5,7 @@ import RentalDivision from "./components/RentalDivision";
 import RentalOffer from "./components/RentalOffer";
 import Rental_division_service_model from "./components/Rental_division_service_model";
 import RentalUseCase from "./components/RentalUseCases";
-import RentalPackages from "./components/RentalPackages";
+import Transparent from "./components/Transparent";
 import Rental_Creative from "./components/Rental_Creative";
 import Rental_Choose_Us from "./components/Rental_Choose_Us";
 import Rental_Analytics from "./components/Rental_Analytics";
@@ -24,7 +24,7 @@ function Rental() {
         <RentalOffer />
         <Rental_division_service_model />
         <RentalUseCase />
-        <RentalPackages />
+        <Transparent />
         <Rental_Creative />
         <Rental_Choose_Us />
         <Rental_Analytics />
