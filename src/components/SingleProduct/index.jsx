@@ -87,12 +87,12 @@ function SingleProduct({ product, index }) {
     const isEven = index % 2 === 1;
 
     return (
-        <div className={`bg-white border border-slate-100 rounded-[24px] shadow-[0_4px_25px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-500 overflow-hidden flex flex-col ${isEven ? "lg:flex-row-reverse" : "lg:flex-row"} w-full group`}>
+        <div className={` bg-white border border-slate-100 rounded-[24px] shadow-[0_4px_25px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-500 overflow-hidden flex flex-col ${isEven ? "lg:flex-row-reverse" : "lg:flex-row"} w-full group`}>
             {/* Product Image */}
             <div className={`w-full lg:w-[45%] flex items-center justify-center p-8 lg:p-12 relative  min-h-[320px] lg:min-h-full`}>
                 <Link href={`/details?id=${product.id}`} className="w-full h-full flex items-center justify-center">
                     <img
-                        className="max-h-[320px] lg:max-h-[380px] object-contain transition-transform duration-500 group-hover:scale-105"
+                        className="w-full  h-full object-contain transition-transform duration-500 group-hover:scale-105"
                         src={product.image}
                         alt={product.name}
                     />

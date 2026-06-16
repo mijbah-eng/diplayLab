@@ -325,7 +325,7 @@ export const ProductsDatas = [
   {
     id: 3,
     name: "3D Holograph",
-    image: "/images/products/products-3.png",
+    image: "/images/products/product image-3.jpeg",
   },
   {
     id: 4,
