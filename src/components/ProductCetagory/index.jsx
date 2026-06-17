@@ -51,6 +51,13 @@ function ProductCetagory({ selectedCategory, setSelectedCategory }) {
   const scrollContainerRef = useRef(null);
   const [showLeftArrow, setShowLeftArrow] = useState(false);
   const [showRightArrow, setShowRightArrow] = useState(false);
+  const [isGrabbing, setIsGrabbing] = useState(false);
+
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const startY = useRef(0);
+  const scrollLeft = useRef(0);
+  const preventClick = useRef(false);
 
   const checkScroll = () => {
     if (scrollContainerRef.current) {
@@ -88,7 +95,65 @@ function ProductCetagory({ selectedCategory, setSelectedCategory }) {
     }
   };
 
+  const handlePointerDown = (e) => {
+    if (e.pointerType === "mouse" && e.button !== 0) return;
+
+    isDragging.current = true;
+    preventClick.current = false;
+    startX.current = e.clientX;
+    startY.current = e.clientY;
+    scrollLeft.current = scrollContainerRef.current.scrollLeft;
+
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.setPointerCapture(e.pointerId);
+    }
+    setIsGrabbing(true);
+  };
+
+  const handlePointerMove = (e) => {
+    if (!isDragging.current) return;
+
+    const dx = e.clientX - startX.current;
+    const dy = e.clientY - startY.current;
+
+    // If moved more than 5px, it's a drag interaction -> prevent clicking.
+    if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
+      preventClick.current = true;
+    }
+
+    if (e.pointerType === "mouse") {
+      e.preventDefault();
+      if (scrollContainerRef.current) {
+        scrollContainerRef.current.scrollLeft = scrollLeft.current - dx;
+      }
+    }
+  };
+
+  const handlePointerUp = (e) => {
+    if (!isDragging.current) return;
+    isDragging.current = false;
+    setIsGrabbing(false);
+    if (scrollContainerRef.current) {
+      try {
+        scrollContainerRef.current.releasePointerCapture(e.pointerId);
+      } catch (err) {}
+    }
+  };
+
+  const handlePointerCancel = (e) => {
+    isDragging.current = false;
+    setIsGrabbing(false);
+    if (scrollContainerRef.current) {
+      try {
+        scrollContainerRef.current.releasePointerCapture(e.pointerId);
+      } catch (err) {}
+    }
+  };
+
   const handleCategoryClick = (id) => {
+    if (preventClick.current) {
+      return;
+    }
     if (setSelectedCategory) {
       setSelectedCategory(id);
     }
@@ -128,7 +193,13 @@ function ProductCetagory({ selectedCategory, setSelectedCategory }) {
         {/* Scrollable Container */}
         <div
           ref={scrollContainerRef}
-          className="flex items-center overflow-x-auto scrollbar-none w-full py-1 px-4 gap-2 scroll-smooth"
+          onPointerDown={handlePointerDown}
+          onPointerMove={handlePointerMove}
+          onPointerUp={handlePointerUp}
+          onPointerCancel={handlePointerCancel}
+          className={`flex items-center overflow-x-auto scrollbar-none w-full py-1 px-4 gap-2 touch-pan-y select-none ${
+            isGrabbing ? "cursor-grabbing" : "cursor-grab"
+          }`}
         >
           {CATEGORIES_DATA.map((category, index) => {
             const isActive = selectedCategory === category.id;
@@ -144,6 +215,7 @@ function ProductCetagory({ selectedCategory, setSelectedCategory }) {
                     <img
                       src={category.image}
                       alt={category.title}
+                      draggable="false"
                       className="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-110"
                     />
                   </div>
