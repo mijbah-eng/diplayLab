@@ -322,8 +322,8 @@ function Price() {
                 <div
                   key={i}
                   className={`p-6 rounded-xl border bg-white flex flex-col ${plan.popular
-                      ? "border-[#3095b5] shadow-xl scale-105"
-                      : ""
+                    ? "border-[#3095b5] shadow-xl scale-105"
+                    : ""
                     }`}
                 >
                   {plan.popular && (
@@ -345,8 +345,8 @@ function Price() {
 
                   <button
                     className={`w-full py-2 mb-4 rounded-md ${plan.popular
-                        ? "bg-[#005582] text-white"
-                        : "bg-[#3095b5] text-white"
+                      ? "bg-[#005582] text-white"
+                      : "bg-[#3095b5] text-white"
                       }`}
                   >
                     Try For Free
