@@ -85,6 +85,26 @@ function ProductCetagory({ selectedCategory, setSelectedCategory }) {
     }
   }, []);
 
+  useEffect(() => {
+    if (!selectedCategory || !scrollContainerRef.current) return;
+    const activeEl = scrollContainerRef.current.querySelector(
+      `[data-category-id="${selectedCategory}"]`
+    );
+    if (activeEl) {
+      const container = scrollContainerRef.current;
+      const containerWidth = container.clientWidth;
+      const elOffsetLeft = activeEl.offsetLeft;
+      const elWidth = activeEl.clientWidth;
+      
+      const targetScrollLeft = elOffsetLeft - (containerWidth / 2) + (elWidth / 2);
+      
+      container.scrollTo({
+        left: targetScrollLeft,
+        behavior: "smooth",
+      });
+    }
+  }, [selectedCategory]);
+
   const handleScroll = (direction) => {
     if (scrollContainerRef.current) {
       const scrollAmount = 300;
@@ -116,8 +136,8 @@ function ProductCetagory({ selectedCategory, setSelectedCategory }) {
     const dx = e.clientX - startX.current;
     const dy = e.clientY - startY.current;
 
-    // If moved more than 5px, it's a drag interaction -> prevent clicking.
-    if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
+    // If moved more than 15px, it's a drag interaction -> prevent clicking.
+    if (Math.abs(dx) > 15 || Math.abs(dy) > 15) {
       preventClick.current = true;
     }
 
@@ -207,8 +227,11 @@ function ProductCetagory({ selectedCategory, setSelectedCategory }) {
               <React.Fragment key={category.id}>
                 <div
                   onClick={() => handleCategoryClick(category.id)}
-                  className={`flex items-center gap-4 py-3 px-6 rounded-2xl transition-all duration-300 cursor-pointer select-none shrink-0 group ${
-                    isActive ? "bg-cyan-50/50 shadow-inner" : "hover:bg-slate-50"
+                  data-category-id={category.id}
+                  className={`flex items-center gap-4 py-3 px-6 rounded-2xl transition-all duration-300 cursor-pointer select-none shrink-0 group border ${
+                    isActive 
+                      ? "bg-cyan-50/70 border-cyan-500/20 shadow-xs scale-102" 
+                      : "bg-white border-transparent hover:bg-slate-50 hover:border-slate-100"
                   }`}
                 >
                   <div className="w-14 h-14 flex items-center justify-center relative shrink-0">
@@ -216,7 +239,9 @@ function ProductCetagory({ selectedCategory, setSelectedCategory }) {
                       src={category.image}
                       alt={category.title}
                       draggable="false"
-                      className="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                      className={`max-w-full max-h-full object-contain transition-transform duration-300 ${
+                        isActive ? "scale-110" : "group-hover:scale-110"
+                      }`}
                     />
                   </div>
                   <div className="flex flex-col text-left shrink-0">
@@ -227,7 +252,9 @@ function ProductCetagory({ selectedCategory, setSelectedCategory }) {
                     >
                       {category.title}
                     </span>
-                    <span className="text-xs text-slate-400 font-normal mt-0.5">
+                    <span className={`text-xs font-normal mt-0.5 transition-colors duration-300 ${
+                      isActive ? "text-cyan-500/70" : "text-slate-400"
+                    }`}>
                       {category.subLabel}
                     </span>
                   </div>

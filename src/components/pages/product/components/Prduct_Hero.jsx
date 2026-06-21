@@ -58,7 +58,7 @@ function Prduct_Hero() {
                     muted
                     preload="none"
                   >
-                    <source src="/videos/hero.mp4" />
+                    <source src="/videos/product.mp4" />
                   </video>
                 </div>
               </div>

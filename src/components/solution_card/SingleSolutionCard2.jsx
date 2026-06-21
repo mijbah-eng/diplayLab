@@ -16,7 +16,7 @@ function SingleSolutionCard2({ card }) {
         <p className="text-sm mb-3">{card.description}</p>
 
         {/* Hover Details */}
-        <div style={{backgroundPosition: 'center', backgroundSize: 'cover', backgroundImage: `url(${card.hoverImage})`}} className="absolute inset-0 bg-[#005582] text-white flex flex-col justify-center items-center p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+        <div style={{backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', backgroundImage: `url(${card.hoverImage})`}} className="w-full h-full absolute inset-0 text-white flex flex-col justify-center items-center  translate-y-full group-hover:translate-y-0 transition-transform duration-300">
           
         </div>
       </Link>

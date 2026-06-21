@@ -46,7 +46,7 @@ function Products({ selectedCategory: propSelectedCategory, setSelectedCategory:
     const nameLower = product.name.toLowerCase();
 
     if (selectedCategory === "indoor") {
-      return nameLower.includes("indoor") || nameLower.includes("window") || nameLower.includes("presentation") || nameLower.includes("wall");
+      return nameLower.includes("indoor") || nameLower.includes("window") || nameLower.includes("presentation") || nameLower.includes("wall") || nameLower.includes("poster");
     }
     if (selectedCategory === "outdoor") {
       return nameLower.includes("outdoor");
