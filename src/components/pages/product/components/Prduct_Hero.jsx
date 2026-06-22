@@ -1,5 +1,6 @@
 "use client";
 import CalandlyButton from "@/components/calandlyButton";
+import Link from "next/link";
 function Prduct_Hero() {
   return (
     <>
@@ -35,6 +36,13 @@ function Prduct_Hero() {
                     </svg>
                   }
                 />
+                <Link
+                  href={"https://displaylab.net/contact"}
+                  target="_blank"
+                  className="w-xs sm:w-fit border-2 border-cyan-600 text-cyan-600 px-8 py-4 rounded font-semibold text-base hover:bg-cyan-50 transition-all cursor-pointer"
+                >
+                  Product Inquiry
+                </Link>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
             </div>

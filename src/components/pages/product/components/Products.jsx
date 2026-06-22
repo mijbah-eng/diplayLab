@@ -28,7 +28,7 @@ function Products({ selectedCategory: propSelectedCategory, setSelectedCategory:
   const [localCategory, setLocalCategory] = useState("all");
   const selectedCategory = propSelectedCategory !== undefined ? propSelectedCategory : localCategory;
   const setSelectedCategory = propSetSelectedCategory !== undefined ? propSetSelectedCategory : setLocalCategory;
-  
+
   const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
@@ -75,7 +75,7 @@ function Products({ selectedCategory: propSelectedCategory, setSelectedCategory:
   return (
     <>
       <div id="products-section" className="space-large"></div>
-      <div className="flex flex-col gap-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col gap-12 max-w-375 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <h1 className="title text-center text-gray-900">Display Lab Products</h1>

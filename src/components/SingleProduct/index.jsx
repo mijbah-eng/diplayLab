@@ -168,7 +168,7 @@ function SingleProduct({ product, index }) {
 
     return (
         <div
-            className={`bg-white border border-slate-100/80 rounded-[32px] shadow-[0_4px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.08)] transition-all duration-500 overflow-hidden flex flex-col ${isEven ? "lg:flex-row-reverse" : "lg:flex-row"
+            className={`bg-white border border-slate-100/80 rounded-[32px] shadow-[0_0_40px_rgba(0,0,0,0.04)] hover:shadow-[0_3px_8px_rgba(0,0,0,0.24)] transition-all duration-500 overflow-hidden flex flex-col ${isEven ? "lg:flex-row-reverse" : "lg:flex-row"
                 } w-full group`}
         >
             {/* Product Image Container */}

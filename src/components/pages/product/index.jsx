@@ -7,6 +7,11 @@ import Footer from "@/components/footer";
 import ProductCetagory from "@/components/ProductCetagory";
 
 import Accessories from "./components/Accessories";
+import ProductLines from "./components/ProductLines";
+import NeedHelp from "./components/NeedHelp";
+import ReadyToUpgrade from "./components/ReadyToUpgrade";
+import MindMap from "./components/MindMap";
+import PowerfulResult from "./components/PowerfulResult";
 
 
 function Product() {
@@ -40,7 +45,7 @@ function Product() {
       <NavberMain />
 
       <Prduct_Hero />
-      <div className="max-w-7xl mx-auto">
+      <div className=" mx-auto">
         <ProductCetagory
           selectedCategory={selectedCategory}
           setSelectedCategory={handleCategoryChange}
@@ -52,7 +57,11 @@ function Product() {
         setSelectedCategory={handleCategoryChange}
       />
       <Accessories />
-
+      <ProductLines setSelectedCategory={handleCategoryChange} />
+      <PowerfulResult />
+      <MindMap />
+      <NeedHelp />
+      <ReadyToUpgrade />
       <Footer />
     </>
   );
