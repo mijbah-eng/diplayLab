@@ -168,7 +168,7 @@ function SingleProduct({ product, index }) {
 
     return (
         <div
-            className={`bg-white border border-slate-100/80 rounded-[32px] shadow-[0_0_40px_rgba(0,0,0,0.04)] hover:shadow-[0_3px_8px_rgba(0,0,0,0.24)] transition-all duration-500 overflow-hidden flex flex-col ${isEven ? "lg:flex-row-reverse" : "lg:flex-row"
+            className={`bg-white border border-slate-100/80 rounded-[32px] shadow-[0_0_40px_rgba(0,0,0,0.04)] hover:shadow-[0px_5px_15px_rgba(0,0,0,0.35)] transition-all duration-500 overflow-hidden flex flex-col ${isEven ? "lg:flex-row-reverse" : "lg:flex-row"
                 } w-full group`}
         >
             {/* Product Image Container */}
@@ -196,7 +196,7 @@ function SingleProduct({ product, index }) {
             </div>
 
             {/* Product Details Container */}
-            <div className="w-full lg:w-[55%] p-6 sm:p-8 lg:p-10 flex flex-col justify-between relative z-10 bg-white">
+            <div className="w-full lg:w-[55%] p-6 pl-0 sm:pl-0 sm:p-8 lg:pl-0 lg:p-10 flex flex-col justify-between relative z-10 bg-white">
                 <div>
                     {/* Badge */}
                     <div className="inline-flex items-center gap-1.5 bg-blue-50/70 text-blue-600 border border-blue-100/50 text-[10px] sm:text-xs font-bold tracking-wider uppercase px-3.5 py-1.5 rounded-lg w-fit mb-4">
