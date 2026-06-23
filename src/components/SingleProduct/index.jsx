@@ -138,12 +138,13 @@ function SingleProduct({ product, index }) {
                 className={`w-full lg:w-[50%] flex items-center justify-center p-0 relative min-h-[360px] lg:min-h-full overflow-hidden shrink-0`}
             >
                 {/* Product Image Link */}
-                <Link href={`/details?id=${product.id}`} className="w-full h-full flex items-center justify-center relative z-20 bg-cover bg-center bg-no-repeat"
+                <Link href={`/details?id=${product.id}`} className={`w-full h-full flex items-center ${bglist.bg1 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "justify-end" : `${bglist.bg2 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "justify-start" :   `${bglist.bg3 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "justify-end" : ""}`}`
+                } relative z-20 bg-cover bg-center bg-no-repeat`}
                     style={{ backgroundImage: `url(/svg/product_card/bg-0${(index % 3) + 1}.svg)` }} >
                     <Image
                     width={1000}
                     height={1000}
-                        className="w-[85%] max-h-[320px] md:max-h-[700px] object-contain transition-transform duration-500 group-hover:scale-90 drop-shadow-[0_20px_50px_rgba(0,122,155,0.18)]"
+                        className="w-[85%] max-h-[320px] md:max-h-[600px] object-contain transition-transform duration-500 group-hover:scale-105 drop-shadow-[0_20px_50px_rgba(0,122,155,0.18)]"
                         src={imageToUse}
                         alt={product.name}
                         onError={(e) => {
