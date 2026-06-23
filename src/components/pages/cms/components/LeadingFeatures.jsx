@@ -3,7 +3,7 @@ import Link from "next/link";
 function LeadingFeatures() {
   const leadingFeatureDataList = [
     {
-      img: "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/655bb871ceff6c00f550ce68_digital_signage-3.webp",
+      img: "/images/cms/Simple-&-User-Friendly.jpg",
       title: "Simple & User-Friendly",
       description:
         "Manage content easily with an intuitive, cloud-based platform.Access and update your screens anytime from desktop or mobile. Create and control digital signage without complexity.",
@@ -11,7 +11,7 @@ function LeadingFeatures() {
       link: "#",
     },
     {
-      img: "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/655bb19b05ff356cc9f5dc9f_digital_signage-1.webp",
+      img: "/images/cms/Reliable-Performance-&-Dedicated-Support.jpg",
       title: "Reliable Performance & Dedicated Support",
       description:
         "Enjoy consistent uptime and dependable performance you can trust.Keep your screens running smoothly with expert support when you need it.Focus on your business while your digital signage works flawlessly.",
@@ -20,7 +20,7 @@ function LeadingFeatures() {
     },
 
     {
-      img: "https://cdn.prod.website-files.com/638d465c7903a622e8a1dbd1/655bb972c3670dec16f0a96e_digital_signage-2.webp",
+      img: "/images/cms/Flexible-Integrations.jpg",
       title: "Flexible Integrations",
       description:
         "Connect seamlessly with tools like Power BI, Instagram, and Google Sheets.Bring all your content together with powerful app integrations.Adapt your signage to fit your workflow and evolving business needs.",

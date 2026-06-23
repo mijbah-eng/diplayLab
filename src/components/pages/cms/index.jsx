@@ -21,8 +21,9 @@ function CMS() {
       <NavberMain />
       <div className="main_div">
         <CMS_HERO />
-
-
+        <GetStarted />
+        <LeadingFeatures />
+        <Benefits />
         <CurvedLoop
           marqueeText="Display Lab ✦ Creative ✦ With ✦ Digital ✦ Business ✦"
           speed={2}
@@ -31,10 +32,6 @@ function CMS() {
           interactive={false}
           className="custom-text-style"
           />
-
-        <GetStarted />
-        <LeadingFeatures />
-        <Benefits />
         <HeroVideoDialogDemo />
         <WHY_SECTION2 />
         <DEVICE_SECTION />

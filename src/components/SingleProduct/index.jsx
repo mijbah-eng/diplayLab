@@ -138,7 +138,7 @@ function SingleProduct({ product, index }) {
                 className={`w-full lg:w-[50%] flex items-center justify-center p-0 relative min-h-[360px] lg:min-h-full overflow-hidden shrink-0`}
             >
                 {/* Product Image Link */}
-                <Link href={`/details?id=${product.id}`} className={`w-full h-full flex items-center ${bglist.bg1 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "justify-end" : `${bglist.bg2 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "justify-start" :   `${bglist.bg3 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "justify-end" : ""}`}`
+                <Link href={`/details?id=${product.id}`} className={`w-full h-full flex items-start ${bglist.bg1 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "justify-end" : `${bglist.bg2 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "justify-start" :   `${bglist.bg3 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "justify-end" : ""}`}`
                 } relative z-20 bg-cover bg-center bg-no-repeat`}
                     style={{ backgroundImage: `url(/svg/product_card/bg-0${(index % 3) + 1}.svg)` }} >
                     <Image
