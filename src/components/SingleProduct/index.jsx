@@ -1,3 +1,4 @@
+import { ProductsDatas } from "@/utils";
 import { products_details_all_data } from "@/utils/products_details_data";
 import {
     Award,
@@ -16,9 +17,8 @@ import {
     Users,
     Wifi
 } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
-
+import Link from "next/link";
 
 
 // Dynamically select the badge icon based on the product badge text
@@ -108,9 +108,9 @@ function SingleProduct({ product, index }) {
     })) || defaultFeatures;
 
     // Display Lab branding prefix
-    const brandedName = product.name.toLowerCase().startsWith("display lab")
-        ? product.name
-        : `Display Lab ${product.name}`;
+    // const brandedName = product.name.toLowerCase().startsWith("display lab")
+    //     ? product.name
+    //     : `Display Lab ${product.name}`;
 
     // Main description
     const description = details.product_description || "Premium commercial digital signage display designed for high-traffic environments.";
@@ -121,20 +121,23 @@ function SingleProduct({ product, index }) {
     const bglist = {
         bg1: "/svg/product_card/bg-01.svg",
         bg2: "/svg/product_card/bg-02.svg",
-        bg3: "/svg/product_card/bg-03.svg"
+        bg3: "/svg/product_card/bg-03.svg",
+        bg4: "/svg/product_card/bg-04.svg"
     }
 
-    const bgImage1 = bglist.bg1 === `/svg/product_card/bg-0${(index % 3) + 1}.svg`;
-    const bgImage2 = bglist.bg2 === `/svg/product_card/bg-0${(index % 3) + 1}.svg`;
-    const bgImage3 = bglist.bg3 === `/svg/product_card/bg-0${(index % 3) + 1}.svg`;
+    const bgImage1 = bglist.bg1 === `/svg/product_card/bg-0${(index % 4) + 1}.svg`;
+    const bgImage2 = bglist.bg2 === `/svg/product_card/bg-0${(index % 4) + 1}.svg`;
+    const bgImage3 = bglist.bg3 === `/svg/product_card/bg-0${(index % 4) + 1}.svg`;
+    const bgImage4 = bglist.bg4 === `/svg/product_card/bg-0${(index % 4) + 1}.svg`;
 
 
     // Utilize the high-res transparent PNG images for a clean blend with the card gradients
-    const imageToUse = `/images/products/products-${product.id}.png`;
+    const imageToUse = ProductsDatas;
+    
 
     return (
         <div
-            className={`bg-white border border-slate-100/80 rounded-[32px] shadow-[0px_3px_8px_rgba(0,0,0,0.24)] hover:shadow-[0px_5px_15px_rgba(0,0,0,0.35)] transition-all duration-500 overflow-hidden flex flex-col ${bgImage1 ? "lg:flex-row-reverse" : `${bgImage2 ? "lg:flex-row" :   `${bgImage3 ? "lg:flex-row-reverse" : ""}`}`
+            className={`bg-white border border-slate-100/80 rounded-[32px] shadow-[0px_3px_8px_rgba(0,0,0,0.24)] hover:shadow-[0px_5px_15px_rgba(0,0,0,0.35)] transition-all duration-500 overflow-hidden flex flex-col ${bgImage1 ? "lg:flex-row-reverse" : `${bgImage2 ? "lg:flex-row" :   `${bgImage3 ? "lg:flex-row-reverse" : `${bgImage4 ? `lg:flex-row` : ``}`}`}`
                 } w-full group `}
 
         >
@@ -145,12 +148,12 @@ function SingleProduct({ product, index }) {
                 {/* Product Image Link */}
                 <Link href={`/details?id=${product.id}`} className={`w-full h-full flex ${imageToUse === `/images/products/products-8.png` ? "items-start" : "items-center" }  ${bgImage1 ? "justify-end" : `${bgImage2 ? "justify-start" :   `${bgImage3 ? "justify-end" : ""}`}`
                 } relative z-20 bg-cover bg-center bg-no-repeat`}
-                    style={{ backgroundImage: `url(/svg/product_card/bg-0${(index % 3) + 1}.svg)` }} >
+                    style={{ backgroundImage: `url(/svg/product_card/bg-0${(index % 4) + 1}.svg)` }} >
                     <Image
                     width={1000}
                     height={1000}
                         className="w-[85%] max-h-[320px] md:max-h-[600px] object-contain transition-transform duration-500 group-hover:scale-105 drop-shadow-[0_20px_50px_rgba(0,122,155,0.18)]"
-                        src={imageToUse}
+                        src={imageToUse[index]?.image}
                         alt={product.name}
                         onError={(e) => {
                             // Fallback to original product.image if png is not loaded properly
@@ -161,7 +164,7 @@ function SingleProduct({ product, index }) {
             </div>
 
             {/* Product Details Container */}
-            <div className={`w-full lg:w-[50%] py-8 lg:py-10 ${bgImage1 ? "pr-0 pl-8 lg:pl-12" : `${bgImage2 ? "pl-0 pr-8 lg:pr-12" :   `${bgImage3 ? "pr-0 pl-8 lg:pl-12" : ""}`}`
+            <div className={`w-full lg:w-[50%] py-8 lg:py-10 ${bgImage1 ? "pr-0 pl-8 lg:pl-12" : `${bgImage2 ? "pl-0 pr-8 lg:pr-12" :   `${bgImage3 ? "pr-0 pl-8 lg:pl-12" : `${bgImage4 ? "pl-0 pr-8 lg:pr-12" : ``}`}`}`
                 } flex flex-col justify-between relative z-10`}>
                 <div>
                     {/* Badge */}
@@ -172,8 +175,8 @@ function SingleProduct({ product, index }) {
 
                     {/* Title */}
                     <Link href={`/details?id=${product.id}`}>
-                        <h3 className="text-2xl lg:text-4xl font-black tracking-tight text-slate-900 hover:text-blue-600 transition-colors leading-tight">
-                            {brandedName}
+                        <h3 className="text-2xl lg:text-4xl font-black tracking-tight text-slate-900 hover:text-[#035eb8] transition-colors leading-tight">
+                            {product.name}
                         </h3>
                     </Link>
 
@@ -211,7 +214,7 @@ function SingleProduct({ product, index }) {
                     <div className="lg:col-span-5 flex flex-col gap-3 justify-center w-full">
                         <Link
                             href={`/details?id=${product.id}`}
-                            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-6 rounded-xl flex items-center justify-between transition-all shadow-md shadow-blue-600/10 hover:shadow-blue-600/20 cursor-pointer text-sm md:text-base"
+                            className="bg-[#035eb8] hover:bg-[#03478b] text-white font-bold py-3.5 px-6 rounded-xl flex items-center justify-between transition-all shadow-md shadow-blue-600/10 hover:shadow-blue-600/20 cursor-pointer text-sm md:text-base"
                         >
                             <span>Product Inquiry</span>
                             <ChevronRight className="w-5 h-5" />
@@ -219,7 +222,7 @@ function SingleProduct({ product, index }) {
 
                         <Link
                             href={`/contact?product=${encodeURIComponent(product.name)}`}
-                            className="border border-blue-600 text-blue-600 bg-white hover:bg-blue-50/20 font-bold py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 transition-all cursor-pointer text-sm md:text-base shadow-sm"
+                            className="border border-[#035eb8] text-[#035eb8] bg-white hover:bg-blue-50/20 font-bold py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 transition-all cursor-pointer text-sm md:text-base shadow-sm"
                         >
                             <Download className="w-4 h-4" />
                             <span>Download Brochure</span>
