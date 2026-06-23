@@ -17,6 +17,7 @@ import {
     Wifi
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 
 
@@ -128,7 +129,7 @@ function SingleProduct({ product, index }) {
 
     return (
         <div
-            className={`bg-white border border-slate-100/80 rounded-[32px] shadow-[0px_3px_8px_rgba(0,0,0,0.24)] hover:shadow-[0px_5px_15px_rgba(0,0,0,0.35)] transition-all duration-500 overflow-hidden flex flex-col ${bglist.bg1 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "lg:flex-row-reverse" : `${bglist.bg2 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "lg:flex-row-reverse" :   `${bglist.bg3 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "lg:flex-row" : ""}`}`
+            className={`bg-white border border-slate-100/80 rounded-[32px] shadow-[0px_3px_8px_rgba(0,0,0,0.24)] hover:shadow-[0px_5px_15px_rgba(0,0,0,0.35)] transition-all duration-500 overflow-hidden flex flex-col ${bglist.bg1 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "lg:flex-row-reverse" : `${bglist.bg2 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "lg:flex-row" :   `${bglist.bg3 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "lg:flex-row-reverse" : ""}`}`
                 } w-full group `}
 
         >
@@ -139,8 +140,10 @@ function SingleProduct({ product, index }) {
                 {/* Product Image Link */}
                 <Link href={`/details?id=${product.id}`} className="w-full h-full flex items-center justify-center relative z-20 bg-cover bg-center bg-no-repeat"
                     style={{ backgroundImage: `url(/svg/product_card/bg-0${(index % 3) + 1}.svg)` }} >
-                    <img
-                        className="w-[85%] max-h-[320px] md:max-h-[500px] object-contain transition-transform duration-500 group-hover:scale-105 drop-shadow-[0_20px_50px_rgba(0,122,155,0.18)]"
+                    <Image
+                    width={1000}
+                    height={1000}
+                        className="w-[85%] max-h-[320px] md:max-h-[700px] object-contain transition-transform duration-500 group-hover:scale-90 drop-shadow-[0_20px_50px_rgba(0,122,155,0.18)]"
                         src={imageToUse}
                         alt={product.name}
                         onError={(e) => {
@@ -152,7 +155,7 @@ function SingleProduct({ product, index }) {
             </div>
 
             {/* Product Details Container */}
-            <div className={`w-full lg:w-[50%] py-8 lg:py-10 ${bglist.bg1 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "pr-0 pl-8 lg:pl-12" : `${bglist.bg2 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "pr-0 pl-8 lg:pl-12" :   `${bglist.bg3 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "pl-0 pr-8 lg:pr-12" : ""}`}`
+            <div className={`w-full lg:w-[50%] py-8 lg:py-10 ${bglist.bg1 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "pr-0 pl-8 lg:pl-12" : `${bglist.bg2 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "pl-0 pr-8 lg:pr-12" :   `${bglist.bg3 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "pr-0 pl-8 lg:pl-12" : ""}`}`
                 } flex flex-col justify-between relative z-10`}>
                 <div>
                     {/* Badge */}
