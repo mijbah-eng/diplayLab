@@ -124,12 +124,17 @@ function SingleProduct({ product, index }) {
         bg3: "/svg/product_card/bg-03.svg"
     }
 
+    const bgImage1 = bglist.bg1 === `/svg/product_card/bg-0${(index % 3) + 1}.svg`;
+    const bgImage2 = bglist.bg2 === `/svg/product_card/bg-0${(index % 3) + 1}.svg`;
+    const bgImage3 = bglist.bg3 === `/svg/product_card/bg-0${(index % 3) + 1}.svg`;
+
+
     // Utilize the high-res transparent PNG images for a clean blend with the card gradients
     const imageToUse = `/images/products/products-${product.id}.png`;
 
     return (
         <div
-            className={`bg-white border border-slate-100/80 rounded-[32px] shadow-[0px_3px_8px_rgba(0,0,0,0.24)] hover:shadow-[0px_5px_15px_rgba(0,0,0,0.35)] transition-all duration-500 overflow-hidden flex flex-col ${bglist.bg1 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "lg:flex-row-reverse" : `${bglist.bg2 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "lg:flex-row" :   `${bglist.bg3 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "lg:flex-row-reverse" : ""}`}`
+            className={`bg-white border border-slate-100/80 rounded-[32px] shadow-[0px_3px_8px_rgba(0,0,0,0.24)] hover:shadow-[0px_5px_15px_rgba(0,0,0,0.35)] transition-all duration-500 overflow-hidden flex flex-col ${bgImage1 ? "lg:flex-row-reverse" : `${bgImage2 ? "lg:flex-row" :   `${bgImage3 ? "lg:flex-row-reverse" : ""}`}`
                 } w-full group `}
 
         >
@@ -138,7 +143,7 @@ function SingleProduct({ product, index }) {
                 className={`w-full lg:w-[50%] flex items-center justify-center p-0 relative min-h-[360px] lg:min-h-full overflow-hidden shrink-0`}
             >
                 {/* Product Image Link */}
-                <Link href={`/details?id=${product.id}`} className={`w-full h-full flex items-start ${bglist.bg1 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "justify-end" : `${bglist.bg2 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "justify-start" :   `${bglist.bg3 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "justify-end" : ""}`}`
+                <Link href={`/details?id=${product.id}`} className={`w-full h-full flex ${imageToUse === `/images/products/products-8.png` ? "items-start" : "items-center" }  ${bgImage1 ? "justify-end" : `${bgImage2 ? "justify-start" :   `${bgImage3 ? "justify-end" : ""}`}`
                 } relative z-20 bg-cover bg-center bg-no-repeat`}
                     style={{ backgroundImage: `url(/svg/product_card/bg-0${(index % 3) + 1}.svg)` }} >
                     <Image
@@ -156,7 +161,7 @@ function SingleProduct({ product, index }) {
             </div>
 
             {/* Product Details Container */}
-            <div className={`w-full lg:w-[50%] py-8 lg:py-10 ${bglist.bg1 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "pr-0 pl-8 lg:pl-12" : `${bglist.bg2 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "pl-0 pr-8 lg:pr-12" :   `${bglist.bg3 === `/svg/product_card/bg-0${(index % 3) + 1}.svg` ? "pr-0 pl-8 lg:pl-12" : ""}`}`
+            <div className={`w-full lg:w-[50%] py-8 lg:py-10 ${bgImage1 ? "pr-0 pl-8 lg:pl-12" : `${bgImage2 ? "pl-0 pr-8 lg:pr-12" :   `${bgImage3 ? "pr-0 pl-8 lg:pl-12" : ""}`}`
                 } flex flex-col justify-between relative z-10`}>
                 <div>
                     {/* Badge */}
