@@ -121,7 +121,7 @@ function Footer() {
     <>
       <Reveal props={"w-full"}>
 
-        <div className="bg-black text-white mt-10">
+        <div className="bg-black text-white">
           <div className="px-5 md:px-12">
             <div className="max-w-7xl mx-auto">
               <div className="w-full">

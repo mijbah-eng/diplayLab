@@ -4,14 +4,13 @@ import NavberMain from "@/components/NavberMain";
 import Prduct_Hero from "./components/Prduct_Hero";
 import Products from "./components/Products";
 import Footer from "@/components/footer";
-import ProductCetagory from "@/components/ProductCetagory";
-
 import Accessories from "./components/Accessories";
 import ProductLines from "./components/ProductLines";
 import NeedHelp from "./components/NeedHelp";
 import ReadyToUpgrade from "./components/ReadyToUpgrade";
 import MindMap from "./components/MindMap";
 import PowerfulResult from "./components/PowerfulResult";
+import ProductCetagoryImage from "@/components/productCetagoryImage";
 
 
 function Product() {
@@ -45,12 +44,8 @@ function Product() {
       <NavberMain />
 
       <Prduct_Hero />
-      <div className=" mx-auto">
-        <ProductCetagory
-          selectedCategory={selectedCategory}
-          setSelectedCategory={handleCategoryChange}
-        />
-      </div>
+
+      <ProductCetagoryImage />
       {/* <NewProdcutDesign /> */}
       <Products
         selectedCategory={selectedCategory}
@@ -59,8 +54,8 @@ function Product() {
       <Accessories />
       <ProductLines setSelectedCategory={handleCategoryChange} />
       <PowerfulResult />
-      <MindMap />
       <NeedHelp />
+      <MindMap />
       <ReadyToUpgrade />
       <Footer />
     </>

@@ -316,7 +316,6 @@ function Price() {
             {plans.map((plan, i) => {
               const basePrice =
                 billing === "monthly" ? plan.monthly : plan.annual;
-              console.log(basePrice, "basePrice");
 
               return (
                 <div

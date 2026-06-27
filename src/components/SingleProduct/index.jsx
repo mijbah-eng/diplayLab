@@ -116,7 +116,7 @@ function SingleProduct({ product, index }) {
     const description = details.product_description || "Premium commercial digital signage display designed for high-traffic environments.";
 
     const isEven = index % 2 === 1;
-    console.log(isEven , "isEven");
+  
     
     const bglist = {
         bg1: "/svg/product_card/bg-01.svg",

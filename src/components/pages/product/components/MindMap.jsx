@@ -218,7 +218,7 @@ function MindMap() {
               {/* Text */}
               <div className="w-[65%] text-left">
                 <h3 className="text-base font-bold text-slate-900 tracking-tight mb-1">
-                  Mobile App
+                  Player App
                 </h3>
                 <p className="text-[12px] leading-relaxed text-slate-500 font-medium">
                   Manage screens and content on the go.

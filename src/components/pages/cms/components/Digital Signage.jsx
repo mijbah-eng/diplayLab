@@ -4,7 +4,7 @@ function DigitalSignage() {
   const DigitalSignagePlatfroms = [
   {
     img_src:
-      "https://www.yodeck.com/wp-content/uploads/2023/09/restaurant-digital-signage-yodeck.jpg",
+      "/images/Every_Industry/Restaurant-2.jpg",
     title: "Restaurant",
     description:
       "Boost orders and enhance dining experience with dynamic menus, promotions, and real-time updates that keep customers engaged.",
@@ -12,14 +12,14 @@ function DigitalSignage() {
 
   {
     img_src:
-      "https://www.yodeck.com/wp-content/uploads/2023/09/TV-Screen-1.jpg",
+      "/images/Every_Industry/Grocery.jpg",
     title: "Grocery",
     description:
       "Promote deals, flash discounts, and product information instantly to improve shopper experience and increase basket size.",
   },
 
   {
-    img_src: "https://www.yodeck.com/wp-content/uploads/2023/09/Retail.jpg",
+    img_src: "/images/Every_Industry/Retai.jpg",
     title: "Retail",
     description:
       "Drive sales with eye-catching in-store displays, promotions, and product highlights that influence purchase decisions at the point of sale.",
@@ -27,14 +27,14 @@ function DigitalSignage() {
 
   {
     img_src:
-      "https://www.yodeck.com/wp-content/uploads/2023/09/Education-1.jpg",
+      "/images/Every_Industry/Education.jpg",
     title: "Education",
     description:
       "Share announcements, schedules, emergency alerts, and campus information in real time for better communication across institutions.",
   },
 
   {
-    img_src: "https://www.yodeck.com/wp-content/uploads/2023/09/Offices.jpg",
+    img_src: "/images/Every_Industry/Office.jpg",
     title: "Offices",
     description:
       "Improve internal communication with dashboards, KPIs, announcements, and visitor information displayed clearly and professionally.",
@@ -42,7 +42,7 @@ function DigitalSignage() {
 
   {
     img_src:
-      "https://www.yodeck.com/wp-content/uploads/2023/09/TV-Screen-1.jpg",
+      "/images/Every_Industry/Goverment.jpg",
     title: "Government",
     description:
       "Deliver public information, service updates, alerts, and announcements efficiently to ensure transparency and accessibility.",
@@ -50,7 +50,7 @@ function DigitalSignage() {
 
   {
     img_src:
-      "https://www.yodeck.com/wp-content/uploads/2023/09/TV-Screen-1.jpg",
+      "/images/Every_Industry/Religious.jpg",
     title: "Religious Venues",
     description:
       "Share prayer timings, sermons, events, and community messages to enhance engagement and keep congregations informed.",
@@ -58,7 +58,7 @@ function DigitalSignage() {
 
   {
     img_src:
-      "https://www.yodeck.com/wp-content/uploads/2023/09/TV-Screen-1.jpg",
+      "/images/Every_Industry/Manufacturing.jpg",
     title: "Manufacturing",
     description:
       "Display safety alerts, production metrics, shift schedules, and operational updates to improve efficiency and workplace safety.",
@@ -66,7 +66,7 @@ function DigitalSignage() {
 
   {
     img_src:
-      "https://www.yodeck.com/wp-content/uploads/2023/09/Healthcare.jpg",
+      "/images/Every_Industry/Healthcare.jpg",
     title: "Healthcare",
     description:
       "Inform patients with wait times, health tips, announcements, and wayfinding to improve experience and streamline operations.",

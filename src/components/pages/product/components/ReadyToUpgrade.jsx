@@ -4,10 +4,10 @@ import { ArrowRight, Download } from "lucide-react";
 
 function ReadyToUpgrade() {
   return (
-    <section className="py-12 md:py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-white">
+      <div className="">
         {/* Banner Container */}
-        <div className="relative overflow-hidden rounded-[24px] bg-gradient-to-br from-[#061c39] via-[#04152a] to-[#020b17] p-8 md:p-12 lg:py-14 flex flex-col lg:flex-row items-center justify-between min-h-[340px] lg:min-h-[280px] gap-8 shadow-xl border border-slate-800">
+        <div className="relative overflow-hidden bg-gradient-to-br from-[#061c39] via-[#04152a] to-[#020b17] p-8 md:p-12 lg:py-14 flex flex-col lg:flex-row items-center justify-between min-h-[340px] lg:min-h-[280px] gap-8 shadow-xl border border-slate-800">
           
           {/* Radial Cyan Glow behind product image */}
           <div className="absolute right-[10%] bottom-0 w-[240px] h-[240px] rounded-full bg-cyan-500/10 blur-[60px] pointer-events-none z-0" />
@@ -96,13 +96,13 @@ function ReadyToUpgrade() {
             {/* Wall Mount/Video Wall Display */}
             <img
               className="absolute left-[5%] lg:left-[15%] bottom-[12px] h-[78%] w-auto object-contain z-10 drop-shadow-[0_15px_30px_rgba(0,180,216,0.3)] transition-transform duration-500 hover:scale-[1.03]"
-              src="/images/products/products-11.png"
+              src="/images/products/product-4.png"
               alt="Video Wall Display"
             />
             {/* Standing Kiosk Display */}
             <img
               className="absolute left-[62%] lg:left-[68%] bottom-0 h-[105%] w-auto object-contain z-20 drop-shadow-[0_12px_24px_rgba(0,180,216,0.25)] transition-transform duration-500 hover:scale-[1.03]"
-              src="/images/products/products-6.png"
+              src="/images/products/product-1.png"
               alt="Floor Standing Kiosk"
             />
           </div>

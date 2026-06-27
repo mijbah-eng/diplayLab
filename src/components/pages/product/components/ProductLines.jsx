@@ -16,7 +16,7 @@ function ProductLines({ setSelectedCategory }) {
 
   return (
     <section className="py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -67,7 +67,7 @@ function ProductLines({ setSelectedCategory }) {
               {/* Image Container (Right) */}
               <div className="relative z-10 w-[42%] flex items-center justify-center h-full select-none pl-2">
                 <img
-                  className="max-w-full max-h-[140px] md:max-h-[190px] object-contain drop-shadow-[0_12px_24px_rgba(0,180,216,0.25)] transition-transform duration-500 group-hover:scale-105"
+                  className="max-w-full max-h-[140px] md:max-h-[190px] scale-125 object-contain drop-shadow-[0_12px_24px_rgba(0,180,216,0.25)] transition-transform duration-500 group-hover:scale-105"
                   src={line.image}
                   alt={line.title}
                 />
@@ -85,21 +85,21 @@ const PRODUCT_LINES = [
     id: "indoor",
     title: "Indoor LCD Displays",
     description: "Crystal clear visuals for indoor environments with sleek design.",
-    image: "/images/products/1.png",
+    image: "/images/products/product-3.png",
     link: "/products?category=indoor",
   },
   {
     id: "outdoor",
     title: "Outdoor LED Displays",
     description: "Engineered for brightness and durability in any weather condition.",
-    image: "/images/products/2.png",
+    image: "/images/products/product-1.png",
     link: "/products?category=outdoor",
   },
   {
     id: "kiosks",
     title: "Interactive Kiosks",
     description: "Engage, inform and convert with interactive experiences.",
-    image: "/images/products/3.png",
+    image: "/images/products/product-4.png",
     link: "/products?category=kiosks",
   },
 ];

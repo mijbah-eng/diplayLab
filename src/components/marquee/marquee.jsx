@@ -2,10 +2,6 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 function MarqueeSection({ images }) {
-  images.map((image,index) => {
-
-    console.log(image.src, image.label);
-  })
   
   return (
     <>
