@@ -11,6 +11,9 @@ import ReadyToUpgrade from "./components/ReadyToUpgrade";
 import MindMap from "./components/MindMap";
 import PowerfulResult from "./components/PowerfulResult";
 import ProductCetagoryImage from "@/components/productCetagoryImage";
+import ServingBusiness from "./components/Serving_Business";
+import ControlEveryScreen from "./components/ControlEveryScreen";
+import NeedContentToo from "./components/NeedContentToo";
 
 
 function Product() {
@@ -55,6 +58,9 @@ function Product() {
       <ProductLines setSelectedCategory={handleCategoryChange} />
       <PowerfulResult />
       <NeedHelp />
+      <ServingBusiness />
+      <ControlEveryScreen />
+      <NeedContentToo />
       <MindMap />
       <ReadyToUpgrade />
       <Footer />

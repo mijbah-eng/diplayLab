@@ -5,7 +5,7 @@ function MindMap() {
   return (
     <section className="py-20 bg-slate-50/50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -18,7 +18,7 @@ function MindMap() {
 
         {/* Map Container */}
         <div className="relative min-h-[500px] md:min-h-[560px]">
-          
+
           {/* SVG Flow Connections (Visible on desktop/tablets) */}
           <svg
             className="absolute inset-0 w-full h-full pointer-events-none z-0 hidden md:block"
@@ -97,7 +97,7 @@ function MindMap() {
 
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-y-16 gap-x-8 md:gap-x-12 relative z-10">
-            
+
             {/* 1. CMS Software (Top-Left) */}
             <div className="justify-self-center md:justify-self-end w-full max-w-[340px] lg:max-w-[360px] rounded-2xl border border-slate-200/60 bg-white p-6 shadow-[0_8px_30px_rgb(0,0,0,0.02)] flex flex-row items-center gap-5 hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)] hover:scale-[1.01] transition-all duration-300 min-h-[150px]">
               {/* Desktop Monitor Mockup */}
@@ -145,9 +145,6 @@ function MindMap() {
                   className="w-10 h-16 object-contain drop-shadow-[0_4px_10px_rgba(0,0,0,0.15)]"
                   src="/images/products/products-6.png"
                   alt="Kiosk Hardware"
-                  onError={(e) => {
-                    e.target.src = "/images/products/products-2.png";
-                  }}
                 />
               </div>
               {/* Text */}
