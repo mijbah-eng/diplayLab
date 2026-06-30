@@ -15,7 +15,7 @@ function Hero() {
           <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
             <Reveal>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-               Powering Business <br /> Growth Through Smart <br />{" "}
+                Powering Business <br /> Growth Through Smart <br />{" "}
                 <span className="text-cyan-600 block">
                   {" "}
                   <Typewriter
@@ -34,8 +34,8 @@ function Hero() {
               </p>
             </Reveal>
             <Reveal>
-            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
-              
+              <div className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
+
                 <CalandlyButton
                   text={"Book A Demo"}
                   basicStyle={true}
@@ -57,16 +57,16 @@ function Hero() {
                     </svg>
                   }
                 />
-              
 
-              <Link
-                href={"https://displaylab.net/signup"}
-                target="_blank"
-                className="w-xs sm:w-fit border-2 border-cyan-600 text-cyan-600 px-8 py-4 rounded font-semibold text-base hover:bg-cyan-50 transition-all cursor-pointer"
-              >
-                Start Free Trial
-              </Link>
-            </div>
+
+                <Link
+                  href={"https://displaylab.net/signup"}
+                  target="_blank"
+                  className="w-xs sm:w-fit border-2 border-cyan-600 text-cyan-600 px-8 py-4 rounded font-semibold text-base hover:bg-cyan-50 transition-all cursor-pointer"
+                >
+                  Start Free Trial
+                </Link>
+              </div>
             </Reveal>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
           </div>
@@ -82,7 +82,7 @@ function Hero() {
                     repeat: Infinity,
                     ease: "linear",
                   }}
-                  className="bg-[#005582] rounded-2xl shadow-2xl p-4 relative z-10"
+                  className="bg-white rounded-2xl shadow-2xl p-4 relative z-10"
                 >
                   <video
                     className="rounded-xl aspect-video w-full h-full object-cover"

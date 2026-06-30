@@ -21,7 +21,7 @@ function ProductSection() {
             </Reveal>
             <Reveal>
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-              Display Lab offers versatile digital signage solutions for diverse business needs, including Stand Kiosk, Indoor Display, 3D Hologram Display, and Self-Ordering Kiosk, designed to enhance engagement, improve efficiency, and deliver modern interactive customer experiences.
+                Display Lab offers versatile digital signage solutions for diverse business needs, including Stand Kiosk, Indoor Display, 3D Hologram Display, and Self-Ordering Kiosk, designed to enhance engagement, improve efficiency, and deliver modern interactive customer experiences.
               </p>
             </Reveal>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"></div>
@@ -38,7 +38,7 @@ function ProductSection() {
                     repeat: Infinity,
                     ease: "linear",
                   }}
-                  className="bg-[#005582] rounded-2xl shadow-2xl p-4 relative z-10"
+                  className="bg-white rounded-2xl shadow-2xl p-4 relative z-10"
                 >
                   <video
                     className="rounded-xl aspect-video w-full h-full object-cover"

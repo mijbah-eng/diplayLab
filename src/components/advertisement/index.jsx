@@ -22,7 +22,7 @@ function Advertisement_Solutions() {
                       repeat: Infinity,
                       ease: "linear",
                     }}
-                    className="bg-[#005582] rounded-2xl shadow-2xl p-4 relative z-10"
+                    className="bg-white rounded-2xl shadow-2xl p-4 relative z-10"
                   >
                     <video
                       className="rounded-xl aspect-video w-full h-full object-cover"
@@ -50,14 +50,14 @@ function Advertisement_Solutions() {
               </Reveal>
               <Reveal props={"w-full"}>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link
-                href={"/advertisement"}
-                className="w-xs sm:w-fit bg-cyan-600 text-white px-8 py-4 rounded font-semibold text-base hover:bg-cyan-700 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
-              >
-                Learn More
-              </Link>
-              </div>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                  <Link
+                    href={"/advertisement"}
+                    className="w-xs sm:w-fit bg-cyan-600 text-white px-8 py-4 rounded font-semibold text-base hover:bg-cyan-700 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
+                  >
+                    Learn More
+                  </Link>
+                </div>
               </Reveal>
             </div>
           </div>
@@ -70,7 +70,7 @@ function Advertisement_Solutions() {
           <div className="h-6"></div>
           <Reveal props={"w-full"}>
             <p className="title_desc mb-8">
-             Turn screens into revenue-generating advertising platforms.Deliver dynamic and eye-catching content that captures audience attention instantly. Manage and update campaigns in real time across all connected displays. Maximize brand visibility with targeted and impactful digital advertising experiences. 
+              Turn screens into revenue-generating advertising platforms.Deliver dynamic and eye-catching content that captures audience attention instantly. Manage and update campaigns in real time across all connected displays. Maximize brand visibility with targeted and impactful digital advertising experiences.
             </p>
           </Reveal>
           <div className="h-6"></div>
