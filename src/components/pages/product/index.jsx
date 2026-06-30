@@ -54,14 +54,14 @@ function Product() {
         selectedCategory={selectedCategory}
         setSelectedCategory={handleCategoryChange}
       />
-      <Accessories />
       <ProductLines setSelectedCategory={handleCategoryChange} />
+      <Accessories />
       <PowerfulResult />
       <NeedHelp />
       <ServingBusiness />
-      <ControlEveryScreen />
       <NeedContentToo />
       <MindMap />
+      <ControlEveryScreen />
       <ReadyToUpgrade />
       <Footer />
     </>

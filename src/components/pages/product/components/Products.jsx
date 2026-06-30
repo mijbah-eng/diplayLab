@@ -1,7 +1,7 @@
 "use client";
 import SingleProduct from "@/components/SingleProduct";
 import { ProductsDatas } from "@/utils";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   LayoutGrid,
   Monitor,
@@ -28,7 +28,6 @@ function Products({ selectedCategory: propSelectedCategory, setSelectedCategory:
   const [localCategory, setLocalCategory] = useState("all");
   const selectedCategory = propSelectedCategory !== undefined ? propSelectedCategory : localCategory;
   const setSelectedCategory = propSetSelectedCategory !== undefined ? propSetSelectedCategory : setLocalCategory;
-
   const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
@@ -37,6 +36,15 @@ function Products({ selectedCategory: propSelectedCategory, setSelectedCategory:
 
   const handleShowAll = () => {
     setShowAll(!showAll);
+  };
+
+  const handleCategorySelect = (categoryId) => {
+    setSelectedCategory(categoryId);
+    setShowAll(false);
+    const element = document.getElementById("products-section");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   // Filter products based on selected category
@@ -74,9 +82,9 @@ function Products({ selectedCategory: propSelectedCategory, setSelectedCategory:
 
   return (
     <>
-      <div id="products-section" className="space-large"></div>
+      <div id="products-section" className="space-large" style={{ scrollMarginTop: "120px" }}></div>
       <div className="flex flex-col gap-12 max-w-375 mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 ">
           <div className="flex flex-col gap-4">
             <h1 className="title text-center text-gray-900">Display Lab Products</h1>
             <p className="section_desc text-center max-w-2xl mx-auto text-gray-600">
@@ -85,19 +93,16 @@ function Products({ selectedCategory: propSelectedCategory, setSelectedCategory:
           </div>
 
           {/* Product Categories Bar */}
-          <div className="flex flex-col items-center gap-4 w-full">
+          <div className="flex flex-col items-center gap-4 w-full sticky top-20 z-100 bg-gray-50/95 backdrop-blur-sm pb-6">
             {/* Top row: All Products (centered) */}
-            <div>
+            <div className="">
               {CATEGORIES.filter(cat => cat.id === "all").map((cat) => {
                 const Icon = cat.icon;
                 const isActive = selectedCategory === cat.id;
                 return (
                   <button
                     key={cat.id}
-                    onClick={() => {
-                      setSelectedCategory(cat.id);
-                      setShowAll(false); // Reset showAll when switching categories
-                    }}
+                    onClick={() => handleCategorySelect(cat.id)}
                     className={`flex items-center gap-2.5 px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-200 cursor-pointer ${isActive
                       ? "bg-cyan-600 text-white shadow-md shadow-cyan-600/20"
                       : "bg-white text-slate-600 border border-slate-200 hover:text-cyan-600 hover:bg-slate-50 shadow-[0_4px_25px_rgba(0,0,0,0.06)]"
@@ -118,10 +123,7 @@ function Products({ selectedCategory: propSelectedCategory, setSelectedCategory:
                 return (
                   <button
                     key={cat.id}
-                    onClick={() => {
-                      setSelectedCategory(cat.id);
-                      setShowAll(false); // Reset showAll when switching categories
-                    }}
+                    onClick={() => handleCategorySelect(cat.id)}
                     className={`flex items-center gap-2.5 px-5 py-3 rounded-xl text-sm font-semibold transition-all duration-200 cursor-pointer shrink-0 ${isActive
                       ? "bg-cyan-600 text-white shadow-md shadow-cyan-600/20"
                       : "text-slate-600 hover:text-cyan-600 hover:bg-slate-50"
@@ -134,25 +136,25 @@ function Products({ selectedCategory: propSelectedCategory, setSelectedCategory:
               })}
             </div>
           </div>
-        </div>
-
-        {/* Dynamic Product Grid */}
-        <div className="flex flex-col gap-6">
-          {productsToShow.length === 0 ? (
-            <div className="text-center py-16 bg-slate-50 rounded-2xl border border-dashed border-slate-200">
-              <p className="text-gray-500 text-lg">No products found in this category.</p>
-            </div>
-          ) : (
-            <>
-              <div className="grid grid-cols-1 gap-8">
-                {productsToShow.map((product, index) => (
-                  <SingleProduct key={product.id} product={product} index={index} />
-                ))}
+          {/* Dynamic Product Grid */}
+          <div className="flex flex-col gap-6">
+            {productsToShow.length === 0 ? (
+              <div className="text-center py-16 bg-slate-50 rounded-2xl border border-dashed border-slate-200">
+                <p className="text-gray-500 text-lg">No products found in this category.</p>
               </div>
+            ) : (
+              <>
+                <div className="grid grid-cols-1 gap-8">
+                  {productsToShow.map((product, index) => (
+                    <SingleProduct key={product.id} product={product} index={index} />
+                  ))}
+                </div>
 
-            </>
-          )}
+              </>
+            )}
+          </div>
         </div>
+
 
         {filteredProducts.length > 6 && (
           <button

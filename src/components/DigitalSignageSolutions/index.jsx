@@ -40,30 +40,6 @@ function DigitalSignageSolutions() {
     },
     {
       contentImageUrls: [
-        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Corporate-Offices/Corporate-Offices.jpg" },
-        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Corporate-Offices/v2-awcgl-fbeds.png" },
-      ],
-      contentTitle: "Corporate Offices",
-      contentDescription:
-        "Improve internal communication with company news and announcements.Share dashboards, KPIs, and updates to keep teams aligned.Enhance workplace engagement with dynamic and timely content.",
-      contentValue: "corporate_offices",
-      features: [
-        {
-          title: "Enhance Internal Communication",
-          desc: "Share company news, announcements, and updates instantly.Keep teams aligned across departments and locations.Reduce email overload with centralized displays.",
-        },
-        {
-          title: "Visualize Data & KPIs",
-          desc: "Display dashboards, metrics, and performance insights.Keep employees informed with real-time business data.Drive transparency and better decision-making.",
-        },
-        {
-          title: "Boost Workplace Engagement",
-          desc: "Promote company culture, events, and achievements.Recognize employees and share success stories.Create a more connected and motivated workforce.",
-        },
-      ],
-    },
-    {
-      contentImageUrls: [
         { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Restaurants/Restaurants_1.jpg" },
         { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Restaurants/Restaurants_2.jpg" },
         { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Restaurants/Restaurants_3.jpg" },
@@ -141,6 +117,30 @@ function DigitalSignageSolutions() {
         {
           title: "Schedules & Alerts",
           desc: "Share class schedules, exam dates, and notices.Provide real-time updates and emergency alerts.Keep everyone informed with timely communication.",
+        },
+      ],
+    },
+    {
+      contentImageUrls: [
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Corporate-Offices/Corporate-Offices.jpg" },
+        { image_url: "/images/Digital-Signage-Solutions-for-Every-Industry/Corporate-Offices/v2-awcgl-fbeds.png" },
+      ],
+      contentTitle: "Corporate Offices",
+      contentDescription:
+        "Improve internal communication with company news and announcements.Share dashboards, KPIs, and updates to keep teams aligned.Enhance workplace engagement with dynamic and timely content.",
+      contentValue: "corporate_offices",
+      features: [
+        {
+          title: "Enhance Internal Communication",
+          desc: "Share company news, announcements, and updates instantly.Keep teams aligned across departments and locations.Reduce email overload with centralized displays.",
+        },
+        {
+          title: "Visualize Data & KPIs",
+          desc: "Display dashboards, metrics, and performance insights.Keep employees informed with real-time business data.Drive transparency and better decision-making.",
+        },
+        {
+          title: "Boost Workplace Engagement",
+          desc: "Promote company culture, events, and achievements.Recognize employees and share success stories.Create a more connected and motivated workforce.",
         },
       ],
     },

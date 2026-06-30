@@ -7,7 +7,7 @@ function ReadyToUpgrade() {
     <section className="bg-white">
       <div className="">
         {/* Banner Container */}
-        <div className="relative overflow-hidden bg-gradient-to-br from-[#061c39] via-[#04152a] to-[#020b17] p-8 md:p-12 lg:py-14 flex flex-col lg:flex-row items-center justify-between min-h-[340px] lg:min-h-[280px] gap-8 shadow-xl border border-slate-800">
+        <div className="relative overflow-hidden bg-gradient-to-br from-[#061c39] via-[#04152a] to-[#020b17] p-8 md:p-12 flex flex-col lg:flex-row items-center justify-between min-h-[340px] lg:min-h-[280px] gap-8 shadow-xl border border-slate-800">
           
           {/* Radial Cyan Glow behind product image */}
           <div className="absolute right-[10%] bottom-0 w-[240px] h-[240px] rounded-full bg-cyan-500/10 blur-[60px] pointer-events-none z-0" />

@@ -7,11 +7,6 @@ function TabSection() {
       tabValue:"retail"
     },
     {
-      tabName: "Corporate Offices",
-      tabValue:"corporate_offices"
-
-    },
-    {
       tabName: "Restaurants",
       tabValue:"restaurants"
 
@@ -24,6 +19,11 @@ function TabSection() {
     {
       tabName: "Education",
       tabValue:"education"
+
+    },
+     {
+      tabName: "Corporate Offices",
+      tabValue:"corporate_offices"
 
     },
   ];

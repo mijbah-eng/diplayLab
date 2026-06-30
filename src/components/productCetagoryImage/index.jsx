@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function ProductCetagoryImage(){
+function ProductCetagoryImage() {
     const categories = [
         { id: 1, name: "Ultra Thin Dual Side Stand Display", image: "/images/products/product-1.png" },
         { id: 2, name: "Digital Stand Kiosk", image: "/images/products/product-2.png" },
@@ -14,20 +14,20 @@ function ProductCetagoryImage(){
         { id: 10, name: "Wall Mount", image: "/images/products/product-10.png" },
         { id: 11, name: "GOBO Projection", image: "/images/products/product-11.png" },
     ];
-return (
-    <div className="pt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="title text-center text-gray-900">Product Categories</h2>
-            <div className="grid grid-cols-5 gap-20 py-20">
-                {categories.map((category, i) => (
-                    <div className="flex flex-col justify-content items-center gap-5 cursor-pointer" key={i}>
-                        <Image src={category.image} alt={category.name} width={200} height={200} />
-                        <h4 className="text-lg font-semibold text-gray-900 text-center">{category.name}</h4>
-                    </div>
-                ))}
+    return (
+        <div className="pt-16">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 className="title text-center text-gray-900">Product Categories</h2>
+                <div className="grid grid-cols-4 gap-20 py-20">
+                    {categories.map((category, i) => (
+                        <div className="flex flex-col justify-between items-center gap-5 cursor-pointer" key={i}>
+                            <Image src={category.image} alt={category.name} width={200} height={200} />
+                            <h4 className="text-lg font-semibold text-gray-900 text-center">{category.name}</h4>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
-    </div>
-)
+    )
 }
 export default ProductCetagoryImage;

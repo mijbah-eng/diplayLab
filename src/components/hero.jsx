@@ -82,7 +82,7 @@ function Hero() {
                     repeat: Infinity,
                     ease: "linear",
                   }}
-                  className="bg-white rounded-2xl shadow-2xl p-4 relative z-10"
+                  className="bg-[#005582] rounded-2xl shadow-2xl p-4 relative z-10"
                 >
                   <video
                     className="rounded-xl aspect-video w-full h-full object-cover"
